@@ -10,6 +10,8 @@ on:
       - 'packages/validators/**'
       - 'packages/tests/**'
 
+
+
 jobs:
   test-api:
     name: Test API Package
@@ -59,7 +61,9 @@ jobs:
             ${{ runner.os }}-bun-
 
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun install
+
+
 
       - name: Build dependencies
         run: bun run build --filter=@qco/db --filter=@qco/auth --filter=@qco/validators --filter=@qco/tests
