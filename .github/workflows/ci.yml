@@ -57,7 +57,8 @@ jobs:
       - name: Run API tests
         run: |
           cd packages/api
-          bun run test:run
+          export NODE_OPTIONS='--max-old-space-size=16096'
+          bun vitest run
         env:
           NODE_ENV: test
           POSTGRES_URL: postgresql://test:test@localhost:5432/test_db

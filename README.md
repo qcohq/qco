@@ -1,4 +1,5 @@
 # Quick Open Commerce (QCO) • Next.js Ecommerce Starter
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/qcohq/qco?utm_source=oss&utm_medium=github&utm_campaign=qcohq%2Fqco&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 
 [demo](https://demo.qco.me) 
 
