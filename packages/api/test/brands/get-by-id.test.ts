@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from "vitest"
 import { TRPCTestHelper, TestUtils } from "../utils/test-infrastructure"
+import { getFileUrl } from "@qco/lib"
 
 describe("brands.getById - Реальные тесты tRPC API", () => {
     let helper: TRPCTestHelper
@@ -189,7 +190,6 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
                             mimeType: "image/jpeg",
                             size: 2048,
                         },
-                        url: "https://example.com/uploads/brands/logo.jpg",
                     },
                     {
                         id: "bf-2",
@@ -204,9 +204,7 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
                             name: "banner.jpg",
                             mimeType: "image/jpeg",
                             size: 4096,
-
                         },
-                        url: "https://example.com/uploads/brands/banner.jpg",
                     },
                 ],
             })
@@ -224,7 +222,7 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
                 categories: [],
                 files: mockBrand.files.map(bf => ({
                     ...bf,
-                    url: `https://example.com/${bf.file.path}`,
+                    url: getFileUrl(bf.file.path),
                 })),
             })
         })
@@ -288,7 +286,7 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
                             mimeType: "image/jpeg",
                             size: 2048,
                         },
-                        url: "https://example.com/uploads/brands/logo.jpg",
+                        url: getFileUrl("uploads/brands/logo.jpg"),
                     },
                 ],
             })
@@ -299,7 +297,7 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
 
             const caller = helper.getCaller()
             const result = await caller.brands.getById(input)
-
+            console.log(result)
             const { brandCategories, ...brandWithoutCategories } = mockBrand
             expect(result).toEqual({
                 ...brandWithoutCategories,
