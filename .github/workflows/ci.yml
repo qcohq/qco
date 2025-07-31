@@ -45,9 +45,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22.14.0'
+          node-version: '22'    # or '22.x' to pick the latest v22 minor
           cache: 'bun'
-
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
