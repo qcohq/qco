@@ -21,7 +21,7 @@ describe("brands.getAll - Реальные тесты tRPC API", () => {
 
             const mockBrands = [
                 TestUtils.createBrand({
-                    id: "brand-1",
+                    id: "brand-get-all-1",
                     name: "Brand 1",
                     slug: "brand-1",
                     isActive: true,
@@ -30,7 +30,7 @@ describe("brands.getAll - Реальные тесты tRPC API", () => {
                     files: [],
                 }),
                 TestUtils.createBrand({
-                    id: "brand-2",
+                    id: "brand-get-all-2",
                     name: "Brand 2",
                     slug: "brand-2",
                     isActive: true,
@@ -84,14 +84,14 @@ describe("brands.getAll - Реальные тесты tRPC API", () => {
 
             const mockBrands = [
                 TestUtils.createBrand({
-                    id: "brand-6",
+                    id: "brand-get-all-3",
                     name: "Brand 6",
                     slug: "brand-6",
                     brandCategories: [],
                     files: [],
                 }),
                 TestUtils.createBrand({
-                    id: "brand-7",
+                    id: "brand-get-all-4",
                     name: "Brand 7",
                     slug: "brand-7",
                     brandCategories: [],
@@ -143,7 +143,7 @@ describe("brands.getAll - Реальные тесты tRPC API", () => {
 
             const mockBrands = [
                 TestUtils.createBrand({
-                    id: "brand-1",
+                    id: "brand-get-all-5",
                     name: "Test Brand",
                     slug: "test-brand",
                     brandCategories: [],
@@ -195,7 +195,7 @@ describe("brands.getAll - Реальные тесты tRPC API", () => {
 
             const mockBrands = [
                 TestUtils.createBrand({
-                    id: "brand-1",
+                    id: "brand-get-all-6",
                     name: "Active Brand",
                     slug: "active-brand",
                     isActive: true,
@@ -248,7 +248,7 @@ describe("brands.getAll - Реальные тесты tRPC API", () => {
 
             const mockBrands = [
                 TestUtils.createBrand({
-                    id: "brand-2",
+                    id: "brand-get-all-7",
                     name: "Brand 2",
                     slug: "brand-2",
                     createdAt: new Date("2024-01-02"),
@@ -256,7 +256,7 @@ describe("brands.getAll - Реальные тесты tRPC API", () => {
                     files: [],
                 }),
                 TestUtils.createBrand({
-                    id: "brand-1",
+                    id: "brand-get-all-8",
                     name: "Brand 1",
                     slug: "brand-1",
                     createdAt: new Date("2024-01-01"),

@@ -17,13 +17,13 @@ describe("brands.getBrandsForSelect - Реальные тесты tRPC API", () 
 
             const mockBrands = [
                 TestUtils.createBrand({
-                    id: "brand-1",
+                    id: "brand-select-1",
                     name: "Brand 1",
                     slug: "brand-1",
                     isActive: true,
                 }),
                 TestUtils.createBrand({
-                    id: "brand-2",
+                    id: "brand-select-2",
                     name: "Brand 2",
                     slug: "brand-2",
                     isActive: true,
@@ -68,7 +68,7 @@ describe("brands.getBrandsForSelect - Реальные тесты tRPC API", () 
 
             const mockBrands = [
                 TestUtils.createBrand({
-                    id: "brand-1",
+                    id: "brand-select-3",
                     name: "Test Brand",
                     slug: "test-brand",
                     isActive: true,
@@ -113,31 +113,31 @@ describe("brands.getBrandsForSelect - Реальные тесты tRPC API", () 
 
             const mockBrands = [
                 TestUtils.createBrand({
-                    id: "brand-1",
+                    id: "brand-select-4",
                     name: "Brand 1",
                     slug: "brand-1",
                     isActive: true,
                 }),
                 TestUtils.createBrand({
-                    id: "brand-2",
+                    id: "brand-select-5",
                     name: "Brand 2",
                     slug: "brand-2",
                     isActive: true,
                 }),
                 TestUtils.createBrand({
-                    id: "brand-3",
+                    id: "brand-select-6",
                     name: "Brand 3",
                     slug: "brand-3",
                     isActive: true,
                 }),
                 TestUtils.createBrand({
-                    id: "brand-4",
+                    id: "brand-select-7",
                     name: "Brand 4",
                     slug: "brand-4",
                     isActive: true,
                 }),
                 TestUtils.createBrand({
-                    id: "brand-5",
+                    id: "brand-select-8",
                     name: "Brand 5",
                     slug: "brand-5",
                     isActive: true,

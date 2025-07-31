@@ -71,7 +71,7 @@ export const getById = protectedProcedure
       };
     }) || [];
 
-    return {
+    const result = {
       id: brand.id,
       name: brand.name,
       slug: brand.slug,
@@ -95,4 +95,5 @@ export const getById = protectedProcedure
       categories,
       files,
     };
+    return result;
   });
