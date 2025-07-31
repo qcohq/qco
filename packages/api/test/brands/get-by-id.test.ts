@@ -285,6 +285,7 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
                             mimeType: "image/jpeg",
                             size: 2048,
                         },
+                        url: "https://example.com/uploads/brands/logo.jpg",
                     },
                 ],
             })
@@ -300,10 +301,7 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
             expect(result).toEqual({
                 ...brandWithoutCategories,
                 categories: mockBrand.brandCategories.map(bc => bc.category),
-                files: mockBrand.files.map(bf => ({
-                    ...bf,
-                    url: `https://example.com/${bf.file.path}`,
-                })),
+                files: mockBrand.files,
             })
         })
     })
