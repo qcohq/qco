@@ -1,0 +1,35 @@
+
+
+
+
+# Icons
+- Use Lucide React for icons throughout the application.
+- Keep icon usage consistent with the existing design system.
+
+
+# Data Fetching & Forms
+- Use TanStack Query (react-query) for frontend data fetching.
+- Use React Hook Form for form handling.
+- Use Zod for validation.
+- Validation schemas are stored in `@qco/validators`.
+
+# State Management & Logic
+- Use React Context for state management.
+
+# Backend & Database
+Use Drizzle for database access.
+
+# Database Schema
+- Database schemas are defined in `@qco/db`.
+- Use Drizzle ORM for database operations.
+- Follow the schema definitions when creating new database models.
+
+
+# tRPC & TanStack Query
+- Use tRPC for type-safe API communication between backend and frontend.
+- Follow examples in docs/trpc-tanstack-examples.md for implementing queries and mutations.
+- Use the useTRPC hook for accessing tRPC procedures.
+- Properly handle loading states, errors, and success cases.
+- Use queryClient.invalidateQueries for cache invalidation after mutations.
+- Leverage type inference capabilities provided by tRPC.
+

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.1.1/schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!**/dist/**",
+      "!**/apps/app/.next/**",
+      "!**/app/.content-collections/**",
+      "!**/apps/payload/src/payload-types.ts",
+      "!**/apps/payload/.next/**",
+      "!**/packages/ui/src/**/*.tsx",
+      "!**/packages/ui/src/**/*.ts",
+      "!**/node_modules/**",
+      "!**/.trigger"
+    ]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "style": {
+        "useLiteralEnumMembers": "error",
+        "useNodejsImportProtocol": "error",
+        "useAsConstAssertion": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "useConst": "error",
+        "useSingleVarDeclarator": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error",
+        "useExponentiationOperator": "error",
+        "useTemplate": "error",
+        "noParameterAssign": "error",
+        "noNonNullAssertion": "error",
+        "useDefaultParameterLast": "error",
+        "useImportType": "error",
+        "useExportType": "error",
+        "noUselessElse": "error",
+        "useShorthandFunctionType": "error"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      },
+      "correctness": {
+        "noUnusedVariables": "warn"
+      },
+      "nursery": {
+        "useSortedClasses": "off"
+      }
+    },
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/.next",
+      "!**/dist",
+      "!**/.wrangler",
+      "!**/.react-email",
+      "!**/.contentlayer",
+      "!**/meta"
+    ]
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "enabled": true,
+    "lineWidth": 80,
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/.next",
+      "!**/dist",
+      "!**/.nuxt",
+      "!**/.wrangler",
+      "!**/.react-email",
+      "!**/.contentlayer",
+      "!**/meta"
+    ]
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  }
+}

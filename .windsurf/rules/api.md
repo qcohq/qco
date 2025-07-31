@@ -1,0 +1,77 @@
+---
+trigger: glob
+globs: packages/api/src/**/*.ts
+---
+
+# API Structure Rules
+
+## Table Schemas
+Import schemas from @qco/db/schema, e.g., import { Category, ProductCategory } from "@qco/db/schema";
+
+## Drizzle ORM
+Import functions like eq, sql from @qco/db, e.g., import { eq, sql } from "@qco/db";
+
+## tRPC Routes Structure
+Use ctx for database access in tRPC routes to ensure consistent data handling.
+
+### File Organization
+- Each route should be in a separate file within a group folder
+- Group folder structure: `packages/api/src/router/{group-name}/`
+- Individual route files: `{action}.ts` (e.g., `create.ts`, `list.ts`, `update.ts`, `delete.ts`)
+- Group index file: `packages/api/src/router/{group-name}/index.ts` - exports all routes as a router object
+- Main router file: `packages/api/src/router/{group-name}.ts` - re-exports from group index
+
+### Route File Structure
+```typescript
+// packages/api/src/router/{group-name}/{action}.ts
+import { TRPCError } from "@trpc/server";
+import { protectedProcedure } from "../../trpc";
+import { SchemaName } from "@qco/db/schema";
+import { actionSchema } from "@qco/validators";
+
+export const action = protectedProcedure
+  .input(actionSchema)
+  .mutation(async ({ ctx, input }) => {
+    // Implementation
+  });
+```
+
+### Group Index File Structure
+```typescript
+// packages/api/src/router/{group-name}/index.ts
+import type { TRPCRouterRecord } from "@trpc/server";
+import { create } from "./create";
+import { list } from "./list";
+import { update } from "./update";
+import { deleteItem } from "./delete";
+
+export const {groupName}Router = {
+  create,
+  list,
+  update,
+  delete: deleteItem,
+} satisfies TRPCRouterRecord;
+```
+
+### Main Router Re-export
+```typescript
+// packages/api/src/router/{group-name}.ts
+export { {groupName}Router } from "./{group-name}/index";
+```
+
+### Root Router Integration
+Add to `packages/api/src/root.ts`:
+```typescript
+import { {groupName}Router } from "./router/{group-name}";
+
+export const appRouter = createTRPCRouter({
+  // ... other routers
+  {groupName}: {groupName}Router,
+});
+```
+
+## Validation
+Use Zod for input and output validation, importing from @qco/validators.
+
+## Error Handling
+Use TRPCError for consistent error handling across all routes.

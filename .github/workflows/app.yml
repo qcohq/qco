@@ -1,0 +1,55 @@
+name: Deploy App
+on:
+  push:
+    branches: [main]
+    paths:
+      - "apps/app/**"
+      - "packages/api/**"
+env:
+  IMAGE_NAME: app
+  CR_REGISTRY: crpahb1mqno377fg9i7a
+  CI: 'true'
+  KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+  IMAGE_TAG: ${{ github.sha }}
+  BETTER_AUTH_SECRET: ${{ secrets.BETTER_AUTH_SECRET }}
+  POSTGRES_URL: ${{ secrets.POSTGRES_URL }}
+  NEXT_PUBLIC_WEB_APP_URL: ${{secrets.NEXT_PUBLIC_WEB_APP_URL}}
+
+jobs:
+  # Deploy to EKS
+  deploy:
+    runs-on: self-hosted
+    timeout-minutes: 20
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Update submodules
+        run: git submodule update --init --recursive
+      - name: Login to Container Registry
+        id: login-cr
+        uses: yc-actions/yc-cr-login@v2
+        with:
+          yc-sa-json-credentials: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
+      - name: Build image
+        run: |
+          docker build . --file apps/app/Dockerfile --tag $IMAGE_NAME \
+            --build-arg BETTER_AUTH_SECRET=$BETTER_AUTH_SECRET \
+            --build-arg POSTGRES_URL=$POSTGRES_URL \
+            --build-arg NEXT_PUBLIC_WEB_APP_URL=$NEXT_PUBLIC_WEB_APP_URL
+      - name: Push Image
+        run: |
+          IMAGE_ID=cr.yandex/$CR_REGISTRY/$IMAGE_NAME
+          docker tag $IMAGE_NAME $IMAGE_ID:$IMAGE_TAG
+          docker tag $IMAGE_NAME $IMAGE_ID:latest
+          docker push $IMAGE_ID:latest
+          docker push $IMAGE_ID:$IMAGE_TAG
+      - name: Deploy To Cluster
+        uses: kodermax/kubectl-aws-eks@v1
+        with:
+          args: set image deployment/$IMAGE_NAME $IMAGE_NAME=cr.yandex/$CR_REGISTRY/$IMAGE_NAME:$IMAGE_TAG

@@ -1,0 +1,95 @@
+import {
+    Body,
+    Button,
+    Container,
+    Head,
+    Heading,
+    Hr,
+    Html,
+    Link,
+    Preview,
+    Section,
+    Tailwind,
+    Text,
+} from "@react-email/components";
+
+import { emailTailwindConfig } from "../tailwind";
+import { env } from "../env";
+
+interface AdminInvitationEmailProps {
+    name: string;
+    email: string;
+    role: string;
+    invitedBy: string;
+    invitationUrl: string;
+    expiresAt: string;
+}
+
+export function AdminInvitationEmail({
+    name,
+    email,
+    role,
+    invitedBy,
+    invitationUrl,
+    expiresAt,
+}: AdminInvitationEmailProps) {
+    return (
+        <Html>
+            <Head />
+            <Preview>Приглашение стать администратором - {env.SITE_NAME}</Preview>
+            <Tailwind config={emailTailwindConfig}>
+                <Body className="mx-auto my-auto bg-white font-sans">
+                    <Container className="mx-auto my-[40px] w-[465px] rounded border border-solid border-[#eaeaea] p-[20px]">
+                        <Heading className="mx-0 my-[30px] p-0 text-center text-[24px] font-normal text-black">
+                            Приглашение стать администратором
+                        </Heading>
+                        <Text className="text-[14px] leading-[24px] text-black">
+                            Здравствуйте, {name}!
+                        </Text>
+                        <Text className="text-[14px] leading-[24px] text-black">
+                            Вас пригласили стать администратором на <strong>{env.SITE_NAME}</strong>.
+                        </Text>
+                        <Text className="text-[14px] leading-[24px] text-black">
+                            <strong>Детали приглашения:</strong>
+                        </Text>
+                        <Text className="text-[14px] leading-[24px] text-black">
+                            • Email: {email}
+                            <br />• Роль: {role}
+                            <br />• Пригласил: {invitedBy}
+                            <br />• Действительно до: {expiresAt}
+                        </Text>
+                        <Section className="mb-[32px] mt-[32px] text-center">
+                            <Button
+                                className="rounded bg-[#000000] px-4 py-3 text-center text-[12px] font-semibold text-white no-underline"
+                                href={invitationUrl}
+                            >
+                                Принять приглашение
+                            </Button>
+                        </Section>
+                        <Text className="text-[14px] leading-[24px] text-black">
+                            Если кнопка выше не работает, скопируйте и вставьте эту ссылку в
+                            ваш браузер:{" "}
+                            <Link href={invitationUrl} className="text-blue-600 no-underline">
+                                {invitationUrl}
+                            </Link>
+                        </Text>
+                        <Text className="text-[14px] leading-[24px] text-black">
+                            <strong>Важная информация:</strong>
+                        </Text>
+                        <Text className="text-[14px] leading-[24px] text-black">
+                            • Приглашение действительно до {expiresAt}
+                            <br />• После принятия приглашения вы получите доступ к панели администратора
+                            <br />• Если вы не ожидали это приглашение, проигнорируйте это письмо
+                        </Text>
+                        <Hr className="mx-0 my-[26px] w-full border border-solid border-[#eaeaea]" />
+                        <Text className="text-[12px] leading-[24px] text-[#666666]">
+                            Это письмо отправлено на адрес {email}. Если у вас возникли
+                            вопросы или проблемы, пожалуйста, свяжитесь с нашей службой
+                            поддержки.
+                        </Text>
+                    </Container>
+                </Body>
+            </Tailwind>
+        </Html>
+    );
+} 

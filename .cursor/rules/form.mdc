@@ -1,0 +1,191 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Правила работы с формами
+
+## Основные принципы
+
+При создании форм в проекте всегда используйте React Hook Form с компонентами shadcn/ui. Это обеспечивает:
+- Типобезопасность с TypeScript
+- Валидацию с помощью Zod
+- Доступность (accessibility)
+- Консистентный UI
+
+## Структура формы
+
+Всегда используйте следующую структуру для полей формы:
+
+```tsx
+<FormField
+  control={form.control}
+  name="fieldName"
+  render={({ field }) => (
+    <FormItem>
+      <FormLabel>Label</FormLabel>
+      <FormControl>
+        {/* Компонент поля */}
+      </FormControl>
+      <FormDescription>Описание поля</FormDescription>
+      <FormMessage />
+    </FormItem>
+  )}
+/>
+```
+
+## Обязательные импорты
+
+```tsx
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm } from "react-hook-form"
+import { z } from "zod"
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form"
+```
+
+## Схема валидации
+
+Всегда создавайте Zod схему для валидации:
+
+```tsx
+const formSchema = z.object({
+  fieldName: z.string().min(2, {
+    message: "Минимальная длина 2 символа",
+  }),
+})
+```
+
+## Инициализация формы
+
+```tsx
+const form = useForm<z.infer<typeof formSchema>>({
+  resolver: zodResolver(formSchema),
+  defaultValues: {
+    fieldName: "",
+  },
+})
+```
+
+## Обработчик отправки
+
+```tsx
+function onSubmit(values: z.infer<typeof formSchema>) {
+  // Обработка данных формы
+  console.log(values)
+}
+```
+
+## Структура компонента формы
+
+```tsx
+export function FormComponent() {
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      // значения по умолчанию
+    },
+  })
+
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    // логика отправки
+  }
+
+  return (
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+        {/* поля формы */}
+        <Button type="submit">Отправить</Button>
+      </form>
+    </Form>
+  )
+}
+```
+
+## Типы полей
+
+### Input
+```tsx
+<FormControl>
+  <Input placeholder="Введите значение" {...field} />
+</FormControl>
+```
+
+### Textarea
+```tsx
+<FormControl>
+  <Textarea placeholder="Введите текст" {...field} />
+</FormControl>
+```
+
+### Select
+```tsx
+<FormControl>
+  <Select onValueChange={field.onChange} defaultValue={field.value}>
+    <SelectTrigger>
+      <SelectValue placeholder="Выберите опцию" />
+    </SelectTrigger>
+    <SelectContent>
+      <SelectItem value="option1">Опция 1</SelectItem>
+      <SelectItem value="option2">Опция 2</SelectItem>
+    </SelectContent>
+  </Select>
+</FormControl>
+```
+
+### Checkbox
+```tsx
+<FormControl>
+  <Checkbox
+    checked={field.value}
+    onCheckedChange={field.onChange}
+  />
+</FormControl>
+```
+
+### Switch
+```tsx
+<FormControl>
+  <Switch
+    checked={field.value}
+    onCheckedChange={field.onChange}
+  />
+</FormControl>
+```
+
+## Лучшие практики
+
+1. **Всегда используйте TypeScript** - типизируйте схему и форму
+2. **Добавляйте описания полей** - используйте FormDescription для подсказок
+3. **Правильные сообщения об ошибках** - используйте FormMessage для отображения ошибок валидации
+4. **Доступность** - все поля должны иметь FormLabel
+5. **Консистентность** - используйте одинаковую структуру для всех форм
+6. **Валидация** - всегда добавляйте валидацию на клиенте с помощью Zod
+7. **Значения по умолчанию** - всегда указывайте defaultValues в useForm
+
+## Примеры валидации
+
+```tsx
+// Email
+email: z.string().email("Неверный формат email"),
+
+// Пароль
+password: z.string().min(8, "Минимум 8 символов"),
+
+// Обязательное поле
+name: z.string().min(1, "Поле обязательно для заполнения"),
+
+// Число
+age: z.number().min(18, "Минимальный возраст 18 лет"),
+
+// Массив
+tags: z.array(z.string()).min(1, "Выберите хотя бы один тег"),
+
+```

@@ -1,0 +1,45 @@
+Найдено 20 файлов для миграции
+Начинаем миграцию 20 файлов...
+Обработка файла: admins.ts
+  Файл admins.ts не требует изменений
+Обработка файла: attachments.ts
+  Файл attachments.ts не требует изменений
+Обработка файла: auth.ts
+  Файл auth.ts не требует изменений
+Обработка файла: banners.ts
+  Файл banners.ts не требует изменений
+Обработка файла: blog.ts
+  Файл blog.ts не требует изменений
+Обработка файла: brands.ts
+  Файл brands.ts не требует изменений
+Обработка файла: categories.ts
+  Файл categories.ts не требует изменений
+Обработка файла: customers.ts
+  Файл customers.ts не требует изменений
+Обработка файла: dashboard.ts
+  Файл dashboard.ts не требует изменений
+Обработка файла: delivery-settings.ts
+  Файл delivery-settings.ts не требует изменений
+Обработка файла: index.ts
+  Файл index.ts не требует изменений
+Обработка файла: orders.ts
+  Файл orders.ts не требует изменений
+Обработка файла: product-attribute.ts
+  Файл product-attribute.ts не требует изменений
+Обработка файла: product-specification.ts
+  Файл product-specification.ts не требует изменений
+Обработка файла: product-table.ts
+  Файл product-table.ts не требует изменений
+Обработка файла: product-type-attributes.ts
+  Файл product-type-attributes.ts не требует изменений
+Обработка файла: product-type.ts
+  Файл product-type.ts не требует изменений
+Обработка файла: product-variants.ts
+  Файл product-variants.ts не требует изменений
+Обработка файла: product.validator.ts
+  Файл product.validator.ts не требует изменений
+Обработка файла: products.ts
+  Файл products.ts не требует изменений
+
+Миграция завершена. Обновлено файлов: 0 из 20
+Пожалуйста, проверьте файлы вручную на наличие ошибок и специфических случаев, которые скрипт мог пропустить.

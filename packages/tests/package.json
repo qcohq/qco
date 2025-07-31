@@ -1,0 +1,15 @@
+{
+  "name": "@qco/tests",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "vitest": "3.2.4"
+  }
+} 

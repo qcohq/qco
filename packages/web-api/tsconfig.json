@@ -1,0 +1,9 @@
+{
+  "extends": "@qco/tsconfig/internal-package.json",
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx"
+  }
+}

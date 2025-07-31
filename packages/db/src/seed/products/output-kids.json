@@ -1,0 +1,3422 @@
+[
+  {
+    "productId": "7411390",
+    "xmlId": "5527498",
+    "name": "Куртка-бомбер с капюшоном",
+    "link": "/product/5527498-det-bryuki-guess/",
+    "images": [
+      "images\\5527498-01.jpg",
+      "images\\5527498-02.jpg",
+      "images\\5527498-03.jpg",
+      "images\\5527498-04.jpg"
+    ],
+    "brand": "Guess",
+    "brandColor": null,
+    "price": 12590,
+    "priceDiscount": 8810,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7411390",
+        "xmlId": "5527498",
+        "multi": [
+          {
+            "name": "синий",
+            "hex": "#0000ff"
+          }
+        ],
+        "name": "синий",
+        "hex": "#0000ff",
+        "link": "/product/5527498-det-bryuki-guess/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7411453",
+        "xmlId": "5527498#0bc53133-d123-421f-97fe-cfd3a2f2317a",
+        "main": "128",
+        "second": "8",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12590,
+        "priceDiscount": 8810,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7411450",
+        "xmlId": "5527498#602ae266-28c8-4df9-a437-bd5bcc774039",
+        "main": "140",
+        "second": "10",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12590,
+        "priceDiscount": 8810,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7411447",
+        "xmlId": "5527498#c3c33fcc-382a-4aa6-a3d8-5ea87af4c14e",
+        "main": "152",
+        "second": "12",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12590,
+        "priceDiscount": 8810,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7411459",
+        "xmlId": "5527498#64b5e27a-7a11-4b0b-ac33-35e6501c7336",
+        "main": "164",
+        "second": "14",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12590,
+        "priceDiscount": 8810,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7411456",
+        "xmlId": "5527498#66aa09d4-55d9-498c-aa53-0fa7fcfa0e46",
+        "main": "176",
+        "second": "16",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12590,
+        "priceDiscount": 8810,
+        "discount": 30,
+        "bonusAddicted": 560
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 560,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "7626741387786",
+    "gender": "girl",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      289,
+      409,
+      63979,
+      292,
+      16275,
+      2343,
+      50058,
+      50448,
+      19891,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7400395",
+    "xmlId": "5526865",
+    "name": "Парка с капюшоном и накладными карманами",
+    "link": "/product/5526865-det-parka-choupette/",
+    "images": [
+      "images\\5526865-01.jpg",
+      "images\\5526865-02.jpg",
+      "images\\5526865-03.jpg",
+      "images\\5526865-04.jpg",
+      "images\\5526865-05.jpg",
+      "images\\5526865-06.jpg",
+      "images\\5526865-07.jpg",
+      "images\\5526865-08.jpg",
+      "images\\5526865-09.jpg",
+      "images\\5526865-10.jpg",
+      "images\\5526865-11.jpg",
+      "images\\5526865-12.jpg",
+      "images\\5526865-13.jpg",
+      "images\\5526865-14.jpg",
+      "images\\5526865-15.jpg",
+      "images\\5526865-16.jpg"
+    ],
+    "brand": "Choupette",
+    "brandColor": null,
+    "price": 13790,
+    "priceDiscount": 9650,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7400395",
+        "xmlId": "5526865",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5526865-det-parka-choupette/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7400926",
+        "xmlId": "5526865#3232576e-4491-4be9-aff5-0dcbe247bda7",
+        "main": "128",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 13790,
+        "priceDiscount": 9650,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7400929",
+        "xmlId": "5526865#402527d0-2311-42e4-af58-729bb43e4c6a",
+        "main": "134",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 13790,
+        "priceDiscount": 9650,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7400923",
+        "xmlId": "5526865#32b6b991-e695-482a-987b-bda69989abb1",
+        "main": "140",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 13790,
+        "priceDiscount": 9650,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7400917",
+        "xmlId": "5526865#2475dcb4-cb1a-4f77-b6a9-5a091210380c",
+        "main": "146",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 13790,
+        "priceDiscount": 9650,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7400920",
+        "xmlId": "5526865#b485e187-4702-4b00-9a03-1c26ec057ee6",
+        "main": "152",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 13790,
+        "priceDiscount": 9650,
+        "discount": 30,
+        "bonusAddicted": 630
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 630,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4660421435780",
+    "gender": "girl",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      289,
+      58293,
+      37264,
+      20823,
+      27100,
+      33103,
+      33091,
+      292,
+      19891,
+      16275,
+      409,
+      63979,
+      415,
+      1229,
+      1230,
+      2179,
+      6899,
+      50448
+    ]
+  },
+  {
+    "productId": "7422922",
+    "xmlId": "5529098",
+    "name": "Куртка утепленная стеганая",
+    "link": "/product/5529098-det-kurtka-uteplennaya-tommy-hilfiger/",
+    "images": [
+      "images\\5529098-01.jpg",
+      "images\\5529098-02.jpg",
+      "images\\5529098-03.jpg"
+    ],
+    "brand": "Tommy Hilfiger",
+    "brandColor": null,
+    "price": 21990,
+    "priceDiscount": 15390,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7422922",
+        "xmlId": "5529098",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5529098-det-kurtka-uteplennaya-tommy-hilfiger/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7423186",
+        "xmlId": "5529098#8d8ac5ee-e6ad-4ef6-a4a3-7fc72a43c984",
+        "main": "140",
+        "second": "10",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 21990,
+        "priceDiscount": 15390,
+        "discount": 30,
+        "bonusAddicted": 1050
+      },
+      {
+        "id": "7423195",
+        "xmlId": "5529098#e144f5ba-7977-4cdb-8a5a-b8212efa967f",
+        "main": "152",
+        "second": "12",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 21990,
+        "priceDiscount": 15390,
+        "discount": 30,
+        "bonusAddicted": 1050
+      },
+      {
+        "id": "7423192",
+        "xmlId": "5529098#7c41e58c-45e6-412f-93af-4681dc8656e5",
+        "main": "164",
+        "second": "14",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 21990,
+        "priceDiscount": 15390,
+        "discount": 30,
+        "bonusAddicted": 1050
+      },
+      {
+        "id": "7423189",
+        "xmlId": "5529098#dd35ec52-1a42-43af-a521-00e5e0573029",
+        "main": "176",
+        "second": "16",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 21990,
+        "priceDiscount": 15390,
+        "discount": 30,
+        "bonusAddicted": 1050
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1050,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8720638563143",
+    "gender": "boy",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      288,
+      58293,
+      37264,
+      20823,
+      27100,
+      33106,
+      33091,
+      318,
+      19891,
+      16275,
+      373,
+      63979,
+      609,
+      50058,
+      610,
+      2180,
+      6898,
+      6908,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7409140",
+    "xmlId": "5527191",
+    "name": "Куртка-бомбер стеганная с принтом",
+    "link": "/product/5527191-det-kurtka-bomber-choupette/",
+    "images": [
+      "images\\5527191-01.jpg",
+      "images\\5527191-02.jpg",
+      "images\\5527191-03.jpg",
+      "images\\5527191-04.jpg",
+      "images\\5527191-05.jpg",
+      "images\\5527191-06.jpg",
+      "images\\5527191-07.jpg",
+      "images\\5527191-08.jpg",
+      "images\\5527191-09.jpg",
+      "images\\5527191-10.jpg",
+      "images\\5527191-11.jpg",
+      "images\\5527191-12.jpg"
+    ],
+    "brand": "Choupette",
+    "brandColor": null,
+    "price": 13590,
+    "priceDiscount": 9510,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [
+      {
+        "text": "только онлайн",
+        "color": "#F2F2F2",
+        "textColor": "#1E1E1E"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7409140",
+        "xmlId": "5527191",
+        "multi": [
+          {
+            "name": "хаки",
+            "hex": "#806b2a"
+          }
+        ],
+        "name": "хаки",
+        "hex": "#806b2a",
+        "link": "/product/5527191-det-kurtka-bomber-choupette/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7409608",
+        "xmlId": "5527191#f6842b1f-9130-45d2-9d28-edfa270f66e4",
+        "main": "110",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 13590,
+        "priceDiscount": 9510,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7409593",
+        "xmlId": "5527191#2db1686d-6bdd-49ec-a48a-ea43ef69e3e0",
+        "main": "116",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 13590,
+        "priceDiscount": 9510,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7409599",
+        "xmlId": "5527191#528733c8-a464-4937-b75d-6b8f6070e3f2",
+        "main": "122",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 13590,
+        "priceDiscount": 9510,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7409602",
+        "xmlId": "5527191#4f04930c-ef7f-456b-9af5-c8de24b20db1",
+        "main": "128",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 13590,
+        "priceDiscount": 9510,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7409605",
+        "xmlId": "5527191#645e94e0-d23e-4de0-9ab5-f424be171f79",
+        "main": "134",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 13590,
+        "priceDiscount": 9510,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7409596",
+        "xmlId": "5527191#2e83c7d0-8b6d-443e-8554-4ca7d11521fd",
+        "main": "140",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 13590,
+        "priceDiscount": 9510,
+        "discount": 30,
+        "bonusAddicted": 630
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 630,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4670209203142",
+    "gender": "boy",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      288,
+      373,
+      33106,
+      63979,
+      318,
+      16275,
+      609,
+      50058,
+      6898,
+      6908,
+      50448,
+      19891
+    ]
+  },
+  {
+    "productId": "7617133",
+    "xmlId": "5549611",
+    "name": "Игрушка мягкая Мишка Ромчик",
+    "link": "/product/5549611-igrushka-maxitoys-luxury/",
+    "images": [
+      "images\\5549611-01.jpg",
+      "images\\5549611-21.jpg",
+      "images\\5549611-22.jpg"
+    ],
+    "brand": "Maxitoys Luxury",
+    "brandColor": null,
+    "price": 1290,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7617133",
+        "xmlId": "5549611",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5549611-igrushka-maxitoys-luxury/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7617160",
+        "xmlId": "5549611#2c2dcf9e-11b7-4f27-b04b-71b5f16d33b7",
+        "main": "19 см",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 1290,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 70
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 70,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4610132767984",
+    "gender": "none",
+    "isFBS": false,
+    "categoryIds": [
+      60,
+      6749,
+      66205,
+      459,
+      16137,
+      11356,
+      16946,
+      9202,
+      37309,
+      61,
+      19891,
+      50448
+    ]
+  },
+  {
+    "productId": "7617145",
+    "xmlId": "5549619",
+    "name": "Игрушка мягкая Мишка Сани",
+    "link": "/product/5549619-igrushka-maxitoys-luxury/",
+    "images": [
+      "images\\5549619-21.jpg"
+    ],
+    "brand": "Maxitoys Luxury",
+    "brandColor": null,
+    "price": 4590,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7617145",
+        "xmlId": "5549619",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5549619-igrushka-maxitoys-luxury/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7617172",
+        "xmlId": "5549619#d544cae0-c143-4dfd-8766-39248c30a0ad",
+        "main": "50 см",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 4590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 280
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 280,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4607947760835",
+    "gender": "none",
+    "isFBS": false,
+    "categoryIds": [
+      60,
+      6749,
+      66205,
+      459,
+      16137,
+      11356,
+      16946,
+      9202,
+      37309,
+      61,
+      19891,
+      50448,
+      61744,
+      65749
+    ]
+  },
+  {
+    "productId": "7435375",
+    "xmlId": "5530577",
+    "name": "Джемпер вязаный из хлопка",
+    "link": "/product/5530577-det-dzhemper-gioco/",
+    "images": [
+      "images\\5530577-21.jpg",
+      "images\\5530577-22.jpg",
+      "images\\5530577-23.jpg"
+    ],
+    "brand": "GIOCO",
+    "brandColor": null,
+    "price": 3590,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7435375",
+        "xmlId": "5530577",
+        "multi": [
+          {
+            "name": "оранжевый",
+            "hex": "#ffa500"
+          },
+          {
+            "name": "белый",
+            "hex": "#ffffff"
+          },
+          {
+            "name": "желтый",
+            "hex": "#ffff00"
+          }
+        ],
+        "name": "оранжевый",
+        "hex": "#ffa500",
+        "link": "/product/5530577-det-dzhemper-gioco/",
+        "checked": true
+      },
+      {
+        "id": "7435567",
+        "xmlId": "5530574",
+        "multi": [],
+        "name": "",
+        "hex": "",
+        "link": "/product/5530574-det-dzhemper-gioco/",
+        "checked": false
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7435441",
+        "xmlId": "5530577#9d3b3757-6ad5-4950-925c-e2a53597bced",
+        "main": "104",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7435438",
+        "xmlId": "5530577#39e383e9-c7ae-4a01-b22d-b3982651147f",
+        "main": "110",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7435444",
+        "xmlId": "5530577#5d404135-f45e-4da9-ac02-1989488fbb35",
+        "main": "116",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7435453",
+        "xmlId": "5530577#877e1050-7eea-42ba-a7e1-d9c1a9a07a9b",
+        "main": "122",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7435450",
+        "xmlId": "5530577#52804c93-2f15-4e2a-88e7-3aaae5de71d1",
+        "main": "128",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7435447",
+        "xmlId": "5530577#7f73df4b-117f-4e7a-bdc0-bb5685f93998",
+        "main": "134",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 210,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405150298",
+    "gender": "girl",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      289,
+      37309,
+      43873,
+      33103,
+      56841,
+      58092,
+      19891,
+      16275,
+      1976,
+      61267,
+      35176,
+      297,
+      11356,
+      50448
+    ]
+  },
+  {
+    "productId": "7435567",
+    "xmlId": "5530574",
+    "name": "Дет. джемпер",
+    "link": "/product/5530574-det-dzhemper-gioco/",
+    "images": [
+      "images\\5530574-001.jpg",
+      "images\\5530574-002.jpg"
+    ],
+    "brand": "GIOCO",
+    "brandColor": null,
+    "price": 3590,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7435375",
+        "xmlId": "5530577",
+        "multi": [
+          {
+            "name": "оранжевый",
+            "hex": "#ffa500"
+          },
+          {
+            "name": "белый",
+            "hex": "#ffffff"
+          },
+          {
+            "name": "желтый",
+            "hex": "#ffff00"
+          }
+        ],
+        "name": "оранжевый",
+        "hex": "#ffa500",
+        "link": "/product/5530577-det-dzhemper-gioco/",
+        "checked": false
+      },
+      {
+        "id": "7435567",
+        "xmlId": "5530574",
+        "multi": [],
+        "name": "",
+        "hex": "",
+        "link": "/product/5530574-det-dzhemper-gioco/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7435741",
+        "xmlId": "5530574#0174ef33-4416-4b58-8b4a-864d438243fc",
+        "main": "104",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7435750",
+        "xmlId": "5530574#111a4198-962c-4ce7-a23f-b83645b0d970",
+        "main": "110",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7435744",
+        "xmlId": "5530574#c8fd969e-0329-4722-8c47-a128a0c567c3",
+        "main": "116",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7435747",
+        "xmlId": "5530574#93855e93-a3e2-4b1c-88e9-bf7a9696a6f0",
+        "main": "122",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7435738",
+        "xmlId": "5530574#8e2290e4-9cd5-4c84-9206-d8a12dfa5283",
+        "main": "128",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7627729",
+        "xmlId": "5530574#cfd7d286-377e-4076-87df-8afa98b7b5a4",
+        "main": "134",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 210,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405150212",
+    "gender": "girl",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      289,
+      37309,
+      43873,
+      33103,
+      56841,
+      58092,
+      19891,
+      16275,
+      1976,
+      61267,
+      35176,
+      297,
+      11356,
+      50448
+    ]
+  },
+  {
+    "productId": "7411759",
+    "xmlId": "5527630",
+    "name": "Жилет утепленный с воротником стойкой",
+    "link": "/product/5527630-det-zhilet-guess/",
+    "images": [
+      "images\\5527630-01.jpg",
+      "images\\5527630-02.jpg",
+      "images\\5527630-03.jpg",
+      "images\\5527630-04.jpg",
+      "images\\5527630-21.jpg",
+      "images\\5527630-22.jpg",
+      "images\\5527630-23.jpg"
+    ],
+    "brand": "Guess",
+    "brandColor": null,
+    "price": 7990,
+    "priceDiscount": 5590,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7411759",
+        "xmlId": "5527630",
+        "multi": [
+          {
+            "name": "синий",
+            "hex": "#0000ff"
+          }
+        ],
+        "name": "синий",
+        "hex": "#0000ff",
+        "link": "/product/5527630-det-zhilet-guess/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7412500",
+        "xmlId": "5527630#4523d793-89dd-40ae-ad7e-baae1a90019a",
+        "main": "128",
+        "second": "8",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "7412494",
+        "xmlId": "5527630#cf1906ae-4845-42d0-90a7-62065f7206aa",
+        "main": "140",
+        "second": "10",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "7412488",
+        "xmlId": "5527630#fd08dc66-9902-4bf4-b47a-2122dd63bcbd",
+        "main": "152",
+        "second": "12",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "7412491",
+        "xmlId": "5527630#e1742a71-c80e-40f8-bc95-55ccd2a430cf",
+        "main": "164",
+        "second": "14",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "7412497",
+        "xmlId": "5527630#72ab17b0-cfa5-47ef-9d71-1942d13dd7c4",
+        "main": "176",
+        "second": "16",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 350,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "7625408490975",
+    "gender": "boy",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      288,
+      6898,
+      318,
+      7366,
+      32521,
+      33106,
+      66222,
+      66243,
+      16275,
+      46816,
+      19891,
+      66240,
+      66231,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7422916",
+    "xmlId": "5529094",
+    "name": "Куртка утепленная с капюшоном",
+    "link": "/product/5529094-det-kurtka-uteplennaya-tommy-hilfiger/",
+    "images": [
+      "images\\5529094-01.jpg",
+      "images\\5529094-02.jpg",
+      "images\\5529094-03.jpg",
+      "images\\5529094-04.jpg",
+      "images\\5529094-05.jpg",
+      "images\\5529094-21.jpg"
+    ],
+    "brand": "Tommy Hilfiger",
+    "brandColor": null,
+    "price": 27990,
+    "priceDiscount": 19590,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7422916",
+        "xmlId": "5529094",
+        "multi": [
+          {
+            "name": "разноцветный",
+            "hex": null
+          }
+        ],
+        "name": "разноцветный",
+        "hex": "",
+        "link": "/product/5529094-det-kurtka-uteplennaya-tommy-hilfiger/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7423165",
+        "xmlId": "5529094#fc151038-4a70-419e-a27b-a6e103a3974e",
+        "main": "140",
+        "second": "10",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 27990,
+        "priceDiscount": 19590,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "7423171",
+        "xmlId": "5529094#080c486d-e4b9-4664-964f-93dd0268a4a9",
+        "main": "152",
+        "second": "12",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 27990,
+        "priceDiscount": 19590,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "7423162",
+        "xmlId": "5529094#d9e0b3fe-ed67-454f-ae3b-adec0a70354a",
+        "main": "164",
+        "second": "14",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 27990,
+        "priceDiscount": 19590,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "7423168",
+        "xmlId": "5529094#86d3bcd6-cd91-431f-8db2-5a2cf9f6de96",
+        "main": "176",
+        "second": "16",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 27990,
+        "priceDiscount": 19590,
+        "discount": 30,
+        "bonusAddicted": 1330
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1330,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8720638543718",
+    "gender": "boy",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      288,
+      58293,
+      37264,
+      20823,
+      27100,
+      33106,
+      33091,
+      318,
+      19891,
+      16275,
+      373,
+      63979,
+      609,
+      50058,
+      610,
+      2180,
+      6898,
+      6908,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7617142",
+    "xmlId": "5549617",
+    "name": "Игрушка мягкая Мишка Рони",
+    "link": "/product/5549617-igrushka-maxitoys-luxury/",
+    "images": [
+      "images\\5549617-21.jpg"
+    ],
+    "brand": "Maxitoys Luxury",
+    "brandColor": null,
+    "price": 3990,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7617142",
+        "xmlId": "5549617",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5549617-igrushka-maxitoys-luxury/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7617169",
+        "xmlId": "5549617#d4a39980-3304-4ffd-9b63-dc8aafc3fbb6",
+        "main": "50 см",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 210,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4607947760804",
+    "gender": "none",
+    "isFBS": false,
+    "categoryIds": [
+      60,
+      6749,
+      66205,
+      459,
+      16137,
+      11356,
+      16946,
+      9202,
+      37309,
+      61,
+      19891,
+      50448
+    ]
+  },
+  {
+    "productId": "7617136",
+    "xmlId": "5549613",
+    "name": "Игрушка мягкая Мишка Арчи",
+    "link": "/product/5549613-igrushka-maxitoys-luxury/",
+    "images": [
+      "images\\5549613-21.jpg"
+    ],
+    "brand": "Maxitoys Luxury",
+    "brandColor": null,
+    "price": 1290,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7617136",
+        "xmlId": "5549613",
+        "multi": [
+          {
+            "name": "коричневый",
+            "hex": "#964b00"
+          }
+        ],
+        "name": "коричневый",
+        "hex": "#964b00",
+        "link": "/product/5549613-igrushka-maxitoys-luxury/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7617163",
+        "xmlId": "5549613#f5121835-bd55-4f50-9d8f-ab667baf3bb5",
+        "main": "25 см",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 1290,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 70
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 70,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4660308800205",
+    "gender": "none",
+    "isFBS": false,
+    "categoryIds": [
+      60,
+      6749,
+      66205,
+      459,
+      16137,
+      11356,
+      16946,
+      9202,
+      37309,
+      61,
+      19891,
+      50448
+    ]
+  },
+  {
+    "productId": "7341199",
+    "xmlId": "5518640",
+    "name": "Платье хлопковое с оборками в мелкую клетку",
+    "link": "/product/5518640-plate-gioco/",
+    "images": [
+      "images\\5518640-001.jpg",
+      "images\\5518640-01.jpg",
+      "images\\5518640-02.jpg",
+      "images\\5518640-03.jpg"
+    ],
+    "brand": "GIOCO",
+    "brandColor": null,
+    "price": 3990,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7341199",
+        "xmlId": "5518640",
+        "multi": [
+          {
+            "name": "зеленый",
+            "hex": "#008000"
+          }
+        ],
+        "name": "зеленый",
+        "hex": "#008000",
+        "link": "/product/5518640-plate-gioco/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7341592",
+        "xmlId": "5518640#61655b69-47c9-4594-a0fa-54a898bb5935",
+        "main": "104",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7341580",
+        "xmlId": "5518640#6b3df4a7-3866-48ae-9560-f0902c3b468f",
+        "main": "110",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7341595",
+        "xmlId": "5518640#9a67202e-3180-4b71-a953-cf65360765d9",
+        "main": "116",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7341583",
+        "xmlId": "5518640#4d371d71-61b6-45a5-b054-73e2f3f25aca",
+        "main": "122",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7341586",
+        "xmlId": "5518640#239c212c-3303-4d89-a9bf-b5bcc33c8976",
+        "main": "128",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7341589",
+        "xmlId": "5518640#73e60c7e-4321-40a0-b6e8-945cb938d7c8",
+        "main": "134",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 210,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405087440",
+    "gender": "girl",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      289,
+      295,
+      58086,
+      66103,
+      66288,
+      16275,
+      66094,
+      19891,
+      433,
+      436,
+      11356,
+      50448
+    ]
+  },
+  {
+    "productId": "7341181",
+    "xmlId": "5518628",
+    "name": "Толстовка хлопковая с капюшоном",
+    "link": "/product/5518628-tolstovka-gioco/",
+    "images": [
+      "images\\5518628-001.jpg",
+      "images\\5518628-002.jpg",
+      "images\\5518628-01.jpg",
+      "images\\5518628-02.jpg",
+      "images\\5518628-03.jpg"
+    ],
+    "brand": "GIOCO",
+    "brandColor": null,
+    "price": 3590,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7341181",
+        "xmlId": "5518628",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          },
+          {
+            "name": "оранжевый",
+            "hex": "#ffa500"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5518628-tolstovka-gioco/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7341472",
+        "xmlId": "5518628#a8fcbd75-15e8-4379-bb70-e3adf65e0d80",
+        "main": "104",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7341484",
+        "xmlId": "5518628#8dc6a7af-ebd9-409c-a1f5-4aed05f9402c",
+        "main": "110",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7341475",
+        "xmlId": "5518628#b9dfb6bd-f447-4e15-931e-8dd656a595d9",
+        "main": "116",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7341481",
+        "xmlId": "5518628#652e997e-32f3-4ba7-a1d1-40b7a9164e97",
+        "main": "122",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7341487",
+        "xmlId": "5518628#2bc98ab8-1f82-4d9f-adf2-c8610968f578",
+        "main": "128",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7341478",
+        "xmlId": "5518628#35515301-14d4-45bf-9385-bd787a4ef1ba",
+        "main": "134",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 210,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405087518",
+    "gender": "girl",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      289,
+      304,
+      37309,
+      33103,
+      33109,
+      58092,
+      63979,
+      66037,
+      66076,
+      66118,
+      19891,
+      16275,
+      66034,
+      65539,
+      512,
+      33115,
+      66133,
+      66154,
+      66252,
+      66240,
+      66231,
+      1365,
+      11356,
+      50448
+    ]
+  },
+  {
+    "productId": "7303115",
+    "xmlId": "5512749",
+    "name": "Ветровка с капюшоном",
+    "link": "/product/5512749-vetrovka-gioco/",
+    "images": [
+      "images\\5512749-01.jpg",
+      "images\\5512749-02.jpg",
+      "images\\5512749-03.jpg",
+      "images\\5512749-04.jpg"
+    ],
+    "brand": "GIOCO",
+    "brandColor": null,
+    "price": 4990,
+    "priceDiscount": 3490,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7303115",
+        "xmlId": "5512749",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5512749-vetrovka-gioco/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7303169",
+        "xmlId": "5512749#dd5885e8-437c-4211-ac2e-13debc64a58e",
+        "main": "134",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 4990,
+        "priceDiscount": 3490,
+        "discount": 30,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7303160",
+        "xmlId": "5512749#ba3969d1-c740-445e-b237-6b9a55a1cc3d",
+        "main": "140",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 4990,
+        "priceDiscount": 3490,
+        "discount": 30,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7303166",
+        "xmlId": "5512749#34f6185b-8675-4b3a-ab28-a7fa2cb172ec",
+        "main": "146",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 4990,
+        "priceDiscount": 3490,
+        "discount": 30,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7303157",
+        "xmlId": "5512749#d3266af2-c74e-452e-8fd1-436750f485c6",
+        "main": "152",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 4990,
+        "priceDiscount": 3490,
+        "discount": 30,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7303163",
+        "xmlId": "5512749#fc19e54b-ce42-456f-b5c2-f2898f7c434e",
+        "main": "158",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 4990,
+        "priceDiscount": 3490,
+        "discount": 30,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7303172",
+        "xmlId": "5512749#07142c1e-b72c-4b26-bca4-f01addcc8038",
+        "main": "164",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 4990,
+        "priceDiscount": 3490,
+        "discount": 30,
+        "bonusAddicted": 210
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 210,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405055159",
+    "gender": "boy",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      288,
+      58293,
+      37264,
+      20823,
+      27100,
+      33106,
+      33091,
+      318,
+      19891,
+      16275,
+      373,
+      63979,
+      374,
+      52587,
+      50058,
+      66243,
+      66276,
+      66240,
+      66231,
+      597,
+      599,
+      610,
+      6898,
+      50448
+    ]
+  },
+  {
+    "productId": "7541281",
+    "xmlId": "5540398",
+    "name": "Дет. кардиган",
+    "link": "/product/5540398-det-kardigan-gioco/",
+    "images": [
+      "images\\5540398-001.jpg"
+    ],
+    "brand": "GIOCO",
+    "brandColor": null,
+    "price": 3590,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7541281",
+        "xmlId": "5540398",
+        "multi": [],
+        "name": "",
+        "hex": "",
+        "link": "/product/5540398-det-kardigan-gioco/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7541290",
+        "xmlId": "5540398#3bdccee8-a438-4acb-8c88-c1d1a329e29c",
+        "main": "104",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7541287",
+        "xmlId": "5540398#07186867-42de-4647-8413-668f4d489ca9",
+        "main": "110",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7541299",
+        "xmlId": "5540398#92f14e08-ada0-4288-b7eb-1d9ea3fa119a",
+        "main": "116",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7541293",
+        "xmlId": "5540398#7834a557-8a14-4d6b-bb3b-7495f0e55d7c",
+        "main": "122",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7541284",
+        "xmlId": "5540398#35e9e519-dcc0-4c39-a0ce-7080d8d05d45",
+        "main": "128",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "7541296",
+        "xmlId": "5540398#f9d12d65-a33e-441f-b534-9d24bd658804",
+        "main": "134",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 3590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 210
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 210,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405150199",
+    "gender": "boy",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      288,
+      321,
+      37309,
+      56841,
+      58089,
+      19891,
+      16275,
+      557,
+      61267,
+      35176,
+      33106,
+      729,
+      11356,
+      50448
+    ]
+  },
+  {
+    "productId": "7617139",
+    "xmlId": "5549615",
+    "name": "Игрушка мягкая Мишка Тема",
+    "link": "/product/5549615-igrushka-maxitoys-luxury/",
+    "images": [
+      "images\\5549615-21.jpg"
+    ],
+    "brand": "Maxitoys Luxury",
+    "brandColor": null,
+    "price": 1290,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7617139",
+        "xmlId": "5549615",
+        "multi": [
+          {
+            "name": "коричневый",
+            "hex": "#964b00"
+          }
+        ],
+        "name": "коричневый",
+        "hex": "#964b00",
+        "link": "/product/5549615-igrushka-maxitoys-luxury/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7617166",
+        "xmlId": "5549615#16d5cced-6832-4bf1-9882-2f742f9ea297",
+        "main": "25 см",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 1290,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 70
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 70,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4660308800144",
+    "gender": "none",
+    "isFBS": false,
+    "categoryIds": [
+      60,
+      6749,
+      66205,
+      459,
+      16137,
+      11356,
+      16946,
+      9202,
+      37309,
+      61,
+      19891,
+      50448
+    ]
+  },
+  {
+    "productId": "7617130",
+    "xmlId": "5549609",
+    "name": "Игрушка мягкая Панда",
+    "link": "/product/5549609-igrushka-maxitoys-luxury/",
+    "images": [
+      "images\\5549609-21.jpg"
+    ],
+    "brand": "Maxitoys Luxury",
+    "brandColor": null,
+    "price": 1590,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7617130",
+        "xmlId": "5549609",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          },
+          {
+            "name": "белый",
+            "hex": "#ffffff"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5549609-igrushka-maxitoys-luxury/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7617157",
+        "xmlId": "5549609#9842d191-7a1c-4514-a119-7e6a25dde801",
+        "main": "25 см",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 1590,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 70
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 70,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4607947762969",
+    "gender": "none",
+    "isFBS": false,
+    "categoryIds": [
+      60,
+      6749,
+      66205,
+      459,
+      16137,
+      11356,
+      16946,
+      9202,
+      37309,
+      61,
+      19891,
+      50448
+    ]
+  },
+  {
+    "productId": "7405228",
+    "xmlId": "5526347",
+    "name": "Куртка утепленная стеганая",
+    "link": "/product/5526347-det-kurtka-uteplennaya-calvin-klein-jeans/",
+    "images": [
+      "images\\5526347-01.jpg",
+      "images\\5526347-02.jpg",
+      "images\\5526347-03.jpg",
+      "images\\5526347-04.jpg",
+      "images\\5526347-05.jpg"
+    ],
+    "brand": "Calvin Klein Jeans",
+    "brandColor": null,
+    "price": 20590,
+    "priceDiscount": 14410,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7405228",
+        "xmlId": "5526347",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5526347-det-kurtka-uteplennaya-calvin-klein-jeans/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7405633",
+        "xmlId": "5526347#3173a50a-dd43-4363-b8e3-0fe853310b26",
+        "main": "140",
+        "second": "10",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 20590,
+        "priceDiscount": 14410,
+        "discount": 30,
+        "bonusAddicted": 980
+      },
+      {
+        "id": "7405627",
+        "xmlId": "5526347#4a6a7378-027b-4be0-83ec-e5a742c76c8e",
+        "main": "152",
+        "second": "12",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 20590,
+        "priceDiscount": 14410,
+        "discount": 30,
+        "bonusAddicted": 980
+      },
+      {
+        "id": "7405624",
+        "xmlId": "5526347#7d5dd7d7-97f9-4f39-8f53-6b210f2edbb7",
+        "main": "164",
+        "second": "14",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 20590,
+        "priceDiscount": 14410,
+        "discount": 30,
+        "bonusAddicted": 980
+      },
+      {
+        "id": "7405630",
+        "xmlId": "5526347#428ef432-3247-41e1-a320-992ae080bd12",
+        "main": "176",
+        "second": "16",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 20590,
+        "priceDiscount": 14410,
+        "discount": 30,
+        "bonusAddicted": 980
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 980,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8721107022130",
+    "gender": "girl",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      289,
+      58293,
+      37264,
+      20823,
+      27100,
+      33103,
+      33091,
+      292,
+      19891,
+      16275,
+      409,
+      63979,
+      1229,
+      2179,
+      6899,
+      50448
+    ]
+  },
+  {
+    "productId": "7414234",
+    "xmlId": "5527839",
+    "name": "Парка с капюшоном Oiva",
+    "link": "/product/5527839-det-parka-lassie/",
+    "images": [
+      "images\\5527839-01.jpg",
+      "images\\5527839-02.jpg",
+      "images\\5527839-03.jpg",
+      "images\\5527839-04.jpg",
+      "images\\5527839-05.jpg",
+      "images\\5527839-06.jpg"
+    ],
+    "brand": "Lassie",
+    "brandColor": null,
+    "price": 8990,
+    "priceDiscount": 6290,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7414234",
+        "xmlId": "5527839",
+        "multi": [
+          {
+            "name": "голубой",
+            "hex": "#42aaff"
+          }
+        ],
+        "name": "голубой",
+        "hex": "#42aaff",
+        "link": "/product/5527839-det-parka-lassie/",
+        "checked": true
+      },
+      {
+        "id": "7414339",
+        "xmlId": "5527897",
+        "multi": [
+          {
+            "name": "синий",
+            "hex": "#0000ff"
+          }
+        ],
+        "name": "синий",
+        "hex": "#0000ff",
+        "link": "/product/5527897-det-parka-lassie/",
+        "checked": false
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7414420",
+        "xmlId": "5527839#3e4c06b9-c1a6-4636-91e6-b4cfbdd003dc",
+        "main": "134",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7414414",
+        "xmlId": "5527839#6c678de0-58ac-4dee-b053-8c68325c8bb6",
+        "main": "140",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7414423",
+        "xmlId": "5527839#8dad3c84-2991-4a00-9255-e865d159d3de",
+        "main": "146",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7414417",
+        "xmlId": "5527839#b7123512-40e9-48e5-a681-629b873f9534",
+        "main": "152",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7414426",
+        "xmlId": "5527839#bae349e3-2c91-4d96-9294-1dd2358b3f06",
+        "main": "158",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7414411",
+        "xmlId": "5527839#6471ae0f-37f0-426a-b88f-0df244f98d69",
+        "main": "164",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 420,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4670207772640",
+    "gender": "girl",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      289,
+      58293,
+      37264,
+      20823,
+      27100,
+      33103,
+      33091,
+      292,
+      19891,
+      16275,
+      409,
+      63979,
+      415,
+      1229,
+      1230,
+      2179,
+      6899,
+      50448
+    ]
+  },
+  {
+    "productId": "6157474",
+    "xmlId": "5374796",
+    "name": "Кроссовки на липучке",
+    "link": "/product/5374796-det-krossovki-geox/",
+    "images": [
+      "images\\5374796-01.jpg",
+      "images\\5374796-02.jpg",
+      "images\\5374796-03.jpg",
+      "images\\5374796-04.jpg"
+    ],
+    "brand": "Geox",
+    "brandColor": null,
+    "price": 7990,
+    "priceDiscount": 5590,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6157474",
+        "xmlId": "5374796",
+        "multi": [
+          {
+            "name": "синий",
+            "hex": "#0000ff"
+          }
+        ],
+        "name": "синий",
+        "hex": "#0000ff",
+        "link": "/product/5374796-det-krossovki-geox/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6157801",
+        "xmlId": "5374796#9c15ce8c-591c-4398-8ae8-cd8f4318cbbe",
+        "main": "28",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "6157789",
+        "xmlId": "5374796#6434baf6-b4dd-426a-95b9-3d4a59675bf2",
+        "main": "29",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "6157774",
+        "xmlId": "5374796#59c7c298-8f97-414a-b74e-f66c6d6db9c7",
+        "main": "30",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "6157780",
+        "xmlId": "5374796#f0b556a5-79cd-4092-b0a6-339f5700ab90",
+        "main": "31",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "6157795",
+        "xmlId": "5374796#6a6f9031-7bf7-47f2-89d9-42fee77b8e41",
+        "main": "32",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "6157771",
+        "xmlId": "5374796#f71d8d9e-da00-44ed-bfda-290d0d0f470f",
+        "main": "33",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "6157792",
+        "xmlId": "5374796#c0e5ca76-55e2-42b0-9c1f-66749548bdb8",
+        "main": "34",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "6157798",
+        "xmlId": "5374796#133cfaf0-f05f-406c-8ade-ac4e484404d4",
+        "main": "35",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "6157804",
+        "xmlId": "5374796#751e6049-9a22-4c46-8aea-719d35569362",
+        "main": "36",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "6157783",
+        "xmlId": "5374796#f8ed05ba-549c-489e-a716-fa544a2be8d9",
+        "main": "37",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "6157777",
+        "xmlId": "5374796#d5f49a97-da7f-42ed-b5c0-4315c41d2f69",
+        "main": "38",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      },
+      {
+        "id": "6157786",
+        "xmlId": "5374796#c0033bb6-0a75-479a-a897-88779a319ebf",
+        "main": "39",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 5590,
+        "discount": 30,
+        "bonusAddicted": 350
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 350,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8054730826531",
+    "gender": "boy",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      288,
+      33097,
+      22576,
+      20817,
+      30655,
+      58512,
+      66175,
+      327,
+      19891,
+      16275,
+      329,
+      35269,
+      46915,
+      46822,
+      52575,
+      33115,
+      65974,
+      66049,
+      66133,
+      66243,
+      33184,
+      65962,
+      66034,
+      66240,
+      66231,
+      37729,
+      50448
+    ]
+  },
+  {
+    "productId": "7341154",
+    "xmlId": "5518610",
+    "name": "Свитшот хлопковый с принтом",
+    "link": "/product/5518610-tolstovka-gioco/",
+    "images": [
+      "images\\5518610-001.jpg",
+      "images\\5518610-002.jpg",
+      "images\\5518610-01.jpg",
+      "images\\5518610-02.jpg",
+      "images\\5518610-03.jpg"
+    ],
+    "brand": "GIOCO",
+    "brandColor": null,
+    "price": 2990,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7341151",
+        "xmlId": "5518608",
+        "multi": [
+          {
+            "name": "желтый",
+            "hex": "#ffff00"
+          },
+          {
+            "name": "белый",
+            "hex": "#ffffff"
+          }
+        ],
+        "name": "желтый",
+        "hex": "#ffff00",
+        "link": "/product/5518608-tolstovka-gioco/",
+        "checked": false
+      },
+      {
+        "id": "7341154",
+        "xmlId": "5518610",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5518610-tolstovka-gioco/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7341310",
+        "xmlId": "5518610#5ec6399a-a11c-4174-bafc-0141c2229623",
+        "main": "104",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 2990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 140
+      },
+      {
+        "id": "7341319",
+        "xmlId": "5518610#774bc1fb-4d16-4494-90ab-94a68f523ee3",
+        "main": "110",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 2990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 140
+      },
+      {
+        "id": "7341325",
+        "xmlId": "5518610#15e36bc9-5019-47bd-9ee3-810dbb663023",
+        "main": "116",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 2990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 140
+      },
+      {
+        "id": "7341322",
+        "xmlId": "5518610#1e592c5e-9a67-4b7a-9a62-410233bb0d5f",
+        "main": "122",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 2990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 140
+      },
+      {
+        "id": "7341313",
+        "xmlId": "5518610#6b0f3402-36ca-4af2-8727-c57e65f498b8",
+        "main": "128",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 2990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 140
+      },
+      {
+        "id": "7341316",
+        "xmlId": "5518610#0065dbb0-5fdc-43b7-8955-7c5fd72da51e",
+        "main": "134",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 2990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 140
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 140,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405087211",
+    "gender": "boy",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      288,
+      326,
+      37309,
+      35269,
+      33106,
+      58089,
+      63979,
+      66046,
+      66073,
+      66118,
+      66243,
+      33184,
+      19891,
+      16275,
+      66034,
+      65539,
+      66240,
+      66231,
+      578,
+      11356,
+      50448
+    ]
+  },
+  {
+    "productId": "7414339",
+    "xmlId": "5527897",
+    "name": "Парка с капюшоном Oiva",
+    "link": "/product/5527897-det-parka-lassie/",
+    "images": [
+      "images\\5527897-01.jpg",
+      "images\\5527897-02.jpg",
+      "images\\5527897-03.jpg",
+      "images\\5527897-04.jpg",
+      "images\\5527897-05.jpg",
+      "images\\5527897-06.jpg"
+    ],
+    "brand": "Lassie",
+    "brandColor": null,
+    "price": 8990,
+    "priceDiscount": 6290,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7414234",
+        "xmlId": "5527839",
+        "multi": [
+          {
+            "name": "голубой",
+            "hex": "#42aaff"
+          }
+        ],
+        "name": "голубой",
+        "hex": "#42aaff",
+        "link": "/product/5527839-det-parka-lassie/",
+        "checked": false
+      },
+      {
+        "id": "7414339",
+        "xmlId": "5527897",
+        "multi": [
+          {
+            "name": "синий",
+            "hex": "#0000ff"
+          }
+        ],
+        "name": "синий",
+        "hex": "#0000ff",
+        "link": "/product/5527897-det-parka-lassie/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7414879",
+        "xmlId": "5527897#703be673-b7a8-49a8-8428-f2abe069ba66",
+        "main": "134",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7414876",
+        "xmlId": "5527897#8288b168-1c8b-4b0e-9ec3-721bff6afca6",
+        "main": "140",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7414888",
+        "xmlId": "5527897#49267b57-6155-40eb-ad62-0087b1aaa18e",
+        "main": "146",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7414885",
+        "xmlId": "5527897#997e6a21-d6a8-4fa5-91e3-1ceec84ce8ea",
+        "main": "152",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7414891",
+        "xmlId": "5527897#a19f2e90-5b30-4a9a-aa17-e38c4caf94a9",
+        "main": "158",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7414882",
+        "xmlId": "5527897#ef3bee0d-8a41-45c2-92d0-a5f53b4b90b2",
+        "main": "164",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 420,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4670207772718",
+    "gender": "girl",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      289,
+      58293,
+      37264,
+      20823,
+      27100,
+      33103,
+      33091,
+      292,
+      19891,
+      16275,
+      409,
+      63979,
+      415,
+      1229,
+      1230,
+      2179,
+      6899,
+      50448
+    ]
+  },
+  {
+    "productId": "7408582",
+    "xmlId": "5527135",
+    "name": "Платье расклешенное с рюшами",
+    "link": "/product/5527135-det-plate-choupette/",
+    "images": [
+      "images\\5527135-01.jpg",
+      "images\\5527135-02.jpg",
+      "images\\5527135-03.jpg"
+    ],
+    "brand": "Choupette",
+    "brandColor": null,
+    "price": 8590,
+    "priceDiscount": 6010,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7408582",
+        "xmlId": "5527135",
+        "multi": [
+          {
+            "name": "белый",
+            "hex": "#ffffff"
+          }
+        ],
+        "name": "белый",
+        "hex": "#ffffff",
+        "link": "/product/5527135-det-plate-choupette/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7408948",
+        "xmlId": "5527135#ee0bb9dd-991f-445e-908e-b0fc4a0e16dc",
+        "main": "98",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8590,
+        "priceDiscount": 6010,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7408969",
+        "xmlId": "5527135#48a3323f-050a-48dd-b3a5-59728762b6f0",
+        "main": "104",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8590,
+        "priceDiscount": 6010,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7408957",
+        "xmlId": "5527135#53d08373-a4b6-4f83-8d0a-5b9ed0fef2e2",
+        "main": "110",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8590,
+        "priceDiscount": 6010,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7408966",
+        "xmlId": "5527135#c9cfa6b6-20d1-4471-af44-a35840f70581",
+        "main": "116",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8590,
+        "priceDiscount": 6010,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7408951",
+        "xmlId": "5527135#8744fedd-5118-4ec6-8552-e27693baf060",
+        "main": "122",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8590,
+        "priceDiscount": 6010,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7408972",
+        "xmlId": "5527135#e736bf67-7d6d-4887-bb51-5ec9d9c3153b",
+        "main": "128",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8590,
+        "priceDiscount": 6010,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7408963",
+        "xmlId": "5527135#14fd12f5-9823-4a99-ab82-157f3f791ece",
+        "main": "134",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8590,
+        "priceDiscount": 6010,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7408945",
+        "xmlId": "5527135#544d2faf-f873-4647-a55d-b557f88133fb",
+        "main": "140",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8590,
+        "priceDiscount": 6010,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7408954",
+        "xmlId": "5527135#726ce095-00dc-461f-8073-ce5f2a77d003",
+        "main": "146",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8590,
+        "priceDiscount": 6010,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7408960",
+        "xmlId": "5527135#e4112b17-b0f3-4b9a-bc66-85cfb8544495",
+        "main": "152",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8590,
+        "priceDiscount": 6010,
+        "discount": 30,
+        "bonusAddicted": 420
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 420,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4660421437845",
+    "gender": "girl",
+    "isFBS": false,
+    "categoryIds": [
+      12878,
+      61,
+      289,
+      295,
+      58086,
+      66103,
+      66288,
+      16275,
+      66094,
+      19891,
+      432,
+      37438,
+      436,
+      37318,
+      50448
+    ]
+  }
+]

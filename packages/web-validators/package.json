@@ -1,0 +1,34 @@
+{
+  "name": "@qco/web-validators",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    }
+   
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "dev": "tsc",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "zod": "4.0.14"
+  },
+  "devDependencies": {
+    "@qco/eslint-config": "workspace:*",
+    "@qco/prettier-config": "workspace:*",
+    "@qco/tsconfig": "workspace:*",
+    "eslint": "9.31.0",
+    "prettier": "3.5.3",
+    "tsup": "8.5.0",
+    "typescript": "5.8.3"
+  },
+  "prettier": "@qco/prettier-config"
+}

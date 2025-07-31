@@ -1,0 +1,20 @@
+---
+description: 
+globs: apps/web/**/*.tsx
+alwaysApply: false
+---
+Table Schemas: Import schemas from @qco/db/schema, e.g., import { Category, ProductCategory } from "@qco/db/schema";.
+Drizzle ORM: Import functions like eq, sql from @qco/db, e.g., import { eq, sql } from "@qco/db";.
+tRPC Routes: 
+- Use ctx for database access in tRPC routes to ensure consistent data handling
+- Each router should be in its own directory (e.g., src/routers/products/, src/routers/orders/)
+- Each route method should be in a separate file:
+  ```
+  src/routers/products/
+  ├── index.ts           # Router definition and exports
+  ├── create.ts          # POST /products
+  ├── get-by-id.ts      # GET /products/:id
+  ├── get-all.ts        # GET /products
+  └── update.ts         # PUT /products/:id
+  ```
+Validation: Use Zod for input and output validation, importing from @qco/web-validators.

@@ -1,0 +1,24 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFEAA7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="white">
+    Уличный стиль
+  </text>
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="white">
+    Фотография городской моды
+  </text>
+  <text x="600" y="550" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="rgba(255,255,255,0.8)">
+    QCO Fashion Blog
+  </text>
+  <rect x="450" y="380" width="300" height="225" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.6)" stroke-width="4"/>
+  <circle cx="600" cy="490" r="60" fill="rgba(255,255,255,0.3)"/>
+  <rect x="480" y="420" width="240" height="120" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="525" cy="300" r="20" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="675" cy="270" r="15" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="825" cy="330" r="25" fill="rgba(255,255,255,0.4)"/>
+</svg> 

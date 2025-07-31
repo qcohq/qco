@@ -1,0 +1,3706 @@
+[
+  {
+    "productId": "6300346",
+    "xmlId": "5387654",
+    "name": "Пальто шерстяное с отложным воротником на поясе",
+    "link": "/product/5387654-palto-sabrina-scala/",
+    "images": [
+      "images\\5387654-01.jpg",
+      "images\\5387654-02.jpg",
+      "images\\5387654-03.jpg",
+      "images\\5387654-04.jpg",
+      "images\\5387654-05.jpg"
+    ],
+    "brand": "SABRINA SCALA",
+    "brandColor": null,
+    "price": 49990,
+    "priceDiscount": 34990,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6300346",
+        "xmlId": "5387654",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5387654-palto-sabrina-scala/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6300721",
+        "xmlId": "5387654#437f7c6d-997c-4a67-9caf-5404afe26d79",
+        "main": "42",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      },
+      {
+        "id": "6300730",
+        "xmlId": "5387654#065362ae-9738-4664-acd0-86b414ef7df0",
+        "main": "44",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      },
+      {
+        "id": "6300718",
+        "xmlId": "5387654#3d2dc3bb-dc39-4949-81fc-49003a580a3b",
+        "main": "46",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      },
+      {
+        "id": "6300724",
+        "xmlId": "5387654#7ecb7496-efcd-4271-87d3-739671c6865d",
+        "main": "48",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      },
+      {
+        "id": "6300727",
+        "xmlId": "5387654#ad2c117a-7274-4b9d-b33d-09ae7dbe6503",
+        "main": "50",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      },
+      {
+        "id": "6300736",
+        "xmlId": "5387654#3a3949c0-10f5-490f-afe9-06539d3d2f4c",
+        "main": "52",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      },
+      {
+        "id": "6300733",
+        "xmlId": "5387654#a64bb952-4cb0-4bb6-b506-d46ca7e1f0ea",
+        "main": "54",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 2380,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4660209543386",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      37264,
+      33091,
+      58,
+      19891,
+      196,
+      37456,
+      16188,
+      2193,
+      2196,
+      2198,
+      2199,
+      6896,
+      58293,
+      2200,
+      12866,
+      14603,
+      50448,
+      56829
+    ]
+  },
+  {
+    "productId": "6299548",
+    "xmlId": "5387656",
+    "name": "Пальто шерстяное с отложным воротником на поясе",
+    "link": "/product/5387656-palto-sabrina-scala/",
+    "images": [
+      "images\\5387656-01.jpg",
+      "images\\5387656-02.jpg",
+      "images\\5387656-03.jpg",
+      "images\\5387656-04.jpg",
+      "images\\5387656-05.jpg"
+    ],
+    "brand": "SABRINA SCALA",
+    "brandColor": null,
+    "price": 49990,
+    "priceDiscount": 34990,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [
+      {
+        "text": "выбор байера",
+        "color": "#FF43BA",
+        "textColor": "#FFFFFF"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6299548",
+        "xmlId": "5387656",
+        "multi": [
+          {
+            "name": "серый",
+            "hex": "#808080"
+          }
+        ],
+        "name": "серый",
+        "hex": "#808080",
+        "link": "/product/5387656-palto-sabrina-scala/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6299698",
+        "xmlId": "5387656#2609e659-dd58-4b97-8cf6-1314450347d4",
+        "main": "42",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      },
+      {
+        "id": "6299713",
+        "xmlId": "5387656#e341d75e-2156-4849-a547-863b91739fd3",
+        "main": "44",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      },
+      {
+        "id": "6299707",
+        "xmlId": "5387656#94557e6c-da35-4994-9767-ad5376ce40ca",
+        "main": "46",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      },
+      {
+        "id": "6299695",
+        "xmlId": "5387656#f4ceb03c-1b18-4b00-a83f-aad22657e355",
+        "main": "48",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      },
+      {
+        "id": "6299701",
+        "xmlId": "5387656#8f09b385-63c1-44a8-bdd2-e5d2e18147b7",
+        "main": "50",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      },
+      {
+        "id": "6299710",
+        "xmlId": "5387656#480c935b-cb46-4641-9b76-396610c72adf",
+        "main": "52",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      },
+      {
+        "id": "6299704",
+        "xmlId": "5387656#6672e622-5188-4bd6-97a6-fd9146e10aa5",
+        "main": "54",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 49990,
+        "priceDiscount": 34990,
+        "discount": 30,
+        "bonusAddicted": 2380
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 2380,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4660209543416",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      37264,
+      33091,
+      58,
+      19891,
+      196,
+      37456,
+      16188,
+      2193,
+      2196,
+      2198,
+      2199,
+      6896,
+      58293,
+      2200,
+      12866,
+      14603,
+      50448,
+      56826,
+      63982,
+      63784
+    ]
+  },
+  {
+    "productId": "7286120",
+    "xmlId": "5510633",
+    "name": "Поло вязаное с коротким рукавом",
+    "link": "/product/5510633-polo-vyazanoe-sabrina-scala/",
+    "images": [
+      "images\\5510633-01.jpg",
+      "images\\5510633-02.jpg",
+      "images\\5510633-03.jpg",
+      "images\\5510633-04.jpg"
+    ],
+    "brand": "SABRINA SCALA",
+    "brandColor": null,
+    "price": 12990,
+    "priceDiscount": 9090,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7286120",
+        "xmlId": "5510633",
+        "multi": [
+          {
+            "name": "серый",
+            "hex": "#808080"
+          }
+        ],
+        "name": "серый",
+        "hex": "#808080",
+        "link": "/product/5510633-polo-vyazanoe-sabrina-scala/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7286147",
+        "xmlId": "5510633#b0d252df-4470-4978-9067-acdb683d8c50",
+        "main": "42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12990,
+        "priceDiscount": 9090,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7286156",
+        "xmlId": "5510633#e83603b6-0c72-4506-a2c7-bba5c45c4ff0",
+        "main": "44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12990,
+        "priceDiscount": 9090,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7286159",
+        "xmlId": "5510633#480681f5-859d-4fee-bf58-782be5b2ede4",
+        "main": "46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12990,
+        "priceDiscount": 9090,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7286144",
+        "xmlId": "5510633#c6094996-8e61-4f77-8967-1a2300ec9c12",
+        "main": "48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12990,
+        "priceDiscount": 9090,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7286150",
+        "xmlId": "5510633#a269b646-700c-421a-96a5-d5d3d5851bf2",
+        "main": "50",
+        "second": "XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12990,
+        "priceDiscount": 9090,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7286153",
+        "xmlId": "5510633#e41dad15-8d4f-4918-a1f9-d47ae6f98d0b",
+        "main": "52",
+        "second": "2XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12990,
+        "priceDiscount": 9090,
+        "discount": 30,
+        "bonusAddicted": 630
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 630,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405072064",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      411,
+      51447,
+      56838,
+      205,
+      19891,
+      16188,
+      12866,
+      50448
+    ]
+  },
+  {
+    "productId": "7579477",
+    "xmlId": "5545130",
+    "name": "Поло вязаное",
+    "link": "/product/5545130-polo-vyazanoe-rinascimento/",
+    "images": [
+      "images\\5545130-01.jpg",
+      "images\\5545130-02.jpg",
+      "images\\5545130-03.jpg",
+      "images\\5545130-04.jpg",
+      "images\\5545130-21.jpg",
+      "images\\5545130-22.jpg",
+      "images\\5545130-23.jpg",
+      "images\\5545130-24.jpg",
+      "images\\5545130-25.jpg"
+    ],
+    "brand": "Rinascimento",
+    "brandColor": null,
+    "price": 13990,
+    "priceDiscount": 9790,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7579474",
+        "xmlId": "5545129",
+        "multi": [
+          {
+            "name": "голубой",
+            "hex": "#42aaff"
+          }
+        ],
+        "name": "голубой",
+        "hex": "#42aaff",
+        "link": "/product/5545129-polo-vyazanoe-rinascimento/",
+        "checked": false
+      },
+      {
+        "id": "7579477",
+        "xmlId": "5545130",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5545130-polo-vyazanoe-rinascimento/",
+        "checked": true
+      },
+      {
+        "id": "7580221",
+        "xmlId": "5545211",
+        "multi": [
+          {
+            "name": "розовый",
+            "hex": "#ffc0cb"
+          }
+        ],
+        "name": "розовый",
+        "hex": "#ffc0cb",
+        "link": "/product/5545211-polo-vyazanoe-rinascimento/",
+        "checked": false
+      },
+      {
+        "id": "7580230",
+        "xmlId": "5545214",
+        "multi": [
+          {
+            "name": "коричневый",
+            "hex": "#964b00"
+          }
+        ],
+        "name": "коричневый",
+        "hex": "#964b00",
+        "link": "/product/5545214-polo-vyazanoe-rinascimento/",
+        "checked": false
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7579540",
+        "xmlId": "5545130#583bae0b-d45c-4324-92b2-a66c3651c63b",
+        "main": "42-46",
+        "second": "S/M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 13990,
+        "priceDiscount": 9790,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7579543",
+        "xmlId": "5545130#a1dd01ce-cdfb-4441-b4e6-6be5d9228a0a",
+        "main": "44-48",
+        "second": "M/L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 13990,
+        "priceDiscount": 9790,
+        "discount": 30,
+        "bonusAddicted": 630
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 630,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "1000782953326",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      411,
+      51447,
+      56838,
+      205,
+      19891,
+      16188,
+      12866,
+      33022,
+      50448,
+      57864
+    ]
+  },
+  {
+    "productId": "7068189",
+    "xmlId": "5489345",
+    "name": "Джемпер из смесовой шерсти с тиснеными монограммами",
+    "link": "/product/5489345-pulover-o-vyrez-boss/",
+    "images": [
+      "images\\5489345-01.jpg",
+      "images\\5489345-02.jpg",
+      "images\\5489345-03.jpg",
+      "images\\5489345-04.jpg"
+    ],
+    "brand": "BOSS",
+    "brandColor": null,
+    "price": 37190,
+    "priceDiscount": 26030,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7068189",
+        "xmlId": "5489345",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5489345-pulover-o-vyrez-boss/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7068420",
+        "xmlId": "5489345#5887e2da-f251-42c0-a502-5b3f8fa7faff",
+        "main": "40-42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 37190,
+        "priceDiscount": 26030,
+        "discount": 30,
+        "bonusAddicted": 1820
+      },
+      {
+        "id": "7068411",
+        "xmlId": "5489345#fb55a05e-b9c6-45ff-9883-c0e9f4c613e9",
+        "main": "42-44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 37190,
+        "priceDiscount": 26030,
+        "discount": 30,
+        "bonusAddicted": 1820
+      },
+      {
+        "id": "7068414",
+        "xmlId": "5489345#83f88c1f-8cae-4383-9d3a-f5ab1f558c96",
+        "main": "44-46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 37190,
+        "priceDiscount": 26030,
+        "discount": 30,
+        "bonusAddicted": 1820
+      },
+      {
+        "id": "7068417",
+        "xmlId": "5489345#b070a110-eaa2-4652-a309-4f3d928fd447",
+        "main": "46-48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 37190,
+        "priceDiscount": 26030,
+        "discount": 30,
+        "bonusAddicted": 1820
+      },
+      {
+        "id": "7498873",
+        "xmlId": "5489345#eb419fe0-bb23-4c8e-a1b7-a9e26cca2853",
+        "main": "48-50",
+        "second": "XL",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 37190,
+        "priceDiscount": 26030,
+        "discount": 30,
+        "bonusAddicted": 1820
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1820,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4063545217827",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      184,
+      57837,
+      57843,
+      63943,
+      58859,
+      66064,
+      16188,
+      19891,
+      230,
+      61267,
+      1047,
+      12866,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7302035",
+    "xmlId": "5512688",
+    "name": "Пуловер шерстяной с воротником стойкой на пуговицах",
+    "link": "/product/5512688-pulover-stoyka-tommy-hilfiger/",
+    "images": [
+      "images\\5512688-01.jpg",
+      "images\\5512688-02.jpg",
+      "images\\5512688-03.jpg",
+      "images\\5512688-04.jpg"
+    ],
+    "brand": "Tommy Hilfiger",
+    "brandColor": null,
+    "price": 29990,
+    "priceDiscount": 20990,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7302035",
+        "xmlId": "5512688",
+        "multi": [
+          {
+            "name": "коричневый",
+            "hex": "#964b00"
+          }
+        ],
+        "name": "коричневый",
+        "hex": "#964b00",
+        "link": "/product/5512688-pulover-stoyka-tommy-hilfiger/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7302617",
+        "xmlId": "5512688#93d7d797-43e2-4a2e-94cb-3cc206f33ccf",
+        "main": "40-42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 29990,
+        "priceDiscount": 20990,
+        "discount": 30,
+        "bonusAddicted": 1400
+      },
+      {
+        "id": "7302614",
+        "xmlId": "5512688#df5535b7-08a8-42d8-9ef8-a3e85ebfc15e",
+        "main": "42-44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 29990,
+        "priceDiscount": 20990,
+        "discount": 30,
+        "bonusAddicted": 1400
+      },
+      {
+        "id": "7302620",
+        "xmlId": "5512688#516aabc0-a172-447d-8a60-e3ec8add1271",
+        "main": "44-46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 29990,
+        "priceDiscount": 20990,
+        "discount": 30,
+        "bonusAddicted": 1400
+      },
+      {
+        "id": "7302623",
+        "xmlId": "5512688#89238e8e-043f-45d1-b600-0f4ec2f92c59",
+        "main": "46-48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 29990,
+        "priceDiscount": 20990,
+        "discount": 30,
+        "bonusAddicted": 1400
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1400,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8720638366355",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      231,
+      61267,
+      184,
+      19891,
+      12866,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7118142",
+    "xmlId": "5496293",
+    "name": "Свитшот хлопковый с принтом",
+    "link": "/product/5496293-dzhemper-tolstovka-karl-lagerfeld/",
+    "images": [
+      "images\\5496293-01.jpg",
+      "images\\5496293-02.jpg",
+      "images\\5496293-03.jpg",
+      "images\\5496293-04.jpg",
+      "images\\5496293-21.jpg",
+      "images\\5496293-22.jpg",
+      "images\\5496293-23.jpg",
+      "images\\5496293-24.jpg",
+      "images\\5496293-25.jpg"
+    ],
+    "brand": "Karl Lagerfeld",
+    "brandColor": null,
+    "price": 25390,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7118142",
+        "xmlId": "5496293",
+        "multi": [
+          {
+            "name": "белый",
+            "hex": "#ffffff"
+          }
+        ],
+        "name": "белый",
+        "hex": "#ffffff",
+        "link": "/product/5496293-dzhemper-tolstovka-karl-lagerfeld/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7118373",
+        "xmlId": "5496293#54ab7443-00a8-406f-9ede-d6f0e4443ecf",
+        "main": "40-42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 25390,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1750
+      },
+      {
+        "id": "7118376",
+        "xmlId": "5496293#25f9e833-7ecb-4692-82b7-6f4fd427c7ec",
+        "main": "42-44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 25390,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1750
+      },
+      {
+        "id": "7118382",
+        "xmlId": "5496293#42527765-a53e-44e8-b30e-bcada2e5ae29",
+        "main": "44-46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 25390,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1750
+      },
+      {
+        "id": "7118379",
+        "xmlId": "5496293#370b0acd-908f-4fae-a380-f4de878fcc7e",
+        "main": "46-48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 25390,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1750
+      },
+      {
+        "id": "7118385",
+        "xmlId": "5496293#9a2789ba-6dcc-4835-b749-905a1c83878f",
+        "main": "48-50",
+        "second": "XL",
+        "available": true,
+        "offline": true,
+        "online": false,
+        "price": 25390,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1750
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1750,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8721066256287",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      203,
+      57837,
+      63943,
+      63940,
+      33034,
+      65539,
+      66082,
+      56838,
+      16188,
+      19891,
+      439,
+      49830,
+      49629,
+      1335,
+      11356,
+      12866,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7071291",
+    "xmlId": "5489607",
+    "name": "Худи хлопковое с карманом оверсайз кроя",
+    "link": "/product/5489607-tolstovka-s-kapyushonom-hugo/",
+    "images": [
+      "images\\5489607-01.jpg",
+      "images\\5489607-02.jpg",
+      "images\\5489607-03.jpg",
+      "images\\5489607-04.jpg"
+    ],
+    "brand": "HUGO",
+    "brandColor": null,
+    "price": 24290,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7071288",
+        "xmlId": "5489606",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5489606-tolstovka-s-kapyushonom-hugo/",
+        "checked": false
+      },
+      {
+        "id": "7071291",
+        "xmlId": "5489607",
+        "multi": [
+          {
+            "name": "белый",
+            "hex": "#ffffff"
+          }
+        ],
+        "name": "белый",
+        "hex": "#ffffff",
+        "link": "/product/5489607-tolstovka-s-kapyushonom-hugo/",
+        "checked": true
+      },
+      {
+        "id": "7072665",
+        "xmlId": "5489720",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5489720-tolstovka-s-kapyushonom-hugo/",
+        "checked": false
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7071465",
+        "xmlId": "5489607#ab0212f3-5915-4698-8a35-780d764be7b8",
+        "main": "40-42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 24290,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1680
+      },
+      {
+        "id": "7071468",
+        "xmlId": "5489607#afd6912f-a310-4dae-8318-78f4bb0cfe2b",
+        "main": "42-44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 24290,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1680
+      },
+      {
+        "id": "7071471",
+        "xmlId": "5489607#a58c68d4-7730-4dad-8e0b-0f2871a88359",
+        "main": "44-46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 24290,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1680
+      },
+      {
+        "id": "7071474",
+        "xmlId": "5489607#cf125921-0d9e-40fd-985e-5433f6da42fc",
+        "main": "46-48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 24290,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1680
+      },
+      {
+        "id": "7071480",
+        "xmlId": "5489607#e08bb51c-2d88-437b-9e87-91b34ada040d",
+        "main": "48-50",
+        "second": "XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 24290,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1680
+      },
+      {
+        "id": "7071477",
+        "xmlId": "5489607#4465ff80-1fa3-4c18-b4e5-ca71056cc7f8",
+        "main": "50-52",
+        "second": "XXL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 24290,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1680
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1680,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4063545377897",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      203,
+      57837,
+      63943,
+      63940,
+      33034,
+      65539,
+      66082,
+      56838,
+      16188,
+      19891,
+      11356,
+      12866,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7244904",
+    "xmlId": "5506883",
+    "name": "Жакет",
+    "link": "/product/5506883-zhaket-belucci/",
+    "images": [
+      "images\\5506883-001.jpg",
+      "images\\5506883-002.jpg",
+      "images\\5506883-01.jpg",
+      "images\\5506883-02.jpg",
+      "images\\5506883-03.jpg",
+      "images\\5506883-04.jpg",
+      "images\\5506883-05.jpg"
+    ],
+    "brand": "BELUCCI",
+    "brandColor": null,
+    "price": 20990,
+    "priceDiscount": 14690,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7244904",
+        "xmlId": "5506883",
+        "multi": [],
+        "name": "",
+        "hex": "",
+        "link": "/product/5506883-zhaket-belucci/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7245000",
+        "xmlId": "5506883#0d1bdf2a-83c9-43c6-a028-e99b194851c9",
+        "main": "42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 20990,
+        "priceDiscount": 14690,
+        "discount": 30,
+        "bonusAddicted": 980
+      },
+      {
+        "id": "7244991",
+        "xmlId": "5506883#b5eb3ef9-f394-4695-b3f5-319d8f8f771c",
+        "main": "44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 20990,
+        "priceDiscount": 14690,
+        "discount": 30,
+        "bonusAddicted": 980
+      },
+      {
+        "id": "7245006",
+        "xmlId": "5506883#995dc7b2-8ad7-4d1e-8995-7a6e3a7ffb34",
+        "main": "46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 20990,
+        "priceDiscount": 14690,
+        "discount": 30,
+        "bonusAddicted": 980
+      },
+      {
+        "id": "7244997",
+        "xmlId": "5506883#86aa448b-88bb-4285-b0ae-cfa35df8d9e4",
+        "main": "48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 20990,
+        "priceDiscount": 14690,
+        "discount": 30,
+        "bonusAddicted": 980
+      },
+      {
+        "id": "7245003",
+        "xmlId": "5506883#e52e276b-8f6b-4b6d-8846-f1ba7c10de41",
+        "main": "50",
+        "second": "XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 20990,
+        "priceDiscount": 14690,
+        "discount": 30,
+        "bonusAddicted": 980
+      },
+      {
+        "id": "7244994",
+        "xmlId": "5506883#2e2c3398-6967-43a0-bfce-641142b4c272",
+        "main": "52",
+        "second": "2XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 20990,
+        "priceDiscount": 14690,
+        "discount": 30,
+        "bonusAddicted": 980
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 980,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405084104",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      32524,
+      56838,
+      199,
+      16188,
+      29245,
+      63877,
+      424,
+      12866,
+      50448,
+      19891
+    ]
+  },
+  {
+    "productId": "7301459",
+    "xmlId": "5512567",
+    "name": "Пиджак однобортный свободного кроя",
+    "link": "/product/5512567-zhaket-calvin-klein/",
+    "images": [
+      "images\\5512567-01.jpg",
+      "images\\5512567-02.jpg",
+      "images\\5512567-03.jpg",
+      "images\\5512567-04.jpg"
+    ],
+    "brand": "Calvin Klein",
+    "brandColor": null,
+    "price": 39390,
+    "priceDiscount": 27570,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7301459",
+        "xmlId": "5512567",
+        "multi": [
+          {
+            "name": "белый",
+            "hex": "#ffffff"
+          }
+        ],
+        "name": "белый",
+        "hex": "#ffffff",
+        "link": "/product/5512567-zhaket-calvin-klein/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7301567",
+        "xmlId": "5512567#28b20cb0-fbe1-4d22-a6e9-c6ce8230cd21",
+        "main": "40",
+        "second": "34",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 39390,
+        "priceDiscount": 27570,
+        "discount": 30,
+        "bonusAddicted": 1890
+      },
+      {
+        "id": "7301573",
+        "xmlId": "5512567#bcfb84ef-84b3-4c5b-9942-e31c24d1cc5c",
+        "main": "42",
+        "second": "36",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 39390,
+        "priceDiscount": 27570,
+        "discount": 30,
+        "bonusAddicted": 1890
+      },
+      {
+        "id": "7301576",
+        "xmlId": "5512567#cb78755f-334a-4569-b00b-0bc8a52c6390",
+        "main": "44",
+        "second": "38",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 39390,
+        "priceDiscount": 27570,
+        "discount": 30,
+        "bonusAddicted": 1890
+      },
+      {
+        "id": "7301570",
+        "xmlId": "5512567#e8f449fc-debe-431f-b4c4-e73e3ece387e",
+        "main": "46",
+        "second": "40",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 39390,
+        "priceDiscount": 27570,
+        "discount": 30,
+        "bonusAddicted": 1890
+      },
+      {
+        "id": "7301579",
+        "xmlId": "5512567#338bee39-daf3-4c1e-b16e-a1e2237375ed",
+        "main": "48",
+        "second": "42",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 39390,
+        "priceDiscount": 27570,
+        "discount": 30,
+        "bonusAddicted": 1890
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1890,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8721107589091",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      32524,
+      56838,
+      199,
+      16188,
+      29245,
+      63877,
+      424,
+      12866,
+      50448,
+      19891,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7334473",
+    "xmlId": "5517895",
+    "name": "Брюки широкого кроя льняные",
+    "link": "/product/5517895-bryuki-colorplay/",
+    "images": [
+      "images\\5517895-01.jpg",
+      "images\\5517895-02.jpg",
+      "images\\5517895-03.jpg",
+      "images\\5517895-04.jpg"
+    ],
+    "brand": "COLORPLAY",
+    "brandColor": null,
+    "price": 8990,
+    "priceDiscount": 6290,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7334401",
+        "xmlId": "5517897",
+        "multi": [
+          {
+            "name": "голубой",
+            "hex": "#42aaff"
+          }
+        ],
+        "name": "голубой",
+        "hex": "#42aaff",
+        "link": "/product/5517897-bryuki-colorplay/",
+        "checked": false
+      },
+      {
+        "id": "7334473",
+        "xmlId": "5517895",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5517895-bryuki-colorplay/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7334515",
+        "xmlId": "5517895#34dd2cda-0643-49b8-b1e4-0089ed62f08e",
+        "main": "42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7334521",
+        "xmlId": "5517895#10a75596-8db0-4264-a46e-4ea039e219b4",
+        "main": "44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7334509",
+        "xmlId": "5517895#1be1d6ec-be9b-4a1b-89a5-c563b4764fb4",
+        "main": "46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7334524",
+        "xmlId": "5517895#2d7b3ad7-e2b8-47af-a47a-d7a22e3df5d5",
+        "main": "48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7334512",
+        "xmlId": "5517895#7ed85965-ec8a-4fa4-812f-8a0f34efe5e8",
+        "main": "50",
+        "second": "XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 420,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405109173",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      183,
+      52083,
+      65731,
+      16188,
+      389,
+      7088,
+      12866,
+      50448,
+      19891,
+      57864
+    ]
+  },
+  {
+    "productId": "7334401",
+    "xmlId": "5517897",
+    "name": "Брюки широкого кроя льняные",
+    "link": "/product/5517897-bryuki-colorplay/",
+    "images": [
+      "images\\5517897-01.jpg",
+      "images\\5517897-02.jpg",
+      "images\\5517897-03.jpg",
+      "images\\5517897-04.jpg"
+    ],
+    "brand": "COLORPLAY",
+    "brandColor": null,
+    "price": 8990,
+    "priceDiscount": 6290,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7334401",
+        "xmlId": "5517897",
+        "multi": [
+          {
+            "name": "голубой",
+            "hex": "#42aaff"
+          }
+        ],
+        "name": "голубой",
+        "hex": "#42aaff",
+        "link": "/product/5517897-bryuki-colorplay/",
+        "checked": true
+      },
+      {
+        "id": "7334473",
+        "xmlId": "5517895",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5517895-bryuki-colorplay/",
+        "checked": false
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7334425",
+        "xmlId": "5517897#ba7d83f6-1aa8-4638-8c8d-cb0dfbf5cc0f",
+        "main": "42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7334422",
+        "xmlId": "5517897#10c18b94-e1a5-4544-8bd5-bf2950f6595c",
+        "main": "44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7334416",
+        "xmlId": "5517897#0b43f39f-6f13-40ae-b17a-95d26111602a",
+        "main": "46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7334428",
+        "xmlId": "5517897#d29a3331-0d30-456a-941d-459f1ba9c935",
+        "main": "48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      },
+      {
+        "id": "7334419",
+        "xmlId": "5517897#37d5817c-d8b6-4cd2-b63f-452f21028dbb",
+        "main": "50",
+        "second": "XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 8990,
+        "priceDiscount": 6290,
+        "discount": 30,
+        "bonusAddicted": 420
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 420,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405108824",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      183,
+      52083,
+      65731,
+      16188,
+      389,
+      7088,
+      12866,
+      50448,
+      19891,
+      57864
+    ]
+  },
+  {
+    "productId": "7071264",
+    "xmlId": "5489593",
+    "name": "Платье из эластичной сетки с принтом",
+    "link": "/product/5489593-plate-hugo/",
+    "images": [
+      "images\\5489593-001.jpg",
+      "images\\5489593-002.jpg",
+      "images\\5489593-003.jpg",
+      "images\\5489593-004.jpg"
+    ],
+    "brand": "HUGO",
+    "brandColor": null,
+    "price": 25790,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7071264",
+        "xmlId": "5489593",
+        "multi": [
+          {
+            "name": "серый",
+            "hex": "#808080"
+          }
+        ],
+        "name": "серый",
+        "hex": "#808080",
+        "link": "/product/5489593-plate-hugo/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7071336",
+        "xmlId": "5489593#c70b0698-8347-49ec-ad99-2ecb0679f52b",
+        "main": "40-42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 25790,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1750
+      },
+      {
+        "id": "7071339",
+        "xmlId": "5489593#1a4bfe74-fdcf-44cf-93c2-bbbcab629e85",
+        "main": "42-44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 25790,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1750
+      },
+      {
+        "id": "7071333",
+        "xmlId": "5489593#4fdacfa8-1f80-4bf6-9f42-647522a3d80e",
+        "main": "44-46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 25790,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1750
+      },
+      {
+        "id": "7071342",
+        "xmlId": "5489593#75621f75-2a5c-422e-83a1-581d0667798b",
+        "main": "46-48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": false,
+        "price": 25790,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1750
+      },
+      {
+        "id": "7518208",
+        "xmlId": "5489593#ab563815-0d5f-4fe8-a860-6f5be5d68439",
+        "main": "48-50",
+        "second": "XL",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 25790,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1750
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1750,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4063545405668",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      52266,
+      52083,
+      49569,
+      33016,
+      63928,
+      63877,
+      197,
+      16188,
+      418,
+      61750,
+      465,
+      468,
+      66016,
+      66013,
+      19891,
+      11356,
+      12866,
+      14813,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7071573",
+    "xmlId": "5489634",
+    "name": "Платье трикотажное с вырезом на груди",
+    "link": "/product/5489634-plate-hugo/",
+    "images": [
+      "images\\5489634-01.jpg",
+      "images\\5489634-02.jpg",
+      "images\\5489634-03.jpg",
+      "images\\5489634-04.jpg"
+    ],
+    "brand": "HUGO",
+    "brandColor": null,
+    "price": 41790,
+    "priceDiscount": 29250,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7071573",
+        "xmlId": "5489634",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5489634-plate-hugo/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7071786",
+        "xmlId": "5489634#24a78d44-6509-4d17-b9df-47ced30a49ab",
+        "main": "40",
+        "second": "34",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 41790,
+        "priceDiscount": 29250,
+        "discount": 30,
+        "bonusAddicted": 2030
+      },
+      {
+        "id": "7071789",
+        "xmlId": "5489634#fff3b2ce-bf7f-4ba8-810f-a1de6ccf7bb5",
+        "main": "42",
+        "second": "36",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 41790,
+        "priceDiscount": 29250,
+        "discount": 30,
+        "bonusAddicted": 2030
+      },
+      {
+        "id": "7071783",
+        "xmlId": "5489634#8fca922d-1aed-46a8-b4a0-4e4a27996336",
+        "main": "44",
+        "second": "38",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 41790,
+        "priceDiscount": 29250,
+        "discount": 30,
+        "bonusAddicted": 2030
+      },
+      {
+        "id": "7071792",
+        "xmlId": "5489634#8a572a5e-2432-4026-a04e-9fd7df989ce4",
+        "main": "46",
+        "second": "40",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 41790,
+        "priceDiscount": 29250,
+        "discount": 30,
+        "bonusAddicted": 2030
+      },
+      {
+        "id": "7071795",
+        "xmlId": "5489634#d146687f-d1b5-40f1-ac7f-ec6cbfa47b0d",
+        "main": "48",
+        "second": "42",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 41790,
+        "priceDiscount": 29250,
+        "discount": 30,
+        "bonusAddicted": 2030
+      },
+      {
+        "id": "7496113",
+        "xmlId": "5489634#e33a9b35-4ddb-4368-93a0-9bd228928e2c",
+        "main": "50",
+        "second": "44",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 41790,
+        "priceDiscount": 29250,
+        "discount": 30,
+        "bonusAddicted": 2030
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 2030,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4063545242102",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      52266,
+      52083,
+      49569,
+      33016,
+      63928,
+      63877,
+      197,
+      16188,
+      418,
+      61750,
+      466,
+      29245,
+      623,
+      12866,
+      14813,
+      50448,
+      19891,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7357750",
+    "xmlId": "5520599",
+    "name": "Джинсы",
+    "link": "/product/5520599-dzhinsy-sabrina-scala/",
+    "images": [
+      "images\\5520599-01.jpg",
+      "images\\5520599-02.jpg",
+      "images\\5520599-03.jpg",
+      "images\\5520599-04.jpg"
+    ],
+    "brand": "SABRINA SCALA",
+    "brandColor": null,
+    "price": 11990,
+    "priceDiscount": 8390,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7357750",
+        "xmlId": "5520599",
+        "multi": [],
+        "name": "",
+        "hex": "",
+        "link": "/product/5520599-dzhinsy-sabrina-scala/",
+        "checked": true
+      },
+      {
+        "id": "7357753",
+        "xmlId": "5520601",
+        "multi": [],
+        "name": "",
+        "hex": "",
+        "link": "/product/5520601-dzhinsy-sabrina-scala/",
+        "checked": false
+      },
+      {
+        "id": "7357756",
+        "xmlId": "5520603",
+        "multi": [],
+        "name": "",
+        "hex": "",
+        "link": "/product/5520603-dzhinsy-sabrina-scala/",
+        "checked": false
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7357855",
+        "xmlId": "5520599#2c9bafee-2a1d-4391-9a27-e5435d6d9896",
+        "main": "42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 11990,
+        "priceDiscount": 8390,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7357849",
+        "xmlId": "5520599#d9b44ee5-6f69-4b53-ae79-5e89000e611c",
+        "main": "44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 11990,
+        "priceDiscount": 8390,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7357858",
+        "xmlId": "5520599#79e6b5bc-9fb6-4a0d-93a9-36e27eb81679",
+        "main": "46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 11990,
+        "priceDiscount": 8390,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7357861",
+        "xmlId": "5520599#8604cf9a-bda7-40db-8ef0-38585585a8f0",
+        "main": "48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 11990,
+        "priceDiscount": 8390,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7357846",
+        "xmlId": "5520599#48f26664-44bd-4e9d-bb3c-b864c5560add",
+        "main": "50",
+        "second": "XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 11990,
+        "priceDiscount": 8390,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7357852",
+        "xmlId": "5520599#ed57ee10-104b-4632-996a-3430fda2b13a",
+        "main": "52",
+        "second": "2XL",
+        "available": true,
+        "offline": true,
+        "online": false,
+        "price": 11990,
+        "priceDiscount": 8390,
+        "discount": 30,
+        "bonusAddicted": 560
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 560,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405105496",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      185,
+      63943,
+      65917,
+      65992,
+      65950,
+      66064,
+      56838,
+      16188,
+      65902,
+      65899,
+      19891,
+      65989,
+      65947,
+      12866,
+      50448
+    ]
+  },
+  {
+    "productId": "7357756",
+    "xmlId": "5520603",
+    "name": "Джинсы",
+    "link": "/product/5520603-dzhinsy-sabrina-scala/",
+    "images": [
+      "images\\5520603-001.jpg",
+      "images\\5520603-01.jpg",
+      "images\\5520603-02.jpg",
+      "images\\5520603-03.jpg",
+      "images\\5520603-04.jpg"
+    ],
+    "brand": "SABRINA SCALA",
+    "brandColor": null,
+    "price": 11990,
+    "priceDiscount": 8390,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7357750",
+        "xmlId": "5520599",
+        "multi": [],
+        "name": "",
+        "hex": "",
+        "link": "/product/5520599-dzhinsy-sabrina-scala/",
+        "checked": false
+      },
+      {
+        "id": "7357753",
+        "xmlId": "5520601",
+        "multi": [],
+        "name": "",
+        "hex": "",
+        "link": "/product/5520601-dzhinsy-sabrina-scala/",
+        "checked": false
+      },
+      {
+        "id": "7357756",
+        "xmlId": "5520603",
+        "multi": [],
+        "name": "",
+        "hex": "",
+        "link": "/product/5520603-dzhinsy-sabrina-scala/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7357882",
+        "xmlId": "5520603#ea3eaca4-9c44-4296-abd0-e119c16850c8",
+        "main": "42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 11990,
+        "priceDiscount": 8390,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7357891",
+        "xmlId": "5520603#51dcd509-2bca-4003-a680-551359f52461",
+        "main": "44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 11990,
+        "priceDiscount": 8390,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7357885",
+        "xmlId": "5520603#7704fe85-3090-48bf-a30a-9726da1206e6",
+        "main": "46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 11990,
+        "priceDiscount": 8390,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7357888",
+        "xmlId": "5520603#ff1cc534-3839-44d8-a560-471b9fefaaa8",
+        "main": "48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 11990,
+        "priceDiscount": 8390,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7357897",
+        "xmlId": "5520603#5b665669-3c53-4546-88f7-089b087c725e",
+        "main": "50",
+        "second": "XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 11990,
+        "priceDiscount": 8390,
+        "discount": 30,
+        "bonusAddicted": 560
+      },
+      {
+        "id": "7357894",
+        "xmlId": "5520603#3b2cc8e2-529a-40df-9e34-b0eb6db88f8e",
+        "main": "52",
+        "second": "2XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 11990,
+        "priceDiscount": 8390,
+        "discount": 30,
+        "bonusAddicted": 560
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 560,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405105434",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      185,
+      63943,
+      65917,
+      65992,
+      65950,
+      66064,
+      56838,
+      16188,
+      65902,
+      65899,
+      19891,
+      65989,
+      65947,
+      12866,
+      50448
+    ]
+  },
+  {
+    "productId": "7357759",
+    "xmlId": "5520605",
+    "name": "Юбка",
+    "link": "/product/5520605-yubka-sabrina-scala/",
+    "images": [
+      "images\\5520605-01.jpg",
+      "images\\5520605-02.jpg",
+      "images\\5520605-03.jpg",
+      "images\\5520605-04.jpg"
+    ],
+    "brand": "SABRINA SCALA",
+    "brandColor": null,
+    "price": 12990,
+    "priceDiscount": 9090,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7357759",
+        "xmlId": "5520605",
+        "multi": [],
+        "name": "",
+        "hex": "",
+        "link": "/product/5520605-yubka-sabrina-scala/",
+        "checked": true
+      },
+      {
+        "id": "7357762",
+        "xmlId": "5520607",
+        "multi": [],
+        "name": "",
+        "hex": "",
+        "link": "/product/5520607-yubka-sabrina-scala/",
+        "checked": false
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7357903",
+        "xmlId": "5520605#95047710-34fe-4c13-9767-79d43c06cc20",
+        "main": "42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12990,
+        "priceDiscount": 9090,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7357915",
+        "xmlId": "5520605#7a66a3ed-fbf7-4af4-bac0-efa6e2753084",
+        "main": "44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12990,
+        "priceDiscount": 9090,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7357900",
+        "xmlId": "5520605#8fe5b0f3-c1f2-48d4-869c-9604447e7026",
+        "main": "46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12990,
+        "priceDiscount": 9090,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7357912",
+        "xmlId": "5520605#3bb826df-3f1e-4b93-9e4f-e1fa5665bc11",
+        "main": "48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12990,
+        "priceDiscount": 9090,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7357909",
+        "xmlId": "5520605#c65d2f48-29cd-4f22-954d-1b751bef010c",
+        "main": "50",
+        "second": "XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12990,
+        "priceDiscount": 9090,
+        "discount": 30,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "7357906",
+        "xmlId": "5520605#b57b3eff-b3bd-4f94-92ab-ad7dad14b408",
+        "main": "52",
+        "second": "2XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 12990,
+        "priceDiscount": 9090,
+        "discount": 30,
+        "bonusAddicted": 630
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 630,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4640405114344",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      208,
+      52266,
+      52083,
+      49569,
+      33016,
+      61750,
+      63928,
+      65731,
+      63877,
+      16188,
+      1828,
+      1836,
+      1837,
+      12866,
+      50448,
+      19891
+    ]
+  },
+  {
+    "productId": "4899457",
+    "xmlId": "5278958",
+    "name": "Юбка-карандаш с добавлением вискозы",
+    "link": "/product/5278958-yubka-karandash-s-dobavleniem-viskozy-boss/",
+    "images": [
+      "images\\5278958-1.jpg",
+      "images\\5278958-2.jpg",
+      "images\\5278958-21.jpg",
+      "images\\5278958-3.jpg",
+      "images\\5278958-4.jpg"
+    ],
+    "brand": "BOSS",
+    "brandColor": null,
+    "price": 27290,
+    "priceDiscount": 19100,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "4899457",
+        "xmlId": "5278958",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5278958-yubka-karandash-s-dobavleniem-viskozy-boss/",
+        "checked": true
+      },
+      {
+        "id": "4899721",
+        "xmlId": "5278959",
+        "multi": [
+          {
+            "name": "разноцветный",
+            "hex": null
+          }
+        ],
+        "name": "разноцветный",
+        "hex": "",
+        "link": "/product/5278959-yubka-karandash-s-dobavleniem-viskozy-boss/",
+        "checked": false
+      }
+    ],
+    "sizes": [
+      {
+        "id": "4901737",
+        "xmlId": "5278958#6562715d-3423-485f-b624-5d6f456971ca",
+        "main": "40-42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "4901398",
+        "xmlId": "5278958#52f07c34-a0b8-4da3-a436-18ca83cdc20c",
+        "main": "42-44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "4900849",
+        "xmlId": "5278958#1fb931d0-4474-4cea-89ad-9c530c997d93",
+        "main": "44-46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "4901515",
+        "xmlId": "5278958#075b3403-2590-4e93-a668-eecdfe7af0e9",
+        "main": "46-48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "6604853",
+        "xmlId": "5278958#f5a1150f-1001-4b00-954e-f62be5d5ee9e",
+        "main": "48-50",
+        "second": "XL",
+        "available": true,
+        "offline": true,
+        "online": false,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "6961947",
+        "xmlId": "5278958#09d3e97f-124e-4b2d-b64b-995948e36c0f",
+        "main": "50-52",
+        "second": "XXL",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1330,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4063538206791",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      208,
+      52266,
+      52083,
+      49569,
+      33016,
+      61750,
+      63928,
+      65731,
+      63877,
+      16188,
+      1828,
+      12866,
+      50448,
+      19891,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "8020932",
+    "xmlId": "5592824",
+    "name": "Шорты трикотажные на эластичном поясе со стразами",
+    "link": "/product/5592824-shorty-marciano-by-guess/",
+    "images": [
+      "images\\5592824-001.jpg",
+      "images\\5592824-002.jpg",
+      "images\\5592824-003.jpg",
+      "images\\5592824-004.jpg"
+    ],
+    "brand": "Marciano by Guess",
+    "brandColor": null,
+    "price": 21900,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "только онлайн",
+        "color": "#F2F2F2",
+        "textColor": "#1E1E1E"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "8020932",
+        "xmlId": "5592824",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5592824-shorty-marciano-by-guess/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "8021274",
+        "xmlId": "5592824#881724a4-bb66-440a-b65c-5664b504add5",
+        "main": "42",
+        "second": "38",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 21900,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1470
+      },
+      {
+        "id": "8021280",
+        "xmlId": "5592824#0b9eb38c-f7ca-4c6d-af67-2fec9817c330",
+        "main": "44",
+        "second": "40",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 21900,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1470
+      },
+      {
+        "id": "8021277",
+        "xmlId": "5592824#2b6c93a6-54cb-414f-9e39-ded6224656f3",
+        "main": "46",
+        "second": "42",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 21900,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1470
+      },
+      {
+        "id": "8021271",
+        "xmlId": "5592824#48cb4538-fb45-4ab2-bae4-f5b6b0db7565",
+        "main": "48",
+        "second": "44",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 21900,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 1470
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1470,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "7626741312719",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      207,
+      52083,
+      53604,
+      66106,
+      66016,
+      16188,
+      19891,
+      66013,
+      6780,
+      2027,
+      1373,
+      11356,
+      12866,
+      50448
+    ]
+  },
+  {
+    "productId": "6916548",
+    "xmlId": "5472398",
+    "name": "Спортивный костюм с фирменной тесьмой и логотипом",
+    "link": "/product/5472398-sportivnyy-kostyum-adidas/",
+    "images": [
+      "images\\5472398-21.jpg",
+      "images\\5472398-22.jpg",
+      "images\\5472398-23.jpg",
+      "images\\5472398-24.jpg",
+      "images\\5472398-25.jpg",
+      "images\\5472398-26.jpg",
+      "images\\5472398-27.jpg",
+      "images\\5472398-28.jpg"
+    ],
+    "brand": "Adidas",
+    "brandColor": null,
+    "price": 9990,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "только онлайн",
+        "color": "#F2F2F2",
+        "textColor": "#1E1E1E"
+      },
+      {
+        "text": "на дачу",
+        "color": "#5EA072",
+        "textColor": "#FFFFFF"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6916548",
+        "xmlId": "5472398",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5472398-sportivnyy-kostyum-adidas/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6916782",
+        "xmlId": "5472398#558cbac6-04ef-4a10-b342-42b1964b600b",
+        "main": "38-40",
+        "second": "XS",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 9990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "6916779",
+        "xmlId": "5472398#eef91703-1f66-472b-a3d8-5a5be5dee8f0",
+        "main": "42-44",
+        "second": "S",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 9990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "6916785",
+        "xmlId": "5472398#262a5108-b69e-4dda-b677-20c4eded44a4",
+        "main": "46-48",
+        "second": "M",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 9990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "6916776",
+        "xmlId": "5472398#ff57f586-f399-4a45-88d9-c7fff4efc097",
+        "main": "50-52",
+        "second": "L",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 9990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 630
+      },
+      {
+        "id": "6916773",
+        "xmlId": "5472398#dacf5d35-7961-4e10-88d2-6e1f698e4f1d",
+        "main": "54-56",
+        "second": "XL",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 9990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 630
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 630,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4067901415988",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      6776,
+      2027,
+      11356,
+      12866,
+      50448,
+      19891,
+      59720,
+      59726,
+      66231
+    ]
+  },
+  {
+    "productId": "7540210",
+    "xmlId": "5540218",
+    "name": "Комбинезон хлопковый коротким рукавом и вышивкой",
+    "link": "/product/5540218-kombinezon-boss/",
+    "images": [
+      "images\\5540218-01.jpg",
+      "images\\5540218-02.jpg",
+      "images\\5540218-03.jpg",
+      "images\\5540218-04.jpg"
+    ],
+    "brand": "BOSS",
+    "brandColor": null,
+    "price": 44790,
+    "priceDiscount": 31350,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7540210",
+        "xmlId": "5540218",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5540218-kombinezon-boss/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7540318",
+        "xmlId": "5540218#0d26b015-9d8d-45f7-bfe4-e32a628df007",
+        "main": "40",
+        "second": "34",
+        "available": true,
+        "offline": true,
+        "online": false,
+        "price": 44790,
+        "priceDiscount": 31350,
+        "discount": 30,
+        "bonusAddicted": 2170
+      },
+      {
+        "id": "7540324",
+        "xmlId": "5540218#5a231141-6ff0-4b17-8443-48122517dc7f",
+        "main": "42",
+        "second": "36",
+        "available": true,
+        "offline": true,
+        "online": false,
+        "price": 44790,
+        "priceDiscount": 31350,
+        "discount": 30,
+        "bonusAddicted": 2170
+      },
+      {
+        "id": "7540327",
+        "xmlId": "5540218#61da3ed3-52c7-44e9-870d-2c857f60fd58",
+        "main": "44",
+        "second": "38",
+        "available": true,
+        "offline": true,
+        "online": false,
+        "price": 44790,
+        "priceDiscount": 31350,
+        "discount": 30,
+        "bonusAddicted": 2170
+      },
+      {
+        "id": "7540321",
+        "xmlId": "5540218#e019037e-be95-4e2a-9ba4-b0179dfc991b",
+        "main": "46",
+        "second": "40",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 44790,
+        "priceDiscount": 31350,
+        "discount": 30,
+        "bonusAddicted": 2170
+      },
+      {
+        "id": "7540330",
+        "xmlId": "5540218#0de276dd-37d0-4307-97ad-4cc763befb73",
+        "main": "48",
+        "second": "42",
+        "available": true,
+        "offline": true,
+        "online": false,
+        "price": 44790,
+        "priceDiscount": 31350,
+        "discount": 30,
+        "bonusAddicted": 2170
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 2170,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4063546066691",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      1350,
+      1357,
+      7519,
+      12866,
+      50448,
+      19891,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7069749",
+    "xmlId": "5489317",
+    "name": "Рубашка хлопковая в полоску свободного кроя",
+    "link": "/product/5489317-bluza-rubashka-boss/",
+    "images": [
+      "images\\5489317-01.jpg",
+      "images\\5489317-02.jpg",
+      "images\\5489317-03.jpg",
+      "images\\5489317-04.jpg"
+    ],
+    "brand": "BOSS",
+    "brandColor": null,
+    "price": 27290,
+    "priceDiscount": 19100,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7069749",
+        "xmlId": "5489317",
+        "multi": [
+          {
+            "name": "голубой",
+            "hex": "#42aaff"
+          }
+        ],
+        "name": "голубой",
+        "hex": "#42aaff",
+        "link": "/product/5489317-bluza-rubashka-boss/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7544080",
+        "xmlId": "5489317#4dabb52c-8af8-41c1-994f-2c271695399e",
+        "main": "38",
+        "second": "32",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "7069869",
+        "xmlId": "5489317#693df394-2d9f-4ce3-b9fd-2961fb67d160",
+        "main": "40",
+        "second": "34",
+        "available": true,
+        "offline": true,
+        "online": false,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "7069872",
+        "xmlId": "5489317#7c78dca9-df4f-4eb5-86c3-07f0b66e20f2",
+        "main": "42",
+        "second": "36",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "7069863",
+        "xmlId": "5489317#e90ea0c1-f5c2-4be2-a276-19f065a0d427",
+        "main": "44",
+        "second": "38",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "7069866",
+        "xmlId": "5489317#9dbe7320-3993-4b64-a5c8-31104babe75b",
+        "main": "46",
+        "second": "40",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "7069875",
+        "xmlId": "5489317#6953b54c-c420-4a65-83a9-360116860bdc",
+        "main": "48",
+        "second": "42",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      },
+      {
+        "id": "7069860",
+        "xmlId": "5489317#8a0ec693-030f-452a-b2b5-effcda2e3775",
+        "main": "50",
+        "second": "44",
+        "available": true,
+        "offline": true,
+        "online": false,
+        "price": 27290,
+        "priceDiscount": 19100,
+        "discount": 30,
+        "bonusAddicted": 1330
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1330,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4063545274158",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      52083,
+      49569,
+      202,
+      16188,
+      229,
+      46666,
+      66061,
+      66109,
+      19891,
+      591,
+      32524,
+      29245,
+      592,
+      12866,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "5177458",
+    "xmlId": "5270407",
+    "name": "Хлопковая рубашка с карманом",
+    "link": "/product/5270407-rubashka/",
+    "images": [
+      "images\\5270407-1.jpg",
+      "images\\5270407-2.jpg",
+      "images\\5270407-3.jpg",
+      "images\\5270407-4.jpg"
+    ],
+    "brand": "BELUCCI",
+    "brandColor": null,
+    "price": 7990,
+    "priceDiscount": 3990,
+    "discount": 50,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "5177458",
+        "xmlId": "5270407",
+        "multi": [
+          {
+            "name": "белый",
+            "hex": "#ffffff"
+          }
+        ],
+        "name": "белый",
+        "hex": "#ffffff",
+        "link": "/product/5270407-rubashka/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "5177494",
+        "xmlId": "5270407#93b32acb-406b-47c5-8e7f-a98ea9ce0385",
+        "main": "40",
+        "second": "XXS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 3990,
+        "discount": 50,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "5177497",
+        "xmlId": "5270407#40a58b4e-86df-46b4-80da-61f2550c4865",
+        "main": "42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 3990,
+        "discount": 50,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "5177500",
+        "xmlId": "5270407#05746f18-3865-4763-b895-e3c540886034",
+        "main": "44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 3990,
+        "discount": 50,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "5177491",
+        "xmlId": "5270407#66fe2541-86f9-415d-b2b9-949e2deece0d",
+        "main": "46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": false,
+        "price": 7990,
+        "priceDiscount": 3990,
+        "discount": 50,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "5177503",
+        "xmlId": "5270407#05531c33-a78b-444c-a2ba-5893b55bb30d",
+        "main": "48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 3990,
+        "discount": 50,
+        "bonusAddicted": 210
+      },
+      {
+        "id": "5177488",
+        "xmlId": "5270407#a280f374-8c45-487b-ba9a-c454c8199727",
+        "main": "50",
+        "second": "XL",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 3990,
+        "discount": 50,
+        "bonusAddicted": 210
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 210,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4660209169968",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      52083,
+      49569,
+      202,
+      16188,
+      229,
+      46666,
+      66061,
+      66109,
+      19891,
+      591,
+      32524,
+      29245,
+      12866,
+      46894,
+      65992,
+      65989,
+      50448
+    ]
+  },
+  {
+    "productId": "8021601",
+    "xmlId": "5592897",
+    "name": "Шорты твидовые с необработанным краем",
+    "link": "/product/5592897-shorty-marciano-by-guess/",
+    "images": [
+      "images\\5592897-001.jpg",
+      "images\\5592897-002.jpg",
+      "images\\5592897-003.jpg",
+      "images\\5592897-004.jpg"
+    ],
+    "brand": "Marciano by Guess",
+    "brandColor": null,
+    "price": 29700,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "только онлайн",
+        "color": "#F2F2F2",
+        "textColor": "#1E1E1E"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "8021601",
+        "xmlId": "5592897",
+        "multi": [
+          {
+            "name": "розовый",
+            "hex": "#ffc0cb"
+          }
+        ],
+        "name": "розовый",
+        "hex": "#ffc0cb",
+        "link": "/product/5592897-shorty-marciano-by-guess/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "8021748",
+        "xmlId": "5592897#46b4c296-f38e-44ac-98c9-79c610bc6b6b",
+        "main": "42",
+        "second": "38",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 29700,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2030
+      },
+      {
+        "id": "8021745",
+        "xmlId": "5592897#38771385-4e18-4f40-b04c-9e1e4dbf1c82",
+        "main": "44",
+        "second": "40",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 29700,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2030
+      },
+      {
+        "id": "8021751",
+        "xmlId": "5592897#bfe56632-9c3c-4377-83ff-b71af9f4c183",
+        "main": "46",
+        "second": "42",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 29700,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2030
+      },
+      {
+        "id": "8021754",
+        "xmlId": "5592897#a14cbbe8-7a70-4419-9135-c8b847fc2315",
+        "main": "48",
+        "second": "44",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 29700,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2030
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 2030,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "7620837151862",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      207,
+      52083,
+      53604,
+      66106,
+      66016,
+      16188,
+      19891,
+      66013,
+      1373,
+      11356,
+      12866,
+      50448
+    ]
+  }
+]

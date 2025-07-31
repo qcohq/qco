@@ -1,0 +1,24 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#96CEB4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#45B7D1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="white">
+    Экологичная мода
+  </text>
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="white">
+    Будущее индустрии
+  </text>
+  <text x="600" y="550" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="rgba(255,255,255,0.8)">
+    QCO Fashion Blog
+  </text>
+  <circle cx="600" cy="450" r="80" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.5)" stroke-width="4"/>
+  <path d="M 560 410 L 640 490 M 640 410 L 560 490" stroke="rgba(255,255,255,0.8)" stroke-width="3"/>
+  <circle cx="300" cy="300" r="25" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="900" cy="300" r="25" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="300" cy="500" r="25" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="900" cy="500" r="25" fill="rgba(255,255,255,0.3)"/>
+</svg> 

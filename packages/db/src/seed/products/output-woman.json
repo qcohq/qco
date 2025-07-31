@@ -1,0 +1,3055 @@
+[
+  {
+    "productId": "6606080",
+    "xmlId": "5429410",
+    "name": "Дубленка из искусственной кожи с отделкой из экомеха",
+    "link": "/product/5429410-dublenka-isk-kozha-hugo/",
+    "images": [
+      "images\\5429410-01.jpg",
+      "images\\5429410-02.jpg",
+      "images\\5429410-03.jpg",
+      "images\\5429410-04.jpg",
+      "images\\5429410-05.jpg"
+    ],
+    "brand": "HUGO",
+    "brandColor": null,
+    "price": 65490,
+    "priceDiscount": 45840,
+    "discount": 30,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "только онлайн",
+        "color": "#F2F2F2",
+        "textColor": "#1E1E1E"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6606080",
+        "xmlId": "5429410",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5429410-dublenka-isk-kozha-hugo/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6606227",
+        "xmlId": "5429410#976464a8-8f73-4df7-9662-d124fbe38eef",
+        "main": "40",
+        "second": "34",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 65490,
+        "priceDiscount": 45840,
+        "discount": 30,
+        "bonusAddicted": 3150
+      },
+      {
+        "id": "6606224",
+        "xmlId": "5429410#1d075436-c87b-4f8a-87f5-a5f703a28b61",
+        "main": "42",
+        "second": "36",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 65490,
+        "priceDiscount": 45840,
+        "discount": 30,
+        "bonusAddicted": 3150
+      },
+      {
+        "id": "6606221",
+        "xmlId": "5429410#36232306-a3e8-47a2-85ac-5e25fa9ef05f",
+        "main": "44",
+        "second": "38",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 65490,
+        "priceDiscount": 45840,
+        "discount": 30,
+        "bonusAddicted": 3150
+      },
+      {
+        "id": "6606215",
+        "xmlId": "5429410#fe501a9b-15d2-4da1-b259-f364277e4ee1",
+        "main": "46",
+        "second": "40",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 65490,
+        "priceDiscount": 45840,
+        "discount": 30,
+        "bonusAddicted": 3150
+      },
+      {
+        "id": "6606218",
+        "xmlId": "5429410#1c8d396d-0444-480e-b854-fd8abbf4af7c",
+        "main": "48",
+        "second": "42",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 65490,
+        "priceDiscount": 45840,
+        "discount": 30,
+        "bonusAddicted": 3150
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 3150,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "2000691931537",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      399,
+      37456,
+      58,
+      16188,
+      12866,
+      50448,
+      19891,
+      59720,
+      59726,
+      63991
+    ]
+  },
+  {
+    "productId": "6696801",
+    "xmlId": "5442717",
+    "name": "Пуховик удлиненный с капюшоном",
+    "link": "/product/5442717-pukhovik-sabrina-scala/",
+    "images": [
+      "images\\5442717-01.jpg",
+      "images\\5442717-02.jpg",
+      "images\\5442717-03.jpg",
+      "images\\5442717-04.jpg",
+      "images\\5442717-05.jpg"
+    ],
+    "brand": "SABRINA SCALA",
+    "brandColor": null,
+    "price": 45990,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "только онлайн",
+        "color": "#F2F2F2",
+        "textColor": "#1E1E1E"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6696801",
+        "xmlId": "5442717",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5442717-pukhovik-sabrina-scala/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6696870",
+        "xmlId": "5442717#2554ea8c-ee65-448a-98c6-629abb59c269",
+        "main": "42",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 45990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 3150
+      },
+      {
+        "id": "6696864",
+        "xmlId": "5442717#42a32e24-d6b8-4473-9d2f-cdf80c706c17",
+        "main": "44",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 45990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 3150
+      },
+      {
+        "id": "6696873",
+        "xmlId": "5442717#3cfc83af-d294-4a0c-888b-e760bbc8c31b",
+        "main": "46",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 45990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 3150
+      },
+      {
+        "id": "6696867",
+        "xmlId": "5442717#173109c6-ed0b-4034-9dfa-04bd9415b77d",
+        "main": "48",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 45990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 3150
+      },
+      {
+        "id": "6696858",
+        "xmlId": "5442717#6c4935e4-bdb7-461b-af71-c02b51165212",
+        "main": "50",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 45990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 3150
+      },
+      {
+        "id": "6696861",
+        "xmlId": "5442717#b8681471-3db1-4fed-bbc7-8b1e1601c267",
+        "main": "52",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 45990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 3150
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 3150,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4680689220560",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      37264,
+      33091,
+      58,
+      19891,
+      70,
+      37456,
+      16188,
+      194,
+      224,
+      2176,
+      11356,
+      12866,
+      63874,
+      58293,
+      16647,
+      50448
+    ]
+  },
+  {
+    "productId": "6567595",
+    "xmlId": "5425126",
+    "name": "Кроссовки Forum",
+    "link": "/product/5425126-krossovki-adidas/",
+    "images": [
+      "images\\5425126-21.jpg",
+      "images\\5425126-22.jpg",
+      "images\\5425126-23.jpg",
+      "images\\5425126-24.jpg"
+    ],
+    "brand": "Adidas",
+    "brandColor": null,
+    "price": 15990,
+    "priceDiscount": 11190,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6567595",
+        "xmlId": "5425126",
+        "multi": [
+          {
+            "name": "белый",
+            "hex": "#ffffff"
+          }
+        ],
+        "name": "белый",
+        "hex": "#ffffff",
+        "link": "/product/5425126-krossovki-adidas/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6567676",
+        "xmlId": "5425126#6091a4a0-9310-41e9-b463-e59338a291c9",
+        "main": "35,5",
+        "second": "3,5",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6567673",
+        "xmlId": "5425126#65e97286-b19e-423c-ad3b-b373ba646ddb",
+        "main": "36",
+        "second": "4",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6567658",
+        "xmlId": "5425126#5d067efd-ecbf-423f-82cb-436fd7265606",
+        "main": "36,5",
+        "second": "4,5",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6567664",
+        "xmlId": "5425126#5d8b0b1c-f0c3-442a-986e-c87a06594526",
+        "main": "37",
+        "second": "5",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6567667",
+        "xmlId": "5425126#123f0d8c-bfd2-4aa9-98a4-bc28eb99a543",
+        "main": "37,5",
+        "second": "5,5",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6567655",
+        "xmlId": "5425126#cf0a714d-c293-45a6-86d2-bdf9afbf9e75",
+        "main": "38",
+        "second": "6",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6567670",
+        "xmlId": "5425126#c41817f0-b17d-4bfe-a9da-131af4017c54",
+        "main": "38,5",
+        "second": "6,5",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6567661",
+        "xmlId": "5425126#1e6330d7-8cc9-4caa-9b19-303cde577227",
+        "main": "39",
+        "second": "7",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6567649",
+        "xmlId": "5425126#6eedcaef-0647-4909-9147-7ce7a5211b07",
+        "main": "40",
+        "second": "7,5",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6567679",
+        "xmlId": "5425126#c75f52aa-9a4b-4f50-bc74-cff1a2e6dc2b",
+        "main": "40,5",
+        "second": "8",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6567652",
+        "xmlId": "5425126#bcad98ce-176a-4c66-8529-0fa69e3ddf3d",
+        "main": "41",
+        "second": "8,5",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6567646",
+        "xmlId": "5425126#3bc6e7e4-fdaf-4363-967f-65d31c0a4d90",
+        "main": "42",
+        "second": "9",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6567682",
+        "xmlId": "5425126#6587bb7c-133d-420a-ba70-6680feb66b3e",
+        "main": "42,5",
+        "second": "9,5",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 15990,
+        "priceDiscount": 11190,
+        "discount": 30,
+        "bonusAddicted": 770
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 770,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4066751952728",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      33100,
+      58512,
+      182,
+      19891,
+      56,
+      63943,
+      61273,
+      63940,
+      66181,
+      210,
+      16188,
+      1483,
+      49830,
+      65965,
+      57861,
+      65962,
+      9090,
+      11077,
+      12866,
+      14546,
+      37309,
+      46810,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "6193753",
+    "xmlId": "5379804",
+    "name": "Кроссовки Falcon",
+    "link": "/product/5379804-krossovki-adidas/",
+    "images": [
+      "images\\5379804-11.jpg",
+      "images\\5379804-12.jpg",
+      "images\\5379804-13.jpg",
+      "images\\5379804-14.jpg",
+      "images\\5379804-15.jpg"
+    ],
+    "brand": "Adidas",
+    "brandColor": null,
+    "price": 16990,
+    "priceDiscount": 11890,
+    "discount": 30,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6193753",
+        "xmlId": "5379804",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5379804-krossovki-adidas/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6193942",
+        "xmlId": "5379804#daac0f44-2bae-4064-90e0-cf47b12fbc9c",
+        "main": "35,5",
+        "second": "3,5",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 16990,
+        "priceDiscount": 11890,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6193939",
+        "xmlId": "5379804#a4ce255e-54af-4c15-8cee-9568b4b78ef4",
+        "main": "36",
+        "second": "4",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 16990,
+        "priceDiscount": 11890,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6193936",
+        "xmlId": "5379804#9e6b0c3d-37e9-4e0c-8e92-ba888e599baa",
+        "main": "36,5",
+        "second": "4,5",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 16990,
+        "priceDiscount": 11890,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6193951",
+        "xmlId": "5379804#7ef6f5ef-bd2d-485c-bdd7-0c32617a59ab",
+        "main": "37",
+        "second": "5",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 16990,
+        "priceDiscount": 11890,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6193954",
+        "xmlId": "5379804#dc154c0b-bb25-47ed-af50-15c0a8aca57b",
+        "main": "37,5",
+        "second": "5,5",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 16990,
+        "priceDiscount": 11890,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6193930",
+        "xmlId": "5379804#c098620a-c20f-44f5-82b2-3f2e70fb691c",
+        "main": "38",
+        "second": "6",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 16990,
+        "priceDiscount": 11890,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6193945",
+        "xmlId": "5379804#704abc70-808c-4be9-a182-89a370a2f5f4",
+        "main": "38,5",
+        "second": "6,5",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 16990,
+        "priceDiscount": 11890,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6193948",
+        "xmlId": "5379804#b9053bb9-1b83-405b-a2f6-12c03adba442",
+        "main": "39",
+        "second": "7",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 16990,
+        "priceDiscount": 11890,
+        "discount": 30,
+        "bonusAddicted": 770
+      },
+      {
+        "id": "6193933",
+        "xmlId": "5379804#4491146d-4d28-4f94-8151-76c1b1c1d3a7",
+        "main": "40",
+        "second": "7,5",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 16990,
+        "priceDiscount": 11890,
+        "discount": 30,
+        "bonusAddicted": 770
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 770,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4066763877651",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      33100,
+      58512,
+      182,
+      19891,
+      56,
+      63943,
+      61273,
+      63940,
+      66181,
+      210,
+      16188,
+      1484,
+      65965,
+      49629,
+      66139,
+      66234,
+      65962,
+      66231,
+      49830,
+      35269,
+      1738,
+      9090,
+      11077,
+      12866,
+      14546,
+      37309,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "1261268",
+    "xmlId": "4973334",
+    "name": "Кожаная сумка кросс-боди 1927 Mini",
+    "link": "/product/4973334-kozhanaya-sumka-kross-bodi-1927-mini-furla/",
+    "images": [
+      "images\\4973334-01.jpg",
+      "images\\4973334-02.jpg",
+      "images\\4973334-03.jpg",
+      "images\\4973334-04.jpg",
+      "images\\4973334-1.jpg",
+      "images\\4973334-2.jpg",
+      "images\\4973334-3.jpg",
+      "images\\4973334-4.jpg"
+    ],
+    "brand": "Furla",
+    "brandColor": null,
+    "price": 41490,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "1261268",
+        "xmlId": "4973334",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/4973334-kozhanaya-sumka-kross-bodi-1927-mini-furla/",
+        "checked": true
+      },
+      {
+        "id": "6343879",
+        "xmlId": "5394021",
+        "multi": [
+          {
+            "name": "синий",
+            "hex": "#0000ff"
+          }
+        ],
+        "name": "синий",
+        "hex": "#0000ff",
+        "link": "/product/5394021-sumka-kross-bodi-furla/",
+        "checked": false
+      },
+      {
+        "id": "6343996",
+        "xmlId": "5394046",
+        "multi": [
+          {
+            "name": "белый",
+            "hex": "#ffffff"
+          }
+        ],
+        "name": "белый",
+        "hex": "#ffffff",
+        "link": "/product/5394046-sumka-kross-bodi-furla/",
+        "checked": false
+      },
+      {
+        "id": "6990642",
+        "xmlId": "5481242",
+        "multi": [
+          {
+            "name": "розовый",
+            "hex": "#ffc0cb"
+          }
+        ],
+        "name": "розовый",
+        "hex": "#ffc0cb",
+        "link": "/product/5481242-sumka-kross-bodi-furla/",
+        "checked": false
+      },
+      {
+        "id": "7343923",
+        "xmlId": "5518970",
+        "multi": [
+          {
+            "name": "голубой",
+            "hex": "#42aaff"
+          }
+        ],
+        "name": "голубой",
+        "hex": "#42aaff",
+        "link": "/product/5518970-sumka-kross-bodi-furla/",
+        "checked": false
+      }
+    ],
+    "sizes": [
+      {
+        "id": "1261271",
+        "xmlId": "4973334#1cbed1cc-78e6-4046-9c29-19309dc58b04",
+        "main": "20x13,5x7см",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 41490,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2870
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 2870,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8050560599980",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57831,
+      61750,
+      41620,
+      33100,
+      61264,
+      65824,
+      222,
+      16188,
+      56,
+      19891,
+      248,
+      252,
+      65791,
+      65803,
+      1702,
+      11356,
+      37309,
+      37729,
+      50448,
+      59720,
+      59726,
+      65761,
+      65776
+    ]
+  },
+  {
+    "productId": "6100333",
+    "xmlId": "5368706",
+    "name": "Рюкзак с принтом из монограмм Power play",
+    "link": "/product/5368706-ryukzak-guess/",
+    "images": [
+      "images\\5368706-01.jpg",
+      "images\\5368706-02.jpg",
+      "images\\5368706-03.jpg",
+      "images\\5368706-21.jpg",
+      "images\\5368706-22.jpg",
+      "images\\5368706-23.jpg"
+    ],
+    "brand": "Guess",
+    "brandColor": null,
+    "price": 20590,
+    "priceDiscount": 14410,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6100333",
+        "xmlId": "5368706",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5368706-ryukzak-guess/",
+        "checked": true
+      },
+      {
+        "id": "6100927",
+        "xmlId": "5368707",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5368707-ryukzak-guess/",
+        "checked": false
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6100552",
+        "xmlId": "5368706#bfff4c6b-a552-4829-982b-fd7e23e7604c",
+        "main": "Один размер",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 20590,
+        "priceDiscount": 14410,
+        "discount": 30,
+        "bonusAddicted": 980
+      }
+    ],
+    "noSize": true,
+    "exclusiveOnline": false,
+    "bonusAddicted": 980,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "0190231814399",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57831,
+      61264,
+      65824,
+      223,
+      16188,
+      56,
+      19891,
+      222,
+      1873,
+      65752,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "8095167",
+    "xmlId": "1450023704",
+    "name": "Сумка ПЕПЕЛ-ЛИМОН ТОУТ L",
+    "link": "/product/1450023704-sumka-pepel-limon-tout-l-znat/",
+    "images": [
+      "images\\02fe8b3bb3ff3c11c3dcc21ca46b3cab3714357a.jpg",
+      "images\\3e6db4ce5016349ee4f050b59af81208d7486a81.jpg",
+      "images\\4f1bd76785d06f4f7e99bd8530158ab5144877ef.jpg",
+      "images\\6477ebdd1699e7ff935446a1a0b95b812014d3d4.jpg",
+      "images\\3e18baec6ef0adf0d07bc422748a57ef8ce52892.jpg"
+    ],
+    "brand": "ЗНАТЬ",
+    "brandColor": null,
+    "price": 39000,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "партнерский товар",
+        "color": "#000000",
+        "textColor": "#FFFFFF"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "8095167",
+        "xmlId": "1450023704",
+        "multi": [
+          {
+            "name": "серый",
+            "hex": "#808080"
+          }
+        ],
+        "name": "серый",
+        "hex": "#808080",
+        "link": "/product/1450023704-sumka-pepel-limon-tout-l-znat/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "8095170",
+        "xmlId": "1450023704#01960287-e93e-738e-ae78-bab3539f7d1c",
+        "main": "Один размер",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 39000,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2730
+      }
+    ],
+    "noSize": true,
+    "exclusiveOnline": false,
+    "bonusAddicted": 0,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "0",
+    "gender": "woman",
+    "isFBS": true,
+    "categoryIds": [
+      252,
+      222,
+      56
+    ]
+  },
+  {
+    "productId": "8095161",
+    "xmlId": "1450023707",
+    "name": "Сумка ОБСИДИАН-ЕЖЕВИКА ТОУТ L",
+    "link": "/product/1450023707-sumka-obsidian-ezhevika-tout-l-znat/",
+    "images": [
+      "images\\8fe44f73410714d28e2f7179669bac6455475fd5.jpg",
+      "images\\80458c3e1865c2e45f65402ecbf9584e93cbaf8f.jpg",
+      "images\\c656c8fc4005412e7dfa214934e187034eac760b.jpg",
+      "images\\e98c495d0d384a7703a0b7016eb4732c28f5784f.jpg"
+    ],
+    "brand": "ЗНАТЬ",
+    "brandColor": null,
+    "price": 39000,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "партнерский товар",
+        "color": "#000000",
+        "textColor": "#FFFFFF"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "8095161",
+        "xmlId": "1450023707",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/1450023707-sumka-obsidian-ezhevika-tout-l-znat/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "8095164",
+        "xmlId": "1450023707#01960288-423f-725a-82ff-726cd8cb9fd4",
+        "main": "Один размер",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 39000,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2730
+      }
+    ],
+    "noSize": true,
+    "exclusiveOnline": false,
+    "bonusAddicted": 0,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "0",
+    "gender": "woman",
+    "isFBS": true,
+    "categoryIds": [
+      252,
+      222,
+      56
+    ]
+  },
+  {
+    "productId": "8074983",
+    "xmlId": "5599783",
+    "name": "Сумка для ноутбука 15/16 дюймов",
+    "link": "/product/5599783-sumka-dlya-noutbuka-guess/",
+    "images": [
+      "images\\5599783-21.jpg",
+      "images\\5599783-22.jpg",
+      "images\\5599783-23.jpg"
+    ],
+    "brand": "Guess",
+    "brandColor": null,
+    "price": 11490,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "только онлайн",
+        "color": "#F2F2F2",
+        "textColor": "#1E1E1E"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "8074983",
+        "xmlId": "5599783",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5599783-sumka-dlya-noutbuka-guess/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "8075112",
+        "xmlId": "5599783#6d439be8-b3c9-409e-825e-8eeda6f18a51",
+        "main": "б/р",
+        "second": "NO SIZE",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 11490,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 770
+      }
+    ],
+    "noSize": true,
+    "exclusiveOnline": false,
+    "bonusAddicted": 770,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "3666339051099",
+    "gender": "none",
+    "isFBS": false,
+    "categoryIds": [
+      219,
+      65998,
+      212,
+      56,
+      19891,
+      9476,
+      65797,
+      276,
+      59,
+      16461,
+      11356,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "8074980",
+    "xmlId": "5599781",
+    "name": "Сумка для ноутбука 15 дюймов Quilted Bag",
+    "link": "/product/5599781-sumka-dlya-noutbuka-guess/",
+    "images": [
+      "images\\5599781-21.jpg",
+      "images\\5599781-22.jpg",
+      "images\\5599781-23.jpg"
+    ],
+    "brand": "Guess",
+    "brandColor": null,
+    "price": 9990,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "только онлайн",
+        "color": "#F2F2F2",
+        "textColor": "#1E1E1E"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "8074980",
+        "xmlId": "5599781",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5599781-sumka-dlya-noutbuka-guess/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "8075109",
+        "xmlId": "5599781#976133c5-e0bc-4247-9b85-ca915da07311",
+        "main": "б/р",
+        "second": "NO SIZE",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 9990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 630
+      }
+    ],
+    "noSize": true,
+    "exclusiveOnline": false,
+    "bonusAddicted": 630,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "3700740469323",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      219,
+      65998,
+      212,
+      56,
+      19891,
+      11356,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "6883803",
+    "xmlId": "5468693",
+    "name": "Пуховик с объемным капюшоном",
+    "link": "/product/5468693-kurtka-uteplennaya-belucci/",
+    "images": [
+      "images\\5468693-01.jpg",
+      "images\\5468693-02.jpg",
+      "images\\5468693-03.jpg",
+      "images\\5468693-04.jpg",
+      "images\\5468693-05.jpg",
+      "images\\5468693-06.jpg"
+    ],
+    "brand": "BELUCCI",
+    "brandColor": null,
+    "price": 30990,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6883803",
+        "xmlId": "5468693",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5468693-kurtka-uteplennaya-belucci/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6883830",
+        "xmlId": "5468693#c3e17fa7-a08e-4d2a-b24f-233fa9bb37b9",
+        "main": "42",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 30990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "6883833",
+        "xmlId": "5468693#d8ef3af5-322e-4ca7-ba2c-5faac1427893",
+        "main": "44",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 30990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "6883839",
+        "xmlId": "5468693#4c87a700-b1ce-4915-a3df-141e93e538bc",
+        "main": "46",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 30990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "6883836",
+        "xmlId": "5468693#86cdcc0a-25df-4925-8fe3-63966304996f",
+        "main": "48",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 30990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "6883827",
+        "xmlId": "5468693#8b96df0c-5acc-441c-b074-1dbad3a94b6d",
+        "main": "50",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 30990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2100
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 2100,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4680689622609",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      37264,
+      33091,
+      58,
+      19891,
+      70,
+      37456,
+      16188,
+      194,
+      2176,
+      7402,
+      11356,
+      12866,
+      63874,
+      58293,
+      16647,
+      50448
+    ]
+  },
+  {
+    "productId": "6883800",
+    "xmlId": "5468691",
+    "name": "Пуховик с объемным капюшоном",
+    "link": "/product/5468691-kurtka-uteplennaya-belucci/",
+    "images": [
+      "images\\5468691-01.jpg",
+      "images\\5468691-02.jpg",
+      "images\\5468691-03.jpg",
+      "images\\5468691-04.jpg",
+      "images\\5468691-05.jpg"
+    ],
+    "brand": "BELUCCI",
+    "brandColor": null,
+    "price": 30990,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6883800",
+        "xmlId": "5468691",
+        "multi": [
+          {
+            "name": "серый",
+            "hex": "#808080"
+          }
+        ],
+        "name": "серый",
+        "hex": "#808080",
+        "link": "/product/5468691-kurtka-uteplennaya-belucci/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6883812",
+        "xmlId": "5468691#7a7dd5c1-5fab-481f-8343-d6fdb79661d9",
+        "main": "42",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 30990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "6883821",
+        "xmlId": "5468691#8ced150a-b6e2-4776-9c36-4e21d0e079ae",
+        "main": "44",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 30990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "6883818",
+        "xmlId": "5468691#128cc636-c72a-471c-9c19-f16b9c9d50be",
+        "main": "46",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 30990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "6883824",
+        "xmlId": "5468691#9634a51d-cdd2-4615-aee1-b74a65e481a6",
+        "main": "48",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 30990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "6883815",
+        "xmlId": "5468691#3e832715-5978-4630-89e5-61770d0c4a4b",
+        "main": "50",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 30990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2100
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 2100,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4680689622562",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      37264,
+      33091,
+      58,
+      19891,
+      70,
+      37456,
+      16188,
+      194,
+      2176,
+      7402,
+      11356,
+      12866,
+      63874,
+      58293,
+      16647,
+      50448
+    ]
+  },
+  {
+    "productId": "6742023",
+    "xmlId": "5448288",
+    "name": "Ботинки кожаные",
+    "link": "/product/5448288-botinki-tommy-hilfiger/",
+    "images": [
+      "images\\5448288-01.jpg",
+      "images\\5448288-02.jpg",
+      "images\\5448288-03.jpg",
+      "images\\5448288-04.jpg",
+      "images\\5448288-21.jpg",
+      "images\\5448288-22.jpg",
+      "images\\5448288-23.jpg",
+      "images\\5448288-24.jpg"
+    ],
+    "brand": "Tommy Hilfiger",
+    "brandColor": null,
+    "price": 26990,
+    "priceDiscount": 21590,
+    "discount": 20,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "только онлайн",
+        "color": "#F2F2F2",
+        "textColor": "#1E1E1E"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6742023",
+        "xmlId": "5448288",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5448288-botinki-tommy-hilfiger/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6742095",
+        "xmlId": "5448288#96f3e805-9d50-4c75-b0c7-bb083a4c81d0",
+        "main": "36",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 26990,
+        "priceDiscount": 21590,
+        "discount": 20,
+        "bonusAddicted": 1470
+      },
+      {
+        "id": "6742098",
+        "xmlId": "5448288#49d18720-1380-4e0e-8a81-e8b028a3d604",
+        "main": "37",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 26990,
+        "priceDiscount": 21590,
+        "discount": 20,
+        "bonusAddicted": 1470
+      },
+      {
+        "id": "6742101",
+        "xmlId": "5448288#1d55fa45-796b-4695-810a-854e48f5c52b",
+        "main": "38",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 26990,
+        "priceDiscount": 21590,
+        "discount": 20,
+        "bonusAddicted": 1470
+      },
+      {
+        "id": "6742107",
+        "xmlId": "5448288#973af89d-f0b4-4e7f-9958-8e5b2cb8f7ab",
+        "main": "39",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 26990,
+        "priceDiscount": 21590,
+        "discount": 20,
+        "bonusAddicted": 1470
+      },
+      {
+        "id": "6742104",
+        "xmlId": "5448288#dba26404-4edf-4006-9dd5-0e9f85c8abed",
+        "main": "40",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 26990,
+        "priceDiscount": 21590,
+        "discount": 20,
+        "bonusAddicted": 1470
+      },
+      {
+        "id": "6742698",
+        "xmlId": "5448288#7853a43e-7ade-4b82-9146-b81e48ef62ab",
+        "main": "41",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 26990,
+        "priceDiscount": 21590,
+        "discount": 20,
+        "bonusAddicted": 1470
+      },
+      {
+        "id": "6742701",
+        "xmlId": "5448288#3e87ce84-ad3a-4d75-8bbd-e3e6d98edffc",
+        "main": "42",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 26990,
+        "priceDiscount": 21590,
+        "discount": 20,
+        "bonusAddicted": 1470
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1470,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8720636824666",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      33100,
+      58512,
+      182,
+      19891,
+      56,
+      211,
+      66181,
+      1709,
+      9090,
+      7382,
+      11077,
+      12866,
+      14546,
+      50448,
+      59720,
+      59726,
+      61654,
+      16188
+    ]
+  },
+  {
+    "productId": "5154241",
+    "xmlId": "5286913",
+    "name": "Кожаные кеды на высокой подошве",
+    "link": "/product/5286913-kedy-emporio-armani/",
+    "images": [
+      "images\\5286913-1.jpg",
+      "images\\5286913-2.jpg",
+      "images\\5286913-3.jpg",
+      "images\\5286913-4.jpg"
+    ],
+    "brand": "EMPORIO ARMANI",
+    "brandColor": null,
+    "price": 42890,
+    "priceDiscount": 30020,
+    "discount": 30,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "5154241",
+        "xmlId": "5286913",
+        "multi": [
+          {
+            "name": "разноцветный",
+            "hex": null
+          }
+        ],
+        "name": "разноцветный",
+        "hex": "",
+        "link": "/product/5286913-kedy-emporio-armani/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "5154295",
+        "xmlId": "5286913#92a36e98-b81c-40c0-8064-9cca1152cf9d",
+        "main": "36",
+        "second": "6",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 42890,
+        "priceDiscount": 30020,
+        "discount": 30,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "5154301",
+        "xmlId": "5286913#8ae1ac38-b702-4c87-96a2-4e02f03a84ef",
+        "main": "37",
+        "second": "7",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 42890,
+        "priceDiscount": 30020,
+        "discount": 30,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "5154307",
+        "xmlId": "5286913#13927d1c-2249-4b54-bccb-0cd2b85b699d",
+        "main": "38",
+        "second": "8",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 42890,
+        "priceDiscount": 30020,
+        "discount": 30,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "5154292",
+        "xmlId": "5286913#7e896bc5-0094-437b-8c08-be555d6c5937",
+        "main": "39",
+        "second": "9",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 42890,
+        "priceDiscount": 30020,
+        "discount": 30,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "5154298",
+        "xmlId": "5286913#977c5f33-ed08-4733-957a-928e024866eb",
+        "main": "40",
+        "second": "10",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 42890,
+        "priceDiscount": 30020,
+        "discount": 30,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "5154304",
+        "xmlId": "5286913#9f0bb84a-4959-4c90-b11d-53f5b17875d5",
+        "main": "41",
+        "second": "11",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 42890,
+        "priceDiscount": 30020,
+        "discount": 30,
+        "bonusAddicted": 2100
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 2100,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8057767071509",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      33100,
+      58512,
+      182,
+      19891,
+      56,
+      63943,
+      61273,
+      63940,
+      66181,
+      210,
+      16188,
+      1483,
+      49830,
+      65965,
+      57861,
+      65962,
+      1729,
+      1734,
+      1736,
+      9090,
+      11077,
+      12866,
+      14546,
+      37309,
+      50448
+    ]
+  },
+  {
+    "productId": "6722853",
+    "xmlId": "5446159",
+    "name": "Рюкзак кожаный Malory",
+    "link": "/product/5446159-ryukzak-coccinelle/",
+    "images": [
+      "images\\5446159-01.jpg",
+      "images\\5446159-02.jpg",
+      "images\\5446159-03.jpg",
+      "images\\5446159-41.jpg"
+    ],
+    "brand": "Coccinelle",
+    "brandColor": null,
+    "price": 39990,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6722853",
+        "xmlId": "5446159",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5446159-ryukzak-coccinelle/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6722976",
+        "xmlId": "5446159#0e5eb09e-07fe-4701-96db-b3d746f25de5",
+        "main": "24x30x11",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 39990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2730
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 2730,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8059978609342",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57831,
+      61264,
+      65824,
+      223,
+      16188,
+      56,
+      19891,
+      222,
+      1871,
+      1873,
+      65752,
+      11356,
+      37729,
+      50448
+    ]
+  },
+  {
+    "productId": "6927633",
+    "xmlId": "5474147",
+    "name": "Сумка кросс-боди Eco Erica",
+    "link": "/product/5474147-sumka-kross-bodi-guess/",
+    "images": [
+      "images\\5474147-01.jpg",
+      "images\\5474147-02.jpg",
+      "images\\5474147-03.jpg"
+    ],
+    "brand": "Guess",
+    "brandColor": null,
+    "price": 19990,
+    "priceDiscount": 13990,
+    "discount": 30,
+    "badge": "",
+    "badges": [
+      {
+        "id": "3005180625",
+        "text": "распродажа",
+        "color": "#D60F3C",
+        "textColor": "#ffffff",
+        "url": "/news-and-promotions/3005180625/",
+        "img": ""
+      }
+    ],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6927633",
+        "xmlId": "5474147",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5474147-sumka-kross-bodi-guess/",
+        "checked": true
+      },
+      {
+        "id": "6927636",
+        "xmlId": "5474148",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/5474148-sumka-kross-bodi-guess/",
+        "checked": false
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6927675",
+        "xmlId": "5474147#0b072ce5-5871-4df5-a8b7-813de94ea499",
+        "main": "Один размер",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 19990,
+        "priceDiscount": 13990,
+        "discount": 30,
+        "bonusAddicted": 910
+      }
+    ],
+    "noSize": true,
+    "exclusiveOnline": false,
+    "bonusAddicted": 910,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "0190231872498",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57831,
+      61750,
+      41620,
+      33100,
+      61264,
+      65824,
+      222,
+      16188,
+      56,
+      19891,
+      248,
+      65791,
+      65803,
+      1702,
+      50448,
+      59720,
+      59726,
+      65776
+    ]
+  },
+  {
+    "productId": "8095155",
+    "xmlId": "1450023710",
+    "name": "Сумка ОБСИДИАН-НЕОН ТОУТ L",
+    "link": "/product/1450023710-sumka-obsidian-neon-tout-l-znat/",
+    "images": [
+      "images\\32b7fb66098df0d1c707f30a3067ec950a3b2a9b.jpg",
+      "images\\45d59d1b808c736a2c4f47e5b6a056d2fd084e91.jpg",
+      "images\\4aaeb49aff2d40842a2b93a88b64e1067f4975c6.jpg"
+    ],
+    "brand": "ЗНАТЬ",
+    "brandColor": null,
+    "price": 39000,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "партнерский товар",
+        "color": "#000000",
+        "textColor": "#FFFFFF"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "8095155",
+        "xmlId": "1450023710",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/1450023710-sumka-obsidian-neon-tout-l-znat/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "8095158",
+        "xmlId": "1450023710#01960288-b18f-713f-8071-c4ae880d1219",
+        "main": "Один размер",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 39000,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2730
+      }
+    ],
+    "noSize": true,
+    "exclusiveOnline": false,
+    "bonusAddicted": 0,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "0",
+    "gender": "woman",
+    "isFBS": true,
+    "categoryIds": [
+      252,
+      222,
+      56
+    ]
+  },
+  {
+    "productId": "8095143",
+    "xmlId": "1450023713",
+    "name": "Сумка ПЕПЕЛ-ДЖИНС ТОУТ L",
+    "link": "/product/1450023713-sumka-pepel-dzhins-tout-l-znat/",
+    "images": [
+      "images\\b650925f100be185eae40841993636c87370b49e.jpg",
+      "images\\5a7c8171a7a0a8ff39dca6c5899babfe0b38deda.jpg",
+      "images\\62d9d451cc0969be618737f052eba714cfc0ca35.jpg",
+      "images\\6baf14326a7447e568221f4c21406543d486983d.jpg",
+      "images\\0609b0a21e4190e0c91dd47aa8aee98fb8a8054e.jpg"
+    ],
+    "brand": "ЗНАТЬ",
+    "brandColor": null,
+    "price": 39000,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "партнерский товар",
+        "color": "#000000",
+        "textColor": "#FFFFFF"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "8095143",
+        "xmlId": "1450023713",
+        "multi": [
+          {
+            "name": "серый",
+            "hex": "#808080"
+          }
+        ],
+        "name": "серый",
+        "hex": "#808080",
+        "link": "/product/1450023713-sumka-pepel-dzhins-tout-l-znat/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "8095146",
+        "xmlId": "1450023713#01960289-102e-736a-8bde-0f01b0d1850b",
+        "main": "Один размер",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 39000,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 2730
+      }
+    ],
+    "noSize": true,
+    "exclusiveOnline": false,
+    "bonusAddicted": 0,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "0",
+    "gender": "woman",
+    "isFBS": true,
+    "categoryIds": [
+      252,
+      222,
+      56
+    ]
+  },
+  {
+    "productId": "8075418",
+    "xmlId": "5599892",
+    "name": "Сумка-чехол для ноутбука 13/14 дюймов Sleeve Saffiano",
+    "link": "/product/5599892-sumka-dlya-noutbuka-karl-lagerfeld/",
+    "images": [
+      "images\\5599892-21.jpg",
+      "images\\5599892-22.jpg",
+      "images\\5599892-23.jpg",
+      "images\\5599892-24.jpg",
+      "images\\5599892-25.jpg"
+    ],
+    "brand": "Karl Lagerfeld",
+    "brandColor": null,
+    "price": 7990,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "только онлайн",
+        "color": "#F2F2F2",
+        "textColor": "#1E1E1E"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "8075418",
+        "xmlId": "5599892",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5599892-sumka-dlya-noutbuka-karl-lagerfeld/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "8075475",
+        "xmlId": "5599892#4015e4ff-0fdd-4f32-9ef3-ad0d116cbbe2",
+        "main": "б/р",
+        "second": "NO SIZE",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 490
+      }
+    ],
+    "noSize": true,
+    "exclusiveOnline": false,
+    "bonusAddicted": 490,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "3666339040222",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      219,
+      65998,
+      212,
+      56,
+      19891,
+      11356,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "8075412",
+    "xmlId": "5599888",
+    "name": "Сумка-чехол для ноутбука 13/14 дюймов Sleeve Saffiano",
+    "link": "/product/5599888-sumka-dlya-noutbuka-karl-lagerfeld/",
+    "images": [
+      "images\\5599888-21.jpg",
+      "images\\5599888-22.jpg",
+      "images\\5599888-23.jpg"
+    ],
+    "brand": "Karl Lagerfeld",
+    "brandColor": null,
+    "price": 7990,
+    "priceDiscount": 0,
+    "discount": 0,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "только онлайн",
+        "color": "#F2F2F2",
+        "textColor": "#1E1E1E"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "8075412",
+        "xmlId": "5599888",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5599888-sumka-dlya-noutbuka-karl-lagerfeld/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "8075469",
+        "xmlId": "5599888#b8c556fb-23f1-4795-90b5-03cf8d195995",
+        "main": "б/р",
+        "second": "NO SIZE",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 7990,
+        "priceDiscount": 0,
+        "discount": 0,
+        "bonusAddicted": 490
+      }
+    ],
+    "noSize": true,
+    "exclusiveOnline": false,
+    "bonusAddicted": 490,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "3666339124229",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      219,
+      65998,
+      212,
+      56,
+      19891,
+      11356,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "6606098",
+    "xmlId": "5429422",
+    "name": "Пуховик стеганый с капюшоном",
+    "link": "/product/5429422-palto-pukhovik-hugo/",
+    "images": [
+      "images\\5429422-01.jpg",
+      "images\\5429422-02.jpg",
+      "images\\5429422-03.jpg",
+      "images\\5429422-04.jpg",
+      "images\\5429422-05.jpg"
+    ],
+    "brand": "HUGO",
+    "brandColor": null,
+    "price": 32690,
+    "priceDiscount": 22880,
+    "discount": 30,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "6606098",
+        "xmlId": "5429422",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5429422-palto-pukhovik-hugo/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "6606305",
+        "xmlId": "5429422#59002808-a509-4aad-92b9-607c42b7d633",
+        "main": "40-42",
+        "second": "XS",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 32690,
+        "priceDiscount": 22880,
+        "discount": 30,
+        "bonusAddicted": 1540
+      },
+      {
+        "id": "6606296",
+        "xmlId": "5429422#dfa79dc4-d72f-4ea0-af03-3eec13a2f562",
+        "main": "42-44",
+        "second": "S",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 32690,
+        "priceDiscount": 22880,
+        "discount": 30,
+        "bonusAddicted": 1540
+      },
+      {
+        "id": "6606293",
+        "xmlId": "5429422#35c04a70-9188-451a-b941-47afe7571a31",
+        "main": "44-46",
+        "second": "M",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 32690,
+        "priceDiscount": 22880,
+        "discount": 30,
+        "bonusAddicted": 1540
+      },
+      {
+        "id": "6606302",
+        "xmlId": "5429422#7c60af5d-1a98-40f2-8188-57c22bf0200d",
+        "main": "46-48",
+        "second": "L",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 32690,
+        "priceDiscount": 22880,
+        "discount": 30,
+        "bonusAddicted": 1540
+      },
+      {
+        "id": "6606299",
+        "xmlId": "5429422#0355f93c-a440-4d8d-a319-68f316746355",
+        "main": "48-50",
+        "second": "XL",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 32690,
+        "priceDiscount": 22880,
+        "discount": 30,
+        "bonusAddicted": 1540
+      },
+      {
+        "id": "6979509",
+        "xmlId": "5429422#6e0afdff-7529-4db9-ae28-045575c0d578",
+        "main": "50-52",
+        "second": "XXL",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 32690,
+        "priceDiscount": 22880,
+        "discount": 30,
+        "bonusAddicted": 1540
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1540,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4063544178754",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      57,
+      56,
+      70,
+      37456,
+      58,
+      16188,
+      194,
+      196,
+      224,
+      453,
+      496,
+      2176,
+      2196,
+      2201,
+      7402,
+      12866,
+      63874,
+      58293,
+      16647,
+      19891,
+      50448,
+      59720,
+      59726
+    ]
+  },
+  {
+    "productId": "7475944",
+    "xmlId": "1090010858",
+    "name": "Платье миди с принтом",
+    "link": "/product/1090010858-plate-midi-s-printom-eleganzza/",
+    "images": [
+      "images\\e7d813b40bb38e41eee7a2876ea4575d54aacfde.jpg",
+      "images\\bbcf1faae37039b8caf1e6922e8a9798d341bfa2.jpg",
+      "images\\e70072dae45f7badcf9e0abf449f77995fd392fb.jpg",
+      "images\\7831342cf8c23c928d48190d2125d2b4639b385a.jpg",
+      "images\\da8b71c99195d1f1358d0fd28421511b108a7fdf.jpg"
+    ],
+    "brand": "ELEGANZZA",
+    "brandColor": null,
+    "price": 26800,
+    "priceDiscount": 13400,
+    "discount": 50,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [
+      {
+        "text": "партнерский товар",
+        "color": "#000000",
+        "textColor": "#FFFFFF"
+      }
+    ],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "7475944",
+        "xmlId": "1090010858",
+        "multi": [
+          {
+            "name": "бежевый",
+            "hex": "#f5f5dc"
+          }
+        ],
+        "name": "бежевый",
+        "hex": "#f5f5dc",
+        "link": "/product/1090010858-plate-midi-s-printom-eleganzza/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "7475947",
+        "xmlId": "1090010858#01934a93-84ca-724e-8a9b-35ab70c3db58",
+        "main": "40",
+        "second": "XS",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 26800,
+        "priceDiscount": 13400,
+        "discount": 50,
+        "bonusAddicted": 910
+      },
+      {
+        "id": "7475950",
+        "xmlId": "1090010858#01934a94-854e-72e4-830c-f52529048ddd",
+        "main": "42",
+        "second": "S",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 26800,
+        "priceDiscount": 13400,
+        "discount": 50,
+        "bonusAddicted": 910
+      },
+      {
+        "id": "7475953",
+        "xmlId": "1090010858#01934a9b-3abd-7063-8885-1079d750e71f",
+        "main": "44",
+        "second": "S",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 26800,
+        "priceDiscount": 13400,
+        "discount": 50,
+        "bonusAddicted": 910
+      },
+      {
+        "id": "7475956",
+        "xmlId": "1090010858#01934a9b-c71c-7376-a8c3-d557f3de1330",
+        "main": "46",
+        "second": "M",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 26800,
+        "priceDiscount": 13400,
+        "discount": 50,
+        "bonusAddicted": 910
+      },
+      {
+        "id": "7475959",
+        "xmlId": "1090010858#01934a9c-6024-735a-8aef-7c73ccd27cb6",
+        "main": "48",
+        "second": "M",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 26800,
+        "priceDiscount": 13400,
+        "discount": 50,
+        "bonusAddicted": 910
+      },
+      {
+        "id": "7475962",
+        "xmlId": "1090010858#01934a9c-ca9d-71d1-9159-40a582859958",
+        "main": "50",
+        "second": "L",
+        "available": false,
+        "offline": false,
+        "online": false,
+        "price": 26800,
+        "priceDiscount": 13400,
+        "discount": 50,
+        "bonusAddicted": 910
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 0,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "4630357336611",
+    "gender": "woman",
+    "isFBS": true,
+    "categoryIds": [
+      57,
+      56,
+      52266,
+      52083,
+      49569,
+      33016,
+      63928,
+      63877,
+      197,
+      16188,
+      418,
+      61750,
+      12866,
+      14813
+    ]
+  },
+  {
+    "productId": "5074552",
+    "xmlId": "5282143",
+    "name": "Кожаные полусапоги",
+    "link": "/product/5282143-polusapogi-nero-giardini/",
+    "images": [
+      "images\\5282143-1.jpg",
+      "images\\5282143-2.jpg",
+      "images\\5282143-3.jpg",
+      "images\\5282143-4.jpg",
+      "images\\5282143-5.jpg"
+    ],
+    "brand": "Nero Giardini",
+    "brandColor": null,
+    "price": 28590,
+    "priceDiscount": 20010,
+    "discount": 30,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "5074552",
+        "xmlId": "5282143",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5282143-polusapogi-nero-giardini/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "5074936",
+        "xmlId": "5282143#6396bd73-b06c-4f38-963c-a615e6022b0a",
+        "main": "36",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 28590,
+        "priceDiscount": 20010,
+        "discount": 30,
+        "bonusAddicted": 1400
+      },
+      {
+        "id": "5074756",
+        "xmlId": "5282143#fa1e170e-9cea-4787-a44a-bc0e9cee1794",
+        "main": "37",
+        "second": "",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 28590,
+        "priceDiscount": 20010,
+        "discount": 30,
+        "bonusAddicted": 1400
+      },
+      {
+        "id": "5074759",
+        "xmlId": "5282143#809c5373-e90c-4c1d-ae66-055e72e93892",
+        "main": "38",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 28590,
+        "priceDiscount": 20010,
+        "discount": 30,
+        "bonusAddicted": 1400
+      },
+      {
+        "id": "5074753",
+        "xmlId": "5282143#5efdcb34-d90a-414b-912c-3f364c1022f3",
+        "main": "39",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 28590,
+        "priceDiscount": 20010,
+        "discount": 30,
+        "bonusAddicted": 1400
+      },
+      {
+        "id": "5074657",
+        "xmlId": "5282143#83bf3b67-9346-4818-b71d-91a05eb4a4ae",
+        "main": "40",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 28590,
+        "priceDiscount": 20010,
+        "discount": 30,
+        "bonusAddicted": 1400
+      },
+      {
+        "id": "5074654",
+        "xmlId": "5282143#af23ec5d-f0f9-4eaf-a026-21063bdf3401",
+        "main": "41",
+        "second": "",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 28590,
+        "priceDiscount": 20010,
+        "discount": 30,
+        "bonusAddicted": 1400
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 1400,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8051572552260",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      33100,
+      58512,
+      182,
+      19891,
+      56,
+      209,
+      1478,
+      66181,
+      1720,
+      9090,
+      7388,
+      1479,
+      7389,
+      11077,
+      12866,
+      14546,
+      37729,
+      50448
+    ]
+  },
+  {
+    "productId": "5154265",
+    "xmlId": "5286969",
+    "name": "Кеды высокие",
+    "link": "/product/5286969-kedy-emporio-armani/",
+    "images": [
+      "images\\5286969-01.jpg",
+      "images\\5286969-02.jpg",
+      "images\\5286969-03.jpg",
+      "images\\5286969-04.jpg",
+      "images\\5286969-05.jpg"
+    ],
+    "brand": "EMPORIO ARMANI",
+    "brandColor": null,
+    "price": 42990,
+    "priceDiscount": 30090,
+    "discount": 30,
+    "badge": "",
+    "badges": [],
+    "stateBadges": [],
+    "modeBadges": [],
+    "colors": [
+      {
+        "id": "5154265",
+        "xmlId": "5286969",
+        "multi": [
+          {
+            "name": "черный",
+            "hex": "#000000"
+          }
+        ],
+        "name": "черный",
+        "hex": "#000000",
+        "link": "/product/5286969-kedy-emporio-armani/",
+        "checked": true
+      }
+    ],
+    "sizes": [
+      {
+        "id": "5154334",
+        "xmlId": "5286969#8fb1465d-624a-40d3-b638-438702faaf6e",
+        "main": "36",
+        "second": "6",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 42990,
+        "priceDiscount": 30090,
+        "discount": 30,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "5154337",
+        "xmlId": "5286969#0f02c256-058b-4f64-b278-74c3f9e7e833",
+        "main": "37",
+        "second": "7",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 42990,
+        "priceDiscount": 30090,
+        "discount": 30,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "5154346",
+        "xmlId": "5286969#ff6d5d0a-42e0-4dc0-b054-b8013f5f0098",
+        "main": "38",
+        "second": "8",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 42990,
+        "priceDiscount": 30090,
+        "discount": 30,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "5154343",
+        "xmlId": "5286969#646ab6de-2cc8-4943-bc06-cc6d8746e334",
+        "main": "39",
+        "second": "9",
+        "available": true,
+        "offline": true,
+        "online": true,
+        "price": 42990,
+        "priceDiscount": 30090,
+        "discount": 30,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "5154340",
+        "xmlId": "5286969#2e52544f-91a9-471d-b46e-94b886f96f21",
+        "main": "40",
+        "second": "10",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 42990,
+        "priceDiscount": 30090,
+        "discount": 30,
+        "bonusAddicted": 2100
+      },
+      {
+        "id": "5154331",
+        "xmlId": "5286969#21e94f3a-2fc8-48a0-9ed8-888d3492972e",
+        "main": "41",
+        "second": "11",
+        "available": true,
+        "offline": false,
+        "online": true,
+        "price": 42990,
+        "priceDiscount": 30090,
+        "discount": 30,
+        "bonusAddicted": 2100
+      }
+    ],
+    "noSize": false,
+    "exclusiveOnline": false,
+    "bonusAddicted": 2100,
+    "cdDay": 0,
+    "cdDayDate": "",
+    "available": true,
+    "showCd": false,
+    "cdBadge": null,
+    "current_day_cd": 0,
+    "profit": 0,
+    "barcode": "8057767960261",
+    "gender": "woman",
+    "isFBS": false,
+    "categoryIds": [
+      33100,
+      58512,
+      182,
+      19891,
+      56,
+      63943,
+      61273,
+      63940,
+      66181,
+      210,
+      16188,
+      1483,
+      49830,
+      65965,
+      57861,
+      65962,
+      1729,
+      1734,
+      12866,
+      37309,
+      50448
+    ]
+  }
+]

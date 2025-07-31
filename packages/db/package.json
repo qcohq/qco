@@ -1,0 +1,66 @@
+{
+  "name": "@qco/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./client": {
+      "default": "./src/client.ts"
+    },
+    "./client-ws": {
+      "default": "./src/client-ws.ts"
+    },
+    "./schema": {
+      "default": "./src/schema.ts"
+    },
+    "./types": {
+      "default": "./src/types.ts"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "seed": "bun with-env bun run src/seed/index.ts",
+    "seed:customers": "bun with-env bun run src/seed/index.ts customers",
+    "build": "tsup",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "clear-brands": "bun with-env bun run src/scripts/delete-brands.ts",
+    "dev": "tsc",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "push": "bun with-env drizzle-kit push",
+    "reset-db": "bun with-env bun run src/scripts/reset-db.ts",
+    "studio": "bun with-env drizzle-kit studio",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "@qco/lib": "workspace:*",
+    "@sindresorhus/slugify": "2.2.1",
+    "@t3-oss/env-core": "0.13.8",
+    "axios": "^1.11.0",
+    "drizzle-orm": "^0.44.4",
+    "drizzle-zod": "^0.8.2",
+    "file-type": "^21.0.0",
+    "pg": "^8.16.3",
+    "zod": "4.0.14"
+  },
+  "devDependencies": {
+    "@qco/eslint-config": "workspace:*",
+    "@qco/prettier-config": "workspace:*",
+    "@qco/tsconfig": "workspace:*",
+    "@types/bun": "^1.2.19",
+    "@types/pg": "^8.15.5",
+    "dotenv-cli": "8.0.0",
+    "drizzle-kit": "^0.31.4",
+    "eslint": "9.31.0",
+    "prettier": "3.5.3",
+    "tsup": "8.5.0",
+    "typescript": "5.8.3"
+  },
+  "prettier": "@qco/prettier-config"
+}

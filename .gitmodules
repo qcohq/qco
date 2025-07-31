@@ -1,0 +1,3 @@
+[submodule "apps/web"]
+	path = apps/web
+	url = git@github.com:kodermax/web-app.git

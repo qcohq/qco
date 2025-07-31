@@ -1,0 +1,1176 @@
+[
+	{
+		"id": 56,
+		"name": "Женщинам",
+		"title": "Женщинам",
+		"level": 1,
+		"parent": null,
+		"image": "",
+		"children": [
+			{
+				"id": 57,
+				"name": "Одежда",
+				"title": "Женская одежда",
+				"level": 2,
+				"parent": 56,
+				"image": "https://stockmann.ru/istk/wtdCDRbfXm4Gk-GGsQZQpLJrI7qmNRbpJMLKQtgzDjKk/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzVjZi9aSGVuc2tpZS1pbWlkemhpX29kZXpoZGEucG5n.jpg",
+				"children": [
+					{
+						"id": 183,
+						"name": "Брюки",
+						"title": "Женские брюки",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 58,
+						"name": "Верхняя одежда",
+						"title": "Женская верхняя одежда",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 184,
+						"name": "Джемперы, кардиганы и водолазки",
+						"title": "Женские джемперы, кардиганы и водолазки",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 185,
+						"name": "Джинсы",
+						"title": "Женские джинсы",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 186,
+						"name": "Домашняя одежда",
+						"title": "Женская домашняя одежда",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 198,
+						"name": "Жилеты",
+						"title": "Женские жилеты",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 1350,
+						"name": "Комбинезоны",
+						"title": "Женские комбинезоны",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 1214,
+						"name": "Купальники и пляжная одежда",
+						"title": "Женские купальники и пляжная одежда",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 200,
+						"name": "Нижнее белье",
+						"title": "Женское нижнее белье",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 6565,
+						"name": "Носки, колготки и чулки",
+						"title": "Носки, колготки и чулки для женщин",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 199,
+						"name": "Пиджаки и жакеты",
+						"title": "Женские пиджаки и жакеты",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 197,
+						"name": "Платья и сарафаны",
+						"title": "Женские платья и сарафаны",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 202,
+						"name": "Рубашки и блузы",
+						"title": "Женские рубашки и блузы",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 2027,
+						"name": "Спортивная одежда",
+						"title": "Женская спортивная одежда",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 203,
+						"name": "Толстовки и свитшоты",
+						"title": "Женские толстовки и свитшоты",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 206,
+						"name": "Топы и майки",
+						"title": "Женские топы и майки",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 66202,
+						"name": "Трикотажные костюмы",
+						"title": "Женские трикотажные костюмы",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 204,
+						"name": "Туники",
+						"title": "Женские туники",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 205,
+						"name": "Футболки и поло",
+						"title": "Женские футболки и поло",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 207,
+						"name": "Шорты",
+						"title": "Женские шорты",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					},
+					{
+						"id": 208,
+						"name": "Юбки",
+						"title": "Женские юбки",
+						"level": 3,
+						"parent": 57,
+						"image": ""
+					}
+				]
+			},
+			{
+				"id": 182,
+				"name": "Обувь",
+				"title": "Женская обувь",
+				"level": 2,
+				"parent": 56,
+				"image": "https://stockmann.ru/istk/wnvWLupZZ5G9kFrvsnUMr5xTn-YJBNONhaF3X2lmHcU/",
+				"children": [
+					{
+						"id": 15719,
+						"name": "Летняя",
+						"title": "Летняя женская обувь",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 14546,
+						"name": "Демисезонная",
+						"title": "Демисезонная женская обувь",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 1778,
+						"name": "Балетки",
+						"title": "Женские балетки",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 1801,
+						"name": "Босоножки",
+						"title": "Женские босоножки",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 268,
+						"name": "Ботильоны",
+						"title": "Женские ботильоны",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 211,
+						"name": "Ботинки",
+						"title": "Женские ботинки",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 210,
+						"name": "Кеды и кроссовки",
+						"title": "Женские кеды и кроссовки",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 1768,
+						"name": "Лоферы",
+						"title": "Женские лоферы",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 1482,
+						"name": "Мокасины и эспадрильи",
+						"title": "Женские мокасины и эспадрильи",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 6614,
+						"name": "Мюли",
+						"title": "Женские мюли",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 1791,
+						"name": "Сабо",
+						"title": "Женские сабо",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 1795,
+						"name": "Сандалии",
+						"title": "Женские сандалии",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 209,
+						"name": "Сапоги и ботфорты",
+						"title": "Женские сапоги и ботфорты",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 1780,
+						"name": "Слипоны",
+						"title": "Женские слипоны",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 1485,
+						"name": "Тапочки",
+						"title": "Женские тапочки",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 1764,
+						"name": "Туфли",
+						"title": "Женские туфли",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 1810,
+						"name": "Шлепанцы и сланцы",
+						"title": "Женские шлепанцы и сланцы",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					},
+					{
+						"id": 7877,
+						"name": "Для ухода за обувью",
+						"title": "Средства для ухода за обувью",
+						"level": 3,
+						"parent": 182,
+						"image": ""
+					}
+				]
+			},
+			{
+				"id": 222,
+				"name": "Сумки",
+				"title": "Женские сумки",
+				"level": 2,
+				"parent": 56,
+				"image": "https://stockmann.ru/istk/IZHp3S25bG33LCFLR_WmilPdDqsBrEjtmZW5D5bMmtc/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmL2Q1YS9aSGVuc2tpZS1pbWlkemhpX3N1bWtpLnBuZw.jpg",
+				"children": [
+					{
+						"id": 7633,
+						"name": "Багаж",
+						"title": "Багаж женский",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 253,
+						"name": "Вечерние сумки",
+						"title": "Женские вечерние сумки",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 65203,
+						"name": "Дорожные сумки",
+						"title": "Дорожные сумки",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 1466,
+						"name": "Клатчи",
+						"title": "Женские клатчи",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 252,
+						"name": "Кожаные сумки",
+						"title": "Женские кожаные сумки",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 221,
+						"name": "Кошельки и косметички",
+						"title": "Женские кошельки и косметички",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 1702,
+						"name": "Кросс-боди",
+						"title": "Женские сумки кросс-боди",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 1468,
+						"name": "Мешки",
+						"title": "Мешки",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 51480,
+						"name": "Пляжные",
+						"title": "Женские пляжные сумки",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 249,
+						"name": "Поясные сумки",
+						"title": "Женские поясные сумки",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 223,
+						"name": "Рюкзаки",
+						"title": "Женские рюкзаки",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 247,
+						"name": "Сумки даффл",
+						"title": "Женские сумки даффл",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 248,
+						"name": "Сумки через плечо",
+						"title": "Женские сумки через плечо",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 250,
+						"name": "Сэтчелы",
+						"title": "Женские сумки сэтчелы",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 246,
+						"name": "Шопперы",
+						"title": "Женские сумки шопперы",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					},
+					{
+						"id": 1467,
+						"name": "Хобо",
+						"title": "Женские сумки хобо",
+						"level": 3,
+						"parent": 222,
+						"image": ""
+					}
+				]
+			},
+			{
+				"id": 212,
+				"name": "Аксессуары",
+				"title": "Женские аксессуары",
+				"level": 2,
+				"parent": 56,
+				"image": "https://stockmann.ru/istk/-LdWeTBnkhmvMFxXgANgTad1vOvfKigmahdgRq7NBW4/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzhmMS9aSGVuc2tpZS1pbWlkemhpX2Frc2Vzc3VhcnkucG5n.jpg",
+				"children": [
+					{
+						"id": 213,
+						"name": "Головные уборы",
+						"title": "Женские головные уборы",
+						"level": 3,
+						"parent": 212,
+						"image": ""
+					},
+					{
+						"id": 1459,
+						"name": "Для волос",
+						"title": "Женские аксессуары для волос",
+						"level": 3,
+						"parent": 212,
+						"image": ""
+					},
+					{
+						"id": 1464,
+						"name": "Зонты",
+						"title": "Женские зонты",
+						"level": 3,
+						"parent": 212,
+						"image": ""
+					},
+					{
+						"id": 214,
+						"name": "Маски",
+						"title": "Женские маски",
+						"level": 3,
+						"parent": 212,
+						"image": ""
+					},
+					{
+						"id": 220,
+						"name": "Обложки для документов",
+						"title": "Женские обложки для документов",
+						"level": 3,
+						"parent": 212,
+						"image": ""
+					},
+					{
+						"id": 215,
+						"name": "Очки",
+						"title": "Женские солнцезащитные очки",
+						"level": 3,
+						"parent": 212,
+						"image": ""
+					},
+					{
+						"id": 217,
+						"name": "Перчатки и варежки",
+						"title": "Женские перчатки и варежки",
+						"level": 3,
+						"parent": 212,
+						"image": ""
+					},
+					{
+						"id": 218,
+						"name": "Ремни и пояса",
+						"title": "Женские ремни и пояса",
+						"level": 3,
+						"parent": 212,
+						"image": ""
+					},
+					{
+						"id": 1463,
+						"name": "Украшения",
+						"title": "Украшения",
+						"level": 3,
+						"parent": 212,
+						"image": ""
+					},
+					{
+						"id": 1465,
+						"name": "Часы",
+						"title": "Женские часы",
+						"level": 3,
+						"parent": 212,
+						"image": ""
+					},
+					{
+						"id": 219,
+						"name": "Чехлы на гаджеты",
+						"title": "Женские чехлы на гаджеты",
+						"level": 3,
+						"parent": 212,
+						"image": ""
+					},
+					{
+						"id": 216,
+						"name": "Шарфы и платки",
+						"title": "Женские шарфы и платки",
+						"level": 3,
+						"parent": 212,
+						"image": ""
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 59,
+		"name": "Мужчинам",
+		"title": "Мужчинам",
+		"level": 1,
+		"parent": null,
+		"image": "",
+		"children": [
+			{
+				"id": 65,
+				"name": "Одежда",
+				"title": "Мужская одежда",
+				"active": false,
+				"activeF": true,
+				"link": "/category/65-muzhskaya-odezhda/",
+				"mainLink": "/category/65-muzhskaya-odezhda/",
+				"selectionLink": "/selection/65-muzhskaya-odezhda/",
+				"count": 14891,
+				"level": 2,
+				"lm": 1554,
+				"rm": 2155,
+				"firstLevel": 59,
+				"parent": 59,
+				"roleId": 2,
+				"typeId": 1,
+				"image": {
+					"default": {
+						"jpg": {
+							"src": "https://stockmann.ru/istk/jZ-Oid_lhV-Y7ouW-IyDzeUfJTS25Z0TLpsudDCSMaw/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzY1ZC9NdXpoc2tpZS1pbWlkemhpX29kZXpoZGEucG5n.jpg",
+							"src2x": "https://stockmann.ru/istk/mG2s8UVC3E6GBp_Wn4HQqS1PZpFznSwjjtPnnt-hJIo/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzY1ZC9NdXpoc2tpZS1pbWlkemhpX29kZXpoZGEucG5n.jpg"
+						},
+						"webp": {
+							"src": "https://stockmann.ru/istk/yBurwcRoTQrxodqyJ_j-ThojtbM-RmcNRQUPdbsejNE/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzY1ZC9NdXpoc2tpZS1pbWlkemhpX29kZXpoZGEucG5n.webp",
+							"src2x": "https://stockmann.ru/istk/0ExeePgkof-wcqvfvpS6elabg1ZU6o2CEQfrdzyT-kE/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzY1ZC9NdXpoc2tpZS1pbWlkemhpX29kZXpoZGEucG5n.webp"
+						}
+					}
+				},
+				"thematic": 0,
+				"children": []
+			},
+			{
+				"id": 267,
+				"name": "Обувь",
+				"title": "Мужская обувь",
+				"active": false,
+				"activeF": true,
+				"link": "/category/267-muzhskaya-obuv/",
+				"mainLink": "/category/267-muzhskaya-obuv/",
+				"selectionLink": "/selection/267-muzhskaya-obuv/",
+				"count": 1878,
+				"level": 2,
+				"lm": 2156,
+				"rm": 2349,
+				"firstLevel": 59,
+				"parent": 59,
+				"roleId": 2,
+				"typeId": 2,
+				"image": {
+					"default": {
+						"jpg": {
+							"src": "https://stockmann.ru/istk/xPcoTuk6neTGgOOKX_vPs7U9WtGnlPfmJA_r-UWrSVI/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmL2I4NC9NdXpoc2tpZS1pbWlkemhpX29idXYucG5n.jpg",
+							"src2x": "https://stockmann.ru/istk/ybQLsFFDcfw9YkZAcBZXw-ushtNDjYTAxIKZJTKR4e8/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmL2I4NC9NdXpoc2tpZS1pbWlkemhpX29idXYucG5n.jpg"
+						},
+						"webp": {
+							"src": "https://stockmann.ru/istk/jwPjCAaClE6iQponv40jXdRG-OP_-3KTs0VThL2iWoI/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmL2I4NC9NdXpoc2tpZS1pbWlkemhpX29idXYucG5n.webp",
+							"src2x": "https://stockmann.ru/istk/duyYFuZGaGVvw6OF6_E9chohDZvgErv8vSEUxrE2yKc/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmL2I4NC9NdXpoc2tpZS1pbWlkemhpX29idXYucG5n.webp"
+						}
+					}
+				},
+				"thematic": 0,
+				"children": []
+			},
+			{
+				"id": 276,
+				"name": "Сумки",
+				"title": "Мужские сумки",
+				"active": false,
+				"activeF": true,
+				"link": "/category/276-muzhskie-sumki/",
+				"mainLink": "/category/276-muzhskie-sumki/",
+				"selectionLink": "/selection/276-muzhskie-sumki/",
+				"count": 1279,
+				"level": 2,
+				"lm": 2350,
+				"rm": 2435,
+				"firstLevel": 59,
+				"parent": 59,
+				"roleId": 2,
+				"typeId": 3,
+				"image": {
+					"default": {
+						"jpg": {
+							"src": "https://stockmann.ru/istk/LoSq9iuGAbuRGtw-VSo08hI4NQ5oSaDLNY4gNJ2zgpE/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzI3Ny9NdXpoc2tpZS1pbWlkemhpX3N1bWtpLnBuZw.jpg",
+							"src2x": "https://stockmann.ru/istk/Mq68bR5KJyYrYDLFDDkXcvNvadcswTtchaNMxyB8efg/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzI3Ny9NdXpoc2tpZS1pbWlkemhpX3N1bWtpLnBuZw.jpg"
+						},
+						"webp": {
+							"src": "https://stockmann.ru/istk/Uuo0z8p-1SORVh5EPHRuqgHiI0JKeyCWQWkzWdENzo4/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzI3Ny9NdXpoc2tpZS1pbWlkemhpX3N1bWtpLnBuZw.webp",
+							"src2x": "https://stockmann.ru/istk/FpeDUizjnz1L8LaNPSLXBL4WvItjz7FZzk7K3b_N24s/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzI3Ny9NdXpoc2tpZS1pbWlkemhpX3N1bWtpLnBuZw.webp"
+						}
+					}
+				},
+				"thematic": 0,
+				"children": []
+			},
+			{
+				"id": 271,
+				"name": "Аксессуары",
+				"title": "Аксессуары для мужчин",
+				"active": false,
+				"activeF": true,
+				"link": "/category/271-aksessuary-dlya-muzchin/",
+				"mainLink": "/category/271-aksessuary-dlya-muzchin/",
+				"selectionLink": "/selection/271-aksessuary-dlya-muzchin/",
+				"count": 1941,
+				"level": 2,
+				"lm": 2436,
+				"rm": 2575,
+				"firstLevel": 59,
+				"parent": 59,
+				"roleId": 2,
+				"typeId": 3,
+				"image": {
+					"default": {
+						"jpg": {
+							"src": "https://stockmann.ru/istk/T-ZtqSjszerbNUmChSPO5nXH8LF8Ic8eIf5eSxqy1IA/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzIxMS9NdXpoc2tpZS1pbWlkemhpX2Frc2Vzc3VhcnkucG5n.jpg",
+							"src2x": "https://stockmann.ru/istk/HqniloD7XjJiQHck4oNJNyXbYu1m8kgKPHLwbI3SgzQ/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzIxMS9NdXpoc2tpZS1pbWlkemhpX2Frc2Vzc3VhcnkucG5n.jpg"
+						},
+						"webp": {
+							"src": "https://stockmann.ru/istk/YIRJSfr3x6qzv9emNQc7MyK5R5EbpK_ByT5w_hG-WWM/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzIxMS9NdXpoc2tpZS1pbWlkemhpX2Frc2Vzc3VhcnkucG5n.webp",
+							"src2x": "https://stockmann.ru/istk/l6fulcsmEq50hXL5Y7Knrkd5ginLrcDf8jS9k_VJ47s/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzIxMS9NdXpoc2tpZS1pbWlkemhpX2Frc2Vzc3VhcnkucG5n.webp"
+						}
+					}
+				},
+				"thematic": 0,
+				"children": []
+			},
+			{
+				"id": 51438,
+				"name": "Лимитированные коллекции",
+				"title": null,
+				"active": false,
+				"activeF": true,
+				"link": "/category/51438-limitirovannaya-kollektsiya/",
+				"mainLink": "/category/51438-limitirovannaya-kollektsiya/",
+				"selectionLink": "/selection/51438-limitirovannaya-kollektsiya/",
+				"count": 17,
+				"level": 2,
+				"lm": 2726,
+				"rm": 2727,
+				"firstLevel": 59,
+				"parent": 59,
+				"roleId": null,
+				"typeId": null,
+				"image": {
+					"default": {
+						"jpg": {
+							"src": "https://stockmann.ru/istk/OUtE8JudHEHGLlNiEbpTmyoxuS6CV8Jb8zmVuQVQC9U/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzg5MS9NdXpoc2tpZS1pbWlkemhpX2xpbWl0a2kucG5n.jpg",
+							"src2x": "https://stockmann.ru/istk/SvI6SnC8H0lY87QB13EhEtOaAsKJAbtcwvkBE19RZlI/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzg5MS9NdXpoc2tpZS1pbWlkemhpX2xpbWl0a2kucG5n.jpg"
+						},
+						"webp": {
+							"src": "https://stockmann.ru/istk/A-8gcOBMc_USje0zkUA3XrOwENTTDVM1a4A68_2H1lg/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzg5MS9NdXpoc2tpZS1pbWlkemhpX2xpbWl0a2kucG5n.webp",
+							"src2x": "https://stockmann.ru/istk/0bdt25yDWbpPntKspHw6talSFQck1gevVGPtFOh-prE/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzg5MS9NdXpoc2tpZS1pbWlkemhpX2xpbWl0a2kucG5n.webp"
+						}
+					}
+				},
+				"thematic": 0,
+				"dntUseInBC": true,
+				"children": []
+			},
+			{
+				"id": 63787,
+				"name": "Выбор байера",
+				"title": "Выбор байера",
+				"active": false,
+				"activeF": true,
+				"link": "/category/63787-vybor-bayera/",
+				"mainLink": "/category/63787-vybor-bayera/",
+				"selectionLink": "/selection/63787-vybor-bayera/",
+				"count": 154,
+				"level": 2,
+				"lm": 2728,
+				"rm": 2729,
+				"firstLevel": 59,
+				"parent": 59,
+				"roleId": null,
+				"typeId": null,
+				"image": {
+					"default": {
+						"jpg": {
+							"src": "https://stockmann.ru/istk/7IlBcPiPavIWRUVFMQVrv3R8zQmQYlRq_DpugO49LMU/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzdhZC9NdXpoc2tpZS1pbWlkemhpX3Z5Ym9yLWJheWVyYS5wbmc.jpg",
+							"src2x": "https://stockmann.ru/istk/UsdeErNwAxCm678XUzSU4GYqeLrgfLh40s5v1nTG3B8/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzdhZC9NdXpoc2tpZS1pbWlkemhpX3Z5Ym9yLWJheWVyYS5wbmc.jpg"
+						},
+						"webp": {
+							"src": "https://stockmann.ru/istk/nbAqI28dBGYp62muV29IPzkMCyRaQmxfBp3ApqHHkVE/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzdhZC9NdXpoc2tpZS1pbWlkemhpX3Z5Ym9yLWJheWVyYS5wbmc.webp",
+							"src2x": "https://stockmann.ru/istk/IbdFCIrBD42BuiQqq2uWlsEQcFDZ69LGgC-ULL_YPKc/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzdhZC9NdXpoc2tpZS1pbWlkemhpX3Z5Ym9yLWJheWVyYS5wbmc.webp"
+						}
+					}
+				},
+				"thematic": 0,
+				"dntUseInBC": true,
+				"children": []
+			},
+			{
+				"count": 1,
+				"level": 1,
+				"parent": null,
+				"roleId": null,
+				"typeId": null,
+				"children": [],
+				"image": "",
+				"active": false,
+				"surrogate": true,
+				"id": 111119,
+				"name": "Распродажа",
+				"link": "/sale/59-muzhchinam/"
+			},
+			{
+				"count": 1,
+				"level": 1,
+				"parent": null,
+				"roleId": null,
+				"typeId": null,
+				"children": [],
+				"image": "",
+				"active": false,
+				"surrogate": true,
+				"id": 111118,
+				"name": "Новинки",
+				"link": "/novelty/59-muzhchinam/"
+			},
+			{
+				"count": 1,
+				"level": 1,
+				"parent": null,
+				"roleId": null,
+				"typeId": null,
+				"children": [],
+				"image": "",
+				"active": false,
+				"surrogate": true,
+				"id": 111117,
+				"name": "Бренды",
+				"link": "/brands/?role=men"
+			},
+			{
+				"count": 1,
+				"level": 1,
+				"parent": null,
+				"roleId": null,
+				"typeId": null,
+				"children": [],
+				"image": "",
+				"active": false,
+				"surrogate": true,
+				"id": 111116,
+				"name": "Косметика",
+				"link": "/category/8295-kosmetika-dlya-muzhchin/"
+			},
+			{
+				"surrogate": true,
+				"level": 2,
+				"id": 65173,
+				"name": "Тренд зона",
+				"title": "Тренд зона",
+				"active": false,
+				"activeF": true,
+				"link": "/category/65173-trend-zona/",
+				"mainLink": "/category/65173-trend-zona/",
+				"selectionLink": "/selection/65173-trend-zona/",
+				"count": 1012,
+				"lm": 7532,
+				"rm": 7537,
+				"firstLevel": null,
+				"parent": 19891,
+				"roleId": null,
+				"typeId": null,
+				"image": "/upload/uf/a30/TREND-ZONA.png",
+				"thematic": 0
+			},
+			{
+				"surrogate": true,
+				"level": 2,
+				"id": 56301,
+				"name": "Спецколлекции",
+				"title": null,
+				"active": false,
+				"activeF": true,
+				"link": "/category/56301-spetskollektsii/",
+				"mainLink": "/category/56301-spetskollektsii/",
+				"selectionLink": "/selection/56301-spetskollektsii/",
+				"count": 1012,
+				"lm": 7533,
+				"rm": 7534,
+				"firstLevel": null,
+				"parent": 65173,
+				"roleId": null,
+				"typeId": null,
+				"image": "/upload/uf/5b8/TDD_spets.png",
+				"thematic": 0
+			}
+		]
+	},
+	{
+		"id": 61,
+		"name": "Детям",
+		"title": "Детям",
+		"level": 1,
+		"parent": null,
+		"image": "",
+		"children": [
+			{
+				"id": 289,
+				"name": "Девочкам",
+				"title": "Девочкам",
+				"active": false,
+				"activeF": true,
+				"link": "/category/289-devochkam/",
+				"mainLink": "/category/289-devochkam/",
+				"selectionLink": "/selection/289-devochkam/",
+				"count": 10250,
+				"level": 2,
+				"lm": 2732,
+				"rm": 3379,
+				"firstLevel": 61,
+				"parent": 61,
+				"roleId": 3,
+				"typeId": 1,
+				"image": {
+					"default": {
+						"jpg": {
+							"src": "https://stockmann.ru/istk/j0DRtdJtlrR0uqz8NXcPflTKKnzuDRWI9f6_QD4mwC8/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmL2MxOS9EZXRza2llX0Rldm9jaGtpLnBuZw.jpg",
+							"src2x": "https://stockmann.ru/istk/f4XnfLqI6fFqGS7pEdejeWk0oVbwNhndxlTct1yU0ww/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmL2MxOS9EZXRza2llX0Rldm9jaGtpLnBuZw.jpg"
+						},
+						"webp": {
+							"src": "https://stockmann.ru/istk/28Q_AgkzB9J3t2EuoULm7Xljam5aZOr76jqTxXHPuZI/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmL2MxOS9EZXRza2llX0Rldm9jaGtpLnBuZw.webp",
+							"src2x": "https://stockmann.ru/istk/xvTDbrTgyQVhJJXrzadujVLWyD1__W5KGy-B5WvfZIc/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmL2MxOS9EZXRza2llX0Rldm9jaGtpLnBuZw.webp"
+						}
+					}
+				},
+				"thematic": 0,
+				"children": []
+			},
+			{
+				"id": 288,
+				"name": "Мальчикам",
+				"title": "Мальчикам",
+				"active": false,
+				"activeF": true,
+				"link": "/category/288-malchikam/",
+				"mainLink": "/category/288-malchikam/",
+				"selectionLink": "/selection/288-malchikam/",
+				"count": 7879,
+				"level": 2,
+				"lm": 3380,
+				"rm": 3905,
+				"firstLevel": 61,
+				"parent": 61,
+				"roleId": 3,
+				"typeId": 1,
+				"image": {
+					"default": {
+						"jpg": {
+							"src": "https://stockmann.ru/istk/x0pRkVMZ7ix-Sd12qHk2DLiEZsVaxxE3ak284IKE-cw/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzk2Yi9EZXRza2llX01hbGNoaWthbS5wbmc.jpg",
+							"src2x": "https://stockmann.ru/istk/ooRsC9uoYXGa0Mb4MxmBDcLDU8h3P5LlnC4GISjpvWA/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzk2Yi9EZXRza2llX01hbGNoaWthbS5wbmc.jpg"
+						},
+						"webp": {
+							"src": "https://stockmann.ru/istk/4_UtaNo2UFZiPqYLn4TBS0gl4q1CQf_Wsv7PNfGv944/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzk2Yi9EZXRza2llX01hbGNoaWthbS5wbmc.webp",
+							"src2x": "https://stockmann.ru/istk/mHKRqoYmmjh1CKbGSpVM5tKdPBMddJRxpk55U5jIBxA/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzk2Yi9EZXRza2llX01hbGNoaWthbS5wbmc.webp"
+						}
+					}
+				},
+				"thematic": 0,
+				"children": []
+			},
+			{
+				"id": 290,
+				"name": "Новорожденным",
+				"title": "Товары для новорожденных",
+				"active": false,
+				"activeF": true,
+				"link": "/category/290-novorozhdennym/",
+				"mainLink": "/category/290-novorozhdennym/",
+				"selectionLink": "/selection/290-novorozhdennym/",
+				"count": 1243,
+				"level": 2,
+				"lm": 3906,
+				"rm": 3971,
+				"firstLevel": 61,
+				"parent": 61,
+				"roleId": 3,
+				"typeId": 1,
+				"image": {
+					"default": {
+						"jpg": {
+							"src": "https://stockmann.ru/istk/7cEq9aY2eGHzRwPingmVdOwUIKrceGm_QefpRlg8GMg/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzU5Ni9EZXRza2llX0RseWEtbm92b3JvemhkZW5ueWtoLnBuZw.jpg",
+							"src2x": "https://stockmann.ru/istk/IaARr0uvxqvmqVjVxiMRhr0ybuMXgwVpdQ0hAw5m6rA/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzU5Ni9EZXRza2llX0RseWEtbm92b3JvemhkZW5ueWtoLnBuZw.jpg"
+						},
+						"webp": {
+							"src": "https://stockmann.ru/istk/x5ljQGibAHdj4SZ7GuR4BUbVaTMSordKaj4NHhhuIr8/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzU5Ni9EZXRza2llX0RseWEtbm92b3JvemhkZW5ueWtoLnBuZw.webp",
+							"src2x": "https://stockmann.ru/istk/zEHDjYDTcFcdLmNUU1nxoiQEb92ED60M_CEzMmpU30A/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzU5Ni9EZXRza2llX0RseWEtbm92b3JvemhkZW5ueWtoLnBuZw.webp"
+						}
+					}
+				},
+				"thematic": 0,
+				"children": []
+			},
+			{
+				"id": 7951,
+				"name": "Школа",
+				"title": "Одежда и товары для школы",
+				"active": false,
+				"activeF": true,
+				"link": "/category/7951-shkola/",
+				"mainLink": "/category/7951-shkola/",
+				"selectionLink": "/selection/7951-shkola/",
+				"count": 1132,
+				"level": 2,
+				"lm": 3972,
+				"rm": 4115,
+				"firstLevel": 61,
+				"parent": 61,
+				"roleId": 3,
+				"typeId": null,
+				"image": {
+					"default": {
+						"jpg": {
+							"src": "https://stockmann.ru/istk/SQZKkb_sv8YKRQ0RMKNN_8CyISwelUBWdt3zxwTyhBw/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzg1NS9EZXRza2llX1NIa29sYS5wbmc.jpg",
+							"src2x": "https://stockmann.ru/istk/52Tq_UURUaFOIqVXogqvdPvlYcfCE5Y9xzIa3nbHadw/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzg1NS9EZXRza2llX1NIa29sYS5wbmc.jpg"
+						},
+						"webp": {
+							"src": "https://stockmann.ru/istk/DeFilqnVSDpQjy9wEXz5X1LAJoilYEiw72mHrWft_bg/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzg1NS9EZXRza2llX1NIa29sYS5wbmc.webp",
+							"src2x": "https://stockmann.ru/istk/tsyQyZ9CSfCl3vPVx165i3NP3NKYdsTlSfUqNr9gxQY/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzg1NS9EZXRza2llX1NIa29sYS5wbmc.webp"
+						}
+					}
+				},
+				"thematic": 0,
+				"children": []
+			},
+			{
+				"id": 9202,
+				"name": "Игры и игрушки",
+				"title": "Игры и игрушки для детей",
+				"active": false,
+				"activeF": true,
+				"link": "/category/9202-igry-i-igrushki-dlya-detey/",
+				"mainLink": "/category/9202-igry-i-igrushki-dlya-detey/",
+				"selectionLink": "/selection/9202-igry-i-igrushki-dlya-detey/",
+				"count": 1360,
+				"level": 2,
+				"lm": 4116,
+				"rm": 4155,
+				"firstLevel": 61,
+				"parent": 61,
+				"roleId": 3,
+				"typeId": null,
+				"image": {
+					"default": {
+						"jpg": {
+							"src": "https://stockmann.ru/istk/g3ig022rUNZcBWRL_V1_urPnDVPSS9MGQE9K8N0ybdw/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzdlZi9EZXRza2llX0lncnktaS1pZ3J1c2hraS5wbmc.jpg",
+							"src2x": "https://stockmann.ru/istk/cFQ2EC4aa5G9YkZuF2gTFzoWAGj4q3BEH6YtiG6LBGI/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzdlZi9EZXRza2llX0lncnktaS1pZ3J1c2hraS5wbmc.jpg"
+						},
+						"webp": {
+							"src": "https://stockmann.ru/istk/o2nDfW4OX-3W2BciyAxqnGMqNOpbgzdTnVHHG_I03UA/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzdlZi9EZXRza2llX0lncnktaS1pZ3J1c2hraS5wbmc.webp",
+							"src2x": "https://stockmann.ru/istk/8Pjo3AV_63KoKpZ1fkBMobmAY1uu8n8AZQXp-c3vxIg/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzdlZi9EZXRza2llX0lncnktaS1pZ3J1c2hraS5wbmc.webp"
+						}
+					}
+				},
+				"thematic": 0,
+				"children": []
+			},
+			{
+				"id": 63793,
+				"name": "Выбор байера",
+				"title": "Выбор байера",
+				"active": false,
+				"activeF": true,
+				"link": "/category/63793-vybor-bayera/",
+				"mainLink": "/category/63793-vybor-bayera/",
+				"selectionLink": "/selection/63793-vybor-bayera/",
+				"count": 168,
+				"level": 2,
+				"lm": 4344,
+				"rm": 4345,
+				"firstLevel": 61,
+				"parent": 61,
+				"roleId": null,
+				"typeId": null,
+				"image": {
+					"default": {
+						"jpg": {
+							"src": "https://stockmann.ru/istk/5hP50NjnI6L9a3qN_oIzAjGjm93z5HTOvASZ5RaQWpY/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzNiNi9EZXRza2llLWltaWR6aGlfdnlib3ItYmF5ZXJhLnBuZw.jpg",
+							"src2x": "https://stockmann.ru/istk/Qh4-mvMMPQY3QrDdz97q2IgNqTD4-iJDC3Le7QLHsUQ/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzNiNi9EZXRza2llLWltaWR6aGlfdnlib3ItYmF5ZXJhLnBuZw.jpg"
+						},
+						"webp": {
+							"src": "https://stockmann.ru/istk/BHmY0t20hm7Q1jnLSo6gh1hoC0_9IpgehwNoNRVD_vM/rs:fill-down:589:325:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzNiNi9EZXRza2llLWltaWR6aGlfdnlib3ItYmF5ZXJhLnBuZw.webp",
+							"src2x": "https://stockmann.ru/istk/H0p8fkC_mb6Nmgm0VRNIOLWhUB27lC9kkZw4HRmAnpw/rs:fill-down:1178:650:0/g:no/bG9jYWw6Ly8vdXBsb2FkL3VmLzNiNi9EZXRza2llLWltaWR6aGlfdnlib3ItYmF5ZXJhLnBuZw.webp"
+						}
+					}
+				},
+				"thematic": 0,
+				"children": []
+			},
+			{
+				"count": 1,
+				"level": 1,
+				"parent": null,
+				"roleId": null,
+				"typeId": null,
+				"children": [],
+				"image": "",
+				"active": false,
+				"surrogate": true,
+				"id": 111120,
+				"name": "Бренды",
+				"link": "/brands/?role=kids"
+			},
+			{
+				"count": 1,
+				"level": 1,
+				"parent": null,
+				"roleId": null,
+				"typeId": null,
+				"children": [],
+				"image": "",
+				"active": false,
+				"surrogate": true,
+				"id": 111121,
+				"name": "Новинки",
+				"link": "/novelty/61-detyam/"
+			},
+			{
+				"count": 1,
+				"level": 1,
+				"parent": null,
+				"roleId": null,
+				"typeId": null,
+				"children": [],
+				"image": "",
+				"active": false,
+				"surrogate": true,
+				"id": 111122,
+				"name": "Распродажа",
+				"link": "/sale/61-detyam/"
+			},
+			{
+				"surrogate": true,
+				"level": 2,
+				"id": 65173,
+				"name": "Тренд зона",
+				"title": "Тренд зона",
+				"active": false,
+				"activeF": true,
+				"link": "/category/65173-trend-zona/",
+				"mainLink": "/category/65173-trend-zona/",
+				"selectionLink": "/selection/65173-trend-zona/",
+				"count": 1012,
+				"lm": 7532,
+				"rm": 7537,
+				"firstLevel": null,
+				"parent": 19891,
+				"roleId": null,
+				"typeId": null,
+				"image": "/upload/uf/a30/TREND-ZONA.png",
+				"thematic": 0
+			},
+			{
+				"surrogate": true,
+				"level": 2,
+				"id": 56301,
+				"name": "Спецколлекции",
+				"title": null,
+				"active": false,
+				"activeF": true,
+				"link": "/category/56301-spetskollektsii/",
+				"mainLink": "/category/56301-spetskollektsii/",
+				"selectionLink": "/selection/56301-spetskollektsii/",
+				"count": 1012,
+				"lm": 7533,
+				"rm": 7534,
+				"firstLevel": null,
+				"parent": 65173,
+				"roleId": null,
+				"typeId": null,
+				"image": "/upload/uf/5b8/TDD_spets.png",
+				"thematic": 0
+			}
+		]
+	}
+]
