@@ -68,7 +68,7 @@
     "@qco/tsconfig": "workspace:*",
     "@tailwindcss/postcss": "4.1.11",
     "@types/react": "19.1.9",
-    "eslint": "9.31.0",
+    "eslint": "9.32.0",
     "prettier": "3.5.3",
     "react": "19.1.1",
     "tsup": "8.5.0",

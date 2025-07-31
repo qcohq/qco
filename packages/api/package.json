@@ -40,7 +40,7 @@
     "@qco/prettier-config": "workspace:*",
     "@qco/tests": "workspace:*",
     "@qco/tsconfig": "workspace:*",
-    "eslint": "9.31.0",
+    "eslint": "9.32.0",
     "prettier": "3.5.3",
     "tsup": "8.5.0",
     "typescript": "5.8.3",
