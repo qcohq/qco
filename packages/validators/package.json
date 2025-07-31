@@ -22,13 +22,13 @@
     "zod": "4.0.14"
   },
   "devDependencies": {
-       "@qco/eslint-config": "workspace:*",
+    "@qco/eslint-config": "workspace:*",
     "@qco/prettier-config": "workspace:*",
     "@qco/tsconfig": "workspace:*",
     "eslint": "9.32.0",
-    "prettier": "3.5.3",
+    "prettier": "3.6.2",
     "tsup": "8.5.0",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   },
   "prettier": "@qco/prettier-config"
 }
