@@ -189,6 +189,7 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
                             mimeType: "image/jpeg",
                             size: 2048,
                         },
+                        url: "https://example.com/uploads/brands/logo.jpg",
                     },
                     {
                         id: "bf-2",
@@ -203,7 +204,9 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
                             name: "banner.jpg",
                             mimeType: "image/jpeg",
                             size: 4096,
+
                         },
+                        url: "https://example.com/uploads/brands/banner.jpg",
                     },
                 ],
             })
