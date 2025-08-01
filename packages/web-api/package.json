@@ -19,8 +19,9 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false",
     "test": "vitest",
-    "test:run": "vitest run",
-    "test:coverage": "vitest run --coverage"
+    "test:run": "bun run with-env vitest run",
+    "test:coverage": "vitest run --coverage",
+    "with-env": "bun run --env-file ../../.env"
   },
   "dependencies": {
     "@qco/db": "workspace:*",

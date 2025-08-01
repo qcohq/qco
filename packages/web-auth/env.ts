@@ -1,5 +1,4 @@
 import { createEnv } from "@t3-oss/env-nextjs";
-import { vercel } from "@t3-oss/env-nextjs/presets-zod";
 import { z } from "zod";
 
 /**
@@ -35,7 +34,6 @@ const client = {
  * Create the environment variables schema.
  */
 export const env = createEnv({
-  extends: [vercel()],
   server,
   client,
   experimental__runtimeEnv: {

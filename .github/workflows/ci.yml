@@ -9,8 +9,7 @@ on:
       - 'packages/auth/**'
       - 'packages/validators/**'
       - 'packages/tests/**'
-
-
+      - 'packages/web-api/**'
 
 jobs:
   test-api:
@@ -106,4 +105,97 @@ jobs:
       - name: Check code formatting
         run: |
           cd packages/api
+          bun run format
+
+  test-web-api:
+    name: Test Web API Package
+    runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: test
+          POSTGRES_DB: test_db
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.2.19
+
+      - name: Get Bun version
+        run: bun --version
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Cache Bun dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.bun/install/cache
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bun-
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build dependencies
+        run: bun run build --filter=@qco/db --filter=@qco/lib --filter=@qco/web-validators --filter=@qco/tests
+
+      - name: Run Web API tests
+        run: |
+          cd packages/web-api
+          bun run test:run
+        env:
+          NODE_ENV: test
+          NODE_OPTIONS: '--max-old-space-size=16096'
+          POSTGRES_URL: postgresql://test:test@localhost:5432/test_db
+          NEXTAUTH_SECRET: test-secret-key
+          NEXTAUTH_URL: http://localhost:3000
+          STORAGE_ENDPOINT_URL: http://localhost:9000
+          STORAGE_ACCESS_KEY_ID: test-access-key
+          STORAGE_SECRET_ACCESS_KEY: test-secret-key
+          STORAGE_BUCKET_NAME: test-bucket
+          STORAGE_REGION: us-east-1
+          APP_URL: http://localhost:3000
+          WEB_APP_URL: http://localhost:3001
+          EMAIL_FROM: test@example.com
+
+      - name: Upload test coverage
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: web-api-test-coverage
+          path: packages/web-api/coverage/
+          retention-days: 30
+
+      - name: Run type checking
+        run: |
+          cd packages/web-api
+          bun run typecheck
+
+      - name: Run biome lint
+        run: bun biome lint packages/web-api
+
+      - name: Check code formatting
+        run: |
+          cd packages/web-api
           bun run format  
