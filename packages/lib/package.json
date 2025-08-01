@@ -32,9 +32,9 @@
     "@qco/tsconfig": "workspace:*",
     "@types/mime-types": "^3.0.1",
     "eslint": "9.32.0",
-    "prettier": "3.5.3",
+    "prettier": "3.6.2",
     "tsup": "8.5.0",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   },
   "prettier": "@qco/prettier-config"
 }

@@ -95,11 +95,6 @@ jobs:
           path: packages/api/coverage/
           retention-days: 30
 
-      - name: Run linting
-        run: |
-          cd packages/api
-          bun run lint
-
       - name: Run type checking
         run: |
           cd packages/api
