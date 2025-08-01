@@ -12,11 +12,11 @@ export default defineConfig({
             forks: {
                 singleFork: true, // Используем один форк для всех тестов
                 maxForks: 1, // Ограничиваем количество форков
-                isolate: false,
+                isolate: true,
 
             },
         },
-        isolate: false,
+        isolate: true,
         maxConcurrency: 1, // Запускаем тесты последовательно
         env: {
             NODE_ENV: 'test',

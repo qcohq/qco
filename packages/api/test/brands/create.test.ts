@@ -21,7 +21,7 @@ describe("brands.create - Реальные тесты tRPC API", () => {
             }
 
             const expectedBrand = {
-                id: "brand-1",
+                id: "brand-create-1",
                 name: input.name,
             }
 
@@ -47,7 +47,7 @@ describe("brands.create - Реальные тесты tRPC API", () => {
             }
 
             const expectedBrand = {
-                id: "brand-1",
+                id: "brand-create-2",
                 name: input.name,
             }
 
@@ -97,7 +97,7 @@ describe("brands.create - Реальные тесты tRPC API", () => {
             }
 
             const expectedBrand = {
-                id: "brand-1",
+                id: "brand-create-3",
                 name: input.name,
             }
 
@@ -146,7 +146,7 @@ describe("brands.create - Реальные тесты tRPC API", () => {
             }
 
             const expectedBrand = {
-                id: "brand-1",
+                id: "brand-create-4",
                 name: input.name,
             }
 

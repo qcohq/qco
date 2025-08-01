@@ -69,7 +69,7 @@ describe("brands.generateSlug - Реальные тесты tRPC API", () => {
             }
 
             const existingBrand = TestUtils.createBrand({
-                id: "brand-1",
+                id: "brand-generate-slug-1",
                 name: "Test Brand",
                 slug: "test-brand",
             })
@@ -99,17 +99,17 @@ describe("brands.generateSlug - Реальные тесты tRPC API", () => {
 
             const existingBrands = [
                 TestUtils.createBrand({
-                    id: "brand-1",
+                    id: "brand-generate-slug-2",
                     name: "Test Brand",
                     slug: "test-brand",
                 }),
                 TestUtils.createBrand({
-                    id: "brand-2",
+                    id: "brand-generate-slug-3",
                     name: "Test Brand",
                     slug: "test-brand-1",
                 }),
                 TestUtils.createBrand({
-                    id: "brand-3",
+                    id: "brand-generate-slug-4",
                     name: "Test Brand",
                     slug: "test-brand-2",
                 }),

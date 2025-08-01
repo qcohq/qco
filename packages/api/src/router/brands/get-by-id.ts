@@ -52,10 +52,7 @@ export const getById = protectedProcedure
 
     // Форматируем файлы
     const files = brand.files?.map((bf) => {
-      let url: string | null = null;
-      if (bf.file?.path) {
-        url = getFileUrl(bf.file.path);
-      }
+      const url = bf.file?.path ? getFileUrl(bf.file.path) : null;
       return {
         id: bf.id,
         brandId: bf.brandId,
@@ -74,7 +71,7 @@ export const getById = protectedProcedure
       };
     }) || [];
 
-    return {
+    const result = {
       id: brand.id,
       name: brand.name,
       slug: brand.slug,
@@ -98,4 +95,5 @@ export const getById = protectedProcedure
       categories,
       files,
     };
+    return result;
   });

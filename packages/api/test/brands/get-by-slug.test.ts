@@ -15,7 +15,7 @@ describe("brands.getBySlug - Реальные тесты tRPC API", () => {
             }
 
             const mockBrand = TestUtils.createBrand({
-                id: "brand-1",
+                id: "brand-get-by-slug-1",
                 name: "Test Brand",
                 slug: "test-brand",
                 description: "Test description",
@@ -73,7 +73,7 @@ describe("brands.getBySlug - Реальные тесты tRPC API", () => {
             }
 
             const mockBrand = TestUtils.createBrand({
-                id: "brand-1",
+                id: "brand-get-by-slug-2",
                 name: "Test Brand",
                 slug: "test-brand",
                 description: "Test description",

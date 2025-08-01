@@ -1,1 +1,1 @@
-export * from '../../../tests/src/setup' 
+export * from '@qco/tests' 

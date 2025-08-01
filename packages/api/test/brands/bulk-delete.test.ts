@@ -17,22 +17,22 @@ describe("brands.bulkDelete - Реальные тесты tRPC API", () => {
     describe("Массовое удаление брендов", () => {
         it("должен успешно удалить несколько брендов", async () => {
             const input = {
-                ids: ["brand-1", "brand-2", "brand-3"],
+                ids: ["brand-bulk-delete-1", "brand-bulk-delete-2", "brand-bulk-delete-3"],
             }
 
             const existingBrands = [
                 TestUtils.createBrand({
-                    id: "brand-1",
+                    id: "brand-bulk-delete-1",
                     name: "Brand 1",
                     slug: "brand-1",
                 }),
                 TestUtils.createBrand({
-                    id: "brand-2",
+                    id: "brand-bulk-delete-2",
                     name: "Brand 2",
                     slug: "brand-2",
                 }),
                 TestUtils.createBrand({
-                    id: "brand-3",
+                    id: "brand-bulk-delete-3",
                     name: "Brand 3",
                     slug: "brand-3",
                 }),
@@ -64,17 +64,17 @@ describe("brands.bulkDelete - Реальные тесты tRPC API", () => {
 
         it("должен успешно удалить бренды с файлами", async () => {
             const input = {
-                ids: ["brand-1", "brand-2"],
+                ids: ["brand-bulk-delete-4", "brand-bulk-delete-5"],
             }
 
             const existingBrands = [
                 TestUtils.createBrand({
-                    id: "brand-1",
+                    id: "brand-bulk-delete-4",
                     name: "Brand 1",
                     slug: "brand-1",
                 }),
                 TestUtils.createBrand({
-                    id: "brand-2",
+                    id: "brand-bulk-delete-5",
                     name: "Brand 2",
                     slug: "brand-2",
                 }),
@@ -84,9 +84,9 @@ describe("brands.bulkDelete - Реальные тесты tRPC API", () => {
             const db = helper.getDb()
             db.query.brands.findMany = vi.fn().mockResolvedValue(existingBrands)
 
-            // Мокаем brandFiles (есть файлы у brand-1)
+            // Мокаем brandFiles (есть файлы у brand-bulk-delete-4)
             const brandFiles = [
-                { id: "bf-1", brandId: "brand-1", fileId: "file-1", type: "logo", order: 1, createdAt: new Date() },
+                { id: "bf-1", brandId: "brand-bulk-delete-4", fileId: "file-1", type: "logo", order: 1, createdAt: new Date() },
             ]
             db.query.brandFiles.findMany = vi.fn().mockResolvedValue(brandFiles)
 

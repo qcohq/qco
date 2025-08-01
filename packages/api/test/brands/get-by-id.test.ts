@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from "vitest"
 import { TRPCTestHelper, TestUtils } from "../utils/test-infrastructure"
+import { getFileUrl } from "@qco/lib"
 
 describe("brands.getById - Реальные тесты tRPC API", () => {
     let helper: TRPCTestHelper
@@ -11,11 +12,11 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
     describe("Получение бренда по ID", () => {
         it("должен успешно получить бренд по ID", async () => {
             const input = {
-                id: "brand-1",
+                id: "brand-get-by-id-1",
             }
 
             const mockBrand = TestUtils.createBrand({
-                id: "brand-1",
+                id: "brand-get-by-id-1",
                 name: "Test Brand",
                 slug: "test-brand",
                 description: "Test description",
@@ -71,11 +72,11 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
 
         it("должен успешно получить бренд с категориями", async () => {
             const input = {
-                id: "brand-1",
+                id: "brand-get-by-id-2",
             }
 
             const mockBrand = TestUtils.createBrand({
-                id: "brand-1",
+                id: "brand-get-by-id-2",
                 name: "Test Brand",
                 slug: "test-brand",
                 description: "Test description",
@@ -149,11 +150,11 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
 
         it("должен успешно получить бренд с файлами", async () => {
             const input = {
-                id: "brand-1",
+                id: "brand-get-by-id-3",
             }
 
             const mockBrand = TestUtils.createBrand({
-                id: "brand-1",
+                id: "brand-get-by-id-3",
                 name: "Test Brand",
                 slug: "test-brand",
                 description: "Test description",
@@ -177,7 +178,7 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
                 files: [
                     {
                         id: "bf-1",
-                        brandId: "brand-1",
+                        brandId: "brand-get-by-id-3",
                         fileId: "file-1",
                         type: "logo",
                         order: 1,
@@ -189,10 +190,11 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
                             mimeType: "image/jpeg",
                             size: 2048,
                         },
+                        url: getFileUrl("uploads/brands/logo.jpg"),
                     },
                     {
                         id: "bf-2",
-                        brandId: "brand-1",
+                        brandId: "brand-get-by-id-3",
                         fileId: "file-2",
                         type: "banner",
                         order: 2,
@@ -204,6 +206,7 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
                             mimeType: "image/jpeg",
                             size: 4096,
                         },
+                        url: getFileUrl("uploads/brands/banner.jpg"),
                     },
                 ],
             })
@@ -214,25 +217,20 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
 
             const caller = helper.getCaller()
             const result = await caller.brands.getById(input)
-
             const { brandCategories, ...brandWithoutCategories } = mockBrand
             expect(result).toEqual({
                 ...brandWithoutCategories,
                 categories: [],
-                files: mockBrand.files.map(bf => ({
-                    ...bf,
-                    url: `https://example.com/${bf.file.path}`,
-                })),
             })
         })
 
         it("должен успешно получить бренд с категориями и файлами", async () => {
             const input = {
-                id: "brand-1",
+                id: "brand-get-by-id-4",
             }
 
             const mockBrand = TestUtils.createBrand({
-                id: "brand-1",
+                id: "brand-get-by-id-4",
                 name: "Test Brand",
                 slug: "test-brand",
                 description: "Test description",
@@ -273,7 +271,7 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
                 files: [
                     {
                         id: "bf-1",
-                        brandId: "brand-1",
+                        brandId: "brand-get-by-id-4",
                         fileId: "file-1",
                         type: "logo",
                         order: 1,
@@ -285,6 +283,7 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
                             mimeType: "image/jpeg",
                             size: 2048,
                         },
+                        url: getFileUrl("uploads/brands/logo.jpg"),
                     },
                 ],
             })
@@ -295,47 +294,49 @@ describe("brands.getById - Реальные тесты tRPC API", () => {
 
             const caller = helper.getCaller()
             const result = await caller.brands.getById(input)
-
             const { brandCategories, ...brandWithoutCategories } = mockBrand
             expect(result).toEqual({
                 ...brandWithoutCategories,
                 categories: mockBrand.brandCategories.map(bc => bc.category),
-                files: mockBrand.files.map(bf => ({
-                    ...bf,
-                    url: `https://example.com/${bf.file.path}`,
-                })),
             })
         })
     })
+})
 
-    describe("Обработка ошибок", () => {
-        it("должен выбросить ошибку при несуществующем ID", async () => {
-            const input = {
-                id: "non-existent-id",
-            }
 
-            // Мокаем отсутствие бренда
-            const db = helper.getDb()
-            db.query.brands.findFirst = vi.fn().mockResolvedValue(null)
+describe("Обработка ошибок", () => {
+    let helper: TRPCTestHelper
 
-            const caller = helper.getCaller()
-
-            const result = await caller.brands.getById(input)
-            expect(result).toBeNull()
-        })
-
-        it("должен обрабатывать ошибки базы данных", async () => {
-            const input = {
-                id: "brand-1",
-            }
-
-            // Мокаем ошибку при запросе
-            const db = helper.getDb()
-            db.query.brands.findFirst = vi.fn().mockRejectedValue(new Error("Database error"))
-
-            const caller = helper.getCaller()
-
-            await expect(caller.brands.getById(input)).rejects.toThrow("Database error")
-        })
+    beforeEach(() => {
+        helper = new TRPCTestHelper()
     })
-}) 
+
+    it("должен выбросить ошибку при несуществующем ID", async () => {
+        const input = {
+            id: "non-existent-id",
+        }
+
+        // Мокаем отсутствие бренда
+        const db = helper.getDb()
+        db.query.brands.findFirst = vi.fn().mockResolvedValue(null)
+
+        const caller = helper.getCaller()
+
+        const result = await caller.brands.getById(input)
+        expect(result).toBeNull()
+    })
+
+    it("должен обрабатывать ошибки базы данных", async () => {
+        const input = {
+            id: "brand-1",
+        }
+
+        // Мокаем ошибку при запросе
+        const db = helper.getDb()
+        db.query.brands.findFirst = vi.fn().mockRejectedValue(new Error("Database error"))
+
+        const caller = helper.getCaller()
+
+        await expect(caller.brands.getById(input)).rejects.toThrow("Database error")
+    })
+})

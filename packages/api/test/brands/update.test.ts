@@ -11,7 +11,7 @@ describe("brands.update - Реальные тесты tRPC API", () => {
     describe("Обновление бренда", () => {
         it("должен успешно обновить бренд", async () => {
             const input = {
-                id: "brand-1",
+                id: "brand-update-1",
                 name: "Updated Brand",
                 slug: "updated-brand",
                 description: "Updated description",
@@ -32,13 +32,13 @@ describe("brands.update - Реальные тесты tRPC API", () => {
             }
 
             const existingBrand = TestUtils.createBrand({
-                id: "brand-1",
+                id: "brand-update-1",
                 name: "Original Brand",
                 slug: "original-brand",
             })
 
             const updatedBrand = {
-                id: "brand-1",
+                id: "brand-update-1",
                 name: "Updated Brand",
             }
 
@@ -76,7 +76,7 @@ describe("brands.update - Реальные тесты tRPC API", () => {
 
         it("должен успешно обновить бренд без категорий", async () => {
             const input = {
-                id: "brand-1",
+                id: "brand-update-2",
                 name: "Updated Brand",
                 slug: "updated-brand",
                 description: "Updated description",
@@ -85,13 +85,13 @@ describe("brands.update - Реальные тесты tRPC API", () => {
             }
 
             const existingBrand = TestUtils.createBrand({
-                id: "brand-1",
+                id: "brand-update-2",
                 name: "Original Brand",
                 slug: "original-brand",
             })
 
             const updatedBrand = {
-                id: "brand-1",
+                id: "brand-update-2",
                 name: "Updated Brand",
             }
 

@@ -44,7 +44,7 @@ describe("brands.delete - Реальные тесты tRPC API", () => {
             const mockBrandFiles = [
                 {
                     id: "bf-1",
-                    brandId: "brand-1",
+                    brandId: "brand-delete-1",
                     fileId: "file-1",
                     type: "logo",
                     order: 1,
@@ -52,7 +52,7 @@ describe("brands.delete - Реальные тесты tRPC API", () => {
                 },
                 {
                     id: "bf-2",
-                    brandId: "brand-1",
+                    brandId: "brand-delete-1",
                     fileId: "file-2",
                     type: "banner",
                     order: 2,

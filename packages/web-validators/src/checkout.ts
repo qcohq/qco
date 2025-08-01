@@ -212,13 +212,12 @@ export function validateDraftData(data: any): DraftValidationResult {
       data: result.data,
       errors: null
     };
-  } else {
+  }
     return {
       isValid: false,
       data: null,
       errors: result.error.issues
     };
-  }
 }
 
 // Полная схема для всего процесса оформления заказа (для API)
