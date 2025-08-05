@@ -154,7 +154,7 @@ export const list = publicProcedure
 					...item,
 					productSku: item.productSku || null,
 					variantName: item.variantName || null,
-					attributes: item.attributes || null,
+
 					slug: productSlugs[item.productId] || null,
 					image: productImages[item.productId] || null,
 					// Дополнительная информация о варианте

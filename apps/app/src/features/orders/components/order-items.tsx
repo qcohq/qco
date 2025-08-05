@@ -131,21 +131,6 @@ export function OrderItems({ order }: OrderItemsProps) {
                         </Badge>
                       ))}
                     </div>
-                  ) : (
-                    item.attributes &&
-                    Object.keys(item.attributes).length > 0 && (
-                      <div className="flex flex-wrap gap-2">
-                        {Object.entries(item.attributes).map(([key, value]) => (
-                          <Badge
-                            key={key}
-                            variant="outline"
-                            className="text-xs"
-                          >
-                            {key}: {String(value)}
-                          </Badge>
-                        ))}
-                      </div>
-                    )
                   )}
 
                   {/* Информация о варианте товара */}

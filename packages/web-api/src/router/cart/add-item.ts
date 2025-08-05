@@ -16,7 +16,7 @@ export const addItem = publicProcedure
   .input(addItemSchema)
   .mutation(async ({ input }) => {
     try {
-      const { sessionId, productId, variantId, quantity, attributes } = input;
+      const { sessionId, productId, variantId, quantity } = input;
 
       // Поиск или создание корзины
       const cart = await findOrCreateCart({ sessionId: sessionId || undefined });
@@ -64,7 +64,6 @@ export const addItem = publicProcedure
           productId,
           variantId,
           quantity,
-          attributes: attributes ?? {},
         });
       }
 

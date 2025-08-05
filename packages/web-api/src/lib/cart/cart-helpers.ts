@@ -21,6 +21,13 @@ import { getFileUrl } from "@qco/lib";
 
 // Типы для TypeScript
 type ProductType = typeof products.$inferSelect;
+type CartItemType = typeof cartItems.$inferSelect;
+type BrandType = typeof brands.$inferSelect;
+type ProductVariantType = typeof productVariants.$inferSelect;
+type ProductFileType = typeof productFiles.$inferSelect;
+type FileType = typeof files.$inferSelect;
+type ProductAttributeValueType = typeof productAttributeValues.$inferSelect;
+type ProductTypeAttributeType = typeof productTypeAttributes.$inferSelect;
 
 
 
@@ -31,7 +38,6 @@ export interface ServerCartItemWithDetails {
   variantId?: string | null;
   price: number | string;
   discountedPrice?: number | string | null;
-  attributes: Record<string, unknown> | null;
   createdAt: Date;
   updatedAt: Date;
   product: {
@@ -43,7 +49,7 @@ export interface ServerCartItemWithDetails {
     basePrice: number | string | null;
     salePrice: number | string | null;
     discountPercent: number | null;
-    stock: number;
+    stock: number | null;
     mainImage: string | null;
     brand: { name: string; slug: string } | null;
   };
@@ -51,17 +57,9 @@ export interface ServerCartItemWithDetails {
     id: string;
     name: string;
     sku: string | null;
-    barcode: string | null;
     price: number | string;
-    salePrice: number | string | null;
-    costPrice: number | string | null;
-    stock: number;
-    minStock: number;
-    weight: number | string | null;
-    width: number | string | null;
-    height: number | string | null;
-    depth: number | string | null;
-    isActive: boolean;
+    compareAtPrice: number | string | null; // alias для salePrice
+    stock: number | null;
     isDefault: boolean;
   };
   options: { name: string; value: string }[];
@@ -183,7 +181,6 @@ export async function findCartItem({
       productId: item.productId,
       variantId: item.variantId,
       price: Number(item.price),
-      attributes: item.attributes as Record<string, unknown> | null,
     };
   } catch (error) {
 
@@ -223,13 +220,11 @@ export async function createCartItem({
   productId,
   variantId,
   quantity,
-  attributes,
 }: {
   cartId: string;
   productId: string;
   variantId?: string;
   quantity: number;
-  attributes?: Record<string, unknown>;
 }): Promise<void> {
   try {
     // Получаем цену продукта или варианта
@@ -304,7 +299,7 @@ export async function createCartItem({
       variantId: variantId ?? null,
       quantity,
       price: typeof price === 'number' ? String(price) : price,
-      attributes: attributes || null,
+      attributes: null,
     });
   } catch (error) {
 
@@ -353,10 +348,10 @@ export async function getCartWithItems(
     }
 
     // Получаем идентификаторы продуктов и вариантов для последующих запросов
-    const productIds = cartItemsData.map((item: any) => item.productId);
+    const productIds = cartItemsData.map((item: CartItemType) => item.productId);
     const variantIds = cartItemsData
-      .filter((item: any) => item.variantId !== null)
-      .map((item: any) => item.variantId);
+      .filter((item: CartItemType) => item.variantId !== null)
+      .map((item: CartItemType) => item.variantId as string);
 
     // Проверяем, есть ли продукты
     if (productIds.length === 0) {
@@ -378,11 +373,11 @@ export async function getCartWithItems(
     const brandIds = Array.from(
       new Set(
         productsData
-          .map((p: any) => p.brandId)
-          .filter((id: any): id is string => !!id),
+          .map((p: ProductType) => p.brandId)
+          .filter((id: string | null): id is string => !!id),
       ),
     );
-    const brandsData =
+    const brandsData: BrandType[] =
       brandIds.length > 0
         ? await db
           .select()
@@ -390,11 +385,11 @@ export async function getCartWithItems(
           .where(inArray(brands.id, brandIds))
         : [];
     const brandsMap = new Map(
-      brandsData.map((b: any) => [b.id, { name: b.name, slug: b.slug }]),
+      brandsData.map((b: BrandType) => [b.id, { name: b.name, slug: b.slug }]),
     );
 
     // Получаем все варианты одним запросом (если они есть)
-    const variantsData =
+    const variantsData: ProductVariantType[] =
       variantIds.length > 0
         ? await db
           .select()
@@ -405,10 +400,10 @@ export async function getCartWithItems(
 
 
     // Получаем связи вариантов с атрибутами
-    const variantAttributeValues: any[] = []; // нет поля variantId в схеме productAttributeValues
+    const variantAttributeValues: ProductAttributeValueType[] = []; // нет поля variantId в схеме productAttributeValues
 
     // Получаем все изображения для продуктов, сортируя по типу и порядку
-    const productFilesData = await db
+    const productFilesData: ProductFileType[] = await db
       .select()
       .from(productFiles)
       .where(inArray(productFiles.productId, productIds))
@@ -418,18 +413,18 @@ export async function getCartWithItems(
       );
 
     // Получаем идентификаторы файлов, чтобы получить пути к изображениям
-    const fileIds = productFilesData.map((file: any) => file.fileId);
+    const fileIds = productFilesData.map((file: ProductFileType) => file.fileId);
 
     // Получаем данные файлов
-    const filesData =
+    const filesData: FileType[] =
       fileIds.length > 0
         ? await db.select().from(files).where(inArray(files.id, fileIds))
         : [];
 
     // Создаем справочники для быстрого доступа
-    const productsMap = new Map(productsData.map((p: any) => [p.id, p]));
-    const variantsMap = new Map(variantsData.map((v: any) => [v.id, v]));
-    const filesMap = new Map(filesData.map((file: any) => [file.id, file.path]));
+    const productsMap = new Map<string, ProductType>(productsData.map((p: ProductType) => [p.id, p]));
+    const variantsMap = new Map<string, ProductVariantType>(variantsData.map((v: ProductVariantType) => [v.id, v]));
+    const filesMap = new Map<string, string>(filesData.map((file: FileType) => [file.id, file.path]));
 
     // Создаем карту изображений продуктов (берем первое изображение для каждого продукта)
     const imagesMap = new Map();
@@ -456,25 +451,25 @@ export async function getCartWithItems(
       }
     }
     const uniqueAttributeValueIds = Array.from(new Set(attributeValueIds));
-    let attributeValues: any[] = [];
-    let attributeMap = new Map();
+    let attributeValues: ProductAttributeValueType[] = [];
+    let attributeMap = new Map<string, ProductTypeAttributeType>();
     if (uniqueAttributeValueIds.length > 0) {
       attributeValues = await db
         .select()
         .from(productAttributeValues)
         .where(inArray(productAttributeValues.id, uniqueAttributeValueIds));
       const attributeIds = Array.from(
-        new Set(attributeValues.map((av: any) => av.attributeId)),
+        new Set(attributeValues.map((av: ProductAttributeValueType) => av.attributeId)),
       );
-      const attributes = await db
+      const attributes: ProductTypeAttributeType[] = await db
         .select()
         .from(productTypeAttributes)
         .where(inArray(productTypeAttributes.id, attributeIds));
-      attributeMap = new Map(attributes.map((a: any) => [a.id, a]));
+      attributeMap = new Map(attributes.map((a: ProductTypeAttributeType) => [a.id, a]));
     }
 
     // Преобразуем элементы корзины в требуемый формат
-    const items = cartItemsData.map((item: any): ServerCartItemWithDetails => {
+    const items = cartItemsData.map((item: CartItemType): ServerCartItemWithDetails => {
       const attributes = item.attributes;
 
       // Формируем массив опций с названиями и значениями
@@ -482,7 +477,7 @@ export async function getCartWithItems(
       if (attributes) {
         for (const [key, val] of Object.entries(attributes)) {
           if (typeof val === "string" && /^attv_/.exec(val)) {
-            const attrValue = attributeValues.find((av: any) => av.id === val);
+            const attrValue = attributeValues.find((av: ProductAttributeValueType) => av.id === val);
             if (attrValue) {
               const attr = attributeMap.get(attrValue.attributeId);
               if (attr) {
@@ -498,11 +493,11 @@ export async function getCartWithItems(
       // Если есть вариант, но нет опций из атрибутов, пытаемся получить опции из связей варианта
       if (item.variantId && options.length === 0) {
         const variantAttributeValuesForVariant = variantAttributeValues.filter(
-          (vav: any) => vav.variantId === item.variantId
+          (vav: ProductAttributeValueType) => vav.id === item.variantId // Исправлено: нет поля variantId в схеме
         );
 
         for (const vav of variantAttributeValuesForVariant) {
-          const attrValue = attributeValues.find((av: any) => av.id === vav.id); // нет поля attributeValueId
+          const attrValue = attributeValues.find((av: ProductAttributeValueType) => av.id === vav.id);
           if (attrValue) {
             const attr = attributeMap.get(attrValue.attributeId);
             if (attr) {
@@ -533,18 +528,13 @@ export async function getCartWithItems(
       const mainImage = imagesMap.get(product.id);
 
       // Базовый объект элемента корзины
-      const cartItem: ServerCartItemWithDetails = {
+      let cartItem: ServerCartItemWithDetails = {
         id: item.id,
         quantity: item.quantity,
         productId: item.productId,
         variantId: item.variantId,
         price: item.price,
         discountedPrice: item.discountedPrice,
-        attributes: attributes
-          ? Object.fromEntries(
-            Object.entries(attributes).map(([k, v]) => [k, String(v)]),
-          )
-          : null,
         createdAt: item.createdAt,
         updatedAt: item.updatedAt,
         product: {
@@ -556,7 +546,7 @@ export async function getCartWithItems(
           basePrice: product.basePrice,
           salePrice: product.salePrice,
           discountPercent: product.discountPercent,
-          stock: product.stock || 0,
+          stock: product.stock,
           mainImage: mainImage ? getFileUrl(mainImage) : null,
           brand:
             product.brandId && brandsMap.has(product.brandId)
@@ -583,17 +573,9 @@ export async function getCartWithItems(
           id: variant.id,
           name: variant.name,
           sku: variant.sku,
-          barcode: variant.barcode,
           price: variant.price,
-          salePrice: variant.salePrice,
-          costPrice: variant.costPrice,
+          compareAtPrice: variant.salePrice, // salePrice становится compareAtPrice для фронтенда
           stock: variant.stock,
-          minStock: variant.minStock,
-          weight: variant.weight,
-          width: variant.width,
-          height: variant.height,
-          depth: variant.depth,
-          isActive: variant.isActive,
           isDefault: variant.isDefault,
         };
       }
@@ -606,17 +588,17 @@ export async function getCartWithItems(
       (sum: number, item: ServerCartItemWithDetails) => {
         let price: number;
 
-        // Приоритет цен: вариант salePrice > вариант price > продукт salePrice > продукт basePrice > сохраненная цена
+        // Приоритет цен: вариант compareAtPrice > вариант price > продукт salePrice > продукт basePrice > сохраненная цена
         if (item.variant) {
-          const variantSalePrice = typeof item.variant.salePrice === "string"
-            ? Number.parseFloat(item.variant.salePrice)
-            : item.variant.salePrice;
+          const variantCompareAtPrice = typeof item.variant.compareAtPrice === "string"
+            ? Number.parseFloat(item.variant.compareAtPrice)
+            : item.variant.compareAtPrice;
           const variantPrice = typeof item.variant.price === "string"
             ? Number.parseFloat(item.variant.price)
             : item.variant.price;
 
-          if (variantSalePrice && variantSalePrice > 0) {
-            price = variantSalePrice;
+          if (variantCompareAtPrice && variantCompareAtPrice > 0) {
+            price = variantCompareAtPrice;
           } else if (variantPrice && variantPrice > 0) {
             price = variantPrice;
           } else {

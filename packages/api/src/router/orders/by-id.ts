@@ -194,7 +194,7 @@ export const byId = protectedProcedure
             quantity: item.quantity,
             unitPrice: item.unitPrice,
             totalPrice: item.totalPrice,
-            attributes: item.attributes as Record<string, unknown> | null,
+
             createdAt: item.createdAt,
             slug: productSlugs[item.productId] || null,
             image: imagePath ? getFileUrl(imagePath) : null,

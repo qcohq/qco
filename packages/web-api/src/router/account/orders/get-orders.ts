@@ -178,7 +178,7 @@ export const getOrders = protectedProcedure
             quantity: item.quantity,
             unitPrice: Number(item.unitPrice),
             totalPrice: Number(item.totalPrice),
-            attributes: item.attributes as Record<string, unknown> | null,
+
             image: productMainImages[item.productId] || null,
             createdAt: item.createdAt,
             // Дополнительная информация о варианте

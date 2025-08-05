@@ -53,7 +53,7 @@ export const create = protectedProcedure
         productName: item.productName,
         productSku: item.productSku,
         variantName: item.variantName,
-        attributes: item.attributes,
+
       });
     }
 

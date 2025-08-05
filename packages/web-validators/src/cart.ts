@@ -25,7 +25,6 @@ export const serverCartItemSchema = z.object({
   quantity: z.number(),
   price: z.number(), // decimal в БД, но возвращаем как number
   discountedPrice: z.number().nullable(), // decimal в БД, но возвращаем как number
-  attributes: z.string().nullable(), // text в БД
   createdAt: z.date(),
   updatedAt: z.date(),
 });
@@ -50,19 +49,11 @@ export const cartItemProductSchema = z.object({
 // Схема варианта в элементе корзины
 export const cartItemVariantSchema = z.object({
   id: z.string(),
-  name: z.string().nullable(),
+  name: z.string(),
   sku: z.string().nullable(),
-  barcode: z.string().nullable(),
-  price: z.number().nullable(),
-  salePrice: z.number().nullable(),
-  costPrice: z.number().nullable(),
+  price: z.union([z.number(), z.string()]),
+  compareAtPrice: z.union([z.number(), z.string()]).nullable(),
   stock: z.number().nullable(),
-  minStock: z.number().nullable(),
-  weight: z.number().nullable(),
-  width: z.number().nullable(),
-  height: z.number().nullable(),
-  depth: z.number().nullable(),
-  isActive: z.boolean(),
   isDefault: z.boolean(),
 }).nullable();
 
@@ -70,7 +61,7 @@ export const cartItemVariantSchema = z.object({
 export const serverCartItemWithDetailsSchema = serverCartItemSchema.extend({
   product: cartItemProductSchema.optional(),
   variant: cartItemVariantSchema.optional(),
-  options: z.array(z.object({ name: z.string(), value: z.string() })).optional(),
+  options: z.array(z.object({ name: z.string(), value: z.string() })),
 });
 
 export type ServerCartItemWithDetails = z.infer<typeof serverCartItemWithDetailsSchema>;
@@ -138,7 +129,6 @@ export const addItemSchema = z.object({
   productId: z.string(),
   variantId: z.string().optional(),
   quantity: z.number().min(1),
-  attributes: z.record(z.string(), z.string()).optional(), // объект с атрибутами
 });
 
 export type AddItemInput = z.infer<typeof addItemSchema>;
@@ -206,7 +196,6 @@ export const basicCartItemWithQuantitySchema = z.object({
   productId: z.string(),
   variantId: z.string().nullable(),
   price: z.number(),
-  attributes: z.record(z.string(), z.unknown()).nullable(), // JSONB в БД
   product: cartItemProductSchema.optional(),
   variant: cartItemVariantSchema.optional()
 });
