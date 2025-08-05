@@ -1,4 +1,4 @@
-import { and, eq, inArray } from "@qco/db";
+import { and, eq, inArray, desc, asc, ne } from "@qco/db";
 import {
   categories,
   productAttributeValues,
@@ -7,7 +7,8 @@ import {
   products,
   productVariants,
   productVariantOptions,
-
+  productVariantOptionCombinations,
+  productVariantOptionValues,
 } from "@qco/db/schema";
 import { getFileUrl } from "@qco/lib";
 import {
@@ -83,56 +84,59 @@ export const getBySlug = publicProcedure
       }
 
       // Получаем варианты продукта с их опциями (размер, цвет и т.д.)
-      const variants =
-        (await ctx.db.query.productVariants.findMany({
-          where: eq(productVariants.productId, product.id),
-          columns: {
-            id: true,
-            name: true,
-            sku: true,
-            barcode: true,
-            price: true,
-            salePrice: true,
-            costPrice: true,
-            stock: true,
-            minStock: true,
-            weight: true,
-            width: true,
-            height: true,
-            depth: true,
-            isActive: true,
-            isDefault: true,
-            createdAt: true,
-            updatedAt: true,
-          },
-          with: {
-            optionCombinations: {
-              with: {
-                option: {
-                  columns: {
-                    id: true,
-                    name: true,
-                    slug: true,
-                    type: true,
-                    sortOrder: true,
-                  },
+      const variants = await ctx.db.query.productVariants.findMany({
+        where: eq(productVariants.productId, product.id),
+        columns: {
+          id: true,
+          name: true,
+          sku: true,
+          barcode: true,
+          price: true,
+          salePrice: true,
+          costPrice: true,
+          stock: true,
+          minStock: true,
+          weight: true,
+          width: true,
+          height: true,
+          depth: true,
+          isActive: true,
+          isDefault: true,
+          createdAt: true,
+          updatedAt: true,
+        },
+        with: {
+          optionCombinations: {
+            with: {
+              option: {
+                columns: {
+                  id: true,
+                  name: true,
+                  slug: true,
+                  type: true,
+                  sortOrder: true,
                 },
-                optionValue: {
-                  columns: {
-                    id: true,
-                    value: true,
-                    displayName: true,
-                    metadata: true,
-                    sortOrder: true,
-                  },
+              },
+              optionValue: {
+                columns: {
+                  id: true,
+                  value: true,
+                  displayName: true,
+                  metadata: true,
+                  sortOrder: true,
                 },
               },
             },
           },
-        })) || [];
+        },
+        orderBy: (fields, { asc, desc }) => [
+          desc(fields.isDefault), // Сначала default варианты
+          asc(fields.name)
+        ],
+      });
 
-      // Получаем опции вариантов продукта (размер, цвет и т.д.)
-      const variantOptionsData = await ctx.db.query.productVariantOptions.findMany({
+      // Получаем все опции продукта для формирования общих списков размеров и цветов
+      const allProductOptions = await ctx.db.query.productVariantOptions.findMany({
         where: eq(productVariantOptions.productId, product.id),
         with: {
           values: {
@@ -140,7 +144,7 @@ export const getBySlug = publicProcedure
           },
         },
         orderBy: (fields, { asc }) => [asc(fields.sortOrder), asc(fields.name)],
-      }) || [];
+      });
 
       // Получаем атрибуты типа продукта (материал, сезон и т.д.)
       const productTypeAttributesData =
@@ -165,33 +169,47 @@ export const getBySlug = publicProcedure
         (a, b) => (a.attribute.sortOrder || 0) - (b.attribute.sortOrder || 0),
       );
 
-      // Извлекаем цвета и размеры из опций вариантов
+      // Формируем цвета и размеры из опций продукта
       const colors: Array<{ name: string; value: string; hex?: string }> = [];
       const sizes: Array<{ name: string; value: string; inStock?: boolean }> = [];
 
-      for (const option of variantOptionsData) {
-        if (
-          option.name.toLowerCase() === "цвет" ||
-          option.name.toLowerCase() === "color"
-        ) {
-          option.values.forEach((value) => {
+      // Получаем все уникальные значения опций и проверяем их наличие в вариантах
+      for (const option of allProductOptions) {
+        const isColorOption = option.name.toLowerCase().includes("цвет") ||
+          option.name.toLowerCase().includes("color");
+        const isSizeOption = option.name.toLowerCase().includes("размер") ||
+          option.name.toLowerCase().includes("size");
+
+        if (isColorOption) {
+          for (const value of option.values) {
+            // Проверяем есть ли варианты с этим цветом
+            const hasVariantWithColor = variants.some(variant =>
+              variant.optionCombinations?.some(combo =>
+                combo.optionValue.id === value.id && variant?.stock && variant.stock > 0
+              )
+            );
+
             colors.push({
               name: value.displayName || value.value,
               value: value.value,
               hex: value.metadata?.hex || undefined,
             });
-          });
-        } else if (
-          option.name.toLowerCase() === "размер" ||
-          option.name.toLowerCase() === "size"
-        ) {
-          option.values.forEach((value) => {
+          }
+        } else if (isSizeOption) {
+          for (const value of option.values) {
+            // Проверяем есть ли варианты с этим размером
+            const hasVariantWithSize = variants.some(variant =>
+              variant.optionCombinations?.some(combo =>
+                combo.optionValue.id === value.id && variant.stock && variant.stock > 0
+              )
+            );
+
             sizes.push({
               name: value.displayName || value.value,
               value: value.value,
-              inStock: true, // TODO: проверить наличие по вариантам
+              inStock: hasVariantWithSize,
             });
-          });
+          }
         }
       }
 
@@ -207,7 +225,7 @@ export const getBySlug = publicProcedure
       }
 
       // Получаем главное изображение
-      const mainImage = product.files?.find((f: any) => f.type === "main");
+      const mainImage = product.files?.find((f) => f.type === "main");
       const image = mainImage?.file?.path
         ? getFileUrl(mainImage.file.path)
         : null;
@@ -215,7 +233,7 @@ export const getBySlug = publicProcedure
       // Форматируем все изображения, сортируя их так, чтобы основное было первым
       const images =
         product.files
-          ?.map((f: any) => ({
+          ?.map((f) => ({
             id: f.id,
             url: f.file?.path
               ? getFileUrl(f.file.path)
@@ -225,10 +243,10 @@ export const getBySlug = publicProcedure
             order: f.order || 0,
           }))
           .filter(
-            (f: any) =>
+            (f) =>
               f.url !== "https://via.placeholder.com/400x400?text=No+Image",
           ) // Фильтруем изображения без URL
-          .sort((a: any, b: any) => {
+          .sort((a, b) => {
             // Основное изображение (type === "main") должно быть первым
             if (a.type === "main" && b.type !== "main") return -1;
             if (a.type !== "main" && b.type === "main") return 1;
@@ -237,14 +255,21 @@ export const getBySlug = publicProcedure
           }) || [];
 
       // Форматируем варианты продукта с их опциями
-      const formattedVariants = variants.map((variant: any) => {
+      const formattedVariants = variants.map((variant) => {
         // Создаем опции варианта на основе комбинаций опций (размер, цвет и т.д.)
-        const variantOptions =
-          variant.optionCombinations?.map((combination: any) => ({
+        // Сортируем опции по sortOrder опции, затем по имени
+        const variantOptions = variant.optionCombinations
+          ?.sort((a, b) => {
+            const sortOrderA = a.option.sortOrder || 0;
+            const sortOrderB = b.option.sortOrder || 0;
+            if (sortOrderA !== sortOrderB) {
+              return sortOrderA - sortOrderB;
+            }
+            return a.option.name.localeCompare(b.option.name);
+          })
+          ?.map((combination) => ({
             option: combination.option.name,
-            value:
-              combination.optionValue.displayName ||
-              combination.optionValue.value,
+            value: combination.optionValue.displayName || combination.optionValue.value,
             metadata: combination.optionValue.metadata,
           })) || [];
 
@@ -287,7 +312,7 @@ export const getBySlug = publicProcedure
 
         if (relatedProductIds.length > 0) {
           const relatedProductIdList = relatedProductIds
-            .map((r: any) => r.productId)
+            .map((r) => r.productId)
             .filter((id: string) => id !== product.id)
             .slice(0, 4);
 
@@ -325,7 +350,7 @@ export const getBySlug = publicProcedure
         }
       }
 
-      const formattedRelatedProducts = relatedProducts.map((p: any) => ({
+      const formattedRelatedProducts = relatedProducts.map((p) => ({
         id: p.id,
         name: p.name,
         slug: p.slug,
