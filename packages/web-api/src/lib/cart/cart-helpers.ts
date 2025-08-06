@@ -38,8 +38,8 @@ export interface ServerCartItemWithDetails {
   quantity: number;
   productId: string;
   variantId?: string | null;
-  price: number | string;
-  discountedPrice?: number | string | null;
+  price: number;
+  discountedPrice?: number | null;
   createdAt: Date;
   updatedAt: Date;
   product: {
@@ -528,8 +528,10 @@ export async function getCartWithItems(
         quantity: item.quantity,
         productId: item.productId,
         variantId: item.variantId,
-        price: item.price,
-        discountedPrice: item.discountedPrice,
+        price: typeof item.price === "string" ? Number.parseFloat(item.price) : item.price,
+        discountedPrice: item.discountedPrice
+          ? (typeof item.discountedPrice === "string" ? Number.parseFloat(item.discountedPrice) : item.discountedPrice)
+          : null,
         createdAt: item.createdAt,
         updatedAt: item.updatedAt,
         product: {
@@ -538,8 +540,12 @@ export async function getCartWithItems(
           slug: product.slug,
           sku: product.sku || "",
           description: product.description,
-          basePrice: product.basePrice,
-          salePrice: product.salePrice,
+          basePrice: product.basePrice
+            ? (typeof product.basePrice === "string" ? Number.parseFloat(product.basePrice) : product.basePrice)
+            : null,
+          salePrice: product.salePrice
+            ? (typeof product.salePrice === "string" ? Number.parseFloat(product.salePrice) : product.salePrice)
+            : null,
           discountPercent: product.discountPercent,
           stock: product.stock,
           mainImage: mainImage ? getFileUrl(mainImage) : null,
@@ -568,8 +574,10 @@ export async function getCartWithItems(
           id: variant.id,
           name: variant.name,
           sku: variant.sku,
-          price: variant.price,
-          compareAtPrice: variant.salePrice, // salePrice становится compareAtPrice для фронтенда
+          price: typeof variant.price === "string" ? Number.parseFloat(variant.price) : variant.price,
+          compareAtPrice: variant.salePrice
+            ? (typeof variant.salePrice === "string" ? Number.parseFloat(variant.salePrice) : variant.salePrice)
+            : null,
           stock: variant.stock,
           isDefault: variant.isDefault,
         };
@@ -585,61 +593,30 @@ export async function getCartWithItems(
 
         // Приоритет цен: вариант price > вариант compareAtPrice > продукт salePrice > продукт basePrice > сохраненная цена
         if (item.variant) {
-          const variantPrice = typeof item.variant.price === "string"
-            ? Number.parseFloat(item.variant.price)
-            : item.variant.price;
-          const variantCompareAtPrice = typeof item.variant.compareAtPrice === "string"
-            ? Number.parseFloat(item.variant.compareAtPrice)
-            : item.variant.compareAtPrice;
-
-          if (variantPrice && variantPrice > 0) {
-            price = variantPrice;
-          } else if (variantCompareAtPrice && variantCompareAtPrice > 0) {
-            price = variantCompareAtPrice;
+          if (item.variant.price && item.variant.price > 0) {
+            price = item.variant.price;
+          } else if (item.variant.compareAtPrice && item.variant.compareAtPrice > 0) {
+            price = item.variant.compareAtPrice;
           } else {
             // Если у варианта нет цены, используем цену продукта
-            const productSalePrice = typeof item.product.salePrice === "string"
-              ? Number.parseFloat(item.product.salePrice)
-              : item.product.salePrice;
-            const productBasePrice = typeof item.product.basePrice === "string"
-              ? Number.parseFloat(item.product.basePrice)
-              : item.product.basePrice;
-
-            price = productSalePrice && productSalePrice > 0
-              ? productSalePrice
-              : productBasePrice && productBasePrice > 0
-                ? productBasePrice
+            price = item.product.salePrice && item.product.salePrice > 0
+              ? item.product.salePrice
+              : item.product.basePrice && item.product.basePrice > 0
+                ? item.product.basePrice
                 : 0;
           }
         } else {
           // Если нет варианта, используем цену продукта с приоритетом salePrice
-          const productSalePrice = typeof item.product.salePrice === "string"
-            ? Number.parseFloat(item.product.salePrice)
-            : item.product.salePrice;
-          const productBasePrice = typeof item.product.basePrice === "string"
-            ? Number.parseFloat(item.product.basePrice)
-            : item.product.basePrice;
-
-          price = productSalePrice && productSalePrice > 0
-            ? productSalePrice
-            : productBasePrice && productBasePrice > 0
-              ? productBasePrice
+          price = item.product.salePrice && item.product.salePrice > 0
+            ? item.product.salePrice
+            : item.product.basePrice && item.product.basePrice > 0
+              ? item.product.basePrice
               : 0;
         }
 
         // Если все цены равны 0, используем сохраненную цену как fallback
         if (price === 0) {
-          if (typeof item.price === "string") {
-            const cleanPrice = item.price.trim().replace(',', '.');
-            price = Number.parseFloat(cleanPrice);
-            if (isNaN(price)) {
-              price = 0;
-            }
-          } else if (typeof item.price === "number") {
-            price = item.price;
-          } else {
-            price = 0;
-          }
+          price = item.price;
         }
 
         return sum + price * item.quantity;

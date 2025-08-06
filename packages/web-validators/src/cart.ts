@@ -51,8 +51,8 @@ export const cartItemVariantSchema = z.object({
   id: z.string(),
   name: z.string(),
   sku: z.string().nullable(),
-  price: z.union([z.number(), z.string()]),
-  compareAtPrice: z.union([z.number(), z.string()]).nullable(),
+  price: z.number(),
+  compareAtPrice: z.number().nullable(),
   stock: z.number().nullable(),
   isDefault: z.boolean(),
 }).nullable();
