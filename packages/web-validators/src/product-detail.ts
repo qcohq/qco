@@ -54,6 +54,7 @@ export const productColorSchema = z.object({
   name: z.string(),
   value: z.string(),
   hex: z.string().optional(),
+  inStock: z.boolean(),
 });
 
 // Схема для размера

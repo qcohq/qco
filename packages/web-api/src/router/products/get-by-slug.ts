@@ -170,7 +170,7 @@ export const getBySlug = publicProcedure
       );
 
       // Формируем цвета и размеры из опций продукта
-      const colors: Array<{ name: string; value: string; hex?: string }> = [];
+      const colors: Array<{ name: string; value: string; hex?: string; inStock: boolean }> = [];
       const sizes: Array<{ name: string; value: string; inStock?: boolean }> = [];
 
       // Получаем все уникальные значения опций и проверяем их наличие в вариантах
@@ -193,6 +193,7 @@ export const getBySlug = publicProcedure
               name: value.displayName || value.value,
               value: value.value,
               hex: value.metadata?.hex || undefined,
+              inStock: hasVariantWithColor,
             });
           }
         } else if (isSizeOption) {
@@ -219,8 +220,8 @@ export const getBySlug = publicProcedure
         if (!attributes[attr.attribute.name]) {
           attributes[attr.attribute.name] = [];
         }
-        if (!attributes[attr.attribute.name].includes(attr.value)) {
-          attributes[attr.attribute.name].push(attr.value);
+        if (!attributes[attr.attribute.name]!.includes(attr.value)) {
+          attributes[attr.attribute.name]!.push(attr.value);
         }
       }
 
