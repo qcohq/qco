@@ -119,7 +119,7 @@ export function OrderItems({ order }: OrderItemsProps) {
                   </div>
 
                   {/* Опции варианта товара */}
-                  {item.variantOptions && item.variantOptions.length > 0 ? (
+                  {item.variantOptions && item.variantOptions.length > 0 && (
                     <div className="flex flex-wrap gap-2">
                       {item.variantOptions.map((option, index) => (
                         <Badge
