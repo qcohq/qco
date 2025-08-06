@@ -13,6 +13,28 @@ export const createSuperAdminSchema = z.object({
   password: z.string().min(8, "Пароль должен содержать минимум 8 символов"),
 });
 
+// Схема для администратора (ответ API)
+export const adminSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  email: z.string().email(),
+  role: adminRoleEnum,
+  isActive: z.boolean(),
+  createdAt: z.date(),
+  updatedAt: z.date(),
+});
+
+// Схема для списка администраторов (ответ API)
+export const adminListResponseSchema = z.object({
+  items: z.array(adminSchema),
+  meta: z.object({
+    total: z.number(),
+    page: z.number(),
+    limit: z.number(),
+    pageCount: z.number(),
+  }),
+});
+
 // Схема для создания администратора
 export const createAdminSchema = z.object({
   name: z.string().min(2, "Имя должно содержать минимум 2 символа").max(255),
@@ -97,6 +119,19 @@ export const acceptAdminInvitationSchema = z.object({
   name: z.string().min(2, "Имя должно содержать минимум 2 символа").max(255),
 });
 
+// Схема для приглашения администратора (ответ API)
+export const adminInvitationSchema = z.object({
+  id: z.string(),
+  email: z.string().email(),
+  name: z.string().nullable(),
+  role: adminRoleEnum,
+  status: invitationStatusEnum,
+  invitationToken: z.string().optional(),
+  expiresAt: z.date(),
+  createdAt: z.date(),
+  updatedAt: z.date(),
+});
+
 // Схема для изменения роли администратора
 export const changeAdminRoleSchema = z.object({
   id: z.string(),
@@ -131,5 +166,8 @@ export type CreateAdminInput = z.infer<typeof createAdminSchema>;
 export type UpdateAdminInput = z.infer<typeof updateAdminSchema>;
 export type CreateAdminInvitationInput = z.infer<typeof createAdminInvitationSchema>;
 export type AcceptAdminInvitationInput = z.infer<typeof acceptAdminInvitationSchema>;
+export type AdminInvitation = z.infer<typeof adminInvitationSchema>;
+export type Admin = z.infer<typeof adminSchema>;
+export type AdminListResponse = z.infer<typeof adminListResponseSchema>;
 export type AdminRole = z.infer<typeof adminRoleEnum>;
 export type InvitationStatus = z.infer<typeof invitationStatusEnum>; 

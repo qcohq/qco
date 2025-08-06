@@ -13,10 +13,10 @@ import { ru } from "date-fns/locale";
 import { Calendar, Clock, Copy, Mail, Share2, User } from "lucide-react";
 import { toast } from "sonner";
 import { env } from "~/env";
-import type { InvitedAdmin } from "@qco/validators";
+import type { AdminInvitation } from "@qco/validators";
 
 interface InvitedAdminsTableProps {
-  invitations: InvitedAdmin[];
+  invitations: AdminInvitation[];
   onResend?: (id: string) => void;
   onCancel?: (id: string) => void;
   isLoading?: boolean;
@@ -35,7 +35,7 @@ export function InvitedAdminsTable({
     }
 
     // Используем правильный формат URL из API
-    const invitationLink = `${env.APP_URL}/admin-invitation/${token}`;
+    const invitationLink = `${env.NEXT_PUBLIC_APP_URL}/admin-invitation/${token}`;
     navigator.clipboard
       .writeText(invitationLink)
       .then(() => {

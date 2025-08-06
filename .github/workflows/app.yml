@@ -14,7 +14,7 @@ env:
   BETTER_AUTH_SECRET: ${{ secrets.BETTER_AUTH_SECRET }}
   POSTGRES_URL: ${{ secrets.POSTGRES_URL }}
   NEXT_PUBLIC_WEB_APP_URL: ${{secrets.NEXT_PUBLIC_WEB_APP_URL}}
-
+  NEXT_PUBLIC_APP_URL: ${{secrets.NEXT_PUBLIC_APP_URL}}
 jobs:
   # Deploy to EKS
   deploy:
