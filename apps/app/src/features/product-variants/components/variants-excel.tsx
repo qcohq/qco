@@ -79,6 +79,8 @@ export function VariantsExcel({
       costPrice: undefined as number | undefined,
       stock: 0,
       minStock: undefined as number | undefined,
+      isActive: true,
+      isDefault: false,
     },
   });
 
@@ -113,6 +115,8 @@ export function VariantsExcel({
         costPrice: variant.costPrice ? Number(variant.costPrice) : undefined,
         stock: Number(variant.stock) || 0,
         minStock: variant.minStock ? Number(variant.minStock) : undefined,
+        isActive: variant.isActive ?? true,
+        isDefault: variant.isDefault ?? false,
       });
 
       // Автоматически фокусируемся на указанном поле или первом поле
@@ -144,7 +148,19 @@ export function VariantsExcel({
   // Сохранить изменения с анимацией прогресса
   const saveChanges = useCallback(
     async (data: VariantEditData, showToast = true, keepEditing = false) => {
-      if (!editingVariantId) return false;
+      if (!editingVariantId) {
+        return false;
+      }
+
+      if (isSaving) {
+        return false;
+      }
+
+      // Очищаем автосохранение при ручном сохранении
+      if (autoSaveTimeout) {
+        clearTimeout(autoSaveTimeout);
+        setAutoSaveTimeout(null);
+      }
 
       setIsSaving(true);
       setSaveProgress(0);
@@ -158,28 +174,29 @@ export function VariantsExcel({
       }, 100);
 
       try {
-        await updateVariant({
-          variantId: editingVariantId,
-          productId,
-          data: {
-            name: data.name,
-            sku: data.sku,
-            price: Number(data.price),
-            costPrice:
-              data.costPrice === null || data.costPrice === undefined
-                ? undefined
-                : Number(data.costPrice),
-            minStock:
-              data.minStock === null || data.minStock === undefined
-                ? undefined
-                : Number(data.minStock),
-            salePrice:
-              data.salePrice === null || data.salePrice === undefined
-                ? undefined
-                : Number(data.salePrice),
-            stock: Number(data.stock),
-          },
-        });
+        const updateData = {
+          id: editingVariantId,
+          name: data.name,
+          sku: data.sku,
+          price: data.price ? Number(data.price) : undefined,
+          costPrice:
+            data.costPrice === null || data.costPrice === undefined || data.costPrice === ""
+              ? undefined
+              : Number(data.costPrice),
+          minStock:
+            data.minStock === null || data.minStock === undefined || data.minStock === ""
+              ? undefined
+              : Number(data.minStock),
+          salePrice:
+            data.salePrice === null || data.salePrice === undefined || data.salePrice === ""
+              ? undefined
+              : Number(data.salePrice),
+          stock: data.stock !== null && data.stock !== undefined ? Number(data.stock) : undefined,
+          isActive: data.isActive,
+          isDefault: data.isDefault,
+        };
+
+        await updateVariant(updateData);
 
         setSaveProgress(100);
         setLastSavedVariant(editingVariantId);
@@ -228,7 +245,7 @@ export function VariantsExcel({
         setIsSaving(false);
       }
     },
-    [editingVariantId, updateVariant, productId, form, queryClient, trpc],
+    [editingVariantId, updateVariant, productId, form, queryClient, trpc, isSaving, autoSaveTimeout],
   );
 
   // Автосохранение при изменении поля
@@ -244,6 +261,11 @@ export function VariantsExcel({
 
       // Устанавливаем новый таймаут для автосохранения через 2 секунды
       const timeout = setTimeout(async () => {
+        // Проверяем, не происходит ли уже сохранение
+        if (isSaving) {
+          return;
+        }
+
         const formData = form.getValues();
         const isValid = await form.trigger();
 
@@ -254,7 +276,7 @@ export function VariantsExcel({
 
       setAutoSaveTimeout(timeout);
     },
-    [form, autoSaveTimeout, hasUnsavedChanges, saveChanges],
+    [form, autoSaveTimeout, hasUnsavedChanges, saveChanges, isSaving],
   );
 
   // Обработка подтверждения отмены изменений
@@ -862,7 +884,7 @@ export function VariantsExcel({
 
                     <TableCell>
                       <div className="flex flex-wrap gap-1">
-                        {variant.attributes.map((attr) => (
+                        {variant.attributes?.map((attr) => (
                           <Badge
                             key={attr.option}
                             variant="outline"
@@ -870,7 +892,7 @@ export function VariantsExcel({
                           >
                             {attr.option}: {attr.value}
                           </Badge>
-                        ))}
+                        )) ?? <span className="text-muted-foreground text-xs">Без атрибутов</span>}
                       </div>
                     </TableCell>
 
@@ -883,13 +905,30 @@ export function VariantsExcel({
                                 size="sm"
                                 variant="ghost"
                                 onClick={async () => {
-                                  const formData = form.getValues();
-                                  const isValid = await form.trigger();
-                                  if (isValid) {
-                                    await saveChanges(formData, true, false);
+                                  // Предотвращаем множественные вызовы
+                                  if (isUpdating || isSaving) {
+                                    return;
+                                  }
+
+                                  try {
+                                    const formData = form.getValues();
+                                    const isValid = await form.trigger();
+
+                                    if (isValid) {
+                                      await saveChanges(formData, true, false);
+                                    } else {
+                                      toast.error("Ошибка валидации", {
+                                        description: "Проверьте введенные данные",
+                                      });
+                                    }
+                                  } catch (error) {
+                                    console.error("Error in save button click:", error);
+                                    toast.error("Ошибка", {
+                                      description: "Не удалось сохранить данные",
+                                    });
                                   }
                                 }}
-                                disabled={isUpdating}
+                                disabled={isUpdating || isSaving}
                                 className="transition-all duration-200 hover:bg-green-100 hover:text-green-700"
                               >
                                 {isUpdating ? (

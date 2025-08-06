@@ -98,7 +98,7 @@ export const orderItemSchema = z.object({
   quantity: z.number(),
   unitPrice: z.number(), // decimal в БД, но возвращается как number
   totalPrice: z.number(), // decimal в БД, но возвращается как number
-  attributes: z.record(z.string(), z.unknown()).nullable(), // JSON в БД
+
   createdAt: z.date(),
   // Дополнительная информация о варианте
   variantSku: z.string().nullable().optional(),

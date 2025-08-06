@@ -362,7 +362,7 @@ function createCartItemsFromOrderItems(
         variantId: item.variantId,
         quantity: item.quantity || 1,
         price: Number.parseFloat(item.unitPrice),
-        attributes: item.attributes || null,
+
         product,
         variant,
       });

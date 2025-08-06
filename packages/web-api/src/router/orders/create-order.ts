@@ -54,7 +54,7 @@ export const createOrderProcedure = publicProcedure
             quantity: item.quantity,
             variantId: item.variantId ?? null,
             productId: item.productId,
-            attributes: item.attributes,
+
             product: item.product
               ? {
                 ...item.product,

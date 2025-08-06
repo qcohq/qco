@@ -97,7 +97,7 @@ export const OrderItemSchema = z.object({
   quantity: z.number().min(1),
   unitPrice: z.number().min(0),
   totalPrice: z.number().min(0),
-  attributes: z.record(z.string(), z.unknown()).nullable(), // JSON с атрибутами варианта
+
   image: z.string().nullable().optional(), // Главное изображение товара
   createdAt: z.date(),
 });

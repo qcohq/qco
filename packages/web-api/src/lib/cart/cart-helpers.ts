@@ -6,8 +6,9 @@ import {
   products,
   productFiles,
   productVariants,
-  productAttributeValues,
-  productTypeAttributes,
+  productVariantOptions,
+  productVariantOptionValues,
+  productVariantOptionCombinations,
   brands,
 } from "@qco/db/schema";
 
@@ -21,6 +22,14 @@ import { getFileUrl } from "@qco/lib";
 
 // Типы для TypeScript
 type ProductType = typeof products.$inferSelect;
+type CartItemType = typeof cartItems.$inferSelect;
+type BrandType = typeof brands.$inferSelect;
+type ProductVariantType = typeof productVariants.$inferSelect;
+type ProductFileType = typeof productFiles.$inferSelect;
+type FileType = typeof files.$inferSelect;
+type ProductVariantOptionType = typeof productVariantOptions.$inferSelect;
+type ProductVariantOptionValueType = typeof productVariantOptionValues.$inferSelect;
+type ProductVariantOptionCombinationType = typeof productVariantOptionCombinations.$inferSelect;
 
 
 
@@ -29,9 +38,8 @@ export interface ServerCartItemWithDetails {
   quantity: number;
   productId: string;
   variantId?: string | null;
-  price: number | string;
-  discountedPrice?: number | string | null;
-  attributes: Record<string, unknown> | null;
+  price: number;
+  discountedPrice?: number | null;
   createdAt: Date;
   updatedAt: Date;
   product: {
@@ -40,10 +48,10 @@ export interface ServerCartItemWithDetails {
     slug: string;
     sku: string;
     description: string | null;
-    basePrice: number | string | null;
-    salePrice: number | string | null;
+    basePrice: number | null;
+    salePrice: number | null;
     discountPercent: number | null;
-    stock: number;
+    stock: number | null;
     mainImage: string | null;
     brand: { name: string; slug: string } | null;
   };
@@ -51,17 +59,9 @@ export interface ServerCartItemWithDetails {
     id: string;
     name: string;
     sku: string | null;
-    barcode: string | null;
-    price: number | string;
-    salePrice: number | string | null;
-    costPrice: number | string | null;
-    stock: number;
-    minStock: number;
-    weight: number | string | null;
-    width: number | string | null;
-    height: number | string | null;
-    depth: number | string | null;
-    isActive: boolean;
+    price: number;
+    compareAtPrice: number | null; // alias для salePrice
+    stock: number | null;
     isDefault: boolean;
   };
   options: { name: string; value: string }[];
@@ -183,7 +183,6 @@ export async function findCartItem({
       productId: item.productId,
       variantId: item.variantId,
       price: Number(item.price),
-      attributes: item.attributes as Record<string, unknown> | null,
     };
   } catch (error) {
 
@@ -223,13 +222,11 @@ export async function createCartItem({
   productId,
   variantId,
   quantity,
-  attributes,
 }: {
   cartId: string;
   productId: string;
   variantId?: string;
   quantity: number;
-  attributes?: Record<string, unknown>;
 }): Promise<void> {
   try {
     // Получаем цену продукта или варианта
@@ -304,7 +301,7 @@ export async function createCartItem({
       variantId: variantId ?? null,
       quantity,
       price: typeof price === 'number' ? String(price) : price,
-      attributes: attributes || null,
+      attributes: null,
     });
   } catch (error) {
 
@@ -353,11 +350,10 @@ export async function getCartWithItems(
     }
 
     // Получаем идентификаторы продуктов и вариантов для последующих запросов
-    const productIds = cartItemsData.map((item: any) => item.productId);
+    const productIds = cartItemsData.map((item: CartItemType) => item.productId);
     const variantIds = cartItemsData
-      .filter((item: any) => item.variantId !== null)
-      .map((item: any) => item.variantId);
-
+      .filter((item: CartItemType) => item.variantId !== null)
+      .map((item: CartItemType) => item.variantId as string);
     // Проверяем, есть ли продукты
     if (productIds.length === 0) {
       throw new TRPCError({
@@ -378,11 +374,11 @@ export async function getCartWithItems(
     const brandIds = Array.from(
       new Set(
         productsData
-          .map((p: any) => p.brandId)
-          .filter((id: any): id is string => !!id),
+          .map((p: ProductType) => p.brandId)
+          .filter((id: string | null): id is string => !!id),
       ),
     );
-    const brandsData =
+    const brandsData: BrandType[] =
       brandIds.length > 0
         ? await db
           .select()
@@ -390,11 +386,11 @@ export async function getCartWithItems(
           .where(inArray(brands.id, brandIds))
         : [];
     const brandsMap = new Map(
-      brandsData.map((b: any) => [b.id, { name: b.name, slug: b.slug }]),
+      brandsData.map((b: BrandType) => [b.id, { name: b.name, slug: b.slug }]),
     );
 
     // Получаем все варианты одним запросом (если они есть)
-    const variantsData =
+    const variantsData: ProductVariantType[] =
       variantIds.length > 0
         ? await db
           .select()
@@ -402,13 +398,40 @@ export async function getCartWithItems(
           .where(inArray(productVariants.id, variantIds))
         : [];
 
+    // Получаем опции вариантов (если есть варианты в корзине)
+    let variantOptionCombinations: ProductVariantOptionCombinationType[] = [];
+    let variantOptions: ProductVariantOptionType[] = [];
+    let variantOptionValues: ProductVariantOptionValueType[] = [];
 
+    if (variantIds.length > 0) {
+      // Получаем комбинации опций для вариантов
+      variantOptionCombinations = await db
+        .select()
+        .from(productVariantOptionCombinations)
+        .where(inArray(productVariantOptionCombinations.variantId, variantIds));
 
-    // Получаем связи вариантов с атрибутами
-    const variantAttributeValues: any[] = []; // нет поля variantId в схеме productAttributeValues
+      // Получаем уникальные ID опций и значений опций
+      const optionIds = Array.from(new Set(variantOptionCombinations.map(c => c.optionId)));
+      const optionValueIds = Array.from(new Set(variantOptionCombinations.map(c => c.optionValueId)));
+
+      // Получаем данные опций и значений опций
+      if (optionIds.length > 0) {
+        variantOptions = await db
+          .select()
+          .from(productVariantOptions)
+          .where(inArray(productVariantOptions.id, optionIds));
+      }
+
+      if (optionValueIds.length > 0) {
+        variantOptionValues = await db
+          .select()
+          .from(productVariantOptionValues)
+          .where(inArray(productVariantOptionValues.id, optionValueIds));
+      }
+    }
 
     // Получаем все изображения для продуктов, сортируя по типу и порядку
-    const productFilesData = await db
+    const productFilesData: ProductFileType[] = await db
       .select()
       .from(productFiles)
       .where(inArray(productFiles.productId, productIds))
@@ -418,18 +441,18 @@ export async function getCartWithItems(
       );
 
     // Получаем идентификаторы файлов, чтобы получить пути к изображениям
-    const fileIds = productFilesData.map((file: any) => file.fileId);
+    const fileIds = productFilesData.map((file: ProductFileType) => file.fileId);
 
     // Получаем данные файлов
-    const filesData =
+    const filesData: FileType[] =
       fileIds.length > 0
         ? await db.select().from(files).where(inArray(files.id, fileIds))
         : [];
 
     // Создаем справочники для быстрого доступа
-    const productsMap = new Map(productsData.map((p: any) => [p.id, p]));
-    const variantsMap = new Map(variantsData.map((v: any) => [v.id, v]));
-    const filesMap = new Map(filesData.map((file: any) => [file.id, file.path]));
+    const productsMap = new Map<string, ProductType>(productsData.map((p: ProductType) => [p.id, p]));
+    const variantsMap = new Map<string, ProductVariantType>(variantsData.map((v: ProductVariantType) => [v.id, v]));
+    const filesMap = new Map<string, string>(filesData.map((file: FileType) => [file.id, file.path]));
 
     // Создаем карту изображений продуктов (берем первое изображение для каждого продукта)
     const imagesMap = new Map();
@@ -444,75 +467,42 @@ export async function getCartWithItems(
       }
     }
 
-    // Получаем все ключи атрибутов из корзины
-    const attributeValueIds: string[] = [];
-    for (const item of cartItemsData) {
-      const attrs = item.attributes;
-      if (attrs) {
-        for (const v of Object.values(attrs)) {
-          if (typeof v === "string" && /^attv_/.exec(v))
-            attributeValueIds.push(v);
-        }
+    // Создаем карты для быстрого доступа к данным опций вариантов
+    const optionsMap = new Map(variantOptions.map(option => [option.id, option]));
+    const optionValuesMap = new Map(variantOptionValues.map(value => [value.id, value]));
+    const variantOptionsMap = new Map<string, Array<{ option: ProductVariantOptionType, value: ProductVariantOptionValueType }>>();
+
+    // Группируем опции по варiantId
+    for (const combination of variantOptionCombinations) {
+      if (!variantOptionsMap.has(combination.variantId)) {
+        variantOptionsMap.set(combination.variantId, []);
       }
-    }
-    const uniqueAttributeValueIds = Array.from(new Set(attributeValueIds));
-    let attributeValues: any[] = [];
-    let attributeMap = new Map();
-    if (uniqueAttributeValueIds.length > 0) {
-      attributeValues = await db
-        .select()
-        .from(productAttributeValues)
-        .where(inArray(productAttributeValues.id, uniqueAttributeValueIds));
-      const attributeIds = Array.from(
-        new Set(attributeValues.map((av: any) => av.attributeId)),
-      );
-      const attributes = await db
-        .select()
-        .from(productTypeAttributes)
-        .where(inArray(productTypeAttributes.id, attributeIds));
-      attributeMap = new Map(attributes.map((a: any) => [a.id, a]));
+
+      const option = optionsMap.get(combination.optionId);
+      const value = optionValuesMap.get(combination.optionValueId);
+
+      if (option && value) {
+        variantOptionsMap.get(combination.variantId)?.push({ option, value });
+      }
     }
 
     // Преобразуем элементы корзины в требуемый формат
-    const items = cartItemsData.map((item: any): ServerCartItemWithDetails => {
-      const attributes = item.attributes;
-
-      // Формируем массив опций с названиями и значениями
+    const items = cartItemsData.map((item: CartItemType): ServerCartItemWithDetails => {
+      // Формируем массив опций для варианта
       const options: { name: string; value: string }[] = [];
-      if (attributes) {
-        for (const [key, val] of Object.entries(attributes)) {
-          if (typeof val === "string" && /^attv_/.exec(val)) {
-            const attrValue = attributeValues.find((av: any) => av.id === val);
-            if (attrValue) {
-              const attr = attributeMap.get(attrValue.attributeId);
-              if (attr) {
-                options.push({ name: attr.name, value: attrValue.value });
-              }
-            }
-          } else if (typeof val === "string") {
-            options.push({ name: key, value: val });
-          }
+
+      // Если есть вариант, получаем его опции из базы данных
+      if (item.variantId && variantOptionsMap.has(item.variantId)) {
+        const variantOptionData = variantOptionsMap.get(item.variantId) || [];
+        for (const { option, value } of variantOptionData) {
+          options.push({
+            name: option.name,
+            value: value.displayName || value.value
+          });
         }
       }
 
-      // Если есть вариант, но нет опций из атрибутов, пытаемся получить опции из связей варианта
-      if (item.variantId && options.length === 0) {
-        const variantAttributeValuesForVariant = variantAttributeValues.filter(
-          (vav: any) => vav.variantId === item.variantId
-        );
-
-        for (const vav of variantAttributeValuesForVariant) {
-          const attrValue = attributeValues.find((av: any) => av.id === vav.id); // нет поля attributeValueId
-          if (attrValue) {
-            const attr = attributeMap.get(attrValue.attributeId);
-            if (attr) {
-              options.push({ name: attr.name, value: attrValue.value });
-            }
-          }
-        }
-      }
-
-      // Если есть вариант, но нет опций, и у варианта есть название, добавляем его как опцию
+      // Если есть вариант, но нет опций в базе, используем название варианта как fallback
       if (item.variantId && options.length === 0) {
         const variant = variantsMap.get(item.variantId);
         if (variant?.name) {
@@ -533,17 +523,14 @@ export async function getCartWithItems(
       const mainImage = imagesMap.get(product.id);
 
       // Базовый объект элемента корзины
-      const cartItem: ServerCartItemWithDetails = {
+      let cartItem: ServerCartItemWithDetails = {
         id: item.id,
         quantity: item.quantity,
         productId: item.productId,
         variantId: item.variantId,
-        price: item.price,
-        discountedPrice: item.discountedPrice,
-        attributes: attributes
-          ? Object.fromEntries(
-            Object.entries(attributes).map(([k, v]) => [k, String(v)]),
-          )
+        price: typeof item.price === "string" ? Number.parseFloat(item.price) : item.price,
+        discountedPrice: item.discountedPrice
+          ? (typeof item.discountedPrice === "string" ? Number.parseFloat(item.discountedPrice) : item.discountedPrice)
           : null,
         createdAt: item.createdAt,
         updatedAt: item.updatedAt,
@@ -553,10 +540,14 @@ export async function getCartWithItems(
           slug: product.slug,
           sku: product.sku || "",
           description: product.description,
-          basePrice: product.basePrice,
-          salePrice: product.salePrice,
+          basePrice: product.basePrice
+            ? (typeof product.basePrice === "string" ? Number.parseFloat(product.basePrice) : product.basePrice)
+            : null,
+          salePrice: product.salePrice
+            ? (typeof product.salePrice === "string" ? Number.parseFloat(product.salePrice) : product.salePrice)
+            : null,
           discountPercent: product.discountPercent,
-          stock: product.stock || 0,
+          stock: product.stock,
           mainImage: mainImage ? getFileUrl(mainImage) : null,
           brand:
             product.brandId && brandsMap.has(product.brandId)
@@ -583,17 +574,11 @@ export async function getCartWithItems(
           id: variant.id,
           name: variant.name,
           sku: variant.sku,
-          barcode: variant.barcode,
-          price: variant.price,
-          salePrice: variant.salePrice,
-          costPrice: variant.costPrice,
+          price: typeof variant.price === "string" ? Number.parseFloat(variant.price) : variant.price,
+          compareAtPrice: variant.salePrice
+            ? (typeof variant.salePrice === "string" ? Number.parseFloat(variant.salePrice) : variant.salePrice)
+            : null,
           stock: variant.stock,
-          minStock: variant.minStock,
-          weight: variant.weight,
-          width: variant.width,
-          height: variant.height,
-          depth: variant.depth,
-          isActive: variant.isActive,
           isDefault: variant.isDefault,
         };
       }
@@ -606,63 +591,32 @@ export async function getCartWithItems(
       (sum: number, item: ServerCartItemWithDetails) => {
         let price: number;
 
-        // Приоритет цен: вариант salePrice > вариант price > продукт salePrice > продукт basePrice > сохраненная цена
+        // Приоритет цен: вариант price > вариант compareAtPrice > продукт salePrice > продукт basePrice > сохраненная цена
         if (item.variant) {
-          const variantSalePrice = typeof item.variant.salePrice === "string"
-            ? Number.parseFloat(item.variant.salePrice)
-            : item.variant.salePrice;
-          const variantPrice = typeof item.variant.price === "string"
-            ? Number.parseFloat(item.variant.price)
-            : item.variant.price;
-
-          if (variantSalePrice && variantSalePrice > 0) {
-            price = variantSalePrice;
-          } else if (variantPrice && variantPrice > 0) {
-            price = variantPrice;
+          if (item.variant.price && item.variant.price > 0) {
+            price = item.variant.price;
+          } else if (item.variant.compareAtPrice && item.variant.compareAtPrice > 0) {
+            price = item.variant.compareAtPrice;
           } else {
             // Если у варианта нет цены, используем цену продукта
-            const productSalePrice = typeof item.product.salePrice === "string"
-              ? Number.parseFloat(item.product.salePrice)
-              : item.product.salePrice;
-            const productBasePrice = typeof item.product.basePrice === "string"
-              ? Number.parseFloat(item.product.basePrice)
-              : item.product.basePrice;
-
-            price = productSalePrice && productSalePrice > 0
-              ? productSalePrice
-              : productBasePrice && productBasePrice > 0
-                ? productBasePrice
+            price = item.product.salePrice && item.product.salePrice > 0
+              ? item.product.salePrice
+              : item.product.basePrice && item.product.basePrice > 0
+                ? item.product.basePrice
                 : 0;
           }
         } else {
           // Если нет варианта, используем цену продукта с приоритетом salePrice
-          const productSalePrice = typeof item.product.salePrice === "string"
-            ? Number.parseFloat(item.product.salePrice)
-            : item.product.salePrice;
-          const productBasePrice = typeof item.product.basePrice === "string"
-            ? Number.parseFloat(item.product.basePrice)
-            : item.product.basePrice;
-
-          price = productSalePrice && productSalePrice > 0
-            ? productSalePrice
-            : productBasePrice && productBasePrice > 0
-              ? productBasePrice
+          price = item.product.salePrice && item.product.salePrice > 0
+            ? item.product.salePrice
+            : item.product.basePrice && item.product.basePrice > 0
+              ? item.product.basePrice
               : 0;
         }
 
         // Если все цены равны 0, используем сохраненную цену как fallback
         if (price === 0) {
-          if (typeof item.price === "string") {
-            const cleanPrice = item.price.trim().replace(',', '.');
-            price = Number.parseFloat(cleanPrice);
-            if (isNaN(price)) {
-              price = 0;
-            }
-          } else if (typeof item.price === "number") {
-            price = item.price;
-          } else {
-            price = 0;
-          }
+          price = item.price;
         }
 
         return sum + price * item.quantity;

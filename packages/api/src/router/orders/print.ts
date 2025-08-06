@@ -61,7 +61,7 @@ export const printOrder = protectedProcedure
                     quantity: item.quantity,
                     unitPrice: item.unitPrice,
                     totalPrice: item.totalPrice,
-                    attributes: item.attributes,
+
                 })) || [],
             },
             customer: {

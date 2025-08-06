@@ -31,7 +31,7 @@ export const orderItemSchema = z.object({
 	quantity: z.number().int().min(1),
 	unitPrice: z.string(), // decimal as string
 	totalPrice: z.string(), // decimal as string
-	attributes: z.record(z.string(), z.unknown()).optional(), // JSON object
+
 	createdAt: z.iso.datetime().optional(),
 });
 
@@ -49,7 +49,7 @@ export const orderCreateSchema = z.object({
 		productName: z.string(),
 		productSku: z.string().optional(),
 		variantName: z.string().optional(),
-		attributes: z.record(z.string(), z.unknown()).optional(),
+
 	})),
 	totalAmount: z.string(),
 	subtotalAmount: z.string(),
@@ -192,7 +192,7 @@ export const orderSchema = z.object({
 		quantity: z.number(),
 		unitPrice: z.string(),
 		totalPrice: z.string(),
-		attributes: z.record(z.string(), z.unknown()).nullable(),
+
 		createdAt: z.date(),
 		slug: z.string().nullable(),
 		image: z.string().nullable(),

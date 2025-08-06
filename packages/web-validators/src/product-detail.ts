@@ -54,6 +54,7 @@ export const productColorSchema = z.object({
   name: z.string(),
   value: z.string(),
   hex: z.string().optional(),
+  inStock: z.boolean(),
 });
 
 // Схема для размера
@@ -72,7 +73,7 @@ export const productDetailSchema = z.object({
   description: z.string().nullable(),
   isActive: z.boolean(),
   isFeatured: z.boolean(),
-  isPopular: z.boolean(), // добавлено поле из БД
+  isPopular: z.boolean(),
   isNew: z.boolean(),
   stock: z.number().nullable(),
   sku: z.string().nullable(),
@@ -99,7 +100,7 @@ export const productDetailSchema = z.object({
   sizes: z.array(z.union([z.string(), productSizeSchema])),
   tags: z.array(z.string()),
   features: z.array(z.string()),
-  attributes: z.record(z.string(), z.string()),
+  attributes: z.record(z.string(), z.array(z.string())),
   relatedProducts: z.array(relatedProductSchema),
 });
 
