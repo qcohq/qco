@@ -8,7 +8,12 @@ import {
   DialogTitle,
 } from "@qco/ui/components/dialog";
 import { Input } from "@qco/ui/components/input";
-import type { Admin, AdminListResponse } from "@qco/validators";
+import type {
+  Admin,
+  AdminListResponse,
+  createAdminSchema,
+  updateAdminSchema
+} from "@qco/validators";
 import { Plus, Search, UserPlus, Users } from "lucide-react";
 import { useState } from "react";
 import type { z } from "zod";

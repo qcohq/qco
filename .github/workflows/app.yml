@@ -14,7 +14,7 @@ env:
   BETTER_AUTH_SECRET: ${{ secrets.BETTER_AUTH_SECRET }}
   POSTGRES_URL: ${{ secrets.POSTGRES_URL }}
   NEXT_PUBLIC_WEB_APP_URL: ${{secrets.NEXT_PUBLIC_WEB_APP_URL}}
-
+  NEXT_PUBLIC_APP_URL: ${{secrets.NEXT_PUBLIC_APP_URL}}
 jobs:
   # Deploy to EKS
   deploy:
@@ -41,7 +41,8 @@ jobs:
           docker build . --file apps/app/Dockerfile --tag $IMAGE_NAME \
             --build-arg BETTER_AUTH_SECRET=$BETTER_AUTH_SECRET \
             --build-arg POSTGRES_URL=$POSTGRES_URL \
-            --build-arg NEXT_PUBLIC_WEB_APP_URL=$NEXT_PUBLIC_WEB_APP_URL
+            --build-arg NEXT_PUBLIC_WEB_APP_URL=$NEXT_PUBLIC_WEB_APP_URL \
+            --build-arg NEXT_PUBLIC_APP_URL=$NEXT_PUBLIC_APP_URL
       - name: Push Image
         run: |
           IMAGE_ID=cr.yandex/$CR_REGISTRY/$IMAGE_NAME
