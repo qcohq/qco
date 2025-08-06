@@ -48,8 +48,8 @@ export interface ServerCartItemWithDetails {
     slug: string;
     sku: string;
     description: string | null;
-    basePrice: number | string | null;
-    salePrice: number | string | null;
+    basePrice: number | null;
+    salePrice: number | null;
     discountPercent: number | null;
     stock: number | null;
     mainImage: string | null;
@@ -59,8 +59,8 @@ export interface ServerCartItemWithDetails {
     id: string;
     name: string;
     sku: string | null;
-    price: number | string;
-    compareAtPrice: number | string | null; // alias для salePrice
+    price: number;
+    compareAtPrice: number | null; // alias для salePrice
     stock: number | null;
     isDefault: boolean;
   };
