@@ -6,8 +6,9 @@ import {
   products,
   productFiles,
   productVariants,
-  productAttributeValues,
-  productTypeAttributes,
+  productVariantOptions,
+  productVariantOptionValues,
+  productVariantOptionCombinations,
   brands,
 } from "@qco/db/schema";
 
@@ -26,8 +27,9 @@ type BrandType = typeof brands.$inferSelect;
 type ProductVariantType = typeof productVariants.$inferSelect;
 type ProductFileType = typeof productFiles.$inferSelect;
 type FileType = typeof files.$inferSelect;
-type ProductAttributeValueType = typeof productAttributeValues.$inferSelect;
-type ProductTypeAttributeType = typeof productTypeAttributes.$inferSelect;
+type ProductVariantOptionType = typeof productVariantOptions.$inferSelect;
+type ProductVariantOptionValueType = typeof productVariantOptionValues.$inferSelect;
+type ProductVariantOptionCombinationType = typeof productVariantOptionCombinations.$inferSelect;
 
 
 
@@ -352,7 +354,6 @@ export async function getCartWithItems(
     const variantIds = cartItemsData
       .filter((item: CartItemType) => item.variantId !== null)
       .map((item: CartItemType) => item.variantId as string);
-
     // Проверяем, есть ли продукты
     if (productIds.length === 0) {
       throw new TRPCError({
@@ -397,10 +398,37 @@ export async function getCartWithItems(
           .where(inArray(productVariants.id, variantIds))
         : [];
 
+    // Получаем опции вариантов (если есть варианты в корзине)
+    let variantOptionCombinations: ProductVariantOptionCombinationType[] = [];
+    let variantOptions: ProductVariantOptionType[] = [];
+    let variantOptionValues: ProductVariantOptionValueType[] = [];
 
+    if (variantIds.length > 0) {
+      // Получаем комбинации опций для вариантов
+      variantOptionCombinations = await db
+        .select()
+        .from(productVariantOptionCombinations)
+        .where(inArray(productVariantOptionCombinations.variantId, variantIds));
 
-    // Получаем связи вариантов с атрибутами
-    const variantAttributeValues: ProductAttributeValueType[] = []; // нет поля variantId в схеме productAttributeValues
+      // Получаем уникальные ID опций и значений опций
+      const optionIds = Array.from(new Set(variantOptionCombinations.map(c => c.optionId)));
+      const optionValueIds = Array.from(new Set(variantOptionCombinations.map(c => c.optionValueId)));
+
+      // Получаем данные опций и значений опций
+      if (optionIds.length > 0) {
+        variantOptions = await db
+          .select()
+          .from(productVariantOptions)
+          .where(inArray(productVariantOptions.id, optionIds));
+      }
+
+      if (optionValueIds.length > 0) {
+        variantOptionValues = await db
+          .select()
+          .from(productVariantOptionValues)
+          .where(inArray(productVariantOptionValues.id, optionValueIds));
+      }
+    }
 
     // Получаем все изображения для продуктов, сортируя по типу и порядку
     const productFilesData: ProductFileType[] = await db
@@ -439,75 +467,42 @@ export async function getCartWithItems(
       }
     }
 
-    // Получаем все ключи атрибутов из корзины
-    const attributeValueIds: string[] = [];
-    for (const item of cartItemsData) {
-      const attrs = item.attributes;
-      if (attrs) {
-        for (const v of Object.values(attrs)) {
-          if (typeof v === "string" && /^attv_/.exec(v))
-            attributeValueIds.push(v);
-        }
+    // Создаем карты для быстрого доступа к данным опций вариантов
+    const optionsMap = new Map(variantOptions.map(option => [option.id, option]));
+    const optionValuesMap = new Map(variantOptionValues.map(value => [value.id, value]));
+    const variantOptionsMap = new Map<string, Array<{ option: ProductVariantOptionType, value: ProductVariantOptionValueType }>>();
+
+    // Группируем опции по варiantId
+    for (const combination of variantOptionCombinations) {
+      if (!variantOptionsMap.has(combination.variantId)) {
+        variantOptionsMap.set(combination.variantId, []);
       }
-    }
-    const uniqueAttributeValueIds = Array.from(new Set(attributeValueIds));
-    let attributeValues: ProductAttributeValueType[] = [];
-    let attributeMap = new Map<string, ProductTypeAttributeType>();
-    if (uniqueAttributeValueIds.length > 0) {
-      attributeValues = await db
-        .select()
-        .from(productAttributeValues)
-        .where(inArray(productAttributeValues.id, uniqueAttributeValueIds));
-      const attributeIds = Array.from(
-        new Set(attributeValues.map((av: ProductAttributeValueType) => av.attributeId)),
-      );
-      const attributes: ProductTypeAttributeType[] = await db
-        .select()
-        .from(productTypeAttributes)
-        .where(inArray(productTypeAttributes.id, attributeIds));
-      attributeMap = new Map(attributes.map((a: ProductTypeAttributeType) => [a.id, a]));
+
+      const option = optionsMap.get(combination.optionId);
+      const value = optionValuesMap.get(combination.optionValueId);
+
+      if (option && value) {
+        variantOptionsMap.get(combination.variantId)?.push({ option, value });
+      }
     }
 
     // Преобразуем элементы корзины в требуемый формат
     const items = cartItemsData.map((item: CartItemType): ServerCartItemWithDetails => {
-      const attributes = item.attributes;
-
-      // Формируем массив опций с названиями и значениями
+      // Формируем массив опций для варианта
       const options: { name: string; value: string }[] = [];
-      if (attributes) {
-        for (const [key, val] of Object.entries(attributes)) {
-          if (typeof val === "string" && /^attv_/.exec(val)) {
-            const attrValue = attributeValues.find((av: ProductAttributeValueType) => av.id === val);
-            if (attrValue) {
-              const attr = attributeMap.get(attrValue.attributeId);
-              if (attr) {
-                options.push({ name: attr.name, value: attrValue.value });
-              }
-            }
-          } else if (typeof val === "string") {
-            options.push({ name: key, value: val });
-          }
+
+      // Если есть вариант, получаем его опции из базы данных
+      if (item.variantId && variantOptionsMap.has(item.variantId)) {
+        const variantOptionData = variantOptionsMap.get(item.variantId) || [];
+        for (const { option, value } of variantOptionData) {
+          options.push({
+            name: option.name,
+            value: value.displayName || value.value
+          });
         }
       }
 
-      // Если есть вариант, но нет опций из атрибутов, пытаемся получить опции из связей варианта
-      if (item.variantId && options.length === 0) {
-        const variantAttributeValuesForVariant = variantAttributeValues.filter(
-          (vav: ProductAttributeValueType) => vav.id === item.variantId // Исправлено: нет поля variantId в схеме
-        );
-
-        for (const vav of variantAttributeValuesForVariant) {
-          const attrValue = attributeValues.find((av: ProductAttributeValueType) => av.id === vav.id);
-          if (attrValue) {
-            const attr = attributeMap.get(attrValue.attributeId);
-            if (attr) {
-              options.push({ name: attr.name, value: attrValue.value });
-            }
-          }
-        }
-      }
-
-      // Если есть вариант, но нет опций, и у варианта есть название, добавляем его как опцию
+      // Если есть вариант, но нет опций в базе, используем название варианта как fallback
       if (item.variantId && options.length === 0) {
         const variant = variantsMap.get(item.variantId);
         if (variant?.name) {
@@ -588,19 +583,19 @@ export async function getCartWithItems(
       (sum: number, item: ServerCartItemWithDetails) => {
         let price: number;
 
-        // Приоритет цен: вариант compareAtPrice > вариант price > продукт salePrice > продукт basePrice > сохраненная цена
+        // Приоритет цен: вариант price > вариант compareAtPrice > продукт salePrice > продукт basePrice > сохраненная цена
         if (item.variant) {
-          const variantCompareAtPrice = typeof item.variant.compareAtPrice === "string"
-            ? Number.parseFloat(item.variant.compareAtPrice)
-            : item.variant.compareAtPrice;
           const variantPrice = typeof item.variant.price === "string"
             ? Number.parseFloat(item.variant.price)
             : item.variant.price;
+          const variantCompareAtPrice = typeof item.variant.compareAtPrice === "string"
+            ? Number.parseFloat(item.variant.compareAtPrice)
+            : item.variant.compareAtPrice;
 
-          if (variantCompareAtPrice && variantCompareAtPrice > 0) {
-            price = variantCompareAtPrice;
-          } else if (variantPrice && variantPrice > 0) {
+          if (variantPrice && variantPrice > 0) {
             price = variantPrice;
+          } else if (variantCompareAtPrice && variantCompareAtPrice > 0) {
+            price = variantCompareAtPrice;
           } else {
             // Если у варианта нет цены, используем цену продукта
             const productSalePrice = typeof item.product.salePrice === "string"
