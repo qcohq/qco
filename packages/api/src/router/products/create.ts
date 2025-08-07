@@ -1,10 +1,11 @@
 import { TRPCError } from "@trpc/server";
-import { eq, type PgTransaction, count } from "drizzle-orm";
+import { eq, } from "@qco/db";
 import { protectedProcedure } from "../../trpc";
 import { products, productCategories } from "@qco/db/schema";
 import { productCreateSchema } from "@qco/validators";
 import { getAllCategoriesWithParents, extractCategoryIds, recalculateCategoryProductsCount } from "../../lib/category-utils";
 import { generateSlug, generateUniqueSlug } from "../../lib/slug-utils";
+
 
 export const create = protectedProcedure
   .input(productCreateSchema)
@@ -49,7 +50,7 @@ export const create = protectedProcedure
       };
 
       // Используем транзакцию для создания продукта и его категорий
-      return await ctx.db.transaction(async (tx: PgTransaction) => {
+      return await ctx.db.transaction(async (tx) => {
         // Создаем продукт
         const [created] = await tx
           .insert(products)

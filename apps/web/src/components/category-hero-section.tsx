@@ -177,15 +177,28 @@ export default function CategoryHeroSection({
                 }`}
             >
               <div className="relative h-full flex items-center justify-center">
-                <div className="absolute inset-0 z-0">
-                  <Image
-                    src={slide.image || "/placeholder.svg"}
-                    alt={slide.title}
-                    fill
-                    className="object-cover"
-                    priority={index === 0}
-                  />
-                </div>
+                {/* Если есть ссылка и нет текста кнопки — кликабелен весь баннер */}
+                {slide.primaryLink && !slide.primaryButton ? (
+                  <a href={slide.primaryLink} className="absolute inset-0 z-0 block">
+                    <Image
+                      src={slide.image || "/placeholder.svg"}
+                      alt={slide.title}
+                      fill
+                      className="object-cover"
+                      priority={index === 0}
+                    />
+                  </a>
+                ) : (
+                  <div className="absolute inset-0 z-0">
+                    <Image
+                      src={slide.image || "/placeholder.svg"}
+                      alt={slide.title}
+                      fill
+                      className="object-cover"
+                      priority={index === 0}
+                    />
+                  </div>
+                )}
 
                 {/* Контент слайда */}
                 <div className="relative z-10 text-center text-white px-4 md:px-8">
@@ -199,7 +212,7 @@ export default function CategoryHeroSection({
                       {slide.description}
                     </p>
                   )}
-                  {/* Показываем кнопку только если есть ссылка */}
+                  {/* Показываем кнопку только если есть ссылка и текст */}
                   {slide.primaryButton && slide.primaryLink && (
                     <div className="flex flex-col sm:flex-row gap-3 justify-center">
                       <a
@@ -255,8 +268,8 @@ export default function CategoryHeroSection({
                   key={`slide-indicator-${slide.id}-${index}`}
                   onClick={() => goToSlide(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
-                      ? "bg-white scale-110"
-                      : "bg-white/50 hover:bg-white/70"
+                    ? "bg-white scale-110"
+                    : "bg-white/50 hover:bg-white/70"
                     }`}
                 />
               ))}

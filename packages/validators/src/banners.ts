@@ -50,15 +50,6 @@ export const bannerFormSchema = z.object({
   })).default([]),
   isUploading: z.boolean().optional(),
 }).refine((data) => {
-  // Если указана ссылка, то должен быть указан текст кнопки
-  if (data.link && !data.linkText) {
-    return false;
-  }
-  return true;
-}, {
-  error: "Если указана ссылка, то текст кнопки обязателен",
-  path: ["linkText"],
-}).refine((data) => {
   // Если указан текст кнопки, то должна быть указана ссылка
   if (data.linkText && !data.link) {
     return false;
@@ -102,15 +93,6 @@ export const bannerEditFormSchema = z.object({
     }).optional(),
   })).default([]),
   id: z.string().optional(),
-}).refine((data) => {
-  // Если указана ссылка, то должен быть указан текст кнопки
-  if (data.link && data.link.trim() !== "" && !data.linkText) {
-    return false;
-  }
-  return true;
-}, {
-  error: "Если указана ссылка, то текст кнопки обязателен",
-  path: ["linkText"],
 }).refine((data) => {
   // Если указан текст кнопки, то должна быть указана ссылка
   if (data.linkText && data.linkText.trim() !== "" && !data.link) {
