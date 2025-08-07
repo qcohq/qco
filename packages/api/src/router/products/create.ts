@@ -29,7 +29,7 @@ export const create = protectedProcedure
         name: input.name,
         slug,
         description: input.description ?? "",
-        isActive: input.isActive ?? false,
+        isActive: false,
         isFeatured: input.isFeatured ?? false,
         isPopular: input.isPopular ?? false,
         isNew: input.isNew ?? false,
