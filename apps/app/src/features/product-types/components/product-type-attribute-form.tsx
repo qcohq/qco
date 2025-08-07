@@ -224,7 +224,7 @@ export function ProductTypeAttributeForm({
                       minLength={2}
                       maxLength={50}
                       allowDuplicates={false}
-                      maxTags={20}
+                      maxTags={100}
                       validateTag={(tag) => {
                         // Проверяем, что опция не содержит специальных символов
                         if (/[<>{}]/.test(tag)) {
