@@ -224,67 +224,90 @@ export default function HeroSection({ categorySlug }: HeroSectionProps) {
                   : "translate-x-full"
                 }`}
             >
-              <div className="relative h-full flex items-center justify-center">
-                <div className="absolute inset-0 z-0 bg-gray-100">
-                  {/* Desktop изображение */}
-                  <Image
-                    src={slide.desktopImage || "/placeholder.svg"}
-                    alt={slide.title || "Banner image"}
-                    fill
-                    className="object-cover object-center hidden md:block"
-                    priority={index === 0}
-                    sizes="(max-width: 768px) 0vw, 100vw"
-                  />
+              {(() => {
+                const background = (
+                  <div className="absolute inset-0 z-0 bg-gray-100">
+                    {/* Desktop изображение */}
+                    <Image
+                      src={slide.desktopImage || "/placeholder.svg"}
+                      alt={slide.title || "Banner image"}
+                      fill
+                      className="object-cover object-center hidden md:block"
+                      priority={index === 0}
+                      sizes="(max-width: 768px) 0vw, 100vw"
+                    />
+                    {/* Mobile изображение */}
+                    <Image
+                      src={
+                        slide.mobileImage ||
+                        slide.desktopImage ||
+                        "/placeholder.svg"
+                      }
+                      alt={slide.title || "Banner image"}
+                      fill
+                      className="object-cover object-center md:hidden"
+                      priority={index === 0}
+                      sizes="100vw"
+                    />
+                  </div>
+                );
 
-                  {/* Mobile изображение */}
-                  <Image
-                    src={
-                      slide.mobileImage ||
-                      slide.desktopImage ||
-                      "/placeholder.svg"
-                    }
-                    alt={slide.title || "Banner image"}
-                    fill
-                    className="object-cover object-center md:hidden"
-                    priority={index === 0}
-                    sizes="100vw"
-                  />
-                </div>
+                const textBase = (
+                  <>
+                    {slide.subtitle && (
+                      <p className="text-lg md:text-xl mb-2 md:mb-4 font-medium">
+                        {slide.subtitle}
+                      </p>
+                    )}
+                    {slide.description && (
+                      <p className="text-sm md:text-base mb-4 md:mb-6 max-w-2xl mx-auto">
+                        {slide.description}
+                      </p>
+                    )}
+                  </>
+                );
 
-                {/* Контент слайда */}
-                <div className="relative z-10 text-center text-white px-4 md:px-8">
-                  {/* Убираем отображение заголовка */}
-                  {slide.subtitle && (
-                    <p className="text-lg md:text-xl mb-2 md:mb-4 font-medium">
-                      {slide.subtitle}
-                    </p>
-                  )}
-                  {slide.description && (
-                    <p className="text-sm md:text-base mb-4 md:mb-6 max-w-2xl mx-auto">
-                      {slide.description}
-                    </p>
-                  )}
-                  {/* Показываем кнопку только если есть ссылка */}
-                  {slide.primaryButton && slide.primaryLink && (
-                    <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                      <a
-                        href={slide.primaryLink}
-                        className="inline-flex items-center justify-center px-6 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-100 transition-colors"
-                      >
-                        {slide.primaryButton}
-                      </a>
-                      {slide.secondaryButton && slide.secondaryLink && (
-                        <a
-                          href={slide.secondaryLink}
-                          className="inline-flex items-center justify-center px-6 py-3 border border-white text-white font-medium rounded-lg hover:bg-white hover:text-black transition-colors"
-                        >
-                          {slide.secondaryButton}
-                        </a>
+                const hasFullLink = Boolean(slide.primaryLink && !slide.primaryButton);
+
+                if (hasFullLink) {
+                  return (
+                    <a href={slide.primaryLink!} className="relative h-full flex items-center justify-center block">
+                      {background}
+                      <div className="relative z-10 text-center text-white px-4 md:px-8">
+                        {textBase}
+                      </div>
+                    </a>
+                  );
+                }
+
+                return (
+                  <div className="relative h-full flex items-center justify-center">
+                    {background}
+                    <div className="relative z-10 text-center text-white px-4 md:px-8">
+                      {textBase}
+                      {/* Показываем кнопку только если есть ссылка и есть текст */}
+                      {slide.primaryButton && slide.primaryLink && (
+                        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                          <a
+                            href={slide.primaryLink}
+                            className="inline-flex items-center justify-center px-6 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-100 transition-colors"
+                          >
+                            {slide.primaryButton}
+                          </a>
+                          {slide.secondaryButton && slide.secondaryLink && (
+                            <a
+                              href={slide.secondaryLink}
+                              className="inline-flex items-center justify-center px-6 py-3 border border-white text-white font-medium rounded-lg hover:bg-white hover:text-black transition-colors"
+                            >
+                              {slide.secondaryButton}
+                            </a>
+                          )}
+                        </div>
                       )}
                     </div>
-                  )}
-                </div>
-              </div>
+                  </div>
+                );
+              })()}
             </div>
           ))}
 
@@ -390,6 +413,6 @@ export default function HeroSection({ categorySlug }: HeroSectionProps) {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
