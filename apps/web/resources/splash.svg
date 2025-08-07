@@ -1,0 +1,10 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#000000"/>
+  <g transform="translate(640, 360)">
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="0" cy="0" r="40" fill="#FFFFFF"/>
+  </g>
+  <text x="640" y="500" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="48" font-weight="bold">Eleganter</text>
+  <text x="640" y="550" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24">Роскошный универмаг</text>
+</svg> 

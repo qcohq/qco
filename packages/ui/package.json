@@ -73,7 +73,7 @@
     "react": "19.1.1",
     "tsup": "8.5.0",
     "typescript": "5.9.2",
-    "zod": "4.0.14"
+    "zod": "4.0.15"
   },
   "prettier": "@qco/prettier-config"
 }

@@ -29,7 +29,7 @@
     "@qco/web-validators": "workspace:*",
     "@trpc/server": "11.4.3",
     "superjson": "2.2.2",
-    "zod": "4.0.14"
+    "zod": "4.0.15"
   },
   "devDependencies": {
     "@qco/eslint-config": "workspace:*",
