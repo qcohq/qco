@@ -33,7 +33,6 @@ COPY --from=builder /app/out/full/ .
 ARG POSTGRES_URL
 ENV POSTGRES_URL=$POSTGRES_URL
 ENV CI=true
-ENV NEXT_PUBLIC_VAPID_PUBLIC_KEY=BDkvXMUbfIzQUvVMhKfFfw4C_dpbGDx0VtRKQ8HU_Lhn-tFSkbrOGh1ubPtq7zd2Pu_hhRRq3R7Cv4BD3B34VnQ
 ENV NEXT_PUBLIC_APP_URL=https://eleganter.shop
 RUN bun turbo run build --filter=@qco/web
 
