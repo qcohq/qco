@@ -21,18 +21,18 @@
   "dependencies": {
     "@qco/tsconfig": "workspace:*",
     "@radix-ui/colors": "3.0.0",
-    "@react-email/components": "0.1.1",
+    "@react-email/components": "0.5.0",
     "@t3-oss/env-core": "0.13.8",
     "@tailwindcss/typography": "0.5.16",
     "nodemailer": "^7.0.3",
     "react": "19.1.1",
     "react-dom": "19.1.1",
-    "react-email": "4.0.17",
-    "resend": "^4.6.0",
-    "sharp": "^0.34.2",
+    "react-email": "4.2.8",
+    "resend": "^6.0.0",
+    "sharp": "^0.34.3",
     "tailwindcss": "4.1.11",
     "tailwindcss-animate": "1.0.7",
-    "zod": "4.0.14"
+    "zod": "4.0.15"
   },
   "devDependencies": {
     "@types/node": "24.1.0",

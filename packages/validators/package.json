@@ -19,10 +19,10 @@
   },
   "dependencies": {
     "@qco/db": "workspace:*",
-    "zod": "4.0.14"
+    "zod": "4.0.15"
   },
   "devDependencies": {
-       "@qco/eslint-config": "workspace:*",
+    "@qco/eslint-config": "workspace:*",
     "@qco/prettier-config": "workspace:*",
     "@qco/tsconfig": "workspace:*",
     "eslint": "9.32.0",
