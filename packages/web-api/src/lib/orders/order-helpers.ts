@@ -218,7 +218,9 @@ export async function createOrder(
       orderId: orderId,
       productId: item.productId,
       productName: item.product?.name || "Unknown Product",
+      productSku: item.variant?.sku ?? item.product?.sku ?? null,
       variantId: item.variantId || null,
+      variantName: item.variant?.name ?? null,
       quantity: item.quantity,
       unitPrice: String(item.price),
       totalPrice: String(Number(item.price) * item.quantity),
@@ -339,11 +341,11 @@ function createCartItemsFromOrderItems(
       // Формируем вариант, если он есть
       const variant = item.variantId ? {
         id: item.variantId,
-        name: item.variantName,
+        name: item.variantName || item.productName || "Default Variant",
         sku: item.productSku || null,
         barcode: null,
         price: Number.parseFloat(item.unitPrice),
-        salePrice: null,
+        compareAtPrice: null,
         costPrice: null,
         stock: null,
         minStock: null,
