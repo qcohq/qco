@@ -11,12 +11,10 @@ import {
     Tailwind,
     Text,
 } from "@react-email/components";
-import { emailTailwindConfig } from "../tailwind";
-import { env } from "../env";
-import { translatePaymentMethod, translateShippingMethod } from "../src/utils/order-status-translations";
+import { emailTailwindConfig } from "../../tailwind";
+import { translatePaymentMethod, translateShippingMethod } from "../../src/utils/order-status-translations";
 
 interface AdminOrderNotificationProps {
-    orderId: string;
     orderNumber: string;
     customerName: string;
     customerEmail: string;
@@ -39,7 +37,6 @@ interface AdminOrderNotificationProps {
 }
 
 export function AdminOrderNotification({
-    orderId,
     orderNumber,
     customerName,
     customerEmail,

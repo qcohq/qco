@@ -170,9 +170,73 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
 
   // Санитизация описания продукта для предотвращения XSS
   const sanitizedDescription = useMemo(() => {
-    return DOMPurify.sanitize(product.description || "", {
+    const clean = DOMPurify.sanitize(product.description || "", {
       USE_PROFILES: { html: true },
+      ALLOW_DATA_ATTR: false,
+      ALLOW_ARIA_ATTR: false,
+      FORBID_ATTR: ["style"],
+      ALLOWED_TAGS: [
+        "a",
+        "p",
+        "br",
+        "strong",
+        "em",
+        "ul",
+        "ol",
+        "li",
+        "span",
+        "b",
+        "i",
+        "u",
+        "blockquote",
+        "code",
+        "pre",
+        "hr",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+      ],
+      ALLOWED_ATTR: ["href", "title", "target", "rel"],
     });
+
+    // Гарантируем безопасность ссылок с target="_blank"
+    if (typeof window !== "undefined") {
+      const wrapper = document.createElement("div");
+      wrapper.innerHTML = clean;
+      const anchors = wrapper.querySelectorAll('a[target="_blank"]');
+      anchors.forEach((anchor) => {
+        const currentRel = anchor.getAttribute("rel") || "";
+        const tokens = new Set(currentRel.split(/\s+/).filter(Boolean));
+        tokens.add("noopener");
+        tokens.add("noreferrer");
+        tokens.add("nofollow");
+        anchor.setAttribute("rel", Array.from(tokens).join(" "));
+      });
+      return wrapper.innerHTML;
+    }
+
+    // Фолбэк для среды без DOM: добавляем rel в строке HTML
+    return clean.replace(
+      /<a([^>]*?)target=(['"])_blank\2([^>]*)>/gi,
+      (match) => {
+        if (/rel=/i.test(match)) {
+          return match.replace(/rel=(["'])(.*?)\1/i, (m, q, relVals) => {
+            const set = new Set(relVals.split(/\s+/).filter(Boolean));
+            set.add("noopener");
+            set.add("noreferrer");
+            set.add("nofollow");
+            return `rel=${q}${Array.from(set).join(" ")}${q}`;
+          });
+        }
+        return match.replace(
+          />/,
+          ' rel="noopener noreferrer nofollow">'
+        );
+      }
+    );
   }, [product?.description]);
 
 

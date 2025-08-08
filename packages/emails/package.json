@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "workspaces": [
-    ".react-email"
-  ],
   "exports": {
     ".": "./index.ts"
   },

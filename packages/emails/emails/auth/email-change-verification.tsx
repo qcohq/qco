@@ -11,8 +11,8 @@ import {
   Text,
 } from "@react-email/components";
 
-import { emailTailwindConfig } from "../tailwind";
-import { env } from "../env";
+import { emailTailwindConfig } from "../../tailwind";
+import { env } from "../../env";
 
 export function EmailChangeVerification({ otp }: { otp: string }) {
   return (
