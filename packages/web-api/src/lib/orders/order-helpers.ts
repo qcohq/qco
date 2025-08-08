@@ -213,12 +213,16 @@ export async function createOrder(
     };
 
     // Создаем элементы заказа
+    // Мы храним SKU продукта (не варианта) в колонке product_sku, чтобы иметь стабильный идентификатор товара в заказе.
+    // Если SKU отсутствует, подставляем безопасный фолбэк.
     const orderItemsToInsert: typeof orderItemsTable.$inferInsert[] = cart.items.map((item) => ({
       id: createId(),
       orderId: orderId,
       productId: item.productId,
       productName: item.product?.name || "Unknown Product",
+      productSku: item.product?.sku ?? `SKU-${item.productId}`,
       variantId: item.variantId || null,
+      variantName: item.variant?.name ?? item.product?.name ?? "Default Variant",
       quantity: item.quantity,
       unitPrice: String(item.price),
       totalPrice: String(Number(item.price) * item.quantity),
@@ -339,11 +343,11 @@ function createCartItemsFromOrderItems(
       // Формируем вариант, если он есть
       const variant = item.variantId ? {
         id: item.variantId,
-        name: item.variantName,
+        name: item.variantName || item.productName || "Default Variant",
         sku: item.productSku || null,
         barcode: null,
         price: Number.parseFloat(item.unitPrice),
-        salePrice: null,
+        compareAtPrice: null,
         costPrice: null,
         stock: null,
         minStock: null,
