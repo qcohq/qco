@@ -4,7 +4,7 @@ import { cancel } from "./cancel";
 import { create } from "./create";
 import { getByCustomer } from "./get-by-customer";
 import { list } from "./list";
-import { printOrder } from "./print";
+import { print } from "./print";
 import { removeOrder } from "./remove";
 import { updateDeliveryStatus } from "./update-delivery-status";
 import { updatePaymentStatus } from "./update-payment-status";
@@ -18,7 +18,7 @@ export const ordersRouter = createTRPCRouter({
   create,
   getByCustomer,
   list,
-  printOrder,
+  print,
   removeOrder,
   updateDeliveryStatus,
   updatePaymentStatus,

@@ -51,8 +51,8 @@ export function OrderHeader({ order }: OrderHeaderProps) {
     orderNumber: string;
     createdAt: string;
     status: string;
-    paymentMethod: string;
-    shippingMethod: string;
+    paymentMethod: string | null;
+    shippingMethod: string | null;
     items: Array<{
       name: string;
       quantity: number;
@@ -66,7 +66,25 @@ export function OrderHeader({ order }: OrderHeaderProps) {
     totalAmount: string;
   };
   const printMutationOptions = trpc.orders.print.mutationOptions({
-    onSuccess: (data: PrintOrderData) => {
+    onSuccess: (payload) => {
+      const data: PrintOrderData = {
+        orderNumber: payload.order.orderNumber,
+        createdAt: payload.order.createdAt,
+        status: payload.order.status,
+        paymentMethod: payload.order.paymentMethod ?? null,
+        shippingMethod: payload.order.shippingMethod ?? null,
+        items: (payload.order.items || []).map((i) => ({
+          name: i.productName,
+          quantity: i.quantity,
+          price: i.unitPrice,
+          totalPrice: i.totalPrice,
+        })),
+        currency: "RUB",
+        subtotalAmount: payload.order.subtotalAmount,
+        shippingAmount: payload.order.shippingAmount,
+        taxAmount: payload.order.taxAmount,
+        totalAmount: payload.order.totalAmount,
+      };
       const printWindow = window.open("", "_blank");
       if (printWindow) {
         printWindow.document.write(`

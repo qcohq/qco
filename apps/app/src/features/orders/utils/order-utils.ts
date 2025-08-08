@@ -93,19 +93,47 @@ export function getStatusColor(status: string): string {
  * Получает метку для статуса заказа
  */
 export function getStatusLabel(status: string): string {
+    const normalized = (status || "").toLowerCase();
     const statusLabels: Record<string, string> = {
-        "pending": "Ожидает оплаты",
-        "processing": "Обработка",
-        "shipped": "Отправлен",
-        "delivered": "Доставлен",
-        "cancelled": "Отменен",
-        "Ожидает оплаты": "Ожидает оплаты",
-        "Обработка": "Обработка",
-        "Отправлен": "Отправлен",
-        "Доставлен": "Доставлен",
-        "Отменен": "Отменен",
-    };
-    return statusLabels[status] || status;
+        // base enum values
+        pending: "Ожидает оплаты",
+        confirmed: "Подтверждён",
+        processing: "В обработке",
+        shipped: "Отправлен",
+        delivered: "Доставлен",
+        cancelled: "Отменён",
+        refunded: "Возврат",
+
+        // sometimes come in uppercase
+        pending_upper: "Ожидает оплаты",
+        confirmed_upper: "Подтверждён",
+        processing_upper: "В обработке",
+        shipped_upper: "Отправлен",
+        delivered_upper: "Доставлен",
+        cancelled_upper: "Отменён",
+        refunded_upper: "Возврат",
+
+        // extra states used in UI mappings
+        failed: "Ошибка",
+        on_hold: "На удержании",
+        partially_refunded: "Частичный возврат",
+
+        // already localized variants (idempotent)
+        "ожидает оплаты": "Ожидает оплаты",
+        "подтверждён": "Подтверждён",
+        "в обработке": "В обработке",
+        "отправлен": "Отправлен",
+        "доставлен": "Доставлен",
+        "отменён": "Отменён",
+        "возврат": "Возврат",
+        "ошибка": "Ошибка",
+        "на удержании": "На удержании",
+        "частичный возврат": "Частичный возврат",
+    } as const;
+
+    if (status in statusLabels) return statusLabels[status];
+    if ((status || "").toUpperCase() in statusLabels) return statusLabels[(status as string).toUpperCase() as keyof typeof statusLabels];
+    return statusLabels[normalized] || status;
 }
 
 /**

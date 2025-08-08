@@ -36,13 +36,18 @@ export const ShippingMethod = {
 
 // Маппинг статусов заказа на русский язык (только существующие в БД)
 export const ORDER_STATUS_LABELS: Record<string, string> = {
-    [OrderStatus.PENDING]: "Заказ создан",
-    [OrderStatus.CONFIRMED]: "Заказ подтверждён",
-    [OrderStatus.PROCESSING]: "Заказ в обработке",
-    [OrderStatus.SHIPPED]: "Заказ отправлен",
-    [OrderStatus.DELIVERED]: "Заказ доставлен",
-    [OrderStatus.CANCELLED]: "Заказ отменён",
-    [OrderStatus.REFUNDED]: "Заказ возвращён",
+    [OrderStatus.PENDING]: "В ожидании",
+    [OrderStatus.CONFIRMED]: "Подтверждён",
+    [OrderStatus.PROCESSING]: "В обработке",
+    [OrderStatus.SHIPPED]: "Отправлен",
+    [OrderStatus.DELIVERED]: "Доставлен",
+    [OrderStatus.CANCELLED]: "Отменён",
+    [OrderStatus.REFUNDED]: "Возврат",
+    // Дополнительные возможные значения, встречающиеся в UI
+    completed: "Завершён",
+    failed: "Ошибка",
+    on_hold: "На удержании",
+    partially_refunded: "Частичный возврат",
 } as const;
 
 /**

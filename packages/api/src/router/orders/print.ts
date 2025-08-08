@@ -1,13 +1,13 @@
 import { TRPCError } from "@trpc/server";
 import { eq } from "drizzle-orm";
 
-import { orders, orderItems, customers } from "@qco/db/schema";
+import { orders, customers } from "@qco/db/schema";
 import { protectedProcedure } from "../../trpc";
 import { orderPrintSchema } from "@qco/validators";
 
-export const printOrder = protectedProcedure
+export const print = protectedProcedure
     .input(orderPrintSchema)
-    .query(async ({ ctx, input }) => {
+    .mutation(async ({ ctx, input }) => {
         const { id } = input;
 
         const order = await ctx.db.query.orders.findFirst({
@@ -46,10 +46,13 @@ export const printOrder = protectedProcedure
                 id: order.id,
                 orderNumber: order.orderNumber,
                 status: order.status,
+                subtotalAmount: order.subtotalAmount,
                 totalAmount: order.totalAmount,
                 taxAmount: order.taxAmount,
                 shippingAmount: order.shippingAmount,
                 discountAmount: order.discountAmount,
+                paymentMethod: order.paymentMethod ?? null,
+                shippingMethod: order.shippingMethod ?? null,
                 createdAt: order.createdAt.toISOString(),
                 updatedAt: order.updatedAt.toISOString(),
                 cancelledAt: order.cancelledAt?.toISOString() || null,
@@ -61,7 +64,6 @@ export const printOrder = protectedProcedure
                     quantity: item.quantity,
                     unitPrice: item.unitPrice,
                     totalPrice: item.totalPrice,
-
                 })) || [],
             },
             customer: {

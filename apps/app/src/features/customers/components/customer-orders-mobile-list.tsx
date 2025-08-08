@@ -12,6 +12,7 @@ import {
 } from "@qco/ui/components/dropdown-menu";
 import { cn } from "@qco/ui/lib/utils";
 import type { OrderOutput } from "@qco/validators";
+import { ORDER_STATUS_LABELS } from "@qco/db/schema";
 import { Calendar, ExternalLink, Package } from "lucide-react";
 import Link from "next/link";
 
@@ -33,23 +34,8 @@ function getStatusColor(status: string) {
   }
 }
 
-// Функция для перевода статуса на русский
-function getStatusLabel(status: string) {
-  switch (status) {
-    case "pending":
-      return "Ожидает оплаты";
-    case "processing":
-      return "Обработка";
-    case "shipped":
-      return "Отправлен";
-    case "delivered":
-      return "Доставлен";
-    case "cancelled":
-      return "Отменен";
-    default:
-      return status;
-  }
-}
+// Единый словарь статусов
+const getStatusLabel = (status: string) => ORDER_STATUS_LABELS[status] || status;
 
 // TODO: Использовать тип из схемы пропсов мобильного списка заказов клиента, если появится в @qco/validators
 type CustomerOrdersMobileListProps = {
