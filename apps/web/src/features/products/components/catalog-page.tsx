@@ -22,7 +22,7 @@ import ProductFiltersPanelDynamic from "./product-filters-panel-dynamic";
 
 export default function CatalogPage() {
   // Используем хук для получения продуктов каталога
-  const { filteredProducts, isPending, isRefetching, error, filters, draftFilters, updateFilter, applyFilters } =
+  const { filteredProducts, isPending, isRefetching, error, filters, draftFilters, updateFilter, applyFilters, availableFilters } =
     useCatalogTRPC();
 
   // Адаптер для функции фильтрации
@@ -105,6 +105,13 @@ export default function CatalogPage() {
                   updateFilter("inStock", false);
                   updateFilter("onSale", false);
                   updateFilter("attributes", {} as any);
+                  updateFilter(
+                    "priceRange",
+                    [
+                      availableFilters?.priceRange?.min ?? 0,
+                      availableFilters?.priceRange?.max ?? 500000,
+                    ],
+                  );
                 }}
                 onApply={() => {
                   applyFilters();
@@ -131,6 +138,13 @@ export default function CatalogPage() {
               updateFilter("inStock", false);
               updateFilter("onSale", false);
               updateFilter("attributes", {} as any);
+              updateFilter(
+                "priceRange",
+                [
+                  availableFilters?.priceRange?.min ?? 0,
+                  availableFilters?.priceRange?.max ?? 500000,
+                ],
+              );
             }}
             onApply={applyFilters}
             isRefetching={isRefetching}

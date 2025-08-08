@@ -101,7 +101,10 @@ export function useCatalogTRPC(
   }, [products, subcategory]);
 
   // Обновление черновых фильтров — UI меняет только их
-  const updateFilter = (filterType: keyof CatalogFilters, value: any) => {
+  const updateFilter = <K extends keyof CatalogFilters>(
+    filterType: K,
+    value: CatalogFilters[K],
+  ) => {
     setDraftFilters((prev) => ({
       ...prev,
       [filterType]: value,

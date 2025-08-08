@@ -22,7 +22,10 @@ interface ProductFiltersPanelDynamicProps {
     // applied + draft режим: отображаем значения из draft
     filters: CatalogFilters;
     appliedFilters?: CatalogFilters;
-    onFilterChange: (filterType: keyof CatalogFilters, value: any) => void;
+    onFilterChange: (
+        filterType: keyof CatalogFilters,
+        value: CatalogFilters[keyof CatalogFilters]
+    ) => void;
     onClearFilters: () => void;
     onApply?: () => void;
     isRefetching?: boolean;
