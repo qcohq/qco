@@ -213,14 +213,16 @@ export async function createOrder(
     };
 
     // Создаем элементы заказа
+    // Мы храним SKU продукта (не варианта) в колонке product_sku, чтобы иметь стабильный идентификатор товара в заказе.
+    // Если SKU отсутствует, подставляем безопасный фолбэк.
     const orderItemsToInsert: typeof orderItemsTable.$inferInsert[] = cart.items.map((item) => ({
       id: createId(),
       orderId: orderId,
       productId: item.productId,
       productName: item.product?.name || "Unknown Product",
-      productSku: item.variant?.sku ?? item.product?.sku ?? null,
+      productSku: item.product?.sku ?? `SKU-${item.productId}`,
       variantId: item.variantId || null,
-      variantName: item.variant?.name ?? null,
+      variantName: item.variant?.name ?? item.product?.name ?? "Default Variant",
       quantity: item.quantity,
       unitPrice: String(item.price),
       totalPrice: String(Number(item.price) * item.quantity),
