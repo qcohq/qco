@@ -93,19 +93,36 @@ export function getStatusColor(status: string): string {
  * Получает метку для статуса заказа
  */
 export function getStatusLabel(status: string): string {
+    const normalized = (status || "").toLowerCase();
     const statusLabels: Record<string, string> = {
-        "pending": "Ожидает оплаты",
-        "processing": "Обработка",
-        "shipped": "Отправлен",
-        "delivered": "Доставлен",
-        "cancelled": "Отменен",
-        "Ожидает оплаты": "Ожидает оплаты",
-        "Обработка": "Обработка",
-        "Отправлен": "Отправлен",
-        "Доставлен": "Доставлен",
-        "Отменен": "Отменен",
-    };
-    return statusLabels[status] || status;
+        // base enum values (lowercase)
+        pending: "Ожидает оплаты",
+        confirmed: "Подтверждён",
+        processing: "В обработке",
+        shipped: "Отправлен",
+        delivered: "Доставлен",
+        cancelled: "Отменён",
+        refunded: "Возврат",
+
+        // extra states used in UI mappings (lowercase)
+        failed: "Ошибка",
+        on_hold: "На удержании",
+        partially_refunded: "Частичный возврат",
+
+        // already localized variants (kept lowercase for idempotency)
+        "ожидает оплаты": "Ожидает оплаты",
+        "подтверждён": "Подтверждён",
+        "в обработке": "В обработке",
+        "отправлен": "Отправлен",
+        "доставлен": "Доставлен",
+        "отменён": "Отменён",
+        "возврат": "Возврат",
+        "ошибка": "Ошибка",
+        "на удержании": "На удержании",
+        "частичный возврат": "Частичный возврат",
+    } as const;
+
+    return statusLabels[normalized] || status;
 }
 
 /**
