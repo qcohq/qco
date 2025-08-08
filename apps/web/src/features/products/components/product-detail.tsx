@@ -3,12 +3,6 @@
 import { Badge } from "@qco/ui/components/badge";
 import { Button } from "@qco/ui/components/button";
 import { Separator } from "@qco/ui/components/separator";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@qco/ui/components/tabs";
 import { Loader2, RotateCcw, Share2, Shield, Truck } from "lucide-react";
 import { useEffect, useState } from "react";
 import { FavoriteButton } from "@/features/favorites/components/favorite-button";
@@ -19,7 +13,7 @@ import ProductSpecifications from "./product-specifications";
 import RelatedProducts from "./related-products";
 import SizeGuide from "./size-guide";
 import { BrandLink } from "./brand-link";
-import type { ProductDetail } from "@qco/web-validators/product-detail";
+import type { ProductDetail } from "@qco/web-validators";
 
 interface ProductDetailProps {
   product: ProductDetail;
@@ -155,7 +149,7 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
     ? selectedVariant.salePrice || selectedVariant.price
     : product.salePrice || product.basePrice || 0;
 
-  const originalPrice = selectedVariant?.compareAtPrice || product.basePrice;
+  const originalPrice = selectedVariant ? selectedVariant.price : product.basePrice;
   // Рассчитываем скидку
   const discountPercentage =
     originalPrice && currentPrice && originalPrice > currentPrice
@@ -332,6 +326,59 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
           </div>
         </div>
 
+        <Separator />
+
+        {/* Описание */}
+        <div className="space-y-2 sm:space-y-3">
+          <h2 className="text-base sm:text-lg font-semibold">Описание</h2>
+          <div className="prose max-w-none">
+            <div
+              className="text-muted-foreground leading-relaxed text-sm sm:text-base"
+              dangerouslySetInnerHTML={{ __html: product.description || "" }}
+            />
+          </div>
+        </div>
+
+        <Separator />
+
+        {/* Характеристики */}
+        <div className="space-y-4 sm:space-y-6">
+          <h2 className="text-base sm:text-lg font-semibold">Характеристики</h2>
+          {/* Спецификации продукта */}
+          <ProductSpecifications
+            specifications={product.attributes}
+            attributes={attributes}
+          />
+
+          {/* Дополнительные характеристики */}
+          {product.features && product.features.length > 0 && (
+            <div className="space-y-2 sm:space-y-3">
+              <h3 className="font-medium text-sm sm:text-base">
+                Дополнительная информация
+              </h3>
+              {product.features.map((detail: string, index: number) => (
+                <div
+                  key={index}
+                  className="flex justify-between py-2 border-b border-gray-100 last:border-0 text-sm sm:text-base"
+                >
+                  <span className="text-muted-foreground">
+                    {detail.split(":")[0]}:
+                  </span>
+                  <span className="font-medium">{detail.split(":")[1]}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {(!product.attributes || Object.keys(product.attributes).length === 0) &&
+            (!product.features || product.features.length === 0) &&
+            (!attributes || attributes.length === 0) && (
+              <p className="text-muted-foreground text-sm sm:text-base">
+                Характеристики не указаны
+              </p>
+            )}
+        </div>
+
         {/* Преимущества */}
         <div className="space-y-2 sm:space-y-3 pt-3 sm:pt-4">
           <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm">
@@ -349,67 +396,7 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
         </div>
       </div>
 
-      {/* Подробная информация */}
-      <div className="lg:col-span-2 mt-8 sm:mt-12">
-        <Tabs defaultValue="description" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 h-10 sm:h-12">
-            <TabsTrigger value="description" className="text-xs sm:text-sm">
-              Описание
-            </TabsTrigger>
-            <TabsTrigger value="details" className="text-xs sm:text-sm">
-              Характеристики
-            </TabsTrigger>
-          </TabsList>
-
-          <TabsContent value="description" className="mt-4 sm:mt-6">
-            <div className="prose max-w-none">
-              <div
-                className="text-muted-foreground leading-relaxed text-sm sm:text-base"
-                dangerouslySetInnerHTML={{ __html: product.description || "" }}
-              />
-            </div>
-          </TabsContent>
-
-          <TabsContent value="details" className="mt-4 sm:mt-6">
-            <div className="space-y-4 sm:space-y-6">
-              {/* Спецификации продукта */}
-              <ProductSpecifications
-                specifications={product.attributes}
-                attributes={attributes}
-              />
-              {/* Дополнительные характеристики */}
-              {product.features && product.features.length > 0 && (
-                <div className="space-y-2 sm:space-y-3">
-                  <h3 className="font-medium text-sm sm:text-base">
-                    Дополнительная информация
-                  </h3>
-                  {product.features.map((detail: string, index: number) => (
-                    <div
-                      key={index}
-                      className="flex justify-between py-2 border-b border-gray-100 last:border-0 text-sm sm:text-base"
-                    >
-                      <span className="text-muted-foreground">
-                        {detail.split(":")[0]}:
-                      </span>
-                      <span className="font-medium">
-                        {detail.split(":")[1]}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              )}
-              {(!product.attributes ||
-                Object.keys(product.attributes).length === 0) &&
-                (!product.features || product.features.length === 0) &&
-                (!attributes || attributes.length === 0) && (
-                  <p className="text-muted-foreground text-sm sm:text-base">
-                    Характеристики не указаны
-                  </p>
-                )}
-            </div>
-          </TabsContent>
-        </Tabs>
-      </div>
+      {/* Блок подробной информации перенесён выше, под кнопкой добавления в корзину */}
 
       {/* Связанные продукты */}
       {product.relatedProducts.length > 0 && (

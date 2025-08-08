@@ -23,9 +23,6 @@ export default function ProductSpecifications({
 
   return (
     <div className={`space-y-2 sm:space-y-3 ${className}`}>
-      <h3 className="font-medium text-sm sm:text-base">
-        Характеристики
-      </h3>
       {description && (
         <p className="text-xs sm:text-sm text-muted-foreground mb-2">
           {description}
