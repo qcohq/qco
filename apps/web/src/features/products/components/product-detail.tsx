@@ -159,6 +159,14 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
   // Получаем URL изображений для галереи
   const imageUrls = product.images.map((img) => img.url);
 
+  // Проверяем наличие характеристик
+  const hasProductAttributes =
+    !!product.attributes && Object.keys(product.attributes).length > 0;
+  const hasFeatures = !!product.features && product.features.length > 0;
+  const hasComputedAttributes = !!attributes && attributes.length > 0;
+  const hasCharacteristics =
+    hasProductAttributes || hasFeatures || hasComputedAttributes;
+
 
 
 
@@ -339,45 +347,40 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
           </div>
         </div>
 
-        <Separator />
+        {hasCharacteristics && (
+          <>
+            <Separator />
+            {/* Характеристики */}
+            <div className="space-y-4 sm:space-y-6">
+              <h2 className="text-base sm:text-lg font-semibold">Характеристики</h2>
+              {/* Спецификации продукта */}
+              <ProductSpecifications
+                specifications={product.attributes}
+                attributes={attributes}
+              />
 
-        {/* Характеристики */}
-        <div className="space-y-4 sm:space-y-6">
-          <h2 className="text-base sm:text-lg font-semibold">Характеристики</h2>
-          {/* Спецификации продукта */}
-          <ProductSpecifications
-            specifications={product.attributes}
-            attributes={attributes}
-          />
-
-          {/* Дополнительные характеристики */}
-          {product.features && product.features.length > 0 && (
-            <div className="space-y-2 sm:space-y-3">
-              <h3 className="font-medium text-sm sm:text-base">
-                Дополнительная информация
-              </h3>
-              {product.features.map((detail: string, index: number) => (
-                <div
-                  key={index}
-                  className="flex justify-between py-2 border-b border-gray-100 last:border-0 text-sm sm:text-base"
-                >
-                  <span className="text-muted-foreground">
-                    {detail.split(":")[0]}:
-                  </span>
-                  <span className="font-medium">{detail.split(":")[1]}</span>
+              {/* Дополнительные характеристики */}
+              {product.features && product.features.length > 0 && (
+                <div className="space-y-2 sm:space-y-3">
+                  <h3 className="font-medium text-sm sm:text-base">
+                    Дополнительная информация
+                  </h3>
+                  {product.features.map((detail: string, index: number) => (
+                    <div
+                      key={index}
+                      className="flex justify-between py-2 border-b border-gray-100 last:border-0 text-sm sm:text-base"
+                    >
+                      <span className="text-muted-foreground">
+                        {detail.split(":")[0]}:
+                      </span>
+                      <span className="font-medium">{detail.split(":")[1]}</span>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
-          )}
-
-          {(!product.attributes || Object.keys(product.attributes).length === 0) &&
-            (!product.features || product.features.length === 0) &&
-            (!attributes || attributes.length === 0) && (
-              <p className="text-muted-foreground text-sm sm:text-base">
-                Характеристики не указаны
-              </p>
-            )}
-        </div>
+          </>
+        )}
 
         {/* Преимущества */}
         <div className="space-y-2 sm:space-y-3 pt-3 sm:pt-4">
