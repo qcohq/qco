@@ -95,7 +95,7 @@ export function getStatusColor(status: string): string {
 export function getStatusLabel(status: string): string {
     const normalized = (status || "").toLowerCase();
     const statusLabels: Record<string, string> = {
-        // base enum values
+        // base enum values (lowercase)
         pending: "Ожидает оплаты",
         confirmed: "Подтверждён",
         processing: "В обработке",
@@ -104,21 +104,12 @@ export function getStatusLabel(status: string): string {
         cancelled: "Отменён",
         refunded: "Возврат",
 
-        // sometimes come in uppercase
-        pending_upper: "Ожидает оплаты",
-        confirmed_upper: "Подтверждён",
-        processing_upper: "В обработке",
-        shipped_upper: "Отправлен",
-        delivered_upper: "Доставлен",
-        cancelled_upper: "Отменён",
-        refunded_upper: "Возврат",
-
-        // extra states used in UI mappings
+        // extra states used in UI mappings (lowercase)
         failed: "Ошибка",
         on_hold: "На удержании",
         partially_refunded: "Частичный возврат",
 
-        // already localized variants (idempotent)
+        // already localized variants (kept lowercase for idempotency)
         "ожидает оплаты": "Ожидает оплаты",
         "подтверждён": "Подтверждён",
         "в обработке": "В обработке",
@@ -131,8 +122,6 @@ export function getStatusLabel(status: string): string {
         "частичный возврат": "Частичный возврат",
     } as const;
 
-    if (status in statusLabels) return statusLabels[status];
-    if ((status || "").toUpperCase() in statusLabels) return statusLabels[(status as string).toUpperCase() as keyof typeof statusLabels];
     return statusLabels[normalized] || status;
 }
 
