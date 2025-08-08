@@ -24,9 +24,7 @@ const nextConfig = {
     ],
     formats: ["image/webp", "image/avif"],
   },
-  experimental: {
-    optimizePackageImports: ["lucide-react"],
-  },
+
   output: "standalone",
   async headers() {
     return [
