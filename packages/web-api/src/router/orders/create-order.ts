@@ -78,14 +78,14 @@ export const createOrderProcedure = publicProcedure
       // Отправляем email уведомление клиенту о создании заказа
       try {
         const orderItems = cart.items.map((item) => ({
-          name: item.product?.name || `Product ${item.productId}`,
+          name: item.product?.name || `Товар ${item.productId}`,
           quantity: item.quantity,
           price: `${Number.parseFloat(String(item.price)).toFixed(2)} ₽`,
         }));
 
         await sendEmail({
           react: OrderCreatedEmail({
-            username: customerInfo.firstName || "Customer",
+            username: customerInfo.firstName || "Клиент",
             orderNumber: order.orderNumber,
             totalAmount: `${total.toFixed(2)} ₽`,
             items: orderItems,

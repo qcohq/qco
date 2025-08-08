@@ -23,7 +23,10 @@ export function useCatalogTRPC(
   searchQuery?: string,
 ) {
   const trpc = useTRPC();
+  // appliedFilters — применённые фильтры, которые используются для запроса
   const [filters, setFilters] = useState<CatalogFilters>(createInitialFilters());
+  // draftFilters — черновик фильтров, который меняется в UI до нажатия «Apply»
+  const [draftFilters, setDraftFilters] = useState<CatalogFilters>(filters);
   const [sortBy, setSortBy] = useState<"newest" | "price-asc" | "price-desc" | "name-asc" | "name-desc" | "popular">("newest");
 
   // Получаем доступные фильтры для категории
@@ -31,14 +34,24 @@ export function useCatalogTRPC(
     categorySlug: category || "all",
   });
 
-  const { data: categoryFiltersData } = useQuery(categoryFiltersQueryOptions);
+  const { data: categoryFiltersData } = useQuery({
+    ...categoryFiltersQueryOptions,
+    placeholderData: (prev) => prev,
+    staleTime: 30_000,
+    refetchOnWindowFocus: false,
+  });
 
   // Обновляем фильтры при получении данных о ценах
   useEffect(() => {
     if (categoryFiltersData?.priceRange) {
       const { min, max } = categoryFiltersData.priceRange;
       if (min > 0 || max > 0) {
+        // Инициализируем и applied, и draft одинаково при первом получении
         setFilters(prev => ({
+          ...prev,
+          priceRange: [min, max]
+        }));
+        setDraftFilters(prev => ({
           ...prev,
           priceRange: [min, max]
         }));
@@ -63,8 +76,13 @@ export function useCatalogTRPC(
     },
   });
 
-  // Используем useQuery для получения данных
-  const { data, isPending, error } = useQuery(productsQueryOptions);
+  // Используем useQuery для получения данных и сохраняем предыдущие данные
+  const { data, isPending, isFetching, error } = useQuery({
+    ...productsQueryOptions,
+    placeholderData: (prev) => prev,
+    staleTime: 15_000,
+    refetchOnWindowFocus: false,
+  });
 
   const products = data?.products || [];
 
@@ -82,18 +100,29 @@ export function useCatalogTRPC(
     return filtered;
   }, [products, subcategory]);
 
-  const updateFilter = (filterType: keyof CatalogFilters, value: any) => {
-    setFilters((prev) => ({
+  // Обновление черновых фильтров — UI меняет только их
+  const updateFilter = <K extends keyof CatalogFilters>(
+    filterType: K,
+    value: CatalogFilters[K],
+  ) => {
+    setDraftFilters((prev) => ({
       ...prev,
       [filterType]: value,
     }));
+  };
+
+  // Применить фильтры — переносим черновик в applied
+  const applyFilters = () => {
+    setFilters(draftFilters);
   };
 
   const clearFilters = () => {
     // Используем динамические цены при сбросе фильтров
     const maxPrice = categoryFiltersData?.priceRange?.max || 500000;
     const minPrice = categoryFiltersData?.priceRange?.min || 0;
-    setFilters(createInitialFilters({ min: minPrice, max: maxPrice }));
+    const next = createInitialFilters({ min: minPrice, max: maxPrice });
+    setFilters(next);
+    setDraftFilters(next);
   };
 
   const removeFilter = (
@@ -108,8 +137,16 @@ export function useCatalogTRPC(
         ...prev,
         priceRange: [minPrice, maxPrice],
       }));
+      setDraftFilters((prev) => ({
+        ...prev,
+        priceRange: [minPrice, maxPrice],
+      }));
     } else if (filterType === "inStock" || filterType === "onSale") {
       setFilters((prev) => ({
+        ...prev,
+        [filterType]: false,
+      }));
+      setDraftFilters((prev) => ({
         ...prev,
         [filterType]: false,
       }));
@@ -120,19 +157,32 @@ export function useCatalogTRPC(
           (item) => item !== value,
         ),
       }));
+      setDraftFilters((prev) => ({
+        ...prev,
+        [filterType]: (prev[filterType] as string[]).filter(
+          (item) => item !== value,
+        ),
+      }));
     }
   };
 
   return {
+    // applied
     filters,
+    // draft
+    draftFilters,
     sortBy,
     setSortBy,
     filteredProducts,
     updateFilter,
     clearFilters,
     removeFilter,
+    // Начальная загрузка
     isPending,
+    // refetch при применении — продукты не моргают
+    isRefetching: isFetching && !!data,
     error,
+    applyFilters,
     // Добавляем доступные фильтры для использования в компонентах
     availableFilters: categoryFiltersData,
   };

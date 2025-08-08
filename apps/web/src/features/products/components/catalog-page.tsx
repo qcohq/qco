@@ -22,7 +22,7 @@ import ProductFiltersPanelDynamic from "./product-filters-panel-dynamic";
 
 export default function CatalogPage() {
   // Используем хук для получения продуктов каталога
-  const { filteredProducts, isPending, error, filters, updateFilter } =
+  const { filteredProducts, isPending, isRefetching, error, filters, draftFilters, updateFilter, applyFilters, availableFilters } =
     useCatalogTRPC();
 
   // Адаптер для функции фильтрации
@@ -30,7 +30,7 @@ export default function CatalogPage() {
     updateFilter(filterType as any, value);
   };
 
-  if (isPending) {
+  if (isPending && filteredProducts.length === 0) {
     return (
       <div className="space-y-6">
         <div className="flex items-center justify-between">
@@ -95,7 +95,8 @@ export default function CatalogPage() {
                 <SheetTitle>Фильтры</SheetTitle>
               </SheetHeader>
               <ProductFiltersPanelDynamic
-                filters={filters}
+                filters={draftFilters}
+                appliedFilters={filters}
                 onFilterChange={updateFilter}
                 onClearFilters={() => {
                   updateFilter("brands", []);
@@ -103,8 +104,19 @@ export default function CatalogPage() {
                   updateFilter("colors", []);
                   updateFilter("inStock", false);
                   updateFilter("onSale", false);
-                  // Ценовой диапазон сбрасывается автоматически в хуке
+                  updateFilter("attributes", {} as any);
+                  updateFilter(
+                    "priceRange",
+                    [
+                      availableFilters?.priceRange?.min ?? 0,
+                      availableFilters?.priceRange?.max ?? 500000,
+                    ],
+                  );
                 }}
+                onApply={() => {
+                  applyFilters();
+                }}
+                isRefetching={isRefetching}
                 categorySlug="all"
               />
             </SheetContent>
@@ -116,7 +128,8 @@ export default function CatalogPage() {
         {/* Desktop Filters */}
         <div className="hidden lg:block">
           <ProductFiltersPanelDynamic
-            filters={filters}
+            filters={draftFilters}
+            appliedFilters={filters}
             onFilterChange={updateFilter}
             onClearFilters={() => {
               updateFilter("brands", []);
@@ -124,8 +137,17 @@ export default function CatalogPage() {
               updateFilter("colors", []);
               updateFilter("inStock", false);
               updateFilter("onSale", false);
-              // Ценовой диапазон сбрасывается автоматически в хуке
+              updateFilter("attributes", {} as any);
+              updateFilter(
+                "priceRange",
+                [
+                  availableFilters?.priceRange?.min ?? 0,
+                  availableFilters?.priceRange?.max ?? 500000,
+                ],
+              );
             }}
+            onApply={applyFilters}
+            isRefetching={isRefetching}
             categorySlug="all"
           />
         </div>

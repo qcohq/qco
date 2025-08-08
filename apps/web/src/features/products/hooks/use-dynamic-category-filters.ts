@@ -32,8 +32,14 @@ export function useDynamicCategoryFilters({ categorySlug, appliedFilters }: UseD
         appliedFilters: apiFilters,
     });
 
-    // Используем опции с хуком useQuery
-    const { data, isPending, error } = useQuery(dynamicFiltersQueryOptions);
+    // Используем опции с хуком useQuery с сохранением предыдущих данных
+    const { data, isPending, isFetching, error } = useQuery({
+        ...dynamicFiltersQueryOptions,
+        // сохраняем предыдущие данные, чтобы не показывать скелетон при применении фильтров
+        placeholderData: (prev) => prev,
+        staleTime: 30_000,
+        refetchOnWindowFocus: false,
+    });
 
     // Предоставляем типизированные данные
     const filters: GetCategoryFiltersResponse = data || {
@@ -47,7 +53,10 @@ export function useDynamicCategoryFilters({ categorySlug, appliedFilters }: UseD
 
     return {
         filters,
-        isPending,
+        // initial loading — только первый запрос без предыдущих данных
+        isInitialLoading: isPending && !data,
+        // refetching при применении фильтров (данные при этом остаются)
+        isRefetching: isFetching && !!data,
         error,
         // Полезные вычисляемые свойства
         hasSizes: filters.sizes.length > 0,
