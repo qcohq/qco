@@ -12,7 +12,7 @@ import {
 import { emailTailwindConfig } from "../../tailwind";
 import { env } from "../../env";
 
-export function OtpSignInEmail({
+export default function OtpSignInEmail({
 	otp,
 	isSignUp = false,
 }: {

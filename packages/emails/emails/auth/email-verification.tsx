@@ -22,7 +22,7 @@ interface EmailVerificationProps {
   url?: string;
 }
 
-export function EmailVerification({ otp, email, url }: EmailVerificationProps) {
+export default function EmailVerification({ otp, email, url }: EmailVerificationProps) {
   return (
     <Html>
       <Head />

@@ -30,7 +30,7 @@ interface OrderUpdatedEmailProps {
   status?: string;
 }
 
-export function OrderUpdatedEmail({
+export default function OrderUpdatedEmail({
   username,
   orderId,
   orderNumber,
@@ -60,7 +60,7 @@ export function OrderUpdatedEmail({
               <strong>Номер заказа:</strong> {orderNumber}
             </Text>
             <Section className="mb-[32px] mt-[32px]">
-              {changes.map((change) => (
+              {changes?.map((change) => (
                 <Text
                   key={change.field}
                   className="text-[14px] leading-[24px] text-black"

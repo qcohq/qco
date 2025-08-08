@@ -17,7 +17,7 @@ interface OrderCancelledEmailProps {
     orderUrl?: string;
 }
 
-export function OrderCancelledEmail({
+export default function OrderCancelledEmail({
     username,
     orderNumber,
     orderUrl,

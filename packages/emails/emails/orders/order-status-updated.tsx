@@ -26,7 +26,7 @@ interface OrderStatusUpdatedEmailProps {
 	comment?: string;
 }
 
-export function OrderStatusUpdatedEmail({
+export default function OrderStatusUpdatedEmail({
 	username,
 	orderId,
 	orderNumber,

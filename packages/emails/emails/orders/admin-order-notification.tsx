@@ -36,7 +36,7 @@ interface AdminOrderNotificationProps {
     adminOrderUrl?: string;
 }
 
-export function AdminOrderNotification({
+export default function AdminOrderNotification({
     orderNumber,
     customerName,
     customerEmail,
@@ -86,7 +86,7 @@ export function AdminOrderNotification({
                             <Text className="text-[16px] font-semibold text-black mb-[16px]">
                                 Состав заказа
                             </Text>
-                            {items.map((item, index) => (
+                            {items?.map((item, index) => (
                                 <div key={index} className="mb-[12px] pb-[12px] border-b border-gray-200 last:border-b-0">
                                     <Text className="text-[14px] leading-[20px] text-black font-medium">
                                         {item.name}

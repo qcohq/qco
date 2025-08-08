@@ -19,7 +19,7 @@ interface OrderDeletedEmailProps {
 	totalAmount: string;
 }
 
-export function OrderDeletedEmail({
+export default function OrderDeletedEmail({
 	username,
 	orderId,
 	orderNumber,

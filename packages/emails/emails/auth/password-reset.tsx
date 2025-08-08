@@ -16,7 +16,7 @@ import {
 import { emailTailwindConfig } from "../../tailwind";
 import { env } from "../../env";
 
-export function PasswordResetEmail({
+export default function PasswordResetEmail({
   username = "username",
   resetLink,
 }: {

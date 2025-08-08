@@ -25,7 +25,7 @@ interface AdminInvitationEmailProps {
     expiresAt: string;
 }
 
-export function AdminInvitationEmail({
+export default function AdminInvitationEmail({
     name,
     email,
     role,

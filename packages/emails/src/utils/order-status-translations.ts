@@ -46,6 +46,7 @@ export const orderStatusTranslations: Record<string, string> = {
  * Переводит статус заказа на русский язык
  */
 export function translateOrderStatus(status: string): string {
+    if (!status) return "";
     return orderStatusTranslations[status.toLowerCase()] || status;
 }
 
@@ -53,6 +54,7 @@ export function translateOrderStatus(status: string): string {
  * Переводит статус оплаты на русский язык
  */
 export function translatePaymentStatus(status: string): string {
+    if (!status) return "";
     const key = status.toLowerCase().replace(/\s+/g, '_');
     return orderStatusTranslations[key] || status;
 }
@@ -61,6 +63,7 @@ export function translatePaymentStatus(status: string): string {
  * Переводит способ доставки на русский язык
  */
 export function translateShippingMethod(method: string): string {
+    if (!method) return "";
     return orderStatusTranslations[method.toLowerCase()] || method;
 }
 
@@ -68,5 +71,6 @@ export function translateShippingMethod(method: string): string {
  * Переводит способ оплаты на русский язык
  */
 export function translatePaymentMethod(method: string): string {
+    if (!method) return "";
     return orderStatusTranslations[method.toLowerCase()] || method;
 } 

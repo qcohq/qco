@@ -14,7 +14,7 @@ import {
 import { emailTailwindConfig } from "../../tailwind";
 import { env } from "../../env";
 
-export function EmailChangeVerification({ otp }: { otp: string }) {
+export default function EmailChangeVerification({ otp }: { otp: string }) {
   return (
     <Html>
       <Head />
