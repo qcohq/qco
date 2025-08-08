@@ -12,23 +12,30 @@ import { Label } from "@qco/ui/components/label";
 import { RangeSlider } from "@/components/ui/range-slider";
 import { Separator } from "@qco/ui/components/separator";
 import { Skeleton } from "@qco/ui/components/skeleton";
-import { ChevronDown, Clock } from "lucide-react";
+import { ChevronDown, Clock, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { useDynamicCategoryFilters } from "../hooks/use-dynamic-category-filters";
 import { useDebouncedPriceFilter } from "../hooks/use-debounced-price-filter";
 import type { CatalogFilters } from "../types/catalog";
 
 interface ProductFiltersPanelDynamicProps {
+    // applied + draft режим: отображаем значения из draft
     filters: CatalogFilters;
+    appliedFilters?: CatalogFilters;
     onFilterChange: (filterType: keyof CatalogFilters, value: any) => void;
     onClearFilters: () => void;
+    onApply?: () => void;
+    isRefetching?: boolean;
     categorySlug: string; // Обязательный параметр категории
 }
 
 export default function ProductFiltersPanelDynamic({
     filters,
+    appliedFilters,
     onFilterChange,
     onClearFilters,
+    onApply,
+    isRefetching,
     categorySlug,
 }: ProductFiltersPanelDynamicProps) {
     const [openSections, setOpenSections] = useState<string[]>([
@@ -39,9 +46,9 @@ export default function ProductFiltersPanelDynamic({
     ]);
 
     // Используем новый хук для получения динамических фильтров
-    const { filters: availableFilters, isPending, hasFilters } = useDynamicCategoryFilters({
+    const { filters: availableFilters, isInitialLoading, isRefetching: isFiltersRefetching, hasFilters } = useDynamicCategoryFilters({
         categorySlug,
-        appliedFilters: filters,
+        appliedFilters: appliedFilters ?? filters,
     });
 
     // Используем умный дебаунсинг для фильтра цены
@@ -98,8 +105,8 @@ export default function ProductFiltersPanelDynamic({
         }
     };
 
-    // Показываем скелетон во время загрузки
-    if (isPending) {
+    // Показываем скелетон только на первоначальной загрузке
+    if (isInitialLoading) {
         return (
             <div className="space-y-6">
                 <div className="space-y-4">
@@ -144,6 +151,14 @@ export default function ProductFiltersPanelDynamic({
                     Очистить все
                 </Button>
             </div>
+
+            {/* Индикация применения (без скелетона) */}
+            {(isFiltersRefetching || isRefetching) && (
+                <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                    <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                    <span>Обновляем доступные опции...</span>
+                </div>
+            )}
 
             {/* Цена */}
             {hasValidPriceRange && (
@@ -391,6 +406,18 @@ export default function ProductFiltersPanelDynamic({
                         </Collapsible>
                     ))}
                 </>
+            )}
+
+            {/* Кнопка применения */}
+            {onApply && (
+                <div className="pt-2">
+                    <Button className="w-full" onClick={onApply} disabled={isRefetching || isFiltersRefetching}>
+                        {(isRefetching || isFiltersRefetching) && (
+                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        )}
+                        Применить
+                    </Button>
+                </div>
             )}
         </div>
     );

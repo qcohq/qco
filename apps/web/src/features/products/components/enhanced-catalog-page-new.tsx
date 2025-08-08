@@ -40,9 +40,12 @@ export default function EnhancedCatalogPage({
   const {
     filteredProducts,
     isPending,
+    isRefetching,
     error,
     filters,
+    draftFilters,
     updateFilter,
+    applyFilters,
     sortBy,
     setSortBy,
   } = useCatalogTRPC(categorySlug, subcategorySlug);
@@ -57,7 +60,7 @@ export default function EnhancedCatalogPage({
   const subcategoryName = getSubcategoryName(subcategorySlug);
   const subsubcategoryName = getSubSubcategoryName(subsubcategorySlug);
 
-  if (isPending) {
+  if (isPending && filteredProducts.length === 0) {
     return (
       <div className="space-y-6">
         <div>
@@ -173,7 +176,8 @@ export default function EnhancedCatalogPage({
               />
               <Separator />
               <ProductFiltersPanelDynamic
-                filters={filters}
+                filters={draftFilters}
+                appliedFilters={filters}
                 onFilterChange={updateFilter}
                 onClearFilters={() => {
                   updateFilter("brands", []);
@@ -181,7 +185,13 @@ export default function EnhancedCatalogPage({
                   updateFilter("colors", []);
                   updateFilter("inStock", false);
                   updateFilter("onSale", false);
+                  updateFilter("attributes", {} as any);
                 }}
+                onApply={() => {
+                  applyFilters();
+                  setIsFilterDrawerOpen(false);
+                }}
+                isRefetching={isRefetching}
                 categorySlug={categorySlug || "all"}
               />
             </div>
@@ -199,7 +209,8 @@ export default function EnhancedCatalogPage({
           />
           <Separator className="my-6" />
           <ProductFiltersPanelDynamic
-            filters={filters}
+            filters={draftFilters}
+            appliedFilters={filters}
             onFilterChange={updateFilter}
             onClearFilters={() => {
               updateFilter("brands", []);
@@ -207,8 +218,10 @@ export default function EnhancedCatalogPage({
               updateFilter("colors", []);
               updateFilter("inStock", false);
               updateFilter("onSale", false);
-              // Ценовой диапазон сбрасывается автоматически в хуке
+              updateFilter("attributes", {} as any);
             }}
+            onApply={applyFilters}
+            isRefetching={isRefetching}
             categorySlug={categorySlug || "all"}
           />
         </div>

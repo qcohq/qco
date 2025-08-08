@@ -57,13 +57,16 @@ export default function CatalogPageLayout({
   // Получаем данные продуктов
   const {
     filters,
+    draftFilters,
     sortBy,
     setSortBy,
     filteredProducts,
     updateFilter,
+    applyFilters,
     clearFilters,
     removeFilter,
     isPending: isProductsLoading,
+    isRefetching,
   } = useCatalogTRPC(category, subcategory);
 
   // Функция-обертка для setSortBy с правильной типизацией
@@ -254,10 +257,20 @@ export default function CatalogPageLayout({
           />
           <Separator />
           <ProductFiltersPanelDynamic
-            filters={filters}
+            filters={draftFilters}
+            appliedFilters={filters}
             onFilterChange={updateFilter}
-            onClearFilters={clearFilters}
-            categorySlug={category || "all"} // Передаем slug категории
+            onClearFilters={() => {
+              updateFilter("brands", []);
+              updateFilter("sizes", []);
+              updateFilter("colors", []);
+              updateFilter("inStock", false);
+              updateFilter("onSale", false);
+              updateFilter("attributes", {} as any);
+            }}
+            onApply={applyFilters}
+            isRefetching={isRefetching}
+            categorySlug={category || "all"}
           />
         </div>
 
@@ -302,19 +315,25 @@ export default function CatalogPageLayout({
             />
             <Separator />
             <ProductFiltersPanelDynamic
-              filters={filters}
+              filters={draftFilters}
+              appliedFilters={filters}
               onFilterChange={updateFilter}
-              onClearFilters={clearFilters}
-              categorySlug={category || "all"} // Передаем slug категории
+              onClearFilters={() => {
+                updateFilter("brands", []);
+                updateFilter("sizes", []);
+                updateFilter("colors", []);
+                updateFilter("inStock", false);
+                updateFilter("onSale", false);
+                updateFilter("attributes", {} as any);
+              }}
+              onApply={() => {
+                applyFilters();
+                setIsFilterDrawerOpen(false);
+              }}
+              isRefetching={isRefetching}
+              categorySlug={category || "all"}
             />
-            <div className="pt-4">
-              <Button
-                className="w-full"
-                onClick={() => setIsFilterDrawerOpen(false)}
-              >
-                Применить фильтры ({filteredProducts.length})
-              </Button>
-            </div>
+            {/* Кнопка перенесена в саму панель фильтров */}
           </div>
         </SheetContent>
       </Sheet>
