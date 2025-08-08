@@ -11,9 +11,9 @@ import {
   Tailwind,
   Text,
 } from "@react-email/components";
-import { emailTailwindConfig } from "../tailwind";
-import { env } from "../env";
-import { translatePaymentMethod, translateShippingMethod } from "../src/utils/order-status-translations";
+import { emailTailwindConfig } from "../../tailwind";
+import { env } from "../../env";
+import { translatePaymentMethod, translateShippingMethod } from "../../src/utils/order-status-translations";
 
 const defaultOrderUrl = `${env.SITE_URL}/orders`;
 
@@ -40,7 +40,7 @@ interface OrderCreatedEmailProps {
   shippingCost?: string;
 }
 
-export function OrderCreatedEmail({
+export default function OrderCreatedEmail({
   username,
   orderNumber,
   orderUrl = defaultOrderUrl,
@@ -101,7 +101,7 @@ export function OrderCreatedEmail({
               <Text className="text-[16px] font-semibold text-black mb-[16px]">
                 Состав заказа
               </Text>
-              {items.map((item, index) => (
+              {items?.map((item, index) => (
                 <div key={index} className="mb-[12px] pb-[12px] border-b border-gray-200 last:border-b-0">
                   <Text className="text-[14px] leading-[20px] text-black font-medium">
                     {item.name}

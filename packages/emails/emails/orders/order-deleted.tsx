@@ -9,7 +9,7 @@ import {
 	Tailwind,
 	Text,
 } from "@react-email/components";
-import { emailTailwindConfig } from "../tailwind";
+import { emailTailwindConfig } from "../../tailwind";
 
 interface OrderDeletedEmailProps {
 	username: string;
@@ -19,7 +19,7 @@ interface OrderDeletedEmailProps {
 	totalAmount: string;
 }
 
-export function OrderDeletedEmail({
+export default function OrderDeletedEmail({
 	username,
 	orderId,
 	orderNumber,

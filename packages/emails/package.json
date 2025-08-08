@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "workspaces": [
-    ".react-email"
-  ],
   "exports": {
     ".": "./index.ts"
   },
@@ -35,6 +32,7 @@
     "zod": "4.0.15"
   },
   "devDependencies": {
+    "@react-email/preview-server": "4.2.8",
     "@types/node": "24.2.0",
     "@types/nodemailer": "^6.4.17",
     "@types/react": "19.1.9",

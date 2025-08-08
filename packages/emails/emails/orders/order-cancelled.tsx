@@ -13,14 +13,12 @@ import { Tailwind } from "@react-email/tailwind";
 
 interface OrderCancelledEmailProps {
     username: string;
-    orderId: string;
     orderNumber: string;
     orderUrl?: string;
 }
 
-export function OrderCancelledEmail({
+export default function OrderCancelledEmail({
     username,
-    orderId,
     orderNumber,
     orderUrl,
 }: OrderCancelledEmailProps) {

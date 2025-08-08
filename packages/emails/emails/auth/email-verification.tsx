@@ -13,8 +13,8 @@ import {
   Text,
 } from "@react-email/components";
 
-import { emailTailwindConfig } from "../tailwind";
-import { env } from "../env";
+import { emailTailwindConfig } from "../../tailwind";
+import { env } from "../../env";
 
 interface EmailVerificationProps {
   otp: string;
@@ -22,7 +22,7 @@ interface EmailVerificationProps {
   url?: string;
 }
 
-export function EmailVerification({ otp, email, url }: EmailVerificationProps) {
+export default function EmailVerification({ otp, email, url }: EmailVerificationProps) {
   return (
     <Html>
       <Head />

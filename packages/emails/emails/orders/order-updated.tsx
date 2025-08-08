@@ -11,9 +11,9 @@ import {
   Tailwind,
   Text,
 } from "@react-email/components";
-import { emailTailwindConfig } from "../tailwind";
-import { env } from "../env";
-import { translateOrderStatus } from "../src/utils/order-status-translations";
+import { emailTailwindConfig } from "../../tailwind";
+import { env } from "../../env";
+import { translateOrderStatus } from "../../src/utils/order-status-translations";
 
 const defaultOrderUrl = `${env.SITE_URL}/orders`;
 
@@ -30,7 +30,7 @@ interface OrderUpdatedEmailProps {
   status?: string;
 }
 
-export function OrderUpdatedEmail({
+export default function OrderUpdatedEmail({
   username,
   orderId,
   orderNumber,
@@ -60,7 +60,7 @@ export function OrderUpdatedEmail({
               <strong>Номер заказа:</strong> {orderNumber}
             </Text>
             <Section className="mb-[32px] mt-[32px]">
-              {changes.map((change) => (
+              {changes?.map((change) => (
                 <Text
                   key={change.field}
                   className="text-[14px] leading-[24px] text-black"

@@ -3,14 +3,9 @@
 import { Badge } from "@qco/ui/components/badge";
 import { Button } from "@qco/ui/components/button";
 import { Separator } from "@qco/ui/components/separator";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@qco/ui/components/tabs";
 import { Loader2, RotateCcw, Share2, Shield, Truck } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import DOMPurify from "isomorphic-dompurify";
 import { FavoriteButton } from "@/features/favorites/components/favorite-button";
 import { useAddToCart } from "../hooks/use-add-to-cart";
 import { useProductAttributes } from "../hooks/use-product-attributes";
@@ -19,7 +14,7 @@ import ProductSpecifications from "./product-specifications";
 import RelatedProducts from "./related-products";
 import SizeGuide from "./size-guide";
 import { BrandLink } from "./brand-link";
-import type { ProductDetail } from "@qco/web-validators/product-detail";
+import type { ProductDetail } from "@qco/web-validators";
 
 interface ProductDetailProps {
   product: ProductDetail;
@@ -155,7 +150,7 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
     ? selectedVariant.salePrice || selectedVariant.price
     : product.salePrice || product.basePrice || 0;
 
-  const originalPrice = selectedVariant?.compareAtPrice || product.basePrice;
+  const originalPrice = selectedVariant ? selectedVariant.price : product.basePrice;
   // Рассчитываем скидку
   const discountPercentage =
     originalPrice && currentPrice && originalPrice > currentPrice
@@ -164,6 +159,85 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
 
   // Получаем URL изображений для галереи
   const imageUrls = product.images.map((img) => img.url);
+
+  // Проверяем наличие характеристик
+  const hasProductAttributes =
+    !!product.attributes && Object.keys(product.attributes).length > 0;
+  const hasFeatures = !!product.features && product.features.length > 0;
+  const hasComputedAttributes = !!attributes && attributes.length > 0;
+  const hasCharacteristics =
+    hasProductAttributes || hasFeatures || hasComputedAttributes;
+
+  // Санитизация описания продукта для предотвращения XSS
+  const sanitizedDescription = useMemo(() => {
+    const clean = DOMPurify.sanitize(product.description || "", {
+      USE_PROFILES: { html: true },
+      ALLOW_DATA_ATTR: false,
+      ALLOW_ARIA_ATTR: false,
+      FORBID_ATTR: ["style"],
+      ALLOWED_TAGS: [
+        "a",
+        "p",
+        "br",
+        "strong",
+        "em",
+        "ul",
+        "ol",
+        "li",
+        "span",
+        "b",
+        "i",
+        "u",
+        "blockquote",
+        "code",
+        "pre",
+        "hr",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+      ],
+      ALLOWED_ATTR: ["href", "title", "target", "rel"],
+    });
+
+    // Гарантируем безопасность ссылок с target="_blank"
+    if (typeof window !== "undefined") {
+      const wrapper = document.createElement("div");
+      wrapper.innerHTML = clean;
+      const anchors = wrapper.querySelectorAll('a[target="_blank"]');
+      anchors.forEach((anchor) => {
+        const currentRel = anchor.getAttribute("rel") || "";
+        const tokens = new Set(currentRel.split(/\s+/).filter(Boolean));
+        tokens.add("noopener");
+        tokens.add("noreferrer");
+        tokens.add("nofollow");
+        anchor.setAttribute("rel", Array.from(tokens).join(" "));
+      });
+      return wrapper.innerHTML;
+    }
+
+    // Фолбэк для среды без DOM: добавляем rel в строке HTML
+    return clean.replace(
+      /<a([^>]*?)target=(['"])_blank\2([^>]*)>/gi,
+      (match) => {
+        if (/rel=/i.test(match)) {
+          return match.replace(/rel=(["'])(.*?)\1/i, (m, q, relVals) => {
+            const set = new Set(relVals.split(/\s+/).filter(Boolean));
+            set.add("noopener");
+            set.add("noreferrer");
+            set.add("nofollow");
+            return `rel=${q}${Array.from(set).join(" ")}${q}`;
+          });
+        }
+        return match.replace(
+          />/,
+          ' rel="noopener noreferrer nofollow">'
+        );
+      }
+    );
+  }, [product?.description]);
 
 
 
@@ -332,6 +406,59 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
           </div>
         </div>
 
+        <Separator />
+
+        {/* Описание */}
+        <div className="space-y-2 sm:space-y-3">
+          <h2 className="text-base sm:text-lg font-semibold">Описание</h2>
+          <div className="prose max-w-none">
+            <div
+              className="text-muted-foreground leading-relaxed text-sm sm:text-base"
+              dangerouslySetInnerHTML={{ __html: sanitizedDescription }}
+            />
+          </div>
+        </div>
+
+        {hasCharacteristics && (
+          <>
+            <Separator />
+            {/* Характеристики */}
+            <div className="space-y-4 sm:space-y-6">
+              <h2 className="text-base sm:text-lg font-semibold">Характеристики</h2>
+              {/* Спецификации продукта */}
+              <ProductSpecifications
+                specifications={product.attributes}
+                attributes={attributes}
+              />
+
+              {/* Дополнительные характеристики */}
+              {product.features && product.features.length > 0 && (
+                <div className="space-y-2 sm:space-y-3">
+                  <h3 className="font-medium text-sm sm:text-base">
+                    Дополнительная информация
+                  </h3>
+                  {product.features.map((detail: string) => {
+                    const [rawLabel, ...rest] = detail.split(":");
+                    const label = (rawLabel ?? "").trim();
+                    const value = rest.join(":").trim();
+                    if (!label || !value) return null;
+                    const stableKey = `${label}-${value}`;
+                    return (
+                      <div
+                        key={stableKey}
+                        className="flex justify-between py-2 border-b border-gray-100 last:border-0 text-sm sm:text-base"
+                      >
+                        <span className="text-muted-foreground">{label}:</span>
+                        <span className="font-medium">{value}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          </>
+        )}
+
         {/* Преимущества */}
         <div className="space-y-2 sm:space-y-3 pt-3 sm:pt-4">
           <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm">
@@ -349,67 +476,7 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
         </div>
       </div>
 
-      {/* Подробная информация */}
-      <div className="lg:col-span-2 mt-8 sm:mt-12">
-        <Tabs defaultValue="description" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 h-10 sm:h-12">
-            <TabsTrigger value="description" className="text-xs sm:text-sm">
-              Описание
-            </TabsTrigger>
-            <TabsTrigger value="details" className="text-xs sm:text-sm">
-              Характеристики
-            </TabsTrigger>
-          </TabsList>
-
-          <TabsContent value="description" className="mt-4 sm:mt-6">
-            <div className="prose max-w-none">
-              <div
-                className="text-muted-foreground leading-relaxed text-sm sm:text-base"
-                dangerouslySetInnerHTML={{ __html: product.description || "" }}
-              />
-            </div>
-          </TabsContent>
-
-          <TabsContent value="details" className="mt-4 sm:mt-6">
-            <div className="space-y-4 sm:space-y-6">
-              {/* Спецификации продукта */}
-              <ProductSpecifications
-                specifications={product.attributes}
-                attributes={attributes}
-              />
-              {/* Дополнительные характеристики */}
-              {product.features && product.features.length > 0 && (
-                <div className="space-y-2 sm:space-y-3">
-                  <h3 className="font-medium text-sm sm:text-base">
-                    Дополнительная информация
-                  </h3>
-                  {product.features.map((detail: string, index: number) => (
-                    <div
-                      key={index}
-                      className="flex justify-between py-2 border-b border-gray-100 last:border-0 text-sm sm:text-base"
-                    >
-                      <span className="text-muted-foreground">
-                        {detail.split(":")[0]}:
-                      </span>
-                      <span className="font-medium">
-                        {detail.split(":")[1]}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              )}
-              {(!product.attributes ||
-                Object.keys(product.attributes).length === 0) &&
-                (!product.features || product.features.length === 0) &&
-                (!attributes || attributes.length === 0) && (
-                  <p className="text-muted-foreground text-sm sm:text-base">
-                    Характеристики не указаны
-                  </p>
-                )}
-            </div>
-          </TabsContent>
-        </Tabs>
-      </div>
+      {/* Блок подробной информации перенесён выше, под кнопкой добавления в корзину */}
 
       {/* Связанные продукты */}
       {product.relatedProducts.length > 0 && (

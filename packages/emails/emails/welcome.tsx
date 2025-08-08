@@ -16,7 +16,7 @@ import {
 import { emailTailwindConfig } from "../tailwind";
 import { env } from "../env";
 
-export function WelcomeEmail({ username = "username" }: { username: string }) {
+export default function WelcomeEmail({ username = "username" }: { username: string }) {
 	return (
 		<Html>
 			<Head />
