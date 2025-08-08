@@ -4,7 +4,7 @@ import { createId } from "@paralleldrive/cuid2";
 
 import { protectedProcedure } from "../../../trpc";
 import { adminInvitations, admins } from "@qco/db/schema";
-import { AdminInvitationEmail, sendEmail } from "@qco/emails";
+import { sendEmail, AdminInvitationEmail } from "@qco/emails";
 import { format } from "date-fns";
 import { ru } from "date-fns/locale";
 import { env } from "../../../../env";
