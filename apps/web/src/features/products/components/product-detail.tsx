@@ -4,7 +4,8 @@ import { Badge } from "@qco/ui/components/badge";
 import { Button } from "@qco/ui/components/button";
 import { Separator } from "@qco/ui/components/separator";
 import { Loader2, RotateCcw, Share2, Shield, Truck } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import DOMPurify from "isomorphic-dompurify";
 import { FavoriteButton } from "@/features/favorites/components/favorite-button";
 import { useAddToCart } from "../hooks/use-add-to-cart";
 import { useProductAttributes } from "../hooks/use-product-attributes";
@@ -166,6 +167,13 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
   const hasComputedAttributes = !!attributes && attributes.length > 0;
   const hasCharacteristics =
     hasProductAttributes || hasFeatures || hasComputedAttributes;
+
+  // Санитизация описания продукта для предотвращения XSS
+  const sanitizedDescription = useMemo(() => {
+    return DOMPurify.sanitize(product.description || "", {
+      USE_PROFILES: { html: true },
+    });
+  }, [product?.description]);
 
 
 
@@ -342,7 +350,7 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
           <div className="prose max-w-none">
             <div
               className="text-muted-foreground leading-relaxed text-sm sm:text-base"
-              dangerouslySetInnerHTML={{ __html: product.description || "" }}
+              dangerouslySetInnerHTML={{ __html: sanitizedDescription }}
             />
           </div>
         </div>
@@ -365,17 +373,22 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
                   <h3 className="font-medium text-sm sm:text-base">
                     Дополнительная информация
                   </h3>
-                  {product.features.map((detail: string, index: number) => (
-                    <div
-                      key={index}
-                      className="flex justify-between py-2 border-b border-gray-100 last:border-0 text-sm sm:text-base"
-                    >
-                      <span className="text-muted-foreground">
-                        {detail.split(":")[0]}:
-                      </span>
-                      <span className="font-medium">{detail.split(":")[1]}</span>
-                    </div>
-                  ))}
+                  {product.features.map((detail: string) => {
+                    const [rawLabel, ...rest] = detail.split(":");
+                    const label = (rawLabel ?? "").trim();
+                    const value = rest.join(":").trim();
+                    if (!label || !value) return null;
+                    const stableKey = `${label}-${value}`;
+                    return (
+                      <div
+                        key={stableKey}
+                        className="flex justify-between py-2 border-b border-gray-100 last:border-0 text-sm sm:text-base"
+                      >
+                        <span className="text-muted-foreground">{label}:</span>
+                        <span className="font-medium">{value}</span>
+                      </div>
+                    );
+                  })}
                 </div>
               )}
             </div>
