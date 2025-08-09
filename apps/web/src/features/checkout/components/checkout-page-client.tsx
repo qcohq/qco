@@ -400,12 +400,14 @@ const CheckoutPageClient = ({ cart }: CheckoutPageProps) => {
                                 onBlur={(fieldName) => createOnBlurHandler(fieldName as keyof CheckoutFormValues)()}
                             />
 
-                            {/* Checkbox для сохранения данных в профиль - теперь доступен всем */}
-                            <SaveToProfileCheckbox
-                                form={form}
-                                isAuthenticated={isAuthenticated}
-                                dataMode={dataMode}
-                            />
+                            {/* Checkbox to save data to profile - only for authenticated users */}
+                            {isAuthenticated && (
+                                <SaveToProfileCheckbox
+                                    form={form}
+                                    isAuthenticated={isAuthenticated}
+                                    dataMode={dataMode}
+                                />
+                            )}
 
                             <PaymentMethodForm
                                 form={form}
