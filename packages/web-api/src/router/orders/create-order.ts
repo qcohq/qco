@@ -95,7 +95,7 @@ export const createOrderProcedure = publicProcedure
             subtotal: `${subtotal.toFixed(2)} ₽`,
             shippingCost: `${shippingCost.toFixed(2)} ₽`,
           }),
-          subject: `Заказ №${order.id} успешно создан`,
+          subject: `Заказ №${order.orderNumber} успешно создан`,
           to: [customerInfo.email],
         });
       } catch (emailError) {

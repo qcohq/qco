@@ -30,7 +30,6 @@ export const sendEmail = async (email: Emails) => {
   const from = email.from || env.EMAIL_FROM || DEFAULT_FROM_EMAIL;
   // Always pre-render React element to HTML to avoid provider-side rendering issues
   const html = await render(email.react);
-
   if (env.EMAIL_SANDBOX_ENABLED === "true") {
     const mailOptions: Mail.Options = {
       from,

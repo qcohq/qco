@@ -24,9 +24,9 @@ export default function OrderCancelledEmail({
 }: OrderCancelledEmailProps) {
     return (
         <Html>
-            <Head />
-            <Preview>Заказ №{orderNumber} отменён</Preview>
             <Tailwind>
+                <Head />
+                <Preview>Заказ №{orderNumber} отменён</Preview>
                 <Body className="bg-white font-sans">
                     <Container className="mx-auto py-8 px-4">
                         <Section className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
