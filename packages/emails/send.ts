@@ -28,12 +28,13 @@ const DEFAULT_FROM_EMAIL = "noreply@qco.me";
 
 export const sendEmail = async (email: Emails) => {
   const from = email.from || env.EMAIL_FROM || DEFAULT_FROM_EMAIL;
-
+  // Always pre-render React element to HTML to avoid provider-side rendering issues
+  const html = await render(email.react);
   if (env.EMAIL_SANDBOX_ENABLED === "true") {
     const mailOptions: Mail.Options = {
       from,
       to: email.to,
-      html: await render(email.react),
+      html,
       subject: email.subject,
     };
     const transporter = nodemailer.createTransport({
@@ -47,7 +48,13 @@ export const sendEmail = async (email: Emails) => {
 
     return Promise.resolve();
   }
-  await resend.emails.send({ ...email, from });
+  // Send pre-rendered HTML instead of React element to ensure consistent output
+  await resend.emails.send({
+    to: email.to,
+    from,
+    subject: email.subject,
+    html,
+  });
 };
 
 export const sendEmailHtml = async (email: EmailHtml) => {

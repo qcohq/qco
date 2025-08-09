@@ -1,3 +1,4 @@
+services:
   inbucket:
     image: inbucket/inbucket:latest
     container_name: inbucket
