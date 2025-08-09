@@ -178,22 +178,17 @@ export function OrderHeader({ order }: OrderHeaderProps) {
       label: "Основные статусы",
       items: [
         { value: OrderStatus.PENDING, label: "В ожидании", icon: Settings },
+        { value: OrderStatus.CONFIRMED, label: "Подтверждён", icon: Settings },
         { value: OrderStatus.PROCESSING, label: "В обработке", icon: Settings },
-        { value: OrderStatus.COMPLETED, label: "Завершён", icon: Settings },
+        { value: OrderStatus.SHIPPED, label: "Отправлен", icon: Settings },
+        { value: OrderStatus.DELIVERED, label: "Доставлен", icon: Settings },
       ],
     },
     {
-      label: "Проблемные статусы",
+      label: "Прочие",
       items: [
         { value: OrderStatus.CANCELLED, label: "Отменён", icon: XCircle },
         { value: OrderStatus.REFUNDED, label: "Возврат", icon: Settings },
-        { value: OrderStatus.ON_HOLD, label: "На удержании", icon: Settings },
-        {
-          value: OrderStatus.PARTIALLY_REFUNDED,
-          label: "Частичный возврат",
-          icon: Settings,
-        },
-        { value: OrderStatus.FAILED, label: "Ошибка", icon: Settings },
       ],
     },
   ];
