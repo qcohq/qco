@@ -218,8 +218,8 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
 
   // Логика цен: приоритет у варианта, затем salePrice, затем basePrice
   const currentPrice = selectedVariant
-    ? selectedVariant.salePrice || selectedVariant.price
-    : product.salePrice || product.basePrice || 0;
+    ? (selectedVariant.salePrice ?? selectedVariant.price)
+    : (product.salePrice ?? product.basePrice ?? 0);
 
   const originalPrice = selectedVariant ? selectedVariant.price : product.basePrice;
   // Рассчитываем скидку
