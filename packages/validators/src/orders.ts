@@ -248,22 +248,6 @@ export const customerInfoSchema = z.object({
  */
 export const orderWithCustomerSchema = z.object({
 	order: orderSchema,
-	customer: z.object({
-		id: z.string(),
-		customerCode: z.string(),
-		name: z.string().nullable(),
-		firstName: z.string().nullable(),
-		lastName: z.string().nullable(),
-		email: z.string(),
-		emailVerified: z.boolean(),
-		phone: z.string().nullable(),
-		dateOfBirth: z.date().nullable(),
-		gender: z.string().nullable(),
-		image: z.string().nullable(),
-		isGuest: z.boolean(),
-		createdAt: z.date(),
-		updatedAt: z.date(),
-	}),
 });
 
 /**
