@@ -15,9 +15,7 @@ export function useCategories(options?: {
 }) {
   const trpc = useTRPC();
   const queryOptions = trpc.category.list.queryOptions(
-    z.object({
-      parentId: z.string().optional()
-    }).parse({
+    categoryListInputV2.parse({
       parentId: options?.parentId,
     }),
     {
@@ -68,9 +66,7 @@ export function useSubcategories(parentId: string) {
   const trpc = useTRPC();
 
   const queryOptions = trpc.category.list.queryOptions(
-    z.object({
-      parentId: z.string().optional()
-    }).parse({
+    categoryListInputV2.parse({
       parentId,
     }),
     {

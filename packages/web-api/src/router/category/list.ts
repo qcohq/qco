@@ -1,12 +1,10 @@
-import { eq, isNull, desc, and } from '@qco/db'
+import { eq, isNull, and, asc } from '@qco/db'
 import { categories } from '@qco/db/schema'
 import { publicProcedure } from '../../trpc'
-import { z } from 'zod'
+import { categoryListInputV2 } from '@qco/web-validators'
 
 export const list = publicProcedure
-    .input(z.object({
-        parentId: z.string().optional()
-    }))
+    .input(categoryListInputV2)
     .query(async ({ ctx, input }) => {
         const categoriesQuery = ctx.db.query.categories.findMany({
             where: input.parentId
@@ -18,7 +16,7 @@ export const list = publicProcedure
                     isNull(categories.parentId),
                     eq(categories.isActive, true)
                 ),
-            orderBy: [desc(categories.sortOrder), desc(categories.createdAt)],
+            orderBy: [asc(categories.sortOrder), asc(categories.name)],
             with: {
                 image: true,
             },
