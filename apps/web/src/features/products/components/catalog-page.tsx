@@ -22,7 +22,7 @@ import ProductFiltersPanelDynamic from "./product-filters-panel-dynamic";
 
 export default function CatalogPage() {
   // Используем хук для получения продуктов каталога
-  const { filteredProducts, isPending, isRefetching, error, filters, draftFilters, updateFilter, applyFilters, availableFilters } =
+  const { filteredProducts, isPending, isRefetching, error, filters, draftFilters, updateFilter, applyFilters, clearFilters, availableFilters } =
     useCatalogTRPC();
 
   // Адаптер для функции фильтрации
@@ -98,21 +98,7 @@ export default function CatalogPage() {
                 filters={draftFilters}
                 appliedFilters={filters}
                 onFilterChange={updateFilter}
-                onClearFilters={() => {
-                  updateFilter("brands", []);
-                  updateFilter("sizes", []);
-                  updateFilter("colors", []);
-                  updateFilter("inStock", false);
-                  updateFilter("onSale", false);
-                  updateFilter("attributes", {} as any);
-                  updateFilter(
-                    "priceRange",
-                    [
-                      availableFilters?.priceRange?.min ?? 0,
-                      availableFilters?.priceRange?.max ?? 500000,
-                    ],
-                  );
-                }}
+                onClearFilters={clearFilters}
                 onApply={() => {
                   applyFilters();
                 }}
@@ -131,21 +117,7 @@ export default function CatalogPage() {
             filters={draftFilters}
             appliedFilters={filters}
             onFilterChange={updateFilter}
-            onClearFilters={() => {
-              updateFilter("brands", []);
-              updateFilter("sizes", []);
-              updateFilter("colors", []);
-              updateFilter("inStock", false);
-              updateFilter("onSale", false);
-              updateFilter("attributes", {} as any);
-              updateFilter(
-                "priceRange",
-                [
-                  availableFilters?.priceRange?.min ?? 0,
-                  availableFilters?.priceRange?.max ?? 500000,
-                ],
-              );
-            }}
+            onClearFilters={clearFilters}
             onApply={applyFilters}
             isRefetching={isRefetching}
             categorySlug="all"

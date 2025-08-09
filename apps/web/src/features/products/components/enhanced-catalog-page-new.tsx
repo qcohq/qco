@@ -46,6 +46,7 @@ export default function EnhancedCatalogPage({
     draftFilters,
     updateFilter,
     applyFilters,
+    clearFilters,
     sortBy,
     setSortBy,
   } = useCatalogTRPC(categorySlug, subcategorySlug);
@@ -179,14 +180,7 @@ export default function EnhancedCatalogPage({
                 filters={draftFilters}
                 appliedFilters={filters}
                 onFilterChange={updateFilter}
-                onClearFilters={() => {
-                  updateFilter("brands", []);
-                  updateFilter("sizes", []);
-                  updateFilter("colors", []);
-                  updateFilter("inStock", false);
-                  updateFilter("onSale", false);
-                  updateFilter("attributes", {} as any);
-                }}
+                onClearFilters={clearFilters}
                 onApply={() => {
                   applyFilters();
                   setIsFilterDrawerOpen(false);
@@ -212,14 +206,7 @@ export default function EnhancedCatalogPage({
             filters={draftFilters}
             appliedFilters={filters}
             onFilterChange={updateFilter}
-            onClearFilters={() => {
-              updateFilter("brands", []);
-              updateFilter("sizes", []);
-              updateFilter("colors", []);
-              updateFilter("inStock", false);
-              updateFilter("onSale", false);
-              updateFilter("attributes", {} as any);
-            }}
+            onClearFilters={clearFilters}
             onApply={applyFilters}
             isRefetching={isRefetching}
             categorySlug={categorySlug || "all"}
