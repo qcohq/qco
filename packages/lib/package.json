@@ -24,7 +24,7 @@
     "@sindresorhus/slugify": "2.2.1",
     "@t3-oss/env-core": "0.13.8",
     "mime-types": "^3.0.1",
-    "zod": "4.0.15"
+    "zod": "4.0.16"
   },
   "devDependencies": {
     "@qco/eslint-config": "workspace:*",

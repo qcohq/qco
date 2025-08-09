@@ -18,7 +18,7 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
-    "zod": "4.0.15"
+    "zod": "4.0.16"
   },
   "devDependencies": {
     "@qco/eslint-config": "workspace:*",
