@@ -1,4 +1,4 @@
-import { eq, isNull, desc, and } from '@qco/db'
+import { eq, isNull, and } from '@qco/db'
 import { categories } from '@qco/db/schema'
 import { publicProcedure } from '../../trpc'
 import { z } from 'zod'
@@ -18,7 +18,7 @@ export const list = publicProcedure
                     isNull(categories.parentId),
                     eq(categories.isActive, true)
                 ),
-            orderBy: [desc(categories.sortOrder), desc(categories.createdAt)],
+            orderBy: [categories.sortOrder, categories.name],
             with: {
                 image: true,
             },
