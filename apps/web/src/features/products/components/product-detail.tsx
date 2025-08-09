@@ -137,37 +137,6 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
     }
   }, [selectedColor, selectedSize, product?.variants]);
 
-  if (isAttributesLoading) {
-    return <div>Загрузка...</div>;
-  }
-
-  if (!product) {
-    return <div>Ошибка загрузки продукта</div>;
-  }
-
-  // Логика цен: приоритет у варианта, затем salePrice, затем basePrice
-  const currentPrice = selectedVariant
-    ? selectedVariant.salePrice || selectedVariant.price
-    : product.salePrice || product.basePrice || 0;
-
-  const originalPrice = selectedVariant ? selectedVariant.price : product.basePrice;
-  // Рассчитываем скидку
-  const discountPercentage =
-    originalPrice && currentPrice && originalPrice > currentPrice
-      ? Math.round(((originalPrice - currentPrice) / originalPrice) * 100)
-      : 0;
-
-  // Получаем URL изображений для галереи
-  const imageUrls = product.images.map((img) => img.url);
-
-  // Проверяем наличие характеристик
-  const hasProductAttributes =
-    !!product.attributes && Object.keys(product.attributes).length > 0;
-  const hasFeatures = !!product.features && product.features.length > 0;
-  const hasComputedAttributes = !!attributes && attributes.length > 0;
-  const hasCharacteristics =
-    hasProductAttributes || hasFeatures || hasComputedAttributes;
-
   // Санитизация описания продукта для предотвращения XSS
   const sanitizedDescription = useMemo(() => {
     const clean = DOMPurify.sanitize(product.description || "", {
@@ -238,6 +207,37 @@ export default function ProductDetail({ product, slug }: ProductDetailProps) {
       }
     );
   }, [product?.description]);
+
+  if (isAttributesLoading) {
+    return <div>Загрузка...</div>;
+  }
+
+  if (!product) {
+    return <div>Ошибка загрузки продукта</div>;
+  }
+
+  // Логика цен: приоритет у варианта, затем salePrice, затем basePrice
+  const currentPrice = selectedVariant
+    ? (selectedVariant.salePrice ?? selectedVariant.price)
+    : (product.salePrice ?? product.basePrice ?? 0);
+
+  const originalPrice = selectedVariant ? selectedVariant.price : product.basePrice;
+  // Рассчитываем скидку
+  const discountPercentage =
+    originalPrice && currentPrice && originalPrice > currentPrice
+      ? Math.round(((originalPrice - currentPrice) / originalPrice) * 100)
+      : 0;
+
+  // Получаем URL изображений для галереи
+  const imageUrls = product.images.map((img) => img.url);
+
+  // Проверяем наличие характеристик
+  const hasProductAttributes =
+    !!product.attributes && Object.keys(product.attributes).length > 0;
+  const hasFeatures = !!product.features && product.features.length > 0;
+  const hasComputedAttributes = !!attributes && attributes.length > 0;
+  const hasCharacteristics =
+    hasProductAttributes || hasFeatures || hasComputedAttributes;
 
 
 
